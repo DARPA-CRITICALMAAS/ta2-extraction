@@ -1,0 +1,1324 @@
+{
+  "TOC": {
+    "Summary": [
+      "",
+      "78"
+    ],
+    "Introduction": [
+      "",
+      "112"
+    ],
+    "Property Description, Location and Ownership": [
+      "1",
+      "15"
+    ],
+    "Geological Setting and Mineralization": [
+      "1",
+      "15"
+    ],
+    "Status of Exploration, Development and Operations": [
+      "1",
+      "17"
+    ],
+    "Drilling": [
+      "",
+      "161"
+    ],
+    "Sample Preparation, Analyses, and Security": [
+      "",
+      "65"
+    ],
+    "Data Verification": [
+      "",
+      "67"
+    ],
+    "Mineral Processing and Metallurgical Testing": [
+      "13",
+      "69"
+    ],
+    "Mineral Resource Estimate": [
+      "",
+      "213"
+    ],
+    "Mineral Reserve Estimates": [
+      "",
+      "123"
+    ],
+    "Mining Methods": [
+      "1",
+      "22"
+    ],
+    "Recovery Methods": [
+      "",
+      "163"
+    ],
+    "Project Infrastructure": [
+      "170"
+    ],
+    "Market Studies and Contracts": [
+      "174"
+    ],
+    "Environment, Permitting and Social Impact": [
+      "1",
+      "23"
+    ],
+    "Cost Estimates": [
+      "1",
+      "24"
+    ],
+    "Capital Costs": [
+      "",
+      "201"
+    ],
+    "Operating Costs": [
+      "",
+      "204"
+    ],
+    "Economic Analysis": [
+      "1",
+      "26"
+    ],
+    "Risks and Opportunities": [
+      "",
+      "210"
+    ],
+    "Conclusion and Recommendations": [
+      "1",
+      "28"
+    ],
+    "Introduction and Terms of Reference": [
+      "2",
+      "31"
+    ],
+    "Responsibility": [
+      "2",
+      "31"
+    ],
+    "Qualifications of SRK and Qualified Persons": [
+      "2",
+      "32"
+    ],
+    "Details of Inspection": [
+      "2",
+      "33"
+    ],
+    "Sources of Information": [
+      "2",
+      "33"
+    ],
+    "Effective Dates": [
+      "2",
+      "34"
+    ],
+    "Units of Measure": [
+      "2",
+      "34"
+    ],
+    "Declaration": [
+      "2",
+      "34"
+    ],
+    "Reliance on Other Experts": [
+      "3",
+      "35"
+    ],
+    "Ownership, Mineral Tenure and Surface Rights": [
+      "3",
+      "35"
+    ],
+    "Environmental": [
+      "3",
+      "35"
+    ],
+    "Taxation": [
+      "",
+      "204"
+    ],
+    "Other": [
+      "3",
+      "35"
+    ],
+    "Property Description and Location": [
+      "4",
+      "36"
+    ],
+    "SRK Consulting": [
+      "530000.020 Florida Canyon Mining, I nc.",
+      "Page x"
+    ],
+    "NI 43-101 Tech Report Reserves": [
+      "",
+      ""
+    ],
+    "Various/RJM FCMI_2018_PFS_TechRpt_530000.020_20190208b.docx Feb 2019": [
+      "",
+      ""
+    ],
+    "Florida Canyon Gold Mine Summary": [
+      "",
+      "36"
+    ],
+    "Property Location": [
+      "",
+      "36"
+    ],
+    "Land Status, Property Agreements, and Operating Permits": [
+      "",
+      "38"
+    ],
+    "Mineral Titles": [
+      "",
+      "38"
+    ],
+    "Environmental Liabilities and Permitting": [
+      "",
+      "41"
+    ],
+    "4.5.1 Environmental Liabilities": [
+      "",
+      "41"
+    ],
+    "4.5.2 Required Permits and Status": [
+      "",
+      "41"
+    ],
+    "Other Significant Factors and Risks": [
+      "",
+      "41"
+    ],
+    "Conclusions and Recommendations": [
+      "",
+      "68"
+    ],
+    "Accessibility, Climate, Local Resources, Infrastructure and Physiography": [
+      "",
+      "42"
+    ],
+    "History": [
+      "",
+      "43"
+    ],
+    "Florida Canyon Gold Mine Geological Setting and Mineralization": [
+      "",
+      "46"
+    ],
+    "Regional Geology": [
+      "",
+      "46"
+    ],
+    "Local Geology": [
+      "",
+      "48"
+    ],
+    "Property Geology": [
+      "",
+      "51"
+    ],
+    "Significant Mineralized Zones": [
+      "",
+      "55"
+    ],
+    "Deposit Types": [
+      "",
+      "59"
+    ],
+    "Exploration": [
+      "",
+      "60"
+    ],
+    "Type and Extent": [
+      "",
+      "62"
+    ],
+    "Procedures": [
+      "",
+      "67"
+    ],
+    "Interpretation and Relevant Results": [
+      "",
+      "64"
+    ],
+    "Security Measures": [
+      "",
+      "65"
+    ],
+    "Sample Preparation and Analysis": [
+      "",
+      "65"
+    ],
+    "Sample Analysis": [
+      "",
+      "65"
+    ],
+    "Quality Assurance and Quality Control Procedures": [
+      "",
+      "65"
+    ],
+    "Opinion on Adequacy": [
+      "",
+      "66"
+    ],
+    "NI 43 -101 Tech Report Reserves": [
+      "Various/RJM  FCMI_2018_PFS_TechRpt_530000.020_20190208b.docx",
+      "Feb 2019"
+    ],
+    "Various/RJM  FCMI_2018_PFS_TechRpt_530000.020_20190208b.docx": [
+      "Feb 2019"
+    ],
+    "Limitations": [
+      "",
+      "67"
+    ],
+    "Opinion on Data Adequacy": [
+      "",
+      "68"
+    ],
+    "Historical Metallurgical Performance": [
+      "",
+      "69"
+    ],
+    "Historical Column Leach Testing Data": [
+      "",
+      "71"
+    ],
+    "Previous Study Gold Recovery Assumptions": [
+      "",
+      "71"
+    ],
+    "Column Leach Testing of 2017 Heap Leach Feed": [
+      "",
+      "72"
+    ],
+    "Gold Recovery Estimates": [
+      "",
+      "76"
+    ],
+    "Gold Recovery Estimates used in Resource Estimate: Marsden 2018": [
+      "13.5.1",
+      "76"
+    ],
+    "Gold Recovery Estimates used in Cash Flow": [
+      "13.5.2",
+      "77"
+    ],
+    "Mineral Resource Estimates": [
+      "14",
+      "78"
+    ],
+    "Drillhole Database": [
+      "",
+      "78"
+    ],
+    "Geological Model": [
+      "",
+      "80"
+    ],
+    "Grade Domains": [
+      "14.3.1",
+      "80"
+    ],
+    "Assay Capping and Compositing": [
+      "14.4.1",
+      "81"
+    ],
+    "Capping": [
+      "14.4.1",
+      "81"
+    ],
+    "Compositing": [
+      "14.4.2",
+      "83"
+    ],
+    "Density": [
+      "",
+      "83"
+    ],
+    "Variogram Analysis and Modeling": [
+      "",
+      "84"
+    ],
+    "Block Model": [
+      "",
+      "87"
+    ],
+    "Estimation Methodology": [
+      "",
+      "87"
+    ],
+    "Model Validation": [
+      "",
+      "89"
+    ],
+    "Visual Comparison": [
+      "14.9.1",
+      "89"
+    ],
+    "Comparative Statistics": [
+      "14.9. 2",
+      "92"
+    ],
+    "Swath Plots": [
+      "14.9.3",
+      "93"
+    ],
+    "Resource Classification": [
+      "",
+      "102"
+    ],
+    "Metallurgical Recovery for NSR Calculation": [
+      "14.11.1",
+      "107"
+    ],
+    "Resource Pit Optimization Parameters": [
+      "14.11.2",
+      "107"
+    ],
+    "Mineral Resource Sensitivity": [
+      "",
+      "111"
+    ],
+    "Key Assumptions, Parameters and Methods": [
+      "",
+      "112"
+    ],
+    "Economic Limit Definition": [
+      "15.2.1",
+      "112"
+    ],
+    "Mine Design Model": [
+      "15.2.2",
+      "115"
+    ],
+    "Commodity Selling Price, Selling Cost, and Royalty": [
+      "15.2.3",
+      "115"
+    ],
+    "530000.020 Florida Canyon Mining, I nc.": [
+      "",
+      ""
+    ],
+    "15.2.4  Metallurgical Recoveries": [
+      "",
+      "115"
+    ],
+    "15.2.5  Geotechnical Slope Guidance and Hydrology": [
+      "",
+      "115"
+    ],
+    "15.2.6  Dilution and Ore Loss": [
+      "",
+      "118"
+    ],
+    "Pit Optimization": [
+      "",
+      "118"
+    ],
+    "15.3.1  Pit Optimization Results": [
+      "",
+      "119"
+    ],
+    "15.3.2  Pit Optimization \u2013  Practical Phasing": [
+      "",
+      "120"
+    ],
+    "Reserve Pit Design": [
+      "",
+      "121"
+    ],
+    "15.4.1  Parameters Relevant to Mine Design": [
+      "",
+      "121"
+    ],
+    "15.4.2  Ultimate Pit Design": [
+      "",
+      "121"
+    ],
+    "15.4.3  Revised 2018 Mining Areas": [
+      "",
+      "122"
+    ],
+    "15.5.1  Cut-Off Grade": [
+      "",
+      "123"
+    ],
+    "15.5.2  Mineral Reserve Estimates": [
+      "",
+      "124"
+    ],
+    "Factors Affecting Mineral Reserves": [
+      "",
+      "125"
+    ],
+    "Mining Method": [
+      "",
+      "127"
+    ],
+    "Open Pit Mining": [
+      "",
+      "127"
+    ],
+    "Equipment Selection": [
+      "",
+      "127"
+    ],
+    "Access Development": [
+      "",
+      "127"
+    ],
+    "Pit Phase Designs": [
+      "",
+      "127"
+    ],
+    "Waste Rock Storage Facility Designs": [
+      "",
+      "159"
+    ],
+    "Mine Production Schedule": [
+      "",
+      "160"
+    ],
+    "Mining Operations": [
+      "",
+      "161"
+    ],
+    "Blasting": [
+      "",
+      "161"
+    ],
+    "Loading": [
+      "",
+      "161"
+    ],
+    "Hauling": [
+      "",
+      "162"
+    ],
+    "Support Activities": [
+      "",
+      "162"
+    ],
+    "Ancillary Equipment": [
+      "",
+      "162"
+    ],
+    "Dewatering": [
+      "",
+      "162"
+    ],
+    "Historical Operations": [
+      "",
+      "163"
+    ],
+    "Crushing and Agglomeration": [
+      "",
+      "165"
+    ],
+    "Ore Stacking and Heap Leachin g": [
+      "",
+      "165"
+    ],
+    "Solution Management": [
+      "",
+      "167"
+    ],
+    "Carbon Adsorption and Carbon Handling": [
+      "",
+      "167"
+    ],
+    "Carbon Elution": [
+      "",
+      "167"
+    ],
+    "Carbon Thermal Reactivation": [
+      "",
+      "167"
+    ],
+    "Carbon Acid Washing": [
+      "",
+      "168"
+    ],
+    "Electrowinning": [
+      "",
+      "168"
+    ],
+    "Electrowinning Sludge Drying and Retorting": [
+      "168"
+    ],
+    "Smelting": [
+      "168"
+    ],
+    "Sampling and Metallurgical Accounting": [
+      "168"
+    ],
+    "Analytical Laboratory": [
+      "169"
+    ],
+    "Quality Control Procedures": [
+      "169"
+    ],
+    "Metallurgical Testing": [
+      "",
+      "214"
+    ],
+    "General Site Layout": [
+      "170"
+    ],
+    "Access Roads and Logistics": [
+      "172"
+    ],
+    "Power": [
+      "172"
+    ],
+    "Water": [
+      "172"
+    ],
+    "Open Pit Mines and Waste Rock Storage Facilities": [
+      "172"
+    ],
+    "Heap Leach Pads": [
+      "173"
+    ],
+    "Process Ponds": [
+      "173"
+    ],
+    "Gold Recovery Plant, Laboratory": [
+      "173"
+    ],
+    "Crushing Plant": [
+      "173"
+    ],
+    "Ancillary Facilities": [
+      "173"
+    ],
+    "Environmental Studies, Permitting and Social Community Impact": [
+      "175"
+    ],
+    "Environmental Studies": [
+      "175"
+    ],
+    "Environmental Baseline Data": [
+      "175"
+    ],
+    "Protection and Species Mitigation": [
+      "177"
+    ],
+    "Environmental Management Planning": [
+      "177"
+    ],
+    "WPCP Management Pla ns": [
+      "177"
+    ],
+    "Waste Rock Management": [
+      "178"
+    ],
+    "Known Environmental Issues": [
+      "178"
+    ],
+    "Required Permits and Status": [
+      "179"
+    ],
+    "Federal Permitting": [
+      "182"
+    ],
+    "State Permitting": [
+      "183"
+    ],
+    "Local Permitting": [
+      "186"
+    ],
+    "Future Permit Amendments": [
+      "186"
+    ],
+    "Social and Community Requirements": [
+      "188"
+    ],
+    "Mine Closure": [
+      "188"
+    ],
+    "Regulatory Requirements": [
+      "188"
+    ],
+    "Reclamation Bonding and Closure Cost Estimates": [
+      "189"
+    ],
+    "Exist ing Bonding at Florida Canyon": [
+      "190"
+    ],
+    "Capital and Operating Costs": [
+      "191"
+    ],
+    "Basis for Capital Cost Estimates": [
+      "191"
+    ],
+    "530000.020 Florida Canyon Mining, Inc.": [
+      "",
+      ""
+    ],
+    "21.1.2 Mining Capital Cost": [
+      "",
+      "191"
+    ],
+    "21.1.3 Process Capital Costs": [
+      "",
+      "192"
+    ],
+    "21.1.4 Leach Pad Capital": [
+      "",
+      "193"
+    ],
+    "21.1.5 Other Capital Costs": [
+      "",
+      "193"
+    ],
+    "Operating Cost Estimates": [
+      "",
+      "193"
+    ],
+    "21.2.1 Basis for Operating Cost Estimates": [
+      "",
+      "193"
+    ],
+    "21.2.2 Unit Cost Modeling": [
+      "",
+      "193"
+    ],
+    "21.2.3 Total Mining Costs": [
+      "",
+      "194"
+    ],
+    "21.2.4 Total Operating Costs": [
+      "",
+      "194"
+    ],
+    "21.2.5 Labour Cost": [
+      "",
+      "196"
+    ],
+    "22 Economic Analysis": [
+      "",
+      "197"
+    ],
+    "General": [
+      "",
+      "197"
+    ],
+    "Summary of Results": [
+      "",
+      "197"
+    ],
+    "Annual Production Schedule": [
+      "",
+      "200"
+    ],
+    "Pricing Assumptions": [
+      "",
+      "201"
+    ],
+    "Process Recovery Assumptions": [
+      "",
+      "201"
+    ],
+    "Royalties": [
+      "",
+      "204"
+    ],
+    "Offsite Costs": [
+      "",
+      "205"
+    ],
+    "Sensitivity Analysis": [
+      "",
+      "205"
+    ],
+    "23 Adjacent Properties": [
+      "",
+      "207"
+    ],
+    "24 Other Relevant Data and Information": [
+      "",
+      "208"
+    ],
+    "25 Interpretations and Conclusions": [
+      "",
+      "209"
+    ],
+    "Mineral Reserve Estimate": [
+      "",
+      "213"
+    ],
+    "Pit Geotechnical and Hydrogeology": [
+      "",
+      "209"
+    ],
+    "Pit Phasing and Access": [
+      "",
+      "209"
+    ],
+    "Metallurgy and Recovery Plan": [
+      "",
+      "210"
+    ],
+    "Environmental Studies Permits and Social or Community Impact": [
+      "",
+      "210"
+    ],
+    "25.7.1 Risks": [
+      "",
+      "211"
+    ],
+    "25.7.2 Opportunities": [
+      "",
+      "211"
+    ],
+    "26 Recommendations": [
+      "",
+      "213"
+    ],
+    "Pit Geotechnical and Hydrology": [
+      "",
+      "214"
+    ],
+    "Environmental Studies, Permitting, Closure Cost Estimates": [
+      "215"
+    ],
+    "27 Date and Signature Page": [
+      "216"
+    ],
+    "28 References": [
+      "217"
+    ],
+    "List of Figures": [
+      "",
+      ""
+    ],
+    "Figure 4- 1: Flori da Canyon Gold Mine location map": [
+      "",
+      "37"
+    ],
+    "Figure 4- 2: Florida Canyon land map": [
+      "",
+      "40"
+    ],
+    "Figure 7- 1: Regional geology map of the Humboldt Range, Nevada (Hess and Johnson, 1996)": [
+      "",
+      "47"
+    ],
+    "Figure 7- 2: Local geology map \u2013  Florida Canyon and Standard mine area": [
+      "",
+      "49"
+    ],
+    "Figure 7- 3: Local geology stratigraphic column": [
+      "",
+      "50"
+    ],
+    "Figure 7- 4: Florida Canyon generalized geologic cross section": [
+      "",
+      "52"
+    ],
+    "Figure 7- 5: Geology plan map, Florida Canyon Gold Mine area": [
+      "",
+      "53"
+    ],
+    "Figure 7- 6: Geologic cross -section A -A\u2019, Florida Canyon Gold Mine area": [
+      "",
+      "53"
+    ],
+    "Figure 7- 7: Alteration plan map, Florida Canyon Gold Mine area": [
+      "",
+      "54"
+    ],
+    "Figure 7- 8: Alteration cross section, Florida Canyon Gold Mine area": [
+      "",
+      "54"
+    ],
+    "Figure 7- 9: Florida Canyon Gold mineralized shell and topography": [
+      "",
+      "56"
+    ],
+    "Figure 7- 10: Florida Canyon Gold mineralized shell and major mineralized structures": [
+      "",
+      "57"
+    ],
+    "Figure 7- 11: Florida Canyon cross -section C -C\u2019, 50000N \u2013  mineralized shell and major mineralized structures": [
+      "",
+      "57"
+    ],
+    "Figure 7- 12: Box plot of gold distribution in altered and mineralized Grass Valley": [
+      "",
+      "58"
+    ],
+    "Figure 10- 1: Location map of drillhole collars, identifying 2017 drilling, and all others.": [
+      "",
+      "63"
+    ],
+    "Figure 13- 1: Fire assay head grade distribution": [
+      "",
+      "74"
+    ],
+    "Figure 13- 2: The cyanide soluble gold head grade": [
+      "",
+      "74"
+    ],
+    "Figure 13- 3: Calculated head grade statistics for the monthly crusher composites": [
+      "",
+      "75"
+    ],
+    "Figure 13- 4: The column test gold recovery data": [
+      "",
+      "76"
+    ],
+    "Figure 13- 5: Column test recovery and calculated head grades by month": [
+      "",
+      "77"
+    ],
+    "Figure 14- 1: Gold assay values by mining area": [
+      "",
+      "79"
+    ],
+    "Figure 14- 2: Gold assay values by domain": [
+      "",
+      "80"
+    ],
+    "Figure 14- 3: 0.003 oz/ston- grade shell with sub- domains": [
+      "",
+      "81"
+    ],
+    "Figure 14- 4: Log probability plot \u2013  AUFA assays, Domain 1 (NNE)": [
+      "",
+      "82"
+    ],
+    "Figure 14- 5: Log probability plot \u2013  AUFA assays, Domain 2 (MID)": [
+      "",
+      "82"
+    ],
+    "Figure 14- 6: Log probability plot \u2013  AUFA assays, Domain 3 (NE)": [
+      "",
+      "83"
+    ],
+    "Figure 14- 7: Experimental variograms and fitted model \u2013  Domain 1 (NNE)": [
+      "",
+      "86"
+    ],
+    "Figure 14- 8: Experimental variograms and fitted model \u2013  Domain 2 ( MID)": [
+      "",
+      "86"
+    ],
+    "Figure 14- 9: Experimental variograms and fitted model \u2013  Domain 3 (NE)": [
+      "",
+      "87"
+    ],
+    "Figure 14- 10: Visual validation \u2013 typical cross- section": [
+      "",
+      "90"
+    ],
+    "Figure 14- 11: Visual validation \u2013 typical plan view, lower levels (Central Pit)": [
+      "",
+      "91"
+    ],
+    "Figure 14- 12: visual validation \u2013 typical plan view, upper levels (Radio Tower)": [
+      "",
+      "92"
+    ],
+    "Figure 14- 13: Swath plot by Easting \u2013 Domain 1 (NNE) M&I": [
+      "",
+      "94"
+    ],
+    "Figure 14- 14: Swath plot by Northing \u2013 Domain 1 (NNE) M&I": [
+      "",
+      "95"
+    ],
+    "Figure 14- 15: Swath plot by Elevation \u2013  Domain 1 (NNE) M&I": [
+      "",
+      "96"
+    ],
+    "Figure 14-16: Swath plot by Easting \u2013 Domain 2 (MID)": [
+      "",
+      "97"
+    ],
+    "Figure 14- 17: Swath plot by Northing \u2013 Domain 2 (MID) M&I": [
+      "",
+      "98"
+    ],
+    "Figure 14- 18: Swath plot by Elevation \u2013  Domain 2 (MID) M&I": [
+      "",
+      "99"
+    ],
+    "Figure 14- 19: Swath plot by Easting \u2013 Domain 3 (NE) M&I": [
+      "",
+      "100"
+    ],
+    "Figure 14- 20: Swath plot by Northing \u2013 Domain 3 (NE)": [
+      "",
+      "101"
+    ],
+    "Figure 14- 21: Swath plot by Elevation \u2013  Domain 3 (NE)": [
+      "",
+      "102"
+    ],
+    "Figure 14- 22: Worst case scenario configurations": [
+      "",
+      "103"
+    ],
+    "Figure 14- 23: Block simple kriging variance estimates \u2013  4360L bench": [
+      "",
+      "104"
+    ],
+    "Figure 14- 24: Measured and indicated categories \u2013  4360L bench": [
+      "",
+      "106"
+    ],
+    "Figure 14- 25: Mining areas and optimized resource pit \u2013 US$1350/oz": [
+      "",
+      "109"
+    ],
+    "Figure 14- 26: Resource sensitivity by gold price": [
+      "",
+      "111"
+    ],
+    "Figure 15- 1: 2017 Mining areas used for pit optimization (black) with 2018 ultimate LG shell (green)": [
+      "",
+      "113"
+    ],
+    "Figure 15- 2: Central failure zone": [
+      "",
+      "116"
+    ],
+    "Figure 15- 3: Intersection of ult imate pit design (grey) and ground water (blue)": [
+      "118"
+    ],
+    "Figure 15- 4: Base- case pit values": [
+      "119"
+    ],
+    "Figure 15- 5: Open pit price sensitivity pits $800 -  $1400": [
+      "120"
+    ],
+    "Figure 16- 1: Pit phases designs": [
+      "128"
+    ],
+    "Figure 16- 2: Pit phase \u2013  Central 1 (C 1)": [
+      "130"
+    ],
+    "Figure 16- 3: Pit phase \u2013   Central 2 (C 2)": [
+      "131"
+    ],
+    "Figure 16- 4: Pit phase \u2013  Central 3 (C 3)": [
+      "132"
+    ],
+    "Figure 16- 5: Pit phase \u2013  Central 4 (C 4)": [
+      "133"
+    ],
+    "Figure 16- 6: Pit phase \u2013  Central 5 (C 5)": [
+      "134"
+    ],
+    "Figure 16- 7: Pit phase \u2013  Central North 1 (CN 1)": [
+      "135"
+    ],
+    "Figure 16- 8: Pit phase \u2013  Central North 2 (CN 2)": [
+      "136"
+    ],
+    "Figure 16- 9: Pit phase \u2013  Central North 3 (CN 3)": [
+      "137"
+    ],
+    "Figure 16- 10: Pit phase \u2013 Central 6 (C 6)": [
+      "138"
+    ],
+    "Figure 16- 11: Pit phase \u2013 Central 7 (C 7)": [
+      "139"
+    ],
+    "Figure 16- 12: Pit phase \u2013 Central North Ext (CN Ext)": [
+      "140"
+    ],
+    "Figure 16- 13: Pit phase \u2013 Central Ultimate": [
+      "141"
+    ],
+    "Figure 16- 14: Pit phase \u2013 Jasperoid 1 (JH 1)": [
+      "142"
+    ],
+    "Figure 16- 15: Pit phase \u2013 Jasperoid 2 (JH 2)": [
+      "143"
+    ],
+    "Figure 16- 16: Pit phase \u2013 Jasperoid 3 (JH 3)": [
+      "144"
+    ],
+    "Figure 16- 17: Pit phase \u2013 Jasperoid Ultimate": [
+      "145"
+    ],
+    "Figure 16- 18: Pit phase \u2013 Main 1a (M 1a)": [
+      "146"
+    ],
+    "Figure 16- 19: Pit phase \u2013 Main 1b (M 1 b)": [
+      "147"
+    ],
+    "Figure 16- 20: Pit phase \u2013 Main 1c (M 1c)": [
+      "148"
+    ],
+    "Figure 16- 21: Pit phase \u2013 Main 2 (M 1a)": [
+      "149"
+    ],
+    "Figure 16- 22: Pit phase \u2013 Main 3 (M 3)": [
+      "150"
+    ],
+    "Figure 16- 23: Pit phase \u2013 Main Ultimate": [
+      "151"
+    ],
+    "Figure 16- 24: Pit phase \u2013 Radio Tower 1 (RT 1)": [
+      "152"
+    ],
+    "Figure 16- 25: Pit phase \u2013 Radio Tower 2 (RT 2)": [
+      "153"
+    ],
+    "Figure 16- 26: Pit phase \u2013 Radio Tower 3 (RT 3)": [
+      "154"
+    ],
+    "Figure 16- 27: Pit phase \u2013 Radio Tower North (RT N)": [
+      "155"
+    ],
+    "Figure 16- 28: Pit phase \u2013  Radio Tower 4 (RT 4)": [
+      "156"
+    ],
+    "Figure 16- 29: Pit phase \u2013 Central Top (CT)": [
+      "157"
+    ],
+    "Figure 16- 30: Pit phase \u2013 Radio Tower Ultimate": [
+      "158"
+    ],
+    "Figure 16- 31: Ultimate pit  design": [
+      "159"
+    ],
+    "Figure 16- 32: Waste rock storage facilities": [
+      "160"
+    ],
+    "Figure 16- 33: Florida Canyon Mine \u2013  annual production schedule": [
+      "161"
+    ],
+    "Figure 17- 1: Process block flow diagram for Florida Canyon Gold Mine": [
+      "164"
+    ],
+    "Figure 17- 2: Layout of heap leach pad showing Phase 1 stacked to the 5th lift and future planned leach pad liner area for Phases 2 and 3": [
+      "166"
+    ],
+    "Figure 18- 1: General site layout": [
+      "171"
+    ],
+    "Figure 19- 1: Historic gold prices 5- year real": [
+      "174"
+    ],
+    "Figure 22- 1: Gold production": [
+      "201"
+    ],
+    "Figure 22- 2: Sensitivity of NPV to percent change in operating costs, capital costs, and gold price": [
+      "206"
+    ],
+    "List of Tables": [
+      "Table 1- 1",
+      "20"
+    ],
+    "Table 1- 2: Mineral Reserves statement for the Florida Canyon Mine, Pershing County, Nevada, effective date November 1, 2018": [
+      "Table 1- 2",
+      "21"
+    ],
+    "Table 1- 3: Florida Canyon Mine Reserves by mining Area, Pershing County, Nevada, effective date November 1, 2018": [
+      "Table 1- 3",
+      "22"
+    ],
+    "Table 1- 4: LOM capital costs estimates": [
+      "Table 1- 4",
+      "25"
+    ],
+    "Table 1- 5: LOM unit cost estimates": [
+      "Table 1- 5",
+      "25"
+    ],
+    "Table 1- 6: LOM cash cost estimates": [
+      "Table 1- 6",
+      "26"
+    ],
+    "Table 1- 7: Economic analysis summary results": [
+      "Table 1- 7",
+      "27"
+    ],
+    "Table 1- 8: Sensitivity of net present value and LOM free cash flow to gold price": [
+      "Table 1- 8",
+      "27"
+    ],
+    "Table 1- 9: Proposed work program cost estimates": [
+      "Table 1- 9",
+      "30"
+    ],
+    "Table 2- 1: QP names and areas of responsibility": [
+      "Table 2- 1",
+      "32"
+    ],
+    "Table 2- 2: Site visit participants": [
+      "Table 2- 2",
+      "33"
+    ],
+    "Table 4- 1: FCMI Land holding cos ts": [
+      "Table 4- 1",
+      "38"
+    ],
+    "Table 4- 2: Property royalties": [
+      "Table 4- 2",
+      "39"
+    ],
+    "Table 6- 1: Historical Mineral Resource \u2013 Florida Canyon \u2013 MDA, 2017": [
+      "Table 6- 1",
+      "45"
+    ],
+    "Table 9- 1: Florida Canyon historical drilling summary": [
+      "Table 9- 1",
+      "61"
+    ],
+    "Table 13- 1: Summary metallurgical leach performance at Florida Canyon between 1986 and 2018 (through June)": [
+      "Table 13- 1",
+      "70"
+    ],
+    "Table 13- 2: MDA determined metallurgical recoveries by material type": [
+      "Table 13- 2",
+      "72"
+    ],
+    "Table 13- 3: Rye patch gold metallurgical recoveries by material type": [
+      "Table 13- 3",
+      "72"
+    ],
+    "Table 13- 4: Monthly crusher composite column leach test results 2017": [
+      "Table 13- 4",
+      "73"
+    ],
+    "Table 14- 1: Gold assay statistics by mining area": [
+      "Table 14- 1",
+      "79"
+    ],
+    "Table 14- 2: Capping thresholds and statistics": [
+      "Table 14- 2",
+      "83"
+    ],
+    "Table 14- 3: Density values assigned in block model": [
+      "Table 14- 3",
+      "84"
+    ],
+    "Table 14- 4: Variogram parameters by grade shell domain": [
+      "Table 14- 4",
+      "85"
+    ],
+    "Table 14- 5: Block model limits and dimensions": [
+      "Table 14- 5",
+      "87"
+    ],
+    "Table 14- 6: Search neighborhood parameters": [
+      "Table 14- 6",
+      "88"
+    ],
+    "Table 14- 7: Comparative statistics \u2013 OK and NN": [
+      "Table 14- 7",
+      "93"
+    ],
+    "Table 14- 8: Resource pit optimization parameters": [
+      "Table 14- 8",
+      "108"
+    ],
+    "Table 14- 9: Mineral Resource statement, Florida Canyon Gold Mine, Pershing County, SRK Consulting, effective date July 31, 2018": [
+      "Table 14- 9",
+      "110"
+    ],
+    "Table 15-1 : Pit optimization input parameters by mining area": [
+      "Table 15-1",
+      "114"
+    ],
+    "Table 15- 2: Final pit optimization slope configuration": [
+      "Table 15- 2",
+      "117"
+    ],
+    "Table 15- 3: Pit design criteria": [
+      "Table 15- 3",
+      "121"
+    ],
+    "Table 15- 4: Dump design criteria": [
+      "Table 15- 4",
+      "121"
+    ],
+    "Table 16- 1: Phase pit responsibility": [
+      "Table 16- 1",
+      "129"
+    ],
+    "Table 20- 1: Current permits for Florida Canyon (as of August 20, 2018)": [
+      "Table 20- 1",
+      "179"
+    ],
+    "Table 20- 2: Florida Canyon Mine water rights": [
+      "Table 20- 2",
+      "185"
+    ],
+    "Table 21- 1: Capital cost estimate": [
+      "Table 21- 1",
+      "191"
+    ],
+    "Table 21- 2: Equipment purchase schedule": [
+      "Table 21- 2",
+      "192"
+    ],
+    "Table 21- 3: Unit costs used for LOM cost estimates": [
+      "Table 21- 3",
+      "194"
+    ],
+    "Table 21- 4: Mining costs": [
+      "Table 21- 4",
+      "194"
+    ],
+    "Table 21- 5: Total estimated operating costs": [
+      "Table 21- 5",
+      "195"
+    ],
+    "Table 21- 6: Estimated steady -state headcount levels for the administration, crushing, processing and mining departments": [
+      "Table 21- 6",
+      "196"
+    ],
+    "Table 22- 1: LOM annual project cash flow": [
+      "Table 22- 1",
+      "198"
+    ],
+    "Table 22- 2: Summary of all -in-sustai ning costs (AISC)": [
+      "Table 22- 2",
+      "199"
+    ],
+    "Table 22- 3: Production schedule summary": [
+      "22- 3",
+      "200"
+    ],
+    "Table 22- 4: LOM sustaining capital costs": [
+      "22- 4",
+      "203"
+    ],
+    "Table 22- 5: Key mining consumables": [
+      "22- 5",
+      "204"
+    ],
+    "Table 22- 6: Key process consumables": [
+      "22- 6",
+      "204"
+    ],
+    "Table 22- 7: Sensitivity of net present value and LOM free cash flow to gold price": [
+      "22- 7",
+      "205"
+    ],
+    "Table 26- 1: Proposed work program cost estimates": [
+      "26- 1",
+      "213"
+    ]
+  },
+  "document_title": "Life of Mine Plan and Mineral Reserves for the Florida Canyon Gold Mine",
+  "document_date": "The date is not provided in the given text.",
+  "document_deposit_types": {
+    "deposit_type": [
+      {
+        "id": 0,
+        "name": "Epithermal gold"
+      }
+    ]
+  },
+  "relevant_tables": "[\"Table 1- 2: Mineral Reserves statement for the Florida Canyon Mine, Pershing County, Nevada, effective date November 1, 2018\", \"Table 6- 1: Historical Mineral Resource \u2013 Florida Canyon \u2013 MDA, 2017\", \"Table 14- 9: Mineral Resource statement, Florida Canyon Gold Mine, Pershing County, SRK Consulting, effective date July 31, 2018\"]",
+  "table_pages": {
+    "Table 6- 1: Historical Mineral Resource \u2013 Florida Canyon \u2013 MDA, 2017": 46
+  },
+  "location": "40\u00b035'N, 118\u00b014'W"
+}
