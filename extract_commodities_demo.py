@@ -173,6 +173,12 @@ def run():
     document_title = pdf_data["document_title"]  
     year = pdf_data["document_date_year"]
     month = pdf_data["document_date_month"]
+    if month and year:
+        date_string = month + "-" + year
+        date_object = datetime.strptime(date_string, '%m-%Y')
+        formatted_date = date_object.strftime('%m-%d-%Y')
+    else:
+       formatted_date = ""
     document_deposit_types = pdf_data["document_deposit_types"]
     table_pages = pdf_data["table_pages"]
     l = pdf_data['location'] 
@@ -262,7 +268,7 @@ def run():
                 inner_dict['cutoff_grade'] = cutoff_grade_dict
                 inner_dict['contained_metal'] = contained_metal
                 inner_dict['reference'] = reference_dict
-                inner_dict['date'] = date_object.strftime('%m-%d-%Y')
+                inner_dict['date'] = formatted_date
                 mineral_inventory['MineralInventory'].append(inner_dict)
                 idx += 1
     else:
