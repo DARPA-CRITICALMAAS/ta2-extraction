@@ -12,11 +12,12 @@ import re
 import ast
 from datetime import datetime
 import prompts as prompts
+from settings import API_KEY
 # Ignore the specific UserWarning from openpyxl
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')
 
 
-openai.api_key = "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"
+openai.api_key = API_KEY
 
 
 
