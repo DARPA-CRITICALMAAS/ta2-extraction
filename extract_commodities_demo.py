@@ -69,6 +69,7 @@ def pdf_info(pdf_path, pdf_name):
         TOC = extract.get_toc(curr_path)
         print(f"Here are the keys from TOC: \n {TOC.keys()}")
         print('Done. \n------------ \n')
+       
 
         ### Extract location
         ### Location information in TOC
@@ -89,8 +90,20 @@ def pdf_info(pdf_path, pdf_name):
         ### Tables in TOC
         print('Searching for relevant table headers within the available TOC...')
         ## add labels between list of tables and list of figures
-        tables_list = [x for x in TOC.keys() if "table" in x.lower()]        
+        add_table = []
+        hit_list = False
+        for x in TOC.keys():
+            if hit_list == True:
+                if "table" not in x.lower():
+                    add_table.append(x)
+            if x.lower() == "list of tables":
+                hit_list = True
+            if x.lower() == "list of figures":
+                hit_list = False
+        print(f"Additional places to check {add_table}")
+        tables_list = [x for x in TOC.keys() if "table" in x.lower()] + add_table        
         print(f"Here is the list of tables: {tables_list}")
+        
         model = 'gpt-4'
         pr = prompt.table_find + ", ".join(tables_list)
 
@@ -113,8 +126,8 @@ def pdf_info(pdf_path, pdf_name):
             print(f"Here are the table_pages {table_pages}")
             print('Done. \n------------ \n')
             
-        except(ValueError, SyntaxError) as e:
-            print(f"ERROR: The relevant tables were not given in the correct format. Table pages will be empty \n")
+        except(ValueError, SyntaxError, TypeError) as e:
+            print(f"ERROR {e}: The relevant tables were not given in the correct format. Table pages will be empty \n")
             table_pages = {}
             
         
@@ -123,8 +136,8 @@ def pdf_info(pdf_path, pdf_name):
         pdf_dict = {
             "TOC": TOC,
             "document_title": document_title,
-            "document_date_month": month,
-            "document_date_year": year,
+            "document_date_month":str(month),
+            "document_date_year": str(year),
             "document_deposit_types": document_deposit_types,
             "relevant_tables": relevant_tables_toc,
             "table_pages" : table_pages,
@@ -173,6 +186,12 @@ def run():
     document_title = pdf_data["document_title"]  
     year = pdf_data["document_date_year"]
     month = pdf_data["document_date_month"]
+    if month and year:
+        date_string = month + "-" + year
+        date_object = datetime.strptime(date_string, '%m-%Y')
+        formatted_date = date_object.strftime('%m-%d-%Y')
+    else:
+       formatted_date = ""
     document_deposit_types = pdf_data["document_deposit_types"]
     table_pages = pdf_data["table_pages"]
     l = pdf_data['location'] 
@@ -262,7 +281,7 @@ def run():
                 inner_dict['cutoff_grade'] = cutoff_grade_dict
                 inner_dict['contained_metal'] = contained_metal
                 inner_dict['reference'] = reference_dict
-                inner_dict['date'] = date_object.strftime('%m-%d-%Y')
+                inner_dict['date'] = formatted_date
                 mineral_inventory['MineralInventory'].append(inner_dict)
                 idx += 1
     else:
