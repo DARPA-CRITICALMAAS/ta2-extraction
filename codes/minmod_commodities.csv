@@ -1,0 +1,90 @@
+minmod_id,CommodityinMRDS,CommodityinGeoKb,IDinGeoKB
+Q501,Abrasive,abrasive,Q407
+Q502,"Abrasive, Corundum",corundum abrasive,Q408
+Q503,"Abrasive, Emery",emery abrasive,Q409
+Q504,"Abrasive, Garnet",garnet abrasive,Q410
+Q505,"Aggregate, Light Weight",light weight aggregate,Q472
+Q506,Aluminum,aluminum,Q293
+Q507,"Aluminum, Contained Or Metal",contained or metal aluminum,Q412
+Q508,"Aluminum, High Alumina Clay",high alumina clay aluminum,Q413
+Q509,Andalusite,andalusite,Q414
+Q510,Antimony,antimony,Q295
+Q511,Arsenic,arsenic,Q297
+Q512,Asbestos,Asbestos,Q415
+Q513,Barium-Barite,barium-barite,Q419
+Q514,Bismuth,bismuth,Q302
+Q515,Boron-Borates,boron-borates,Q418
+Q516,Cadmium,cadmium,Q306
+Q517,Carbon Dioxide,carbon dioxide,Q434
+Q518,Cement Rock,cement rock,Q420
+Q519,Chromium,chromium,Q313
+Q520,"Chromium, Ferrochrome",ferrochrome chromium,Q440
+Q521,Clay,clay,Q421
+Q522,"Clay, Ball Clay",ball clay,Q422
+Q523,"Clay, Bloating Material",bloating material clay,Q424
+Q524,"Clay, Brick",brick clay,Q423
+Q525,"Clay, Chlorite",chlorite clay,Q426
+Q526,"Clay, Fire (Refractory)",fire (refractory) clay ,Q428
+Q527,"Clay, Fullers Earth",fullers earth clay,Q427
+Q528,"Clay, General",general clay,Q430
+Q529,"Clay, Glauconite",glauconite clay,Q429
+Q530,"Clay, Hectorite",hectorite clay,Q431
+Q531,"Clay, Kaolin",kaolin clay,Q432
+Q532,"Clay, Montmorillonite",montmorillonite clay,Q433
+Q533,"Coal, Anthracite",anthracite coal,Q436
+Q534,"Coal, Bituminous",bituminous coal,Q437
+Q535,"Coal, Lignite",lignite coal,Q438
+Q536,"Coal, Subbituminous",subbituminous coal,Q439
+Q537,Cobalt,cobalt,Q314
+Q538,Copper,copper,Q315
+Q539,"Copper, Oxide",oxide copper,Q441
+Q540,"Copper, Sulfide",sulfide copper,Q442
+Q541,Dolomite,dolomite,Q444
+Q542,Feldspar,feldspar,Q449
+Q543,Fluorine-Fluorite,fluorine-fluorite,Q446
+Q544,Gemstone,gemstone,Q452
+Q545,"Gemstone, Diamond",Diamond,Q453
+Q546,"Gemstone, Emerald",emerald,Q454
+Q547,"Gemstone, Ruby",Ruby,Q456
+Q548,"Gemstone, Sapphire",Sapphire,Q457
+Q549,"Gemstone, Semiprecious",semiprecious gemstone,Q458
+Q550,Geothermal,geothermal,Q459
+Q551,Gold,gold,Q329
+Q552,"Gold, Refinery",refinery gold,Q417
+Q553,Graphite,Graphite,Q460
+Q554,"Graphite, Carbon",carbon graphite,Q461
+Q555,Gypsum-Anhydrite,gypsum-anhydrite,Q463
+Q556,"Gypsum-Anhydrite, Alabaster",alabaster gypsum-anhydrite,Q464
+Q557,Hafnium,hafnium,Q330
+Q558,Helium,helium,Q332
+Q559,Indium,indium,Q335
+Q560,Iodine,iodine,Q336
+Q561,Iron,iron,Q337
+Q562,"Iron, Pig Iron",pig iron,Q447
+Q563,"Iron, Pyrite",pyrite iron,Q448
+Q564,Kyanite,kyanite,Q467
+Q565,Lead,lead,Q342
+Q566,"Limestone, Dimension",dimension limestone,Q470
+Q567,"Limestone, High Calcium",high calcium limestone,Q469
+Q568,"Limestone, Ultra Pure",ultra pure limestone,Q471
+Q569,Lithium,lithium,Q343
+Q570,Magnesite,magnesite,Q475
+Q571,Manganese,manganese,Q346
+Q572,"Manganese, Ferromanganese",ferromanganese manganese,Q477
+Q573,Mercury,mercury,Q349
+Q574,Mica,Mica,Q476
+Q575,Mineral Pigments,mineral pigments,Q478
+Q576,Molybdenum,molybdenum,Q350
+Q577,Natural Gas,Natural gas,Q451
+Q578,Nickel,nickel,Q354
+Q579,Niobium,niobium,Q355
+Q580,Nitrogen-Nitrates,nitrogen-nitrates,Q479
+Q581,Nonmetal,nonmetal,Q480
+Q582,platinum-group elements,platinum-group elements,Q291
+Q583,Potassium,potassium,Q365
+Q584,"Potassium, Alum",alum potassium,Q466
+Q585,Silver,silver,Q381
+Q586,"Silver, Refinery",refinery silver,Q411
+Q587,Tin,tin,Q392
+Q588,Uranium,uranium,Q398
+Q589,Zinc,zinc,Q403
