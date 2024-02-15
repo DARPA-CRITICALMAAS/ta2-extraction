@@ -4,7 +4,7 @@ easier across all files as well.
     
 """
 
-API_KEY = "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"
+API_KEY = ""
 LIBRARY_ID = "4530692"
 LIBRARY_TYPE = "group"
 ZOLTERO_KEY ="vdtxtnjWsMBMBIrWgfF4i2CY"
