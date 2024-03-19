@@ -49,12 +49,12 @@ def cancel_assistant_run(thread_id,run_id):
 
 def get_assistant_response(thread_id, run_id):
     run = client.beta.threads.runs.retrieve(thread_id=thread_id,run_id=run_id)
-    print(f"Checking run status: {run.status}")
+    # print(f"Checking run status: {run.status}")
     while run.status != "completed":
         time.sleep(15)
         run = client.beta.threads.runs.retrieve(thread_id=thread_id,run_id=run_id)
         
-    print("Run is completed. Printing the entire thread now in sequential order \n")
+    # print("Run is completed. Printing the entire thread now in sequential order \n")
     messages = client.beta.threads.messages.list(thread_id=thread_id)
     
 #     for thread_message in messages.data[::-1]:
@@ -64,7 +64,7 @@ def get_assistant_response(thread_id, run_id):
     
     
     most_recent = messages.data[0].content[0].text.value
-    print(f"Most run {run_id} response: {most_recent} ")
+    print(f"Most run {run_id} response: {most_recent} \n")
     return most_recent
 
 def create_assistant(file_id):
@@ -83,7 +83,7 @@ def create_assistant(file_id):
       "content": "You are a geology expert and you are very good in understanding mining reports, which is attached.",
       "file_ids": [file_id]
     }])
-    print(f"Created an Assistant")
+    # print(f"Created an Assistant")
     return thread.id, assistant.id
 
 def check_file(thread_id, assistant_id):
@@ -95,7 +95,7 @@ def check_file(thread_id, assistant_id):
       assistant_id=assistant_id,
       instructions= file_instructions
     )
-    print(f"Current run id = {run.id} thread_id = {thread_id}")
+    # print(f"Current run id = {run.id} thread_id = {thread_id}")
     
     ans = get_assistant_response(thread_id, run.id)
     print(f"Response: {ans}")
@@ -105,13 +105,13 @@ def check_file(thread_id, assistant_id):
         if response_code == 200:
             print(f"Deleted assistant {assistant_id}")
         file = client.files.create(
-              file=open(f"./reports/{os.environ.get('file_path')}", "rb"),
+              file=open(f"{os.environ.get('file_path')}", "rb"),
               purpose='assistants'
             )
         new_thread_id, new_assistant_id =  create_assistant(file.id)
         return check_file(new_thread_id, new_assistant_id)
     else:
-        print("File was correctly uploaded")
+        print("File was correctly uploaded \n")
         return thread_id, assistant_id
 
 def extract_json_strings(input_string, correct_format, remove_comments = False):
@@ -134,7 +134,7 @@ def extract_json_strings(input_string, correct_format, remove_comments = False):
                     return json.loads(json_str)
                 except json.JSONDecodeError as e:
                     # here is the error, lets fix this
-                    print("Need to fix the JSON extraction")
+                    print("Need to reformat the JSON extraction \n")
                     completion = client.chat.completions.create(
                     model="gpt-4-1106-preview",
                     messages=[
@@ -317,7 +317,7 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                     if table_match is not None:
                         current_inventory_format['reference']['page_info'][0]['page'] = relevant_tables['Tables'][table_match]
                     else:
-                        print("Need to find correct Page number for current table: ", value)
+                        print(f"Need to find correct Page number for current table: {value} \n")
                         
         if current_inventory_format['cutoff_grade']['grade_unit'] == '' and current_inventory_format['cutoff_grade']['grade_value'] == '':
             current_inventory_format.pop('cutoff_grade')
@@ -332,7 +332,7 @@ def get_zotero(url):
     file_key = file_list[-1]
     file_item = zot.item(file_key)
     title = file_item['data']['title']
-    print(f"file_key {file_key} Title: {title}")
+    print(f"Zoltero Information: file_key {file_key} Title: {title} \n")
     return title
 
 def format_deposit_candidates(deposit_list):
@@ -351,7 +351,7 @@ def format_deposit_candidates(deposit_list):
         
 def extract_by_category(commodity, commodity_sign, dictionary_format, curr_cat, relevant_tables, thread_id, assistant_id, done_first):
     if relevant_tables is not None and len(relevant_tables['Tables']) > 0:
-        print("Creating the thread")
+        # print("Creating the thread")
         if not done_first:
             use_instructions = find_category_rows.replace("__RELEVANT__", str(relevant_tables)).replace("__CATEGORY__", curr_cat).replace("__COMMODITY__", commodity).replace("__MINERAL_SIGN__", commodity_sign).replace("__DICTIONARY_FORMAT__", dictionary_format)
         else:
@@ -364,9 +364,9 @@ def extract_by_category(commodity, commodity_sign, dictionary_format, curr_cat, 
         instructions=use_instructions
         )
 
-        print(f"Current run id = {run.id} thread_id = {thread_id}")
+        # print(f"Current run id = {run.id} thread_id = {thread_id}")
 
-        print("Retrieving the response\n")
+        # print("Retrieving the response\n")
         ans = get_assistant_response(thread_id, run.id)
 
 
