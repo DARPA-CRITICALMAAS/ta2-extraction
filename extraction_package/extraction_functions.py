@@ -260,7 +260,6 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
             elif 'zone' in key:
                 current_inventory_format['zone'] = value.lower()
                 
-                
             elif 'cut' in key.lower() and 'unit' not in key.lower():
                 current_inventory_format['cutoff_grade']['grade_value'] = value.lower()
             
@@ -268,7 +267,6 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                 if value == '%':
                     current_inventory_format['cutoff_grade']['grade_unit'] = url_str + unit_dict['percent']
                 elif value != '':
-                    
                     found_value = find_best_match(value, grade_unit_list[5:])
        
                     if found_value is not None:
@@ -291,7 +289,10 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                     changed_tonnage = True
                 else:
                     found_value = find_best_match(value, grade_unit_list)
-                    current_inventory_format['ore']['ore_unit'] = url_str + unit_dict[found_value.lower()]
+                    if found_value is not None:
+                        current_inventory_format['ore']['ore_unit'] = url_str + unit_dict[found_value.lower()]
+                    else:
+                        current_inventory_format['ore']['ore_unit'] = ''
                 
                 # print(f"After looking at tonnage unit {current_inventory_format['ore']['ore_value']}")
                 
