@@ -2,12 +2,12 @@
 This is part of the TA2 project for USGS. This is the package that works to extract information from Mining Reports to gather deposit types, mineral inventory, mining report reference, and mining site information to create a larger Database. The most up to date package is stored in ./extraction_package. 
 
 ## Extraction Package Directory 
-|-extraction_package/ \
-    |---- __init__ \
-    |---- extraction_pipeline : the main driver of the code \
-    |---- extraction_functions.py : stores all the functions needed to help the pipeline code \
-    |---- prompts: all prompts used \
-    |---- schema_formats: all the formats that match the schema derived by the larger TA2 team \
+extraction_package/ \
+|    |---- \_\_init\_\_ \
+| |---- extraction_pipeline : the main driver of the code \
+|    |---- extraction_functions : stores all the functions needed to help the pipeline code \
+|    |---- prompts: all prompts used \
+|    |---- schema_formats: all the formats that match the schema derived by the larger TA2 team 
 
 ## Installation (requires python >3.7 and pip)
 1. Create virtual environment (python, anaconda, etc.)

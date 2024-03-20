@@ -64,13 +64,13 @@ def get_assistant_response(thread_id, run_id):
     
     
     most_recent = messages.data[0].content[0].text.value
-    print(f"Most run {run_id} response: {most_recent} \n")
+    print(f"Run: {run_id} Thread: {thread_id} \n response: {most_recent} \n")
     return most_recent
 
-def create_assistant(file_id):
+def create_assistant(file_id, commodity, sign):
     assistant = client.beta.assistants.create(
         name="Get Extraction",
-        instructions= instructions.replace("__COMMODITY__", os.environ.get('commodity')).replace("__SIGN__", os.environ.get('sign')),
+        instructions= instructions.replace("__COMMODITY__", commodity).replace("__SIGN__", sign),
         tools=[{"type": "retrieval"}],
         model="gpt-4-1106-preview",
         file_ids=[file_id]
@@ -86,7 +86,7 @@ def create_assistant(file_id):
     # print(f"Created an Assistant")
     return thread.id, assistant.id
 
-def check_file(thread_id, assistant_id):
+def check_file(thread_id, assistant_id, file_path, commodity, sign):
     file_instructions = """If the file was correctly uploaded and can be read return YES otherwise return NO. 
                         Only return the Yes or No answer.
                         """
@@ -105,11 +105,11 @@ def check_file(thread_id, assistant_id):
         if response_code == 200:
             print(f"Deleted assistant {assistant_id}")
         file = client.files.create(
-              file=open(f"{os.environ.get('file_path')}", "rb"),
+              file=open(f"{file_path}", "rb"),
               purpose='assistants'
             )
-        new_thread_id, new_assistant_id =  create_assistant(file.id)
-        return check_file(new_thread_id, new_assistant_id)
+        new_thread_id, new_assistant_id =  create_assistant(file.id, commodity, sign)
+        return check_file(new_thread_id, new_assistant_id, file_path, commodity, sign)
     else:
         print("File was correctly uploaded \n")
         return thread_id, assistant_id
@@ -161,7 +161,7 @@ def read_csv_to_dict(file_path):
 def is_array(s):
     return s.startswith('[') and s.endswith(']')
 
-def clean_document_dict(document_dict_temp):
+def clean_document_dict(document_dict_temp, title, url):
     key_to_remove = []
 
     for key, value in document_dict_temp.items():
@@ -169,11 +169,11 @@ def clean_document_dict(document_dict_temp):
             if value.strip() == "" and key != "doi":
                 key_to_remove.append(key) 
         if key == 'title':
-            document_dict_temp[key] = os.environ.get("title")
+            document_dict_temp[key] = title
         
         if key == 'doi':
-            if value != os.environ.get("url"):
-                document_dict_temp[key] = os.environ.get("url")
+            if value != url:
+                document_dict_temp[key] = url
         if key == 'authors':
             if isinstance(value, str):
                 if value.strip()[0] == "[":
@@ -186,7 +186,7 @@ def clean_document_dict(document_dict_temp):
 
     return document_dict_temp
 
-def clean_mineral_site_json(json_str):
+def clean_mineral_site_json(json_str, title, url):
     # cycle through dict
     key_to_remove = []
 
@@ -199,10 +199,10 @@ def clean_mineral_site_json(json_str):
             json_str["MineralSite"][0][key] = "1"
         
         if key == 'name':
-             json_str["MineralSite"][0][key] = os.environ.get("title")
+             json_str["MineralSite"][0][key] = title
         if key == 'source_id':
-            if value != os.environ.get("url"):
-                json_str["MineralSite"][0][key] = os.environ.get("url")
+            if value != url:
+                json_str["MineralSite"][0][key] = url
         if key == 'location_info' and isinstance(value, dict):
             for new_key, new_value in value.items():
                 if isinstance(new_value, str) and (new_value.strip() == "" or new_value.strip() == "POINT()"):
@@ -242,8 +242,10 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
         changed_tonnage = False
     
         for key, value in inner_dict.items():
+            if value == '':
+                pass
             
-            if 'category' in key:
+            elif 'category' in key:
                 current_inventory_format['category'] = []
                 acceptable_values = ["inferred", "indicated","measured", "probable", 
                 "proven", "proven+probable", "inferred+indicated", "inferred+measured",
@@ -317,6 +319,7 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                     if table_match is not None:
                         current_inventory_format['reference']['page_info'][0]['page'] = relevant_tables['Tables'][table_match]
                     else:
+                        current_inventory_format['reference']['page_info'][0]['page'] = 0
                         print(f"Need to find correct Page number for current table: {value} \n")
                         
         if current_inventory_format['cutoff_grade']['grade_unit'] == '' and current_inventory_format['cutoff_grade']['grade_value'] == '':
