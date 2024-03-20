@@ -305,7 +305,8 @@ if __name__ == "__main__":
     parser.add_argument('--primary_commodity', type=str, help='Primary commodity we are interested in', required=True)
     parser.add_argument('--element_sign', type=str, help='The element sign of the primery commodity', required=True)
     parser.add_argument('--url', type=str, help='The Zotero URL required to fullfile the DOI portion', required=True)
-
+    parser.add_argument('--output_path', type=str, help='Path where you want the output saved', required=True)
+    
     # Parse the arguments
     args = parser.parse_args()
 
@@ -315,9 +316,10 @@ if __name__ == "__main__":
     primary_commodity = args.primary_commodity
     element_sign = args.element_sign
     zotero_url = args.url
+    output_folder_path = args.output_path
     
     print(f"Current Inputs: file_path: {pdf_p+pdf_name} zotero_url: {zotero_url} \n")
-    run(pdf_p, pdf_name, zotero_url, primary_commodity, element_sign)
+    run(pdf_p, pdf_name, zotero_url, primary_commodity, element_sign, output_folder_path)
     
 
     
