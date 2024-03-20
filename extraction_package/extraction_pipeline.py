@@ -39,10 +39,14 @@ def create_document_reference(file_path, url, commodity, sign, title):
 
     document_dict_temp = extract_json_strings(ans, document_ref)
     document_dict = clean_document_dict(document_dict_temp, title, url)
-    doc_month = document_dict['month']
-    doc_year = document_dict['year']
-    doc_name = document_dict['title']
-    doc_date = f"{doc_year}-{doc_month}"
+    doc_month = document_dict.get('month', '')  
+    doc_year = document_dict.get('year', '')   
+    doc_name = document_dict.get('title', '')   
+
+    if doc_year and doc_month:
+        doc_date = f"{doc_year}-{doc_month}"
+    else:
+        doc_date = ''
 
     print(f" Here is the reference material for the document: \n {document_dict} \n")
     
@@ -193,9 +197,12 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
     categories_to_test = ["INFERRED", "INDICATED","INDICATED+INFERRED","MEASURED","MEASURED+INDICATED",
                          "MEASURED+INFERRED","PROBABLE","PROVEN","PROVEN+PROBABLE"]
     
-    doc_month = document_dict['month']
-    doc_year = document_dict['year']
-    doc_date = f"{doc_year}-{doc_month}"
+    doc_month = document_dict.get('month', '')
+    doc_year = document_dict.get('year', '')
+    if doc_month and doc_year:
+        doc_date = f"{doc_year}-{doc_month}"
+    else: 
+        doc_date = ''
     inventory_format = create_inventory_format(commodities, commodity, document_dict, doc_date)
     dictionary_format = create_mineral_extractions_format(commodity)
     
