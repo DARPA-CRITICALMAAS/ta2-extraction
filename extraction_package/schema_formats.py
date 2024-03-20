@@ -14,17 +14,20 @@ def created_document_ref(title, url):
             
 def create_mineral_site(url, doc_name):
     return f"""
-        {{ "MineralSite":[
-            "source_id": "{url}",
-            "record_id": "1",
-            "name": "{doc_name}",
-            "location_info": {{
-                "location": "POINT()",
-                "crs": "WGS84",
-                "country": "",
-                "state_or_province": ""
+        {{
+            "MineralSite": [
+                {{
+                    "source_id": "{url}",
+                    "record_id": "1",
+                    "name": "{doc_name}",
+                    "location_info": {{
+                        "location": "POINT()",
+                        "crs": "WGS84",
+                        "country": "",
+                        "state_or_province": ""
+                    }}
                 }}
-            ] 
+            ]
         }}
         """
         
