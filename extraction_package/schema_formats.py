@@ -20,7 +20,7 @@ def create_mineral_site(url, doc_name):
             "name": "{doc_name}",
             "location_info": {{
                 "location": "POINT()",
-                "crs": "WGS84"
+                "crs": "WGS84",
                 "country": "",
                 "state_or_province": ""
                 }}
@@ -68,18 +68,18 @@ def create_inventory_format(commodities_dict, commodity, document_dict, doc_date
     "commodity": "https://minmod.isi.edu/resource/" + commodities_dict[commodity],
     "category": "",
     "ore": {
-        "ore_unit": "unit",
-        "ore_value": "value"
+        "ore_unit": "",
+        "ore_value": ""
     },
     "grade": {
-        "grade_unit": "unit",
-        "grade_value": "value"
+        "grade_unit": "",
+        "grade_value": ""
     },
     "cutoff_grade": {
-        "grade_unit": "unit",
-        "grade_value": "value"
+        "grade_unit": "",
+        "grade_value": ""
     },
-    "contained_metal": "ore_value * grade_value", 
+    "contained_metal": "", 
     "reference": {
         "document": document_dict,
         "page_info": [
