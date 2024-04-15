@@ -191,7 +191,7 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
         categories_in_report = []
         
     print(f" List of idenitified Categories in the report: {categories_in_report} \n")
-    mineral_inventory_json = {"MineralInventory":[]}
+    mineral_inventory_json = {"mineral_inventory":[]}
     done_first = False
     
     categories_to_test = ["INFERRED", "INDICATED","INDICATED+INFERRED","MEASURED","MEASURED+INDICATED",
@@ -211,11 +211,12 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
         if cat.lower() in categories_in_report:
             print(f" Extracting category: {cat} \n")
             extraction = extract_by_category(commodity, sign, dictionary_format, cat, relevant_tables, thread_id, assistant_id, done_first)
+            
             print(f" Extracted: {extraction} \n")
             
-            if extraction is not None:
+            if extraction is not None and 'extractions' in extraction:
                 cleaned = create_mineral_inventory_json(extraction, inventory_format, relevant_tables, correct_units)
-                mineral_inventory_json["MineralInventory"] += cleaned['MineralInventory']
+                mineral_inventory_json["mineral_inventory"] += cleaned['mineral_inventory']
             
         if not done_first:
             done_first = True
@@ -223,9 +224,9 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
     reference = {"reference": {
             "document": document_dict}}
 
-    if len(mineral_inventory_json["MineralInventory"]) == 0:
-        mineral_inventory_json["MineralInventory"].append({"commodity": "https://minmod.isi.edu/resource/" + commodities[commodity]})
-        mineral_inventory_json["MineralInventory"].append(reference)
+    if len(mineral_inventory_json["mineral_inventory"]) == 0:
+        mineral_inventory_json["mineral_inventory"].append({"commodity": "https://minmod.isi.edu/resource/" + commodities[commodity]})
+        mineral_inventory_json["mineral_inventory"].append(reference)
         
     resp_code = delete_assistant(assistant_id)
 
@@ -273,7 +274,7 @@ def run(folder_path, file_name, url, commodity, sign, output_folder_path):
     
     mineral_inventory_json = create_mineral_inventory(document_dict, file_path, url, commodity.lower(), sign, title)
     
-    mineral_site_json["MineralSite"][0]['MineralInventory'] = mineral_inventory_json['MineralInventory']
+    mineral_site_json["MineralSite"][0]['mineral_inventory'] = mineral_inventory_json['mineral_inventory']
     mineral_site_json["MineralSite"][0]['deposit_type_candidate'] = deposit_types_json['deposit_type_candidate']
     print(f" mineral site json :\n {mineral_site_json} \n")
     current_datetime_str = datetime.now().strftime("%Y%m%d_%H%M%S")

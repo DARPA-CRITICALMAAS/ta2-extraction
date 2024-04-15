@@ -59,7 +59,7 @@ Zone: the named area where the resources were extracted from (Note: Include Tota
 __MINERAL_SIGN__ Cut-Off: The threshold grade used to determine the economic viability of 
 mining the __COMMODITY__ resource (this might not be provided in some tables). 
 __MINERAL_SIGN__ Cut-Off Unit: The unit that is labeled cut off and always start from the smallest cut-off value. Note if it is a NSR value. 
-__MINERAL_SIGN__ Tonnage: The calculated or estimated tonnage for the resource. 
+__MINERAL_SIGN__ Tonnage: The calculated or estimated tonnage for the resource, which should be a float with no commas. 
 __MINERAL_SIGN__ Tonnage Unit: The unit that the tonnage was presented in, which should be in tonnes, thousand tonnes, 
 million tonnes, or gram per tonne,. 
 __MINERAL_SIGN__ Grade %: The concentration of __COMMODITY__ in the resource, which should 
