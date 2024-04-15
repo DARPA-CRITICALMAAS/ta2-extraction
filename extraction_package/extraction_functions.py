@@ -211,9 +211,11 @@ def clean_mineral_site_json(json_str, title, url):
 
     for outer_key, inner_key in key_to_remove:
         if inner_key is None:
-            del json_str["MineralSite"][0][outer_key]
+            if outer_key in json_str["MineralSite"][0]:
+                del json_str["MineralSite"][0][outer_key]
         else:
-            del json_str["MineralSite"][0][outer_key][inner_key]
+            if outer_key in json_str["MineralSite"][0] and inner_key in json_str["MineralSite"][0][outer_key]:
+                del json_str["MineralSite"][0][outer_key][inner_key]
 
     return json_str
     
@@ -232,7 +234,7 @@ def find_best_match(input_str, list_to_match, threshold=75):
 def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_tables, unit_dict):
     kt_values = ["k","kt", "000s tonnes", "thousand tonnes", "thousands", "000s" , "000 tonnes"]
     url_str = "https://minmod.isi.edu/resource/"
-    output_str = {"MineralInventory":[]}
+    output_str = {"mineral_inventory":[]}
     grade_unit_list = list(unit_dict.keys())
     
     ## add conversion to tonnes
@@ -242,7 +244,10 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
         changed_tonnage = False
     
         for key, value in inner_dict.items():
-            if value == '':
+            if isinstance(value, int) or isinstance(value, float):
+                value = str(value)
+                
+            if value == '' and 'contained' not in key:
                 pass
             
             elif 'category' in key:
@@ -279,16 +284,20 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                     current_inventory_format['cutoff_grade']['grade_unit'] = ''
             
             elif 'tonnage' in key.lower() and 'unit' not in key.lower():
+                value = value.replace(",", "")
                 current_inventory_format['ore']['ore_value'] = value.lower()
+               
+              
           
             
             elif 'tonnage' in key.lower() and 'unit' in key.lower():
                 if value.lower() in kt_values:
                     value = "tonnes"
-                    float_val = float(current_inventory_format['ore']['ore_value']) * 1000
-                    current_inventory_format['ore']['ore_value'] =  str(float_val)
-                    current_inventory_format['ore']['ore_unit'] = url_str + unit_dict[value]
-                    changed_tonnage = True
+                    if len(current_inventory_format['ore']['ore_value']) > 0: 
+                        float_val = float(current_inventory_format['ore']['ore_value']) * 1000
+                        current_inventory_format['ore']['ore_value'] =  str(float_val)
+                        current_inventory_format['ore']['ore_unit'] = url_str + unit_dict[value]
+                        changed_tonnage = True
                 else:
                     found_value = find_best_match(value, grade_unit_list)
                     if found_value is not None:
@@ -325,7 +334,7 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
         if current_inventory_format['cutoff_grade']['grade_unit'] == '' and current_inventory_format['cutoff_grade']['grade_value'] == '':
             current_inventory_format.pop('cutoff_grade')
             
-        output_str["MineralInventory"].append(current_inventory_format)
+        output_str["mineral_inventory"].append(current_inventory_format)
         
     return output_str
 
