@@ -246,9 +246,6 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
         for key, value in inner_dict.items():
             if isinstance(value, int) or isinstance(value, float):
                 value = str(value)
-                
-            if value == '' and 'contained' not in key:
-                pass
             
             elif 'category' in key:
                 current_inventory_format['category'] = []
@@ -263,12 +260,15 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                             current_inventory_format['category'].append(url_str + val.lower())
                     else:
                         current_inventory_format['category'].append(url_str + value.lower())
+                        
+                check_instance(current_extraction=current_inventory_format, key = 'category', instance=list)
             
             elif 'zone' in key:
                 current_inventory_format['zone'] = value.lower()
                 
             elif 'cut' in key.lower() and 'unit' not in key.lower():
                 current_inventory_format['cutoff_grade']['grade_value'] = value.lower()
+                check_instance(current_extraction=current_inventory_format['cutoff_grade'], key = 'grade_value', instance=float)
             
             elif 'cut' in key.lower() and 'unit' in key.lower():
                 if value == '%':
@@ -278,19 +278,18 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
        
                     if found_value is not None:
                         current_inventory_format['cutoff_grade']['grade_unit'] = url_str + unit_dict[found_value]
-                    else:
-                        current_inventory_format['cutoff_grade']['grade_unit'] = ''
-                else:
-                    current_inventory_format['cutoff_grade']['grade_unit'] = ''
+                    
+                check_instance(current_extraction=current_inventory_format['cutoff_grade'], key = 'grade_unit', instance=str)
             
             elif 'tonnage' in key.lower() and 'unit' not in key.lower():
                 value = value.replace(",", "")
                 current_inventory_format['ore']['ore_value'] = value.lower()
+                
+                check_instance(current_extraction=current_inventory_format['ore'], key = 'ore_value', instance=float)
                
-              
-          
-            
             elif 'tonnage' in key.lower() and 'unit' in key.lower():
+                
+                ## check if in the kt values
                 if value.lower() in kt_values:
                     value = "tonnes"
                     if len(current_inventory_format['ore']['ore_value']) > 0: 
@@ -302,10 +301,8 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                     found_value = find_best_match(value, grade_unit_list)
                     if found_value is not None:
                         current_inventory_format['ore']['ore_unit'] = url_str + unit_dict[found_value.lower()]
-                    else:
-                        current_inventory_format['ore']['ore_unit'] = ''
-                
-                # print(f"After looking at tonnage unit {current_inventory_format['ore']['ore_value']}")
+                    
+                check_instance(current_extraction=current_inventory_format['ore'], key = 'ore_unit', instance=str)
                 
             elif 'contained' in key.lower():
                 tonnes = float(current_inventory_format['ore']['ore_value'])
@@ -314,29 +311,60 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
 
                 if changed_tonnage: 
                     integer_value = float(value.lower())*1000
-                    current_inventory_format['contained_metal'] = str(integer_value)
+                    current_inventory_format['contained_metal'] = integer_value
                 else:
                     current_inventory_format['contained_metal'] = value.lower()
+                    
+                check_instance(current_extraction=current_inventory_format, key = 'contained_metal', instance=float)
                 
             elif 'grade' in key.lower():
+                
                 current_inventory_format['grade']['grade_unit'] = url_str + unit_dict['percent']
                 current_inventory_format['grade']['grade_value'] = value.lower()
                 
+                check_instance(current_extraction=current_inventory_format['grade'], key = 'grade_value', instance=float)
+                
             elif 'table' in key.lower():
-                    table_match = find_best_match(value.lower(), list(relevant_tables['Tables'].keys()), threshold = 70)
+                table_match = find_best_match(value.lower(), list(relevant_tables['Tables'].keys()), threshold = 70)
+    
+                if table_match is not None and isinstance(relevant_tables['Tables'][table_match], int):
+                    current_inventory_format['reference']['page_info'][0]['page'] = relevant_tables['Tables'][table_match]
+                else:
+                    ## need to figure out best way to do this
+                    current_inventory_format['reference']['page_info'][0]['page'] = -1
+
+                check_instance(current_extraction=current_inventory_format['reference']['page_info'][0], key = 'page', instance=int)
         
-                    if table_match is not None:
-                        current_inventory_format['reference']['page_info'][0]['page'] = relevant_tables['Tables'][table_match]
-                    else:
-                        current_inventory_format['reference']['page_info'][0]['page'] = 0
-                        print(f"Need to find correct Page number for current table: {value} \n")
-                        
-        if current_inventory_format['cutoff_grade']['grade_unit'] == '' and current_inventory_format['cutoff_grade']['grade_value'] == '':
-            current_inventory_format.pop('cutoff_grade')
-            
         output_str["mineral_inventory"].append(current_inventory_format)
         
     return output_str
+
+def check_instance(current_extraction, key, instance):
+
+    if key not in current_extraction:
+        return current_extraction
+    
+    ## want to test the current value or if its 0
+    if current_extraction[key] == '':
+        ## in case we have an empty value should pop that value out
+        current_extraction.pop(key)
+        print(f"Removed a value {key} cause it was empty")
+            
+    elif isinstance(current_extraction[key], instance):
+        ## we got the right value
+        pass
+    else:
+        try:
+        # testing the current value as the instance
+            current_extraction[key] = instance(current_extraction[key])
+        except ValueError:
+            current_extraction.pop(key)
+            print(f"Removed a value {key} cause it was empty")
+            
+    return current_extraction
+   
+    
+
 
 def get_zotero(url):
     zot = zotero.Zotero(LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY)

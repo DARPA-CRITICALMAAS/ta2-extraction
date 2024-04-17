@@ -221,12 +221,11 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
         if not done_first:
             done_first = True
             
-    reference = {"reference": {
-            "document": document_dict}}
 
     if len(mineral_inventory_json["mineral_inventory"]) == 0:
-        mineral_inventory_json["mineral_inventory"].append({"commodity": "https://minmod.isi.edu/resource/" + commodities[commodity]})
-        mineral_inventory_json["mineral_inventory"].append(reference)
+        mineral_inventory_json["mineral_inventory"].append({"commodity": "https://minmod.isi.edu/resource/" + commodities[commodity], "reference": {
+            "document": document_dict}})
+        
         
     resp_code = delete_assistant(assistant_id)
 
