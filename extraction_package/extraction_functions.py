@@ -305,15 +305,18 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                 check_instance(current_extraction=current_inventory_format['ore'], key = 'ore_unit', instance=str)
                 
             elif 'contained' in key.lower():
-                tonnes = float(current_inventory_format['ore']['ore_value'])
-                grade = float(current_inventory_format['grade']['grade_value'])
-                value = str(tonnes*grade/100)
-
-                if changed_tonnage: 
-                    integer_value = float(value.lower())*1000
-                    current_inventory_format['contained_metal'] = integer_value
+                if not current_inventory_format['ore']['ore_value'] or not current_inventory_format['grade']['grade_value']:
+                    current_inventory_format['contained_metal'] = ''
                 else:
-                    current_inventory_format['contained_metal'] = value.lower()
+                    tonnes = float(current_inventory_format['ore']['ore_value'])
+                    grade = float(current_inventory_format['grade']['grade_value'])
+                    value = str(tonnes*grade/100)
+
+                    if changed_tonnage: 
+                        integer_value = float(value.lower())*1000
+                        current_inventory_format['contained_metal'] = integer_value
+                    else:
+                        current_inventory_format['contained_metal'] = value.lower()
                     
                 check_instance(current_extraction=current_inventory_format, key = 'contained_metal', instance=float)
                 
@@ -362,9 +365,6 @@ def check_instance(current_extraction, key, instance):
             print(f"Removed a value {key} cause it was empty")
             
     return current_extraction
-   
-    
-
 
 def get_zotero(url):
     zot = zotero.Zotero(LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY)
