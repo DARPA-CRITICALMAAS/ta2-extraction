@@ -17,7 +17,7 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl'
 
 client = openai.OpenAI(api_key = API_KEY)
 
-def delete_assistant(assistant_id):
+def delete_assistant_and_file(assistant_id, file_id):
     url = f"https://api.openai.com/v1/assistants/{assistant_id}"
 
     # Set up headers with your API key
@@ -29,6 +29,9 @@ def delete_assistant(assistant_id):
 
     # Make the DELETE request
     response = requests.delete(url, headers=headers)
+    
+    client.files.delete(file_id)
+    print("file was deleted")
 
     # Print the response content
     return response.status_code
@@ -86,7 +89,7 @@ def create_assistant(file_id, commodity, sign):
     # print(f"Created an Assistant")
     return thread.id, assistant.id
 
-def check_file(thread_id, assistant_id, file_path, commodity, sign):
+def check_file(thread_id, assistant_id, file_id, file_path, commodity, sign):
     file_instructions = """If the file was correctly uploaded and can be read return YES otherwise return NO. 
                         Only return the Yes or No answer.
                         """
@@ -101,18 +104,19 @@ def check_file(thread_id, assistant_id, file_path, commodity, sign):
     print(f"Response: {ans}")
     if ans.lower() == "no":
         print("We need to reload file.")
-        response_code = delete_assistant(assistant_id)
+        response_code = delete_assistant_and_file(assistant_id, file_id)
         if response_code == 200:
             print(f"Deleted assistant {assistant_id}")
         file = client.files.create(
               file=open(f"{file_path}", "rb"),
               purpose='assistants'
             )
+        
         new_thread_id, new_assistant_id =  create_assistant(file.id, commodity, sign)
-        return check_file(new_thread_id, new_assistant_id, file_path, commodity, sign)
+        return check_file(new_thread_id, new_assistant_id, file.id, file_path, commodity, sign)
     else:
         print("File was correctly uploaded \n")
-        return thread_id, assistant_id
+        return thread_id, assistant_id, file_id
 
 def extract_json_strings(input_string, correct_format, remove_comments = False):
     start = input_string.find('{')
@@ -146,6 +150,12 @@ def extract_json_strings(input_string, correct_format, remove_comments = False):
                     return json.loads(completion.choices[0].message.content)         
     else:
         return None
+    
+def delete_all_files():
+    print("Cleaning any leftover files")
+    response = client.files.list(purpose="assistants")
+    for file in response.data:
+        client.files.delete(file.id)
     
 def read_csv_to_dict(file_path):
     data_dict_list = []
@@ -205,9 +215,12 @@ def clean_mineral_site_json(json_str, title, url):
                 json_str["MineralSite"][0][key] = url
         if key == 'location_info' and isinstance(value, dict):
             for new_key, new_value in value.items():
+                if new_key == 'crs':
+                    json_str[key][new_key] = "EPSG:4326"
                 if isinstance(new_value, str) and (new_value.strip() == "" or new_value.strip() == "POINT()"):
                     key_to_remove.append((key, new_key))  # Append a tuple (key, new_key) for inner keys
                     key_to_remove.append((key, 'crs'))
+                    
 
     for outer_key, inner_key in key_to_remove:
         if inner_key is None:
@@ -261,15 +274,23 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                     else:
                         current_inventory_format['category'].append(url_str + value.lower())
                         
-                check_instance(current_extraction=current_inventory_format, key = 'category', instance=list)
+                output = check_instance(current_extraction=current_inventory_format, key = 'category', instance=list)
+                if output is None:
+                    current_inventory_format.pop('category')
+                else:
+                    current_inventory_format['category'] = output
             
             elif 'zone' in key:
                 current_inventory_format['zone'] = value.lower()
                 
             elif 'cut' in key.lower() and 'unit' not in key.lower():
                 current_inventory_format['cutoff_grade']['grade_value'] = value.lower()
-                check_instance(current_extraction=current_inventory_format['cutoff_grade'], key = 'grade_value', instance=float)
-            
+                output = check_instance(current_extraction=current_inventory_format['cutoff_grade'], key = 'grade_value', instance=float)
+                if output is None:
+                    current_inventory_format['cutoff_grade'].pop('grade_value')
+                else:
+                    current_inventory_format['cutoff_grade']['grade_value'] = output
+                                                            
             elif 'cut' in key.lower() and 'unit' in key.lower():
                 if value == '%':
                     current_inventory_format['cutoff_grade']['grade_unit'] = url_str + unit_dict['percent']
@@ -279,33 +300,49 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                     if found_value is not None:
                         current_inventory_format['cutoff_grade']['grade_unit'] = url_str + unit_dict[found_value]
                     
-                check_instance(current_extraction=current_inventory_format['cutoff_grade'], key = 'grade_unit', instance=str)
-            
+                output = check_instance(current_extraction=current_inventory_format['cutoff_grade'], key = 'grade_unit', instance=str)
+                
+                if output is None:
+                    current_inventory_format['cutoff_grade'].pop('grade_unit')
+                else:
+                    current_inventory_format['cutoff_grade']['grade_unit'] = output
+                    
+                    
             elif 'tonnage' in key.lower() and 'unit' not in key.lower():
                 value = value.replace(",", "")
                 current_inventory_format['ore']['ore_value'] = value.lower()
                 
-                check_instance(current_extraction=current_inventory_format['ore'], key = 'ore_value', instance=float)
+                output = check_instance(current_extraction=current_inventory_format['ore'], key = 'ore_value', instance=float)
+                if output is None:
+                    current_inventory_format['ore'].pop('ore_value')
+                else:
+                    current_inventory_format['ore']['ore_value'] = output
                
             elif 'tonnage' in key.lower() and 'unit' in key.lower():
                 
                 ## check if in the kt values
                 if value.lower() in kt_values:
                     value = "tonnes"
-                    if len(current_inventory_format['ore']['ore_value']) > 0: 
+                    if current_inventory_format['ore']['ore_value']: 
                         float_val = float(current_inventory_format['ore']['ore_value']) * 1000
-                        current_inventory_format['ore']['ore_value'] =  str(float_val)
+                        current_inventory_format['ore']['ore_value'] =  float_val
                         current_inventory_format['ore']['ore_unit'] = url_str + unit_dict[value]
                         changed_tonnage = True
                 else:
                     found_value = find_best_match(value, grade_unit_list)
                     if found_value is not None:
+                        print(f"Found match value for ore_unit {found_value}")
                         current_inventory_format['ore']['ore_unit'] = url_str + unit_dict[found_value.lower()]
-                    
-                check_instance(current_extraction=current_inventory_format['ore'], key = 'ore_unit', instance=str)
+                    else:
+                        current_inventory_format['ore'].pop('ore_unit')
+                output = check_instance(current_extraction=current_inventory_format['ore'], key = 'ore_unit', instance=str)
+                if output is None:
+                    current_inventory_format['ore'].pop('ore_unit')
+                else:
+                    current_inventory_format['ore']['ore_unit'] = output
                 
             elif 'contained' in key.lower():
-                if not current_inventory_format['ore']['ore_value'] or not current_inventory_format['grade']['grade_value']:
+                if not current_inventory_format['ore'].get('ore_value') or not current_inventory_format['grade'].get('grade_value'):
                     current_inventory_format['contained_metal'] = ''
                 else:
                     tonnes = float(current_inventory_format['ore']['ore_value'])
@@ -318,14 +355,23 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                     else:
                         current_inventory_format['contained_metal'] = value.lower()
                     
-                check_instance(current_extraction=current_inventory_format, key = 'contained_metal', instance=float)
+                output =  check_instance(current_extraction=current_inventory_format, key = 'contained_metal', instance=float)
+                if output is None:
+                    current_inventory_format.pop('contained_metal')
+                else:
+                    current_inventory_format['contained_metal'] = output
                 
             elif 'grade' in key.lower():
                 
                 current_inventory_format['grade']['grade_unit'] = url_str + unit_dict['percent']
                 current_inventory_format['grade']['grade_value'] = value.lower()
                 
-                check_instance(current_extraction=current_inventory_format['grade'], key = 'grade_value', instance=float)
+                output = check_instance(current_extraction=current_inventory_format['grade'], key = 'grade_value', instance=float)
+                if output is None:
+                    current_inventory_format['grade'].pop('grade_value')
+                    current_inventory_format['grade'].pop('grade_unit')
+                else:
+                    current_inventory_format['grade']['grade_value'] = output
                 
             elif 'table' in key.lower():
                 table_match = find_best_match(value.lower(), list(relevant_tables['Tables'].keys()), threshold = 70)
@@ -336,35 +382,50 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                     ## need to figure out best way to do this
                     current_inventory_format['reference']['page_info'][0]['page'] = -1
 
-                check_instance(current_extraction=current_inventory_format['reference']['page_info'][0], key = 'page', instance=int)
+                output = check_instance(current_extraction=current_inventory_format['reference']['page_info'][0], key = 'page', instance=int)
+                if output is None:
+                    current_inventory_format['reference']['page_info'][0].pop('page')
+                else:
+                    current_inventory_format['reference']['page_info'][0]['page'] = output
+            
         
+            
+                    
+                
         output_str["mineral_inventory"].append(current_inventory_format)
         
     return output_str
 
 def check_instance(current_extraction, key, instance):
+    print(f"Previous value: {current_extraction}")
 
-    if key not in current_extraction:
-        return current_extraction
+    if key in current_extraction:
+        curr_value = current_extraction[key]
+        
+        if instance == float and isinstance(curr_value, str):
+            curr_value = current_extraction[key]
+            numeric_chars = re.findall(r'\d|\.', curr_value)
+            str_value = ''.join(numeric_chars)
+            curr_value = float(str_value)
     
-    ## want to test the current value or if its 0
-    if current_extraction[key] == '':
-        ## in case we have an empty value should pop that value out
-        current_extraction.pop(key)
-        print(f"Removed a value {key} cause it was empty")
+        ## want to test the current value or if its 0
+        if isinstance(curr_value, str) and len(curr_value == 0):
+            ## in case we have an empty value should pop that value out
+            output_value = None
             
-    elif isinstance(current_extraction[key], instance):
-        ## we got the right value
-        pass
-    else:
-        try:
-        # testing the current value as the instance
-            current_extraction[key] = instance(current_extraction[key])
-        except ValueError:
-            current_extraction.pop(key)
-            print(f"Removed a value {key} cause it was empty")
-            
-    return current_extraction
+        
+        elif isinstance(curr_value, instance):
+            output_value = current_extraction[key]
+        else:
+            try:
+            # testing the current value as the instance
+                output_value = instance(curr_value)
+        
+            except ValueError:
+                print("Get value error")
+                
+    print("Outputted value: ", output_value)
+    return output_value
 
 def get_zotero(url):
     zot = zotero.Zotero(LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY)

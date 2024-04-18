@@ -25,7 +25,7 @@ def create_document_reference(file_path, url, commodity, sign, title):
 
     thread_id, assistant_id = create_assistant(file.id, commodity, sign)
 
-    thread_id, assistant_id = check_file(thread_id, assistant_id, file_path, commodity, sign)
+    thread_id, assistant_id, file_id = check_file(thread_id, assistant_id, file.id, file_path, commodity, sign)
 
     document_ref = created_document_ref(title, url)
 
@@ -68,7 +68,7 @@ def create_document_reference(file_path, url, commodity, sign, title):
 
     print(f"Here is the Mineral Site Json: \n {mineral_site_json} \n")
     
-    resp_code = delete_assistant(assistant_id)
+    resp_code = delete_assistant_and_file(assistant_id, file_id)
 
     if resp_code == 200:
         print(f" Deleted assistant for Document Reference \n")
@@ -84,7 +84,7 @@ def create_deposit_types(file_path, url, commodity, sign, title):
     )
     thread_id, assistant_id =create_assistant(file.id, commodity, sign)
     
-    thread_id, assistant_id = check_file(thread_id, assistant_id, file_path, commodity, sign)
+    thread_id, assistant_id, file_id = check_file(thread_id, assistant_id, file.id, file_path, commodity, sign)
     
     minmod_deposit_types = read_csv_to_dict("./codes/minmod_deposit_types.csv")
     deposit_id = {}
@@ -128,7 +128,7 @@ def create_deposit_types(file_path, url, commodity, sign, title):
         
     print(f" Final Formatted Deposit Type: {deposit_types_json} \n")
     
-    resp_code = delete_assistant(assistant_id)
+    resp_code = delete_assistant_and_file(assistant_id, file_id)
 
     if resp_code == 200:
         print(f" Deleted assistant for Deposit Types \n")
@@ -142,9 +142,10 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
     file=open(f"{file_path}", "rb"),
     purpose='assistants'
     )
+    file_id = file.id
     thread_id, assistant_id = create_assistant(file.id, commodity, sign)
     
-    thread_id, assistant_id = check_file(thread_id, assistant_id, file_path, commodity, sign)
+    thread_id, assistant_id, file_id = check_file(thread_id, assistant_id, file.id, file_path, commodity, sign)
     
     minmod_commodities = read_csv_to_dict("./codes/minmod_commodities.csv")
     commodities = {}
@@ -227,7 +228,7 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
             "document": document_dict}})
         
         
-    resp_code = delete_assistant(assistant_id)
+    resp_code = delete_assistant_and_file(assistant_id, file_id)
 
     if resp_code == 200:
         print(f" Deleted assistant for Mineral Inventory \n")
@@ -252,7 +253,8 @@ def document_parallel_extract(
     element_sign = [element_sign]*len(file_names)
     output_path = [output_path]*len(file_names)
     print(f"Running the parallelization method with {len(file_names)} files \n")
-
+    delete_all_files()
+    
     with concurrent.futures.ThreadPoolExecutor() as executor:
 
         list(executor.map(run, pdf_paths, file_names, url_list, primary_commodity, element_sign, output_path))
@@ -260,7 +262,7 @@ def document_parallel_extract(
 
 
 def run(folder_path, file_name, url, commodity, sign, output_folder_path):
-  
+    
     file_path = folder_path + file_name
     title = get_zotero(url)
     
@@ -296,6 +298,8 @@ def run(folder_path, file_name, url, commodity, sign, output_folder_path):
     
 if __name__ == "__main__":
     print("Running the extraction pipeline for file: Provide the Folder path, File Name, Zotero URL \n\n")
+    delete_all_files()
+    
     
     parser = argparse.ArgumentParser(description="Named arguments.")
 

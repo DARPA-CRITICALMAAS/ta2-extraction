@@ -22,7 +22,7 @@ def create_mineral_site(url, doc_name):
                     "name": "{doc_name}",
                     "location_info": {{
                         "location": "POINT()",
-                        "crs": "WGS84",
+                        "crs": "",
                         "country": "",
                         "state_or_province": ""
                     }}
@@ -87,7 +87,7 @@ def create_inventory_format(commodities_dict, commodity, document_dict, doc_date
         "document": document_dict,
         "page_info": [
             {
-                "page": 0,
+                "page": -1,
                 "bounding_box": {
                     "x_min": "",
                     "x_max": "",
