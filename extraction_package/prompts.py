@@ -45,7 +45,7 @@ Return the list of tables as a json structure: {{"Tables": {{"Table 1 Name": pag
 "Table 2 Name": page_number}}}}. Only return the json structure. Note that these tables are typically found in the
 early sections of the document. If there are no tables just return None.
 """
-
+ 
 find_relevant_categories = f""" From this list of tables: __RELEVANT__, return the json structure that
 contains the list of categories found in the tables. The allotted categories are ["inferred", "indicated","measured", 
 "probable", "proven", "proven+probable", "inferred+indicated", "inferred+measured", "measured+indicated"]. The Return value should be {{"categories": [value1, value2, ...]}} and each value should be all
@@ -53,19 +53,18 @@ lower case.
 """
 
 find_category_rows = f""" From this list of tables: __RELEVANT__, create a python dictionary that
-captures all rows that describe __COMMODITY__ resource estimate data. Each 
+captures all rows that describe __COMMODITY__ resource or reserve estimate data. Each 
 relevant row should have the category __CATEGORY__. The rows should also include the following headers.
-Zone: the named area where the resources were extracted from (Note: Include Total values).
+Zone: the named area where the resources were extracted from (Note: Do not include any Total values).
 __MINERAL_SIGN__ Cut-Off: The threshold grade used to determine the economic viability of 
 mining the __COMMODITY__ resource (this might not be provided in some tables). 
 __MINERAL_SIGN__ Cut-Off Unit: The unit that is labeled cut off and always start from the smallest cut-off value. Note if it is a NSR value. 
-__MINERAL_SIGN__ Tonnage: The calculated or estimated tonnage for the resource, which should be a float with no commas. 
+__MINERAL_SIGN__ Tonnage: The calculated or estimated tonnage for the resource. 
 __MINERAL_SIGN__ Tonnage Unit: The unit that the tonnage was presented in, which should be in tonnes, thousand tonnes, 
-million tonnes, or gram per tonne,. 
+million tonnes, or gram per tonne. 
 __MINERAL_SIGN__ Grade %: The concentration of __COMMODITY__ in the resource, which should 
 be converted into a percentage. 
-Unit values should either be converted into tonnes, million tonnes, gram per tonne, or percent. Also return what tables the rows were extracted from.
-If any values are unknown return it as an empty string ''
+Also return what tables the rows were extracted from. If any values are unknown return it as an empty string ''
 
 Return the information as dictionary with an internal list of keys and values, wrapped in "", that follows this
 format: __DICTIONARY_FORMAT__. Do not add any additional comments using // in the returned dictionary format.

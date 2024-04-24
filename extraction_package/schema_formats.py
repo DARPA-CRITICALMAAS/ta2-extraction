@@ -59,7 +59,6 @@ def create_mineral_extractions_format(commodity):
         "{commodity} Tonnage": "",
         "{commodity} Tonnage Unit": "",
         "{commodity} Grade Percent": "",
-        "Contained_metal": "",
         "Table": ""
         }}
         ]

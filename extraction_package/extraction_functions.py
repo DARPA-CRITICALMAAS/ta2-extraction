@@ -391,10 +391,21 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
         
             
                     
-                
+        current_inventory_format = check_empty_headers(current_inventory_format)        
         output_str["mineral_inventory"].append(current_inventory_format)
         
     return output_str
+
+def check_empty_headers(extraction):
+    keys_to_check = ["ore", "grade", "cutoff_grade"]
+    
+    for key in keys_to_check:
+        if not extraction[key]:
+            extraction.pop(key)
+            print("Currently this value is empty")
+    
+    
+    return extraction
 
 def check_instance(current_extraction, key, instance):
     print(f"Previous value: {current_extraction}")
