@@ -143,9 +143,8 @@ def extract_json_strings(input_string, correct_format, remove_comments = False):
                     model="gpt-4-1106-preview",
                     messages=[
                         {"role": "system", "content": "You are a json formatting expert"},
-                        {"role": "user", "content": json_format_fix.replace("__INCORRECT__", json_str).replace("__CORRECT_SCHEMA__", correct_format)}
-                    ],
-                    response_format={'type': "json_object"}
+                        {"role": "user", "content": JSON_format_fix.replace("__INCORRECT__", json_str).replace("__CORRECT_SCHEMA__", correct_format)}
+                    ]
                     ) 
                     return json.loads(completion.choices[0].message.content)         
     else:
@@ -380,7 +379,7 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                     current_inventory_format['reference']['page_info'][0]['page'] = relevant_tables['Tables'][table_match]
                 else:
                     ## need to figure out best way to do this
-                    current_inventory_format['reference']['page_info'][0]['page'] = -1
+                    current_inventory_format['reference']['page_info'][0].pop("page")
 
                 output = check_instance(current_extraction=current_inventory_format['reference']['page_info'][0], key = 'page', instance=int)
                 if output is None:
