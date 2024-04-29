@@ -86,13 +86,7 @@ def create_inventory_format(commodities_dict, commodity, document_dict, doc_date
         "document": document_dict,
         "page_info": [
             {
-                "page": -1,
-                "bounding_box": {
-                    "x_min": "",
-                    "x_max": "",
-                    "y_min": "",
-                    "y_max": ""
-                }
+            "page": ""    
             }
         ]
     },

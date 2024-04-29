@@ -17,22 +17,19 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl'
 
 client = openai.OpenAI(api_key = API_KEY)
 
-def delete_assistant_and_file(assistant_id, file_id):
+def delete_assistant(assistant_id):
     url = f"https://api.openai.com/v1/assistants/{assistant_id}"
 
     # Set up headers with your API key
     headers = {
     "Content-Type": "application/json",
     "Authorization": f"Bearer {API_KEY}",
-    "OpenAI-Beta": "assistants=v1"
+    "OpenAI-Beta": "assistants=v2"
     }
 
     # Make the DELETE request
     response = requests.delete(url, headers=headers)
     
-    client.files.delete(file_id)
-    print("file was deleted")
-
     # Print the response content
     return response.status_code
 
@@ -43,7 +40,7 @@ def cancel_assistant_run(thread_id,run_id):
     headers = {
         "Authorization": f"Bearer {API_KEY}",
         "Content-Type": "application/json",
-        "OpenAI-Beta": "assistants=v1"
+        "OpenAI-Beta": "assistants=v2"
     }
 
     response = requests.post(url, headers=headers)
@@ -52,31 +49,36 @@ def cancel_assistant_run(thread_id,run_id):
 
 def get_assistant_response(thread_id, run_id):
     run = client.beta.threads.runs.retrieve(thread_id=thread_id,run_id=run_id)
-    # print(f"Checking run status: {run.status}")
+    print(f"Checking run status: {run.status}")
     while run.status != "completed":
         time.sleep(15)
         run = client.beta.threads.runs.retrieve(thread_id=thread_id,run_id=run_id)
+        print(f"Run status: {run.status}")
+        if run.status == "failed":
+            print("Run failed")
+            print("Failure reason:", run.last_error.message) 
+            print(f"Run: {run_id} Thread: {thread_id} \n FAILED RUN \n")
+            return ""
         
-    # print("Run is completed. Printing the entire thread now in sequential order \n")
+
     messages = client.beta.threads.messages.list(thread_id=thread_id)
-    
-#     for thread_message in messages.data[::-1]:
-#         run_id_value = thread_message.run_id
-#         content_value = thread_message.content[0].text.value
-#         print(f"{run_id_value}: {content_value} \n")
     
     
     most_recent = messages.data[0].content[0].text.value
     print(f"Run: {run_id} Thread: {thread_id} \n response: {most_recent} \n")
     return most_recent
 
-def create_assistant(file_id, commodity, sign):
+def create_assistant(file_path, commodity, sign):
     assistant = client.beta.assistants.create(
         name="Get Extraction",
         instructions= instructions.replace("__COMMODITY__", commodity).replace("__SIGN__", sign),
-        tools=[{"type": "retrieval"}],
-        model="gpt-4-1106-preview",
-        file_ids=[file_id]
+        model="gpt-4-turbo",
+        tools=[{"type": "file_search"}],
+    )
+
+    
+    message_file = client.files.create(
+    file=open(file_path, "rb"), purpose="assistants"
     )
 
     thread = client.beta.threads.create(
@@ -84,12 +86,15 @@ def create_assistant(file_id, commodity, sign):
     {
       "role": "user",
       "content": "You are a geology expert and you are very good in understanding mining reports, which is attached.",
-      "file_ids": [file_id]
+      "attachments": [
+        { "file_id": message_file.id, "tools": [{"type": "file_search"}] }
+      ],
     }])
-    # print(f"Created an Assistant")
+    
+    print(f"Created Assistant: {assistant.id}")
     return thread.id, assistant.id
 
-def check_file(thread_id, assistant_id, file_id, file_path, commodity, sign):
+def check_file(thread_id, assistant_id, file_path, commodity, sign):
     file_instructions = """If the file was correctly uploaded and can be read return YES otherwise return NO. 
                         Only return the Yes or No answer.
                         """
@@ -104,19 +109,15 @@ def check_file(thread_id, assistant_id, file_id, file_path, commodity, sign):
     print(f"Response: {ans}")
     if ans.lower() == "no":
         print("We need to reload file.")
-        response_code = delete_assistant_and_file(assistant_id, file_id)
+        response_code = delete_assistant(assistant_id)
         if response_code == 200:
             print(f"Deleted assistant {assistant_id}")
-        file = client.files.create(
-              file=open(f"{file_path}", "rb"),
-              purpose='assistants'
-            )
         
-        new_thread_id, new_assistant_id =  create_assistant(file.id, commodity, sign)
-        return check_file(new_thread_id, new_assistant_id, file.id, file_path, commodity, sign)
+        new_thread_id, new_assistant_id =  create_assistant(file_path, commodity, sign)
+        return check_file(new_thread_id, new_assistant_id, file_path, commodity, sign)
     else:
         print("File was correctly uploaded \n")
-        return thread_id, assistant_id, file_id
+        return thread_id, assistant_id
 
 def extract_json_strings(input_string, correct_format, remove_comments = False):
     start = input_string.find('{')
@@ -151,10 +152,10 @@ def extract_json_strings(input_string, correct_format, remove_comments = False):
         return None
     
 def delete_all_files():
-    print("Cleaning any leftover files")
     response = client.files.list(purpose="assistants")
     for file in response.data:
         client.files.delete(file.id)
+    print("Deleted any leftover files")
     
 def read_csv_to_dict(file_path):
     data_dict_list = []
@@ -215,10 +216,12 @@ def clean_mineral_site_json(json_str, title, url):
         if key == 'location_info' and isinstance(value, dict):
             for new_key, new_value in value.items():
                 if new_key == 'crs':
-                    json_str[key][new_key] = "EPSG:4326"
-                if isinstance(new_value, str) and (new_value.strip() == "" or new_value.strip() == "POINT()"):
-                    key_to_remove.append((key, new_key))  # Append a tuple (key, new_key) for inner keys
-                    key_to_remove.append((key, 'crs'))
+                    json_str["MineralSite"][0][key][new_key] = "EPSG:4326"
+                    
+                if new_key == 'location':
+                    if isinstance(new_value, str) and (new_value.strip() == "" or new_value.strip() == "POINT()"):
+                        key_to_remove.append((key, new_key))  # Append a tuple (key, new_key) for inner keys
+                        key_to_remove.append((key, 'crs'))
                     
 
     for outer_key, inner_key in key_to_remove:

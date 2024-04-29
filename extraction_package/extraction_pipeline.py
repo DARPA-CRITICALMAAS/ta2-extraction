@@ -18,14 +18,10 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl'
 client = openai.OpenAI(api_key = API_KEY)
 
 def create_document_reference(file_path, url, commodity, sign, title):
-    file = client.files.create(
-    file=open(f"{file_path}", "rb"),
-    purpose='assistants'
-    )
+    print("Creating document reference \n")
+    thread_id, assistant_id = create_assistant(file_path, commodity, sign)
 
-    thread_id, assistant_id = create_assistant(file.id, commodity, sign)
-
-    thread_id, assistant_id, file_id = check_file(thread_id, assistant_id, file.id, file_path, commodity, sign)
+    thread_id, assistant_id = check_file(thread_id, assistant_id, file_path, commodity, sign)
 
     document_ref = created_document_ref(title, url)
 
@@ -39,14 +35,14 @@ def create_document_reference(file_path, url, commodity, sign, title):
 
     document_dict_temp = extract_json_strings(ans, document_ref)
     document_dict = clean_document_dict(document_dict_temp, title, url)
-    doc_month = document_dict.get('month', '')  
-    doc_year = document_dict.get('year', '')   
+    # doc_month = document_dict.get('month', '')  
+    # doc_year = document_dict.get('year', '')   
     doc_name = document_dict.get('title', '')   
 
-    if doc_year and doc_month:
-        doc_date = f"{doc_year}-{doc_month}"
-    else:
-        doc_date = ''
+    # if doc_year and doc_month:
+    #     doc_date = f"{doc_year}-{doc_month}"
+    # else:
+    #     doc_date = ''
 
     print(f" Here is the reference material for the document: \n {document_dict} \n")
     
@@ -68,7 +64,7 @@ def create_document_reference(file_path, url, commodity, sign, title):
 
     print(f"Here is the Mineral Site Json: \n {mineral_site_json} \n")
     
-    resp_code = delete_assistant_and_file(assistant_id, file_id)
+    resp_code = delete_assistant(assistant_id)
 
     if resp_code == 200:
         print(f" Deleted assistant for Document Reference \n")
@@ -78,13 +74,10 @@ def create_document_reference(file_path, url, commodity, sign, title):
     return document_dict, mineral_site_json
 
 def create_deposit_types(file_path, url, commodity, sign, title):
-    file = client.files.create(
-    file=open(f"{file_path}", "rb"),
-    purpose='assistants'
-    )
-    thread_id, assistant_id =create_assistant(file.id, commodity, sign)
+  
+    thread_id, assistant_id =create_assistant(file_path, commodity, sign)
     
-    thread_id, assistant_id, file_id = check_file(thread_id, assistant_id, file.id, file_path, commodity, sign)
+    thread_id, assistant_id = check_file(thread_id, assistant_id, file_path, commodity, sign)
     
     minmod_deposit_types = read_csv_to_dict("./codes/minmod_deposit_types.csv")
     deposit_id = {}
@@ -96,7 +89,6 @@ def create_deposit_types(file_path, url, commodity, sign, title):
     
     run = client.beta.threads.runs.create(
     thread_id=thread_id,
-        
     assistant_id=assistant_id,
     instructions=deposit_instructions.replace('__COMMODITY__', commodity).replace('__DEPOSIT_FORMAT__', deposit_format)
     )
@@ -114,7 +106,6 @@ def create_deposit_types(file_path, url, commodity, sign, title):
         instructions=check_deposit_instructions.replace("__DEPOSIT_TYPE_LIST__", str(deposit_types_initial['deposit_type'])).replace("__DEPOSIT_ID__", str(deposit_id)).replace("__DEPOSIT_FORMAT_CORRECT__", deposit_format_correct).replace("__COMMODITY__", commodity)
         )
         
-        
         ans = get_assistant_response(thread_id, run.id)
         deposit_types_output = extract_json_strings(ans, deposit_format_correct)
         
@@ -128,7 +119,7 @@ def create_deposit_types(file_path, url, commodity, sign, title):
         
     print(f" Final Formatted Deposit Type: {deposit_types_json} \n")
     
-    resp_code = delete_assistant_and_file(assistant_id, file_id)
+    resp_code = delete_assistant(assistant_id)
 
     if resp_code == 200:
         print(f" Deleted assistant for Deposit Types \n")
@@ -138,14 +129,10 @@ def create_deposit_types(file_path, url, commodity, sign, title):
     return deposit_types_json
 
 def create_mineral_inventory(document_dict, file_path, url, commodity, sign, title):
-    file = client.files.create(
-    file=open(f"{file_path}", "rb"),
-    purpose='assistants'
-    )
-    file_id = file.id
-    thread_id, assistant_id = create_assistant(file.id, commodity, sign)
+   
+    thread_id, assistant_id = create_assistant(file_path, commodity, sign)
     
-    thread_id, assistant_id, file_id = check_file(thread_id, assistant_id, file.id, file_path, commodity, sign)
+    thread_id, assistant_id = check_file(thread_id, assistant_id,file_path, commodity, sign)
     
     minmod_commodities = read_csv_to_dict("./codes/minmod_commodities.csv")
     commodities = {}
@@ -204,6 +191,7 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
         doc_date = f"{doc_year}-{doc_month}"
     else: 
         doc_date = ''
+        
     inventory_format = create_inventory_format(commodities, commodity, document_dict, doc_date)
     dictionary_format = create_mineral_extractions_format(commodity)
     
@@ -228,7 +216,7 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
             "document": document_dict}})
         
         
-    resp_code = delete_assistant_and_file(assistant_id, file_id)
+    resp_code = delete_assistant(assistant_id)
 
     if resp_code == 200:
         print(f" Deleted assistant for Mineral Inventory \n")
