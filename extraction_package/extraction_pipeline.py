@@ -18,7 +18,6 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl'
 client = openai.OpenAI(api_key = API_KEY)
 
 def create_document_reference(file_path, url, commodity, sign, title):
-    print("Creating document reference \n")
     thread_id, assistant_id = create_assistant(file_path, commodity, sign)
 
     thread_id, assistant_id = check_file(thread_id, assistant_id, file_path, commodity, sign)
@@ -30,7 +29,7 @@ def create_document_reference(file_path, url, commodity, sign, title):
     assistant_id=assistant_id,
     instructions= name_instructions.replace('__DOCUMENT_REF___', document_ref)
     )
-  
+    
     ans = get_assistant_response(thread_id, run.id)
 
     document_dict_temp = extract_json_strings(ans, document_ref)
@@ -193,6 +192,10 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
         doc_date = ''
         
     inventory_format = create_inventory_format(commodities, commodity, document_dict, doc_date)
+    
+    if doc_date == '':
+        inventory_format.pop('date')
+    
     dictionary_format = create_mineral_extractions_format(commodity)
     
     for cat in categories_to_test:
@@ -204,6 +207,7 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
             print(f" Extracted: {extraction} \n")
             
             if extraction is not None and 'extractions' in extraction:
+                
                 cleaned = create_mineral_inventory_json(extraction, inventory_format, relevant_tables, correct_units)
                 mineral_inventory_json["mineral_inventory"] += cleaned['mineral_inventory']
             

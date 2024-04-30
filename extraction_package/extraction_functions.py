@@ -414,18 +414,19 @@ def check_instance(current_extraction, key, instance):
 
     if key in current_extraction:
         curr_value = current_extraction[key]
+        print(f"Looking at key {key} : {curr_value}")
         
-        if instance == float and isinstance(curr_value, str):
+        ## want to test the current value or if its 0
+        if isinstance(curr_value, str) and len(curr_value == 0):
+            ## in case we have an empty value should pop that value out
+            output_value = None
+        
+        elif instance == float and isinstance(curr_value, str):
             curr_value = current_extraction[key]
             numeric_chars = re.findall(r'\d|\.', curr_value)
             str_value = ''.join(numeric_chars)
             curr_value = float(str_value)
     
-        ## want to test the current value or if its 0
-        if isinstance(curr_value, str) and len(curr_value == 0):
-            ## in case we have an empty value should pop that value out
-            output_value = None
-            
         
         elif isinstance(curr_value, instance):
             output_value = current_extraction[key]
