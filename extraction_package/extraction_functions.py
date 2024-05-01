@@ -8,6 +8,7 @@ import re
 import csv
 import requests
 from pyzotero import zotero
+from tenacity import retry, retry_if_result, stop_after_attempt, wait_fixed
 import copy
 from fuzzywuzzy import process
 from settings import API_KEY, LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY 
@@ -47,20 +48,32 @@ def cancel_assistant_run(thread_id,run_id):
     
     return response.json()
 
-def get_assistant_response(thread_id, run_id):
-    run = client.beta.threads.runs.retrieve(thread_id=thread_id,run_id=run_id)
-    print(f"Checking run status: {run.status}")
-    while run.status != "completed":
-        time.sleep(15)
-        run = client.beta.threads.runs.retrieve(thread_id=thread_id,run_id=run_id)
-        print(f"Run status: {run.status}")
-        if run.status == "failed":
-            print("Run failed")
-            print("Failure reason:", run.last_error.message) 
-            print(f"Run: {run_id} Thread: {thread_id} \n FAILED RUN \n")
-            return ""
-        
+def is_failed_result(response):
+    return response.status == "failed"
+    
 
+@retry(retry=retry_if_result(is_failed_result), 
+       stop=stop_after_attempt(3), 
+       wait=wait_fixed(2))
+def get_completed_assistant_run(thread_id, run_id):
+    
+    run = client.beta.threads.runs.retrieve(thread_id=thread_id, run_id=run_id)
+    print(f"Checking run status: {run.status}")
+    
+    while run.status not in ["completed", "failed"]:
+        time.sleep(15)
+        run = client.beta.threads.runs.retrieve(thread_id=thread_id, run_id=run_id)
+        print(f"Run status: {run.status}")
+        
+    if run.status == "failed":
+        print("Failure reason:", run.last_error.message)
+        print(f"Run: {run_id} Thread: {thread_id} \n FAILED RUN \n")
+        return "failed"  # Returning the failed run for retry evaluation
+
+    print("Outside of the if status failed: ", run.status)
+    return run  # Completed runs are returned directly
+        
+def get_assistant_message(run_id, thread_id):
     messages = client.beta.threads.messages.list(thread_id=thread_id)
     
     
@@ -417,7 +430,7 @@ def check_instance(current_extraction, key, instance):
         print(f"Looking at key {key} : {curr_value}")
         
         ## want to test the current value or if its 0
-        if isinstance(curr_value, str) and len(curr_value == 0):
+        if isinstance(curr_value, str) and len(curr_value) == 0:
             ## in case we have an empty value should pop that value out
             output_value = None
         

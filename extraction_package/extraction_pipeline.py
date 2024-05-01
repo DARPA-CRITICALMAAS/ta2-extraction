@@ -30,7 +30,8 @@ def create_document_reference(file_path, url, commodity, sign, title):
     instructions= name_instructions.replace('__DOCUMENT_REF___', document_ref)
     )
     
-    ans = get_assistant_response(thread_id, run.id)
+    get_completed_assistant_run(thread_id, run.id)
+    ans = get_assistant_message(thread_id, run.id)
 
     document_dict_temp = extract_json_strings(ans, document_ref)
     document_dict = clean_document_dict(document_dict_temp, title, url)
@@ -52,7 +53,8 @@ def create_document_reference(file_path, url, commodity, sign, title):
     assistant_id=assistant_id,
     instructions=loc_instructions.replace('__SITE_FORMAT__', site_format)
     )
-    ans = get_assistant_response(thread_id, run.id)
+    get_completed_assistant_run(thread_id, run.id)
+    ans = get_assistant_message(thread_id, run.id)
     
     mineral_site_json = extract_json_strings(ans, site_format)
     if mineral_site_json is None:
@@ -92,7 +94,9 @@ def create_deposit_types(file_path, url, commodity, sign, title):
     instructions=deposit_instructions.replace('__COMMODITY__', commodity).replace('__DEPOSIT_FORMAT__', deposit_format)
     )
 
-    ans = get_assistant_response(thread_id, run.id)
+    get_completed_assistant_run(thread_id, run.id)
+    ans = get_assistant_message(thread_id, run.id)
+    
     deposit_types_initial = extract_json_strings(ans, deposit_format)
     print(f" Observed Deposit Types in the Report: \n {deposit_types_initial} \n")
     
@@ -105,7 +109,8 @@ def create_deposit_types(file_path, url, commodity, sign, title):
         instructions=check_deposit_instructions.replace("__DEPOSIT_TYPE_LIST__", str(deposit_types_initial['deposit_type'])).replace("__DEPOSIT_ID__", str(deposit_id)).replace("__DEPOSIT_FORMAT_CORRECT__", deposit_format_correct).replace("__COMMODITY__", commodity)
         )
         
-        ans = get_assistant_response(thread_id, run.id)
+        get_completed_assistant_run(thread_id, run.id)
+        ans = get_assistant_message(thread_id, run.id)
         deposit_types_output = extract_json_strings(ans, deposit_format_correct)
         
     else:
@@ -151,7 +156,9 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
     instructions=find_relevant_table_instructions
     )
 
-    ans = get_assistant_response(thread_id, run.id)
+    get_completed_assistant_run(thread_id, run.id)
+    ans = get_assistant_message(thread_id, run.id)
+    
     table_format = "{'Tables': {'Table 1 Name': page_number,'Table 2 Name': page_number}"
     relevant_tables = extract_json_strings(ans, table_format)
     
@@ -166,7 +173,9 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
         assistant_id=assistant_id,
         instructions=find_relevant_categories.replace("__RELEVANT__", str(relevant_tables['Tables'].keys()))
         )
-        ans = get_assistant_response(thread_id, run.id)
+        get_completed_assistant_run(thread_id, run.id)
+        ans = get_assistant_message(thread_id, run.id)
+        
         categories_format = "{'categories': [value1, value2, ...]}"
         relevant_cats = extract_json_strings(ans, categories_format)
         
