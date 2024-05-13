@@ -52,14 +52,14 @@ def create_mineral_extractions_format(commodity):
     return f"""
         {{ "extractions":[
         {{
+        "Table": "",
         "category": "",
         "zone": "",
         "{commodity} Cut-Off": "",
         "{commodity} Cut-Off Unit": "",
         "{commodity} Tonnage": "",
         "{commodity} Tonnage Unit": "",
-        "{commodity} Grade Percent": "",
-        "Table": ""
+        "{commodity} Grade Percent": ""
         }}
         ]
     }}

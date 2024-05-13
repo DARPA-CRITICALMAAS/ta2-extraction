@@ -6,6 +6,7 @@ import time
 import warnings
 import re
 import csv
+import PyPDF2
 import requests
 from pyzotero import zotero
 from tenacity import retry, retry_if_result, stop_after_attempt, wait_fixed
@@ -49,11 +50,12 @@ def cancel_assistant_run(thread_id,run_id):
     return response.json()
 
 def is_failed_result(response):
+    print(f"is_failed_result: Response: {response.status} type {type(response.status)}")
     return response.status == "failed"
     
 
 @retry(retry=retry_if_result(is_failed_result), 
-       stop=stop_after_attempt(3), 
+       stop=stop_after_attempt(5), 
        wait=wait_fixed(2))
 def get_completed_assistant_run(thread_id, run_id):
     
@@ -68,15 +70,13 @@ def get_completed_assistant_run(thread_id, run_id):
     if run.status == "failed":
         print("Failure reason:", run.last_error.message)
         print(f"Run: {run_id} Thread: {thread_id} \n FAILED RUN \n")
-        return "failed"  # Returning the failed run for retry evaluation
 
-    print("Outside of the if status failed: ", run.status)
+    print()
     return run  # Completed runs are returned directly
         
-def get_assistant_message(run_id, thread_id):
+def get_assistant_message(thread_id, run_id):
     messages = client.beta.threads.messages.list(thread_id=thread_id)
-    
-    
+
     most_recent = messages.data[0].content[0].text.value
     print(f"Run: {run_id} Thread: {thread_id} \n response: {most_recent} \n")
     return most_recent
@@ -116,9 +116,11 @@ def check_file(thread_id, assistant_id, file_path, commodity, sign):
       assistant_id=assistant_id,
       instructions= file_instructions
     )
-    # print(f"Current run id = {run.id} thread_id = {thread_id}")
+    print(f"Current run id = {run.id} thread_id = {thread_id} \n")
     
-    ans = get_assistant_response(thread_id, run.id)
+    get_completed_assistant_run(thread_id, run.id)
+    ans = get_assistant_message(thread_id, run.id)
+    
     print(f"Response: {ans}")
     if ans.lower() == "no":
         print("We need to reload file.")
@@ -127,6 +129,7 @@ def check_file(thread_id, assistant_id, file_path, commodity, sign):
             print(f"Deleted assistant {assistant_id}")
         
         new_thread_id, new_assistant_id =  create_assistant(file_path, commodity, sign)
+        print("Created new_thread")
         return check_file(new_thread_id, new_assistant_id, file_path, commodity, sign)
     else:
         print("File was correctly uploaded \n")
@@ -158,7 +161,8 @@ def extract_json_strings(input_string, correct_format, remove_comments = False):
                     messages=[
                         {"role": "system", "content": "You are a json formatting expert"},
                         {"role": "user", "content": JSON_format_fix.replace("__INCORRECT__", json_str).replace("__CORRECT_SCHEMA__", correct_format)}
-                    ]
+                    ],
+                    response_format={'type': "json_object"}
                     ) 
                     return json.loads(completion.choices[0].message.content)         
     else:
@@ -199,7 +203,7 @@ def clean_document_dict(document_dict_temp, title, url):
                 document_dict_temp[key] = url
         if key == 'authors':
             if isinstance(value, str):
-                if value.strip()[0] == "[":
+                if value and len(value.strip()) > 0 and value.strip()[0] == "[":
                     document_dict_temp[key] = [str(item.strip()).replace('"', "") for item in value[1:-1].split(',')]
                 else:
                     document_dict_temp[key] = [str(item.strip()) for item in value.split(',')]  
@@ -235,17 +239,22 @@ def clean_mineral_site_json(json_str, title, url):
                     if isinstance(new_value, str) and (new_value.strip() == "" or new_value.strip() == "POINT()"):
                         key_to_remove.append((key, new_key))  # Append a tuple (key, new_key) for inner keys
                         key_to_remove.append((key, 'crs'))
-                    
 
-    for outer_key, inner_key in key_to_remove:
-        if inner_key is None:
-            if outer_key in json_str["MineralSite"][0]:
-                del json_str["MineralSite"][0][outer_key]
-        else:
-            if outer_key in json_str["MineralSite"][0] and inner_key in json_str["MineralSite"][0][outer_key]:
-                del json_str["MineralSite"][0][outer_key][inner_key]
+    json_str = remove_keys(json_check=json_str, keys_list = key_to_remove)
 
     return json_str
+
+def remove_keys(json_check, keys_list):
+    ## Removing any keys we don't need
+    for outer_key, inner_key in keys_list:
+        if inner_key is None:
+            if outer_key in json_check["MineralSite"][0]:
+                del json_check["MineralSite"][0][outer_key]
+        else:
+            if outer_key in json_check["MineralSite"][0] and inner_key in json_check["MineralSite"][0][outer_key]:
+                del json_check["MineralSite"][0][outer_key][inner_key]
+    
+    return json_check
     
     
 def find_best_match(input_str, list_to_match, threshold=75):
@@ -259,7 +268,7 @@ def find_best_match(input_str, list_to_match, threshold=75):
         return None
 
 
-def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_tables, unit_dict):
+def create_mineral_inventory_json(extraction_dict, inventory_format, unit_dict, file_path):
     kt_values = ["k","kt", "000s tonnes", "thousand tonnes", "thousands", "000s" , "000 tonnes"]
     url_str = "https://minmod.isi.edu/resource/"
     output_str = {"mineral_inventory":[]}
@@ -269,9 +278,10 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
     
     for inner_dict in extraction_dict['extractions']:
         current_inventory_format = copy.deepcopy(inventory_format)
-        changed_tonnage = False
     
         for key, value in inner_dict.items():
+            print(f"Checking the current_inventory_format:{key}: {value}")
+            
             if isinstance(value, int) or isinstance(value, float):
                 value = str(value)
             
@@ -342,42 +352,23 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                         float_val = float(current_inventory_format['ore']['ore_value']) * 1000
                         current_inventory_format['ore']['ore_value'] =  float_val
                         current_inventory_format['ore']['ore_unit'] = url_str + unit_dict[value]
-                        changed_tonnage = True
+            
                 else:
                     found_value = find_best_match(value, grade_unit_list)
                     if found_value is not None:
                         print(f"Found match value for ore_unit {found_value}")
                         current_inventory_format['ore']['ore_unit'] = url_str + unit_dict[found_value.lower()]
                     else:
-                        current_inventory_format['ore'].pop('ore_unit')
+                        # need ot do this for the check
+                        current_inventory_format['ore']['ore_unit'] = ""
+                        
                 output = check_instance(current_extraction=current_inventory_format['ore'], key = 'ore_unit', instance=str)
                 if output is None:
                     current_inventory_format['ore'].pop('ore_unit')
                 else:
                     current_inventory_format['ore']['ore_unit'] = output
                 
-            elif 'contained' in key.lower():
-                if not current_inventory_format['ore'].get('ore_value') or not current_inventory_format['grade'].get('grade_value'):
-                    current_inventory_format['contained_metal'] = ''
-                else:
-                    tonnes = float(current_inventory_format['ore']['ore_value'])
-                    grade = float(current_inventory_format['grade']['grade_value'])
-                    value = str(tonnes*grade/100)
-
-                    if changed_tonnage: 
-                        integer_value = float(value.lower())*1000
-                        current_inventory_format['contained_metal'] = integer_value
-                    else:
-                        current_inventory_format['contained_metal'] = value.lower()
-                    
-                output =  check_instance(current_extraction=current_inventory_format, key = 'contained_metal', instance=float)
-                if output is None:
-                    current_inventory_format.pop('contained_metal')
-                else:
-                    current_inventory_format['contained_metal'] = output
-                
             elif 'grade' in key.lower():
-                
                 current_inventory_format['grade']['grade_unit'] = url_str + unit_dict['percent']
                 current_inventory_format['grade']['grade_value'] = value.lower()
                 
@@ -389,30 +380,107 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, relevant_ta
                     current_inventory_format['grade']['grade_value'] = output
                 
             elif 'table' in key.lower():
-                table_match = find_best_match(value.lower(), list(relevant_tables['Tables'].keys()), threshold = 70)
-    
-                if table_match is not None and isinstance(relevant_tables['Tables'][table_match], int):
-                    current_inventory_format['reference']['page_info'][0]['page'] = relevant_tables['Tables'][table_match]
+                # table_match = find_best_match(value.lower(), list(relevant_tables['Tables']), threshold = 70)
+                
+                output_page = find_correct_page(file_path=file_path, extractions = inner_dict)
+                
+                if output_page:
+                    current_inventory_format['reference']['page_info'][0]['page'] = output_page
                 else:
-                    ## need to figure out best way to do this
-                    current_inventory_format['reference']['page_info'][0].pop("page")
-
-                output = check_instance(current_extraction=current_inventory_format['reference']['page_info'][0], key = 'page', instance=int)
-                if output is None:
                     current_inventory_format['reference']['page_info'][0].pop('page')
-                else:
-                    current_inventory_format['reference']['page_info'][0]['page'] = output
-            
-        
-            
-                    
-        current_inventory_format = check_empty_headers(current_inventory_format)        
+                
+             
+        current_inventory_format = check_empty_headers_add_contained_metal(current_inventory_format)        
         output_str["mineral_inventory"].append(current_inventory_format)
         
     return output_str
 
-def check_empty_headers(extraction):
+def find_correct_page(file_path, extractions):
+    ## get a series of strings to look at to find these values in curr_json
+    ## probably ask Goran how many strings should be looked at
+    print(f"This is the inner_dict: {extractions}, {type(extractions)}")
+    page = []
+    target_strings = []
+    for key, value in extractions.items():
+        if len(value) > 0 and len(target_strings) < 3:
+            target_strings.append(value)
+            
+    
+    print(f"Target strings found: {target_strings}")
+    ## DO TWO METHODS: METHOD 1
+    # checks based off first target for the second ones
+    if len(target_strings) > 2:
+        table_pages = search_text_in_pdf(file_path, target_strings[0])
+        matching_pages = {}
+
+        for string in target_strings[1:]:
+            matching_pages[string] = string_in_page(file_path, string, table_pages)
+            if len(list(matching_pages.values())) > 0: 
+                page = find_common_numbers(matching_pages)
+    
+        print(f"Matching pages: {matching_pages}")
+        print(f"Output pages: {page}")
+  
+    if len(page) == 0:
+        return page
+    else:
+        return int(page[0])
+                
+              
+def string_in_page(pdf_path, target_string, check_pages):
+    page_numbers = []
+    # Open the PDF file in binary mode
+    if not check_pages:
+        return page_numbers
+
+    with open(pdf_path, 'rb') as file:
+        
+        # Create a PDF reader
+        pdf = PyPDF2.PdfReader(file)
+        
+        # Iterate over each page
+        for page_num in check_pages:
+            page = pdf.pages[page_num]
+            text = page.extract_text()
+            text_new = ' '.join(text.replace("\t", " ").split()).lower()
+            # Check if target string is in the page's text
+            if target_string.lower() in text_new:
+                page_numbers.append(page_num)      
+                      
+    return page_numbers
+
+def search_text_in_pdf(pdf_path, target_string):
+    page_numbers = []
+    
+    # Open the PDF file in binary mode
+    with open(pdf_path, 'rb') as file:
+        
+        # Create a PDF reader
+        pdf = PyPDF2.PdfReader(file)
+        
+        # Iterate over each page
+        for page_num in range(len(pdf.pages)):
+            page = pdf.pages[page_num]
+            text = page.extract_text()
+            text_new = ' '.join(text.replace("\t", " ").split()).lower()
+            # Check if target string is in the page's text
+            if target_string.lower() in text_new:
+                page_numbers.append(page_num)  
+                          
+    return page_numbers
+
+def find_common_numbers(dictionary):
+
+    number_lists = list(dictionary.values())
+
+    common_numbers = set(number_lists[0]).intersection(*number_lists[1:])
+
+    return list(common_numbers)
+
+
+def check_empty_headers_add_contained_metal(extraction):
     keys_to_check = ["ore", "grade", "cutoff_grade"]
+    print(extraction)
     
     for key in keys_to_check:
         if not extraction[key]:
@@ -420,11 +488,26 @@ def check_empty_headers(extraction):
             print("Currently this value is empty")
     
     
+    if "ore" in extraction and "ore_value" in extraction["ore"]:
+        ore_value = extraction["ore"]["ore_value"]
+    else: ore_value = None
+    
+    if "grade" in extraction and "grade_value" in extraction["ore"]:
+        grade_value = extraction["grade"]["grade_value"]
+    else: grade_value = None 
+    
+    if  ore_value and grade_value:
+        extraction["contained_metal"] = round(ore_value*(grade_value/100), 4)
+    else:
+        extraction.pop("contained_metal")
+    
+    
     return extraction
 
 def check_instance(current_extraction, key, instance):
-    print(f"Previous value: {current_extraction}")
-
+    print(f"Previous value: {current_extraction[key]}")
+    output_value = None
+    
     if key in current_extraction:
         curr_value = current_extraction[key]
         print(f"Looking at key {key} : {curr_value}")
@@ -435,13 +518,17 @@ def check_instance(current_extraction, key, instance):
             output_value = None
         
         elif instance == float and isinstance(curr_value, str):
+            # if its a float we want to change the string to the correct float value
+            
             curr_value = current_extraction[key]
             numeric_chars = re.findall(r'\d|\.', curr_value)
             str_value = ''.join(numeric_chars)
-            curr_value = float(str_value)
+            output_value = float(str_value)
     
         
         elif isinstance(curr_value, instance):
+            # if it is the correct instance type
+            
             output_value = current_extraction[key]
         else:
             try:
@@ -450,8 +537,11 @@ def check_instance(current_extraction, key, instance):
         
             except ValueError:
                 print("Get value error")
+    
+        
                 
     print("Outputted value: ", output_value)
+    print()
     return output_value
 
 def get_zotero(url):
@@ -466,7 +556,7 @@ def get_zotero(url):
 def format_deposit_candidates(deposit_list):
     deposit_type_candidate = { "deposit_type_candidate": []}
     
-    for dep in deposit_list['deposit_type'].keys():
+    for dep in deposit_list['deposit_type']:
         inner_dict = {}
         inner_dict["observed_name"] = dep
         inner_dict["normalized_uri"] = deposit_list['deposit_type'][dep]
@@ -495,7 +585,8 @@ def extract_by_category(commodity, commodity_sign, dictionary_format, curr_cat, 
         # print(f"Current run id = {run.id} thread_id = {thread_id}")
 
         # print("Retrieving the response\n")
-        ans = get_assistant_response(thread_id, run.id)
+        get_completed_assistant_run(thread_id, run.id)
+        ans = get_assistant_message(thread_id, run.id)
 
 
         extraction_dict = extract_json_strings(ans, dictionary_format, remove_comments = True)

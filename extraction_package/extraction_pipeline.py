@@ -2,6 +2,7 @@ import openai
 import json
 import os
 import warnings
+import time
 import requests
 import concurrent.futures
 import multiprocessing
@@ -153,13 +154,13 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
     run = client.beta.threads.runs.create(
     thread_id=thread_id,
     assistant_id=assistant_id,
-    instructions=find_relevant_table_instructions
+    instructions=find_relevant_table_instructions.replace("__COMMODITY__", commodity)
     )
 
     get_completed_assistant_run(thread_id, run.id)
     ans = get_assistant_message(thread_id, run.id)
     
-    table_format = "{'Tables': {'Table 1 Name': page_number,'Table 2 Name': page_number}"
+    table_format = "{'Tables': ['Table 1 Name', 'Table 2 Name']}"
     relevant_tables = extract_json_strings(ans, table_format)
     
     
@@ -171,7 +172,7 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
         run = client.beta.threads.runs.create(
         thread_id=thread_id,
         assistant_id=assistant_id,
-        instructions=find_relevant_categories.replace("__RELEVANT__", str(relevant_tables['Tables'].keys()))
+        instructions=find_relevant_categories.replace("__RELEVANT__", str(relevant_tables['Tables']))
         )
         get_completed_assistant_run(thread_id, run.id)
         ans = get_assistant_message(thread_id, run.id)
@@ -217,7 +218,7 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
             
             if extraction is not None and 'extractions' in extraction:
                 
-                cleaned = create_mineral_inventory_json(extraction, inventory_format, relevant_tables, correct_units)
+                cleaned = create_mineral_inventory_json(extraction, inventory_format, correct_units, file_path)
                 mineral_inventory_json["mineral_inventory"] += cleaned['mineral_inventory']
             
         if not done_first:
@@ -263,7 +264,7 @@ def document_parallel_extract(
 
 
 def run(folder_path, file_name, url, commodity, sign, output_folder_path):
-    
+    t = time.time()
     file_path = folder_path + file_name
     title = get_zotero(url)
     
@@ -291,7 +292,7 @@ def run(folder_path, file_name, url, commodity, sign, output_folder_path):
     with open(output_file_path, "w") as json_file:
         json.dump(convert_int_or_float(mineral_site_json), json_file, indent=2)
         
-    print(f"Combined data written to {output_file_path} \n")
+    print(f"Combined data written to {output_file_path} Took {time.time()-t} s \n")
     
 
 

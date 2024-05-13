@@ -8,7 +8,8 @@ Note we only care about the mineral __COMMODITY__ represented by __SIGN__"
 """
 
 name_instructions = f"""Please tell me description information about the attached document such as the title, 
-list of author names (ignore professional titles), year and month it was published as integers, volume, issue, and a one sentence description. 
+list of author names (ignore professional titles), year and month it was published as integers, and a one sentence description. 
+Note that the authors can be identified by key words such as authors or prepared by and can be found in the first few pages of the document.
 Return the response as a JSON structure that follows this format __DOCUMENT_REF___. Only return the JSON structure.
 Any unknown values should be returned as ""
 """
@@ -38,17 +39,19 @@ Do not return any additional comments and do not use // in the JSON structure.
 
 
 find_relevant_table_instructions = f"""
-Can you go through the document, find all tables that give mineral resource estimates or mineral reserve estimates. If there are multiple resource
-or reserve tables pull the tables that are closest to the doc_date. Avoid any resource sensitivities tables. Include the page number from the document that you got the table from. The page number can be calculated by 
-counting from the first page up to the page that the table was found.
-Return the list of tables as a JSON structure: {{"Tables": {{"Table 1 Name": page_number, 
-"Table 2 Name": page_number}}}}. Only return the JSON structure. Note that these tables are typically found in the
-early sections of the document. If there are no tables just return None.
+Can you go through the document, find every table that discusses the mineral resource estimates or mineral reserve estimates. If there are multiple resource
+or reserve tables pull the tables that are closest to the doc_date. Avoid any resource sensitivities tables. 
+Return the list of tables as a JSON structure: {{"Tables": ["Table 1 Name","Table 2 Name",...]}}. 
+Only return the JSON structure. Note that these tables are typically found in the Mineral resource or Mineral
+reserve sections of the document. These tables should have column names that describe categories, tonnage, 
+cut off grade, or grades related to the commodity __COMMODITY__.
+If there are no tables just return None.
 """
  
 find_relevant_categories = f""" From this list of tables: __RELEVANT__, return the JSON structure that
 contains the list of categories found in the tables. The allotted categories are ["inferred", "indicated","measured", 
-"probable", "proven", "proven+probable", "inferred+indicated", "inferred+measured", "measured+indicated"]. The Return value should be {{"categories": [value1, value2, ...]}} and each value should be all
+"probable", "proven", "proven+probable", "inferred+indicated", "inferred+measured", "measured+indicated"]. The output should be a
+JSON that follow this format : {{"categories": [value1, value2, ...]}} and each value should be all
 lower case.
 """
 

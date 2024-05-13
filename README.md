@@ -33,16 +33,24 @@ extraction_package/ \
 
 
 ## Version Control
-### current version 1.2
+### current version 2.0
 Major Changes
+- LARGE overhaul to make code more scalable, readable, & all MPG's standards
+- add logging, more try catch
+- modularize the code into classes
+
+
+
+### Past version explanations
+1.2 Changes for 9 month, pushed to main DATE
 reference : https://platform.openai.com/docs/assistants/tools/file-search
 - Removed the need to look at total for categories or for zones
 - Using gpt-4-Turbo
 - updates to assistants v2 which includes JSON return
 - add a separate check for just tonnage or units using chat GPT
-
-
-### Past version explanations
+- utilizing tenacity for any run status failures/errors
+- Changing the author prompts
+- Updating how we get pages by looking for key words
 
 1.1 Change to the extraction clean-up
     - adding the instance check & removal of keys
