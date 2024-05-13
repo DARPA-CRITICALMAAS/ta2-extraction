@@ -22,7 +22,7 @@ def create_mineral_site(url, doc_name):
                     "name": "{doc_name}",
                     "location_info": {{
                         "location": "POINT()",
-                        "crs": "WGS84",
+                        "crs": "",
                         "country": "",
                         "state_or_province": ""
                     }}
@@ -52,15 +52,14 @@ def create_mineral_extractions_format(commodity):
     return f"""
         {{ "extractions":[
         {{
+        "Table": "",
         "category": "",
         "zone": "",
         "{commodity} Cut-Off": "",
         "{commodity} Cut-Off Unit": "",
         "{commodity} Tonnage": "",
         "{commodity} Tonnage Unit": "",
-        "{commodity} Grade Percent": "",
-        "Contained_metal": "",
-        "Table": ""
+        "{commodity} Grade Percent": ""
         }}
         ]
     }}
@@ -87,13 +86,7 @@ def create_inventory_format(commodities_dict, commodity, document_dict, doc_date
         "document": document_dict,
         "page_info": [
             {
-                "page": 0,
-                "bounding_box": {
-                    "x_min": "",
-                    "x_max": "",
-                    "y_min": "",
-                    "y_max": ""
-                }
+            "page": ""    
             }
         ]
     },

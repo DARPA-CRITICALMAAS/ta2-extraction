@@ -2,6 +2,7 @@ import openai
 import json
 import os
 import warnings
+import time
 import requests
 import concurrent.futures
 import multiprocessing
@@ -18,12 +19,7 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl'
 client = openai.OpenAI(api_key = API_KEY)
 
 def create_document_reference(file_path, url, commodity, sign, title):
-    file = client.files.create(
-    file=open(f"{file_path}", "rb"),
-    purpose='assistants'
-    )
-
-    thread_id, assistant_id = create_assistant(file.id, commodity, sign)
+    thread_id, assistant_id = create_assistant(file_path, commodity, sign)
 
     thread_id, assistant_id = check_file(thread_id, assistant_id, file_path, commodity, sign)
 
@@ -34,19 +30,20 @@ def create_document_reference(file_path, url, commodity, sign, title):
     assistant_id=assistant_id,
     instructions= name_instructions.replace('__DOCUMENT_REF___', document_ref)
     )
-  
-    ans = get_assistant_response(thread_id, run.id)
+    
+    get_completed_assistant_run(thread_id, run.id)
+    ans = get_assistant_message(thread_id, run.id)
 
     document_dict_temp = extract_json_strings(ans, document_ref)
     document_dict = clean_document_dict(document_dict_temp, title, url)
-    doc_month = document_dict.get('month', '')  
-    doc_year = document_dict.get('year', '')   
+    # doc_month = document_dict.get('month', '')  
+    # doc_year = document_dict.get('year', '')   
     doc_name = document_dict.get('title', '')   
 
-    if doc_year and doc_month:
-        doc_date = f"{doc_year}-{doc_month}"
-    else:
-        doc_date = ''
+    # if doc_year and doc_month:
+    #     doc_date = f"{doc_year}-{doc_month}"
+    # else:
+    #     doc_date = ''
 
     print(f" Here is the reference material for the document: \n {document_dict} \n")
     
@@ -57,7 +54,8 @@ def create_document_reference(file_path, url, commodity, sign, title):
     assistant_id=assistant_id,
     instructions=loc_instructions.replace('__SITE_FORMAT__', site_format)
     )
-    ans = get_assistant_response(thread_id, run.id)
+    get_completed_assistant_run(thread_id, run.id)
+    ans = get_assistant_message(thread_id, run.id)
     
     mineral_site_json = extract_json_strings(ans, site_format)
     if mineral_site_json is None:
@@ -78,11 +76,8 @@ def create_document_reference(file_path, url, commodity, sign, title):
     return document_dict, mineral_site_json
 
 def create_deposit_types(file_path, url, commodity, sign, title):
-    file = client.files.create(
-    file=open(f"{file_path}", "rb"),
-    purpose='assistants'
-    )
-    thread_id, assistant_id =create_assistant(file.id, commodity, sign)
+  
+    thread_id, assistant_id =create_assistant(file_path, commodity, sign)
     
     thread_id, assistant_id = check_file(thread_id, assistant_id, file_path, commodity, sign)
     
@@ -96,12 +91,13 @@ def create_deposit_types(file_path, url, commodity, sign, title):
     
     run = client.beta.threads.runs.create(
     thread_id=thread_id,
-        
     assistant_id=assistant_id,
     instructions=deposit_instructions.replace('__COMMODITY__', commodity).replace('__DEPOSIT_FORMAT__', deposit_format)
     )
 
-    ans = get_assistant_response(thread_id, run.id)
+    get_completed_assistant_run(thread_id, run.id)
+    ans = get_assistant_message(thread_id, run.id)
+    
     deposit_types_initial = extract_json_strings(ans, deposit_format)
     print(f" Observed Deposit Types in the Report: \n {deposit_types_initial} \n")
     
@@ -114,8 +110,8 @@ def create_deposit_types(file_path, url, commodity, sign, title):
         instructions=check_deposit_instructions.replace("__DEPOSIT_TYPE_LIST__", str(deposit_types_initial['deposit_type'])).replace("__DEPOSIT_ID__", str(deposit_id)).replace("__DEPOSIT_FORMAT_CORRECT__", deposit_format_correct).replace("__COMMODITY__", commodity)
         )
         
-        
-        ans = get_assistant_response(thread_id, run.id)
+        get_completed_assistant_run(thread_id, run.id)
+        ans = get_assistant_message(thread_id, run.id)
         deposit_types_output = extract_json_strings(ans, deposit_format_correct)
         
     else:
@@ -138,13 +134,10 @@ def create_deposit_types(file_path, url, commodity, sign, title):
     return deposit_types_json
 
 def create_mineral_inventory(document_dict, file_path, url, commodity, sign, title):
-    file = client.files.create(
-    file=open(f"{file_path}", "rb"),
-    purpose='assistants'
-    )
-    thread_id, assistant_id = create_assistant(file.id, commodity, sign)
+   
+    thread_id, assistant_id = create_assistant(file_path, commodity, sign)
     
-    thread_id, assistant_id = check_file(thread_id, assistant_id, file_path, commodity, sign)
+    thread_id, assistant_id = check_file(thread_id, assistant_id,file_path, commodity, sign)
     
     minmod_commodities = read_csv_to_dict("./codes/minmod_commodities.csv")
     commodities = {}
@@ -161,11 +154,13 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
     run = client.beta.threads.runs.create(
     thread_id=thread_id,
     assistant_id=assistant_id,
-    instructions=find_relevant_table_instructions
+    instructions=find_relevant_table_instructions.replace("__COMMODITY__", commodity)
     )
 
-    ans = get_assistant_response(thread_id, run.id)
-    table_format = "{'Tables': {'Table 1 Name': page_number,'Table 2 Name': page_number}"
+    get_completed_assistant_run(thread_id, run.id)
+    ans = get_assistant_message(thread_id, run.id)
+    
+    table_format = "{'Tables': ['Table 1 Name', 'Table 2 Name']}"
     relevant_tables = extract_json_strings(ans, table_format)
     
     
@@ -177,9 +172,11 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
         run = client.beta.threads.runs.create(
         thread_id=thread_id,
         assistant_id=assistant_id,
-        instructions=find_relevant_categories.replace("__RELEVANT__", str(relevant_tables['Tables'].keys()))
+        instructions=find_relevant_categories.replace("__RELEVANT__", str(relevant_tables['Tables']))
         )
-        ans = get_assistant_response(thread_id, run.id)
+        get_completed_assistant_run(thread_id, run.id)
+        ans = get_assistant_message(thread_id, run.id)
+        
         categories_format = "{'categories': [value1, value2, ...]}"
         relevant_cats = extract_json_strings(ans, categories_format)
         
@@ -203,7 +200,12 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
         doc_date = f"{doc_year}-{doc_month}"
     else: 
         doc_date = ''
+        
     inventory_format = create_inventory_format(commodities, commodity, document_dict, doc_date)
+    
+    if doc_date == '':
+        inventory_format.pop('date')
+    
     dictionary_format = create_mineral_extractions_format(commodity)
     
     for cat in categories_to_test:
@@ -215,18 +217,18 @@ def create_mineral_inventory(document_dict, file_path, url, commodity, sign, tit
             print(f" Extracted: {extraction} \n")
             
             if extraction is not None and 'extractions' in extraction:
-                cleaned = create_mineral_inventory_json(extraction, inventory_format, relevant_tables, correct_units)
+                
+                cleaned = create_mineral_inventory_json(extraction, inventory_format, correct_units, file_path)
                 mineral_inventory_json["mineral_inventory"] += cleaned['mineral_inventory']
             
         if not done_first:
             done_first = True
             
-    reference = {"reference": {
-            "document": document_dict}}
 
     if len(mineral_inventory_json["mineral_inventory"]) == 0:
-        mineral_inventory_json["mineral_inventory"].append({"commodity": "https://minmod.isi.edu/resource/" + commodities[commodity]})
-        mineral_inventory_json["mineral_inventory"].append(reference)
+        mineral_inventory_json["mineral_inventory"].append({"commodity": "https://minmod.isi.edu/resource/" + commodities[commodity], "reference": {
+            "document": document_dict}})
+        
         
     resp_code = delete_assistant(assistant_id)
 
@@ -253,7 +255,8 @@ def document_parallel_extract(
     element_sign = [element_sign]*len(file_names)
     output_path = [output_path]*len(file_names)
     print(f"Running the parallelization method with {len(file_names)} files \n")
-
+    delete_all_files()
+    
     with concurrent.futures.ThreadPoolExecutor() as executor:
 
         list(executor.map(run, pdf_paths, file_names, url_list, primary_commodity, element_sign, output_path))
@@ -261,7 +264,7 @@ def document_parallel_extract(
 
 
 def run(folder_path, file_name, url, commodity, sign, output_folder_path):
-  
+    t = time.time()
     file_path = folder_path + file_name
     title = get_zotero(url)
     
@@ -289,7 +292,7 @@ def run(folder_path, file_name, url, commodity, sign, output_folder_path):
     with open(output_file_path, "w") as json_file:
         json.dump(convert_int_or_float(mineral_site_json), json_file, indent=2)
         
-    print(f"Combined data written to {output_file_path} \n")
+    print(f"Combined data written to {output_file_path} Took {time.time()-t} s \n")
     
 
 
@@ -297,6 +300,8 @@ def run(folder_path, file_name, url, commodity, sign, output_folder_path):
     
 if __name__ == "__main__":
     print("Running the extraction pipeline for file: Provide the Folder path, File Name, Zotero URL \n\n")
+    delete_all_files()
+    
     
     parser = argparse.ArgumentParser(description="Named arguments.")
 
