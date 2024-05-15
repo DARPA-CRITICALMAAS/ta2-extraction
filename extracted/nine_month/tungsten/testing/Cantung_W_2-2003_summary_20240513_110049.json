@@ -1,0 +1,40 @@
+{
+  "MineralSite": [
+    {
+      "source_id": "https://w3id.org/usgs/z/4530692/9V6FSWT6",
+      "record_id": 1,
+      "name": "NI 43-101 Technical Report for the Cantung Project in North America dated February 2003",
+      "location_info": {
+        "location": "POINT(-128.283333 61.966667)",
+        "crs": "EPSG:4326",
+        "country": "Canada",
+        "state_or_province": "Northwest Territories"
+      },
+      "mineral_inventory": [
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated February 2003",
+              "doi": "https://w3id.org/usgs/z/4530692/9V6FSWT6",
+              "authors": [
+                "Dr. C. J. Hodgson"
+              ],
+              "year": 2003,
+              "month": 2,
+              "description": "This report provides a technical review and reserve estimate for the Cantung Mine as required by National Instrument 43-101."
+            }
+          }
+        }
+      ],
+      "deposit_type_candidate": [
+        {
+          "observed_name": "Disseminated scheelite deposits in calc-silicate skarn",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q447",
+          "source": "report",
+          "confidence": 1.0
+        }
+      ]
+    }
+  ]
+}

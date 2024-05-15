@@ -1,0 +1,189 @@
+{
+  "MineralSite": [
+    {
+      "source_id": "https://w3id.org/usgs/z/4530692/33R38T8G",
+      "record_id": 1,
+      "name": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated February 2008",
+      "location_info": {
+        "location": "POINT(-66.805 46.570)",
+        "crs": "EPSG:4326",
+        "country": "Canada",
+        "state_or_province": "New Brunswick"
+      },
+      "mineral_inventory": [
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/inferred"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 924000.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.125
+          },
+          "cutoff_grade": {
+            "grade_value": 0.125
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated February 2008",
+              "doi": "https://w3id.org/usgs/z/4530692/33R38T8G",
+              "authors": [
+                "James G. Burns",
+                "Neil Willoughby",
+                "Eugene J. Puritch",
+                "Wayne D. Ewert"
+              ],
+              "year": 2008,
+              "month": 2,
+              "description": "The report evaluates the mineral potential of the Burnt Hill tungsten-molybdenum property for Cadillac Ventures Inc."
+            },
+            "page_info": [
+              {}
+            ]
+          },
+          "date": "2008-2",
+          "zone": "open-pit, veins 0 to 8"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/inferred"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 1507000.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.162
+          },
+          "cutoff_grade": {
+            "grade_value": 0.162
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated February 2008",
+              "doi": "https://w3id.org/usgs/z/4530692/33R38T8G",
+              "authors": [
+                "James G. Burns",
+                "Neil Willoughby",
+                "Eugene J. Puritch",
+                "Wayne D. Ewert"
+              ],
+              "year": 2008,
+              "month": 2,
+              "description": "The report evaluates the mineral potential of the Burnt Hill tungsten-molybdenum property for Cadillac Ventures Inc."
+            },
+            "page_info": [
+              {}
+            ]
+          },
+          "date": "2008-2",
+          "zone": "underground, veins 0 to 7"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/indicated"
+          ],
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated February 2008",
+              "doi": "https://w3id.org/usgs/z/4530692/33R38T8G",
+              "authors": [
+                "James G. Burns",
+                "Neil Willoughby",
+                "Eugene J. Puritch",
+                "Wayne D. Ewert"
+              ],
+              "year": 2008,
+              "month": 2,
+              "description": "The report evaluates the mineral potential of the Burnt Hill tungsten-molybdenum property for Cadillac Ventures Inc."
+            },
+            "page_info": [
+              {}
+            ]
+          },
+          "date": "2008-2",
+          "zone": ""
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/measured"
+          ],
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated February 2008",
+              "doi": "https://w3id.org/usgs/z/4530692/33R38T8G",
+              "authors": [
+                "James G. Burns",
+                "Neil Willoughby",
+                "Eugene J. Puritch",
+                "Wayne D. Ewert"
+              ],
+              "year": 2008,
+              "month": 2,
+              "description": "The report evaluates the mineral potential of the Burnt Hill tungsten-molybdenum property for Cadillac Ventures Inc."
+            },
+            "page_info": [
+              {}
+            ]
+          },
+          "date": "2008-2",
+          "zone": ""
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/inferred"
+          ],
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated February 2008",
+              "doi": "https://w3id.org/usgs/z/4530692/33R38T8G",
+              "authors": [
+                "James G. Burns",
+                "Neil Willoughby",
+                "Eugene J. Puritch",
+                "Wayne D. Ewert"
+              ],
+              "year": 2008,
+              "month": 2,
+              "description": "The report evaluates the mineral potential of the Burnt Hill tungsten-molybdenum property for Cadillac Ventures Inc."
+            },
+            "page_info": [
+              {}
+            ]
+          },
+          "date": "2008-2",
+          "zone": ""
+        }
+      ],
+      "deposit_type_candidate": [
+        {
+          "observed_name": "Quartz vein",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q427",
+          "source": "report",
+          "confidence": 0.3333333333333333
+        },
+        {
+          "observed_name": "Stockwork deposit",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q427",
+          "source": "report",
+          "confidence": 0.3333333333333333
+        },
+        {
+          "observed_name": "Porphyry-type deposit",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q459",
+          "source": "report",
+          "confidence": 0.3333333333333333
+        }
+      ]
+    }
+  ]
+}

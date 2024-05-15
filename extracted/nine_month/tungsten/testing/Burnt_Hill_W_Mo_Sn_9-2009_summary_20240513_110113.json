@@ -1,0 +1,185 @@
+{
+  "MineralSite": [
+    {
+      "source_id": "https://w3id.org/usgs/z/4530692/H9RR2X54",
+      "record_id": 1,
+      "name": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated September 2009",
+      "location_info": {
+        "location": "POINT(-66.8 46.5666667)",
+        "crs": "EPSG:4326",
+        "country": "Canada",
+        "state_or_province": "New Brunswick"
+      },
+      "mineral_inventory": [
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/inferred"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 38000.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.413
+          },
+          "cutoff_grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.1
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated September 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/H9RR2X54",
+              "authors": [
+                "Eugene Puritch",
+                "Tracy Armstrong",
+                "Antoine Yassa",
+                "Kirstine Malloch"
+              ],
+              "year": 2009,
+              "month": 9,
+              "description": "This report provides an independent, NI 43-101 compliant technical report and resource estimate for the Burnt Hill deposit in York County, New Brunswick, Canada."
+            },
+            "page_info": [
+              {
+                "page": 8
+              }
+            ]
+          },
+          "date": "2009-9",
+          "zone": "open pit"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/inferred"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 552000.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.543
+          },
+          "cutoff_grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.25
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated September 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/H9RR2X54",
+              "authors": [
+                "Eugene Puritch",
+                "Tracy Armstrong",
+                "Antoine Yassa",
+                "Kirstine Malloch"
+              ],
+              "year": 2009,
+              "month": 9,
+              "description": "This report provides an independent, NI 43-101 compliant technical report and resource estimate for the Burnt Hill deposit in York County, New Brunswick, Canada."
+            },
+            "page_info": [
+              {
+                "page": 8
+              }
+            ]
+          },
+          "date": "2009-9",
+          "zone": "underground"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/indicated"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 245000.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.53
+          },
+          "cutoff_grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.1
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated September 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/H9RR2X54",
+              "authors": [
+                "Eugene Puritch",
+                "Tracy Armstrong",
+                "Antoine Yassa",
+                "Kirstine Malloch"
+              ],
+              "year": 2009,
+              "month": 9,
+              "description": "This report provides an independent, NI 43-101 compliant technical report and resource estimate for the Burnt Hill deposit in York County, New Brunswick, Canada."
+            },
+            "page_info": [
+              {
+                "page": 8
+              }
+            ]
+          },
+          "date": "2009-9",
+          "zone": "open pit"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/indicated"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 216000.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.44
+          },
+          "cutoff_grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.25
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated September 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/H9RR2X54",
+              "authors": [
+                "Eugene Puritch",
+                "Tracy Armstrong",
+                "Antoine Yassa",
+                "Kirstine Malloch"
+              ],
+              "year": 2009,
+              "month": 9,
+              "description": "This report provides an independent, NI 43-101 compliant technical report and resource estimate for the Burnt Hill deposit in York County, New Brunswick, Canada."
+            },
+            "page_info": [
+              {
+                "page": 8
+              }
+            ]
+          },
+          "date": "2009-9",
+          "zone": "underground"
+        }
+      ],
+      "deposit_type_candidate": [
+        {
+          "observed_name": "granite-related quartz vein, stockwork and greisen polymetallic mineralization",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q462",
+          "source": "report",
+          "confidence": 1.0
+        }
+      ]
+    }
+  ]
+}

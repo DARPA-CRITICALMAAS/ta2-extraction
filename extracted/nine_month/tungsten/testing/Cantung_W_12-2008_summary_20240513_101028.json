@@ -1,0 +1,78 @@
+{
+  "MineralSite": [
+    {
+      "source_id": "https://w3id.org/usgs/z/4530692/GW46XXPU",
+      "record_id": 1,
+      "name": "NI 43-101 Technical Report for the Cantung Project in North America dated 2008",
+      "location_info": {
+        "location": "POINT(-128.194 61.9795)",
+        "crs": "EPSG:4326",
+        "country": "Canada",
+        "state_or_province": "Northwest Territories"
+      },
+      "mineral_inventory": [
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated 2008",
+              "doi": "https://w3id.org/usgs/z/4530692/GW46XXPU",
+              "authors": [
+                "J. Britt Reid",
+                "Benjamin W. Mossman",
+                "Finley J. Bakker"
+              ],
+              "year": 2008,
+              "month": 12,
+              "description": "This report provides a comprehensive technical analysis and update on the reserves and resources of the Cantung Mine, focusing on its operations and geological settings."
+            }
+          }
+        }
+      ],
+      "deposit_type_candidate": [
+        {
+          "observed_name": "Skarn",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q447",
+          "source": "report",
+          "confidence": 0.14285714285714285
+        },
+        {
+          "observed_name": "Open Pit",
+          "normalized_uri": "",
+          "source": "report",
+          "confidence": 0.14285714285714285
+        },
+        {
+          "observed_name": "PUG",
+          "normalized_uri": "",
+          "source": "report",
+          "confidence": 0.14285714285714285
+        },
+        {
+          "observed_name": "Room and Pillar",
+          "normalized_uri": "",
+          "source": "report",
+          "confidence": 0.14285714285714285
+        },
+        {
+          "observed_name": "Cut and Fill",
+          "normalized_uri": "",
+          "source": "report",
+          "confidence": 0.14285714285714285
+        },
+        {
+          "observed_name": "Longhole Stoping",
+          "normalized_uri": "",
+          "source": "report",
+          "confidence": 0.14285714285714285
+        },
+        {
+          "observed_name": "Pillar-Remnant Ore Recovery",
+          "normalized_uri": "",
+          "source": "report",
+          "confidence": 0.14285714285714285
+        }
+      ]
+    }
+  ]
+}
