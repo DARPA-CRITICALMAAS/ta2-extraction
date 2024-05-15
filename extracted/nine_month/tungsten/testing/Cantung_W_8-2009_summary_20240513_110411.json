@@ -1,0 +1,823 @@
+{
+  "MineralSite": [
+    {
+      "source_id": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+      "record_id": 1,
+      "name": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+      "location_info": {
+        "location": "POINT(-125.75 61.0)",
+        "crs": "EPSG:4326",
+        "country": "Canada",
+        "state_or_province": "Northwest Territories"
+      },
+      "mineral_inventory": [
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/indicated"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 132597.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.2
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 16
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "west extension"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/indicated"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 379763.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.38
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 16
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "west extension below 3700el"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/indicated"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 24183.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.97
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {}
+            ]
+          },
+          "date": "2009-8",
+          "zone": "e-zone"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 95666.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.08
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 5
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "west extension"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 271451.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.07
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 5
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "west extension below 3700el"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 148187.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.11
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 5
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "west extension below 3570el"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 23967.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.09
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {}
+            ]
+          },
+          "date": "2009-8",
+          "zone": "e-zone"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 376554.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.06
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 5
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "main zone pillars"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 22750.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.87
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 5
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "central flats"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 45287.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.33
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 5
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "south flats"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 30390.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.17
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 5
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "pug"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 6447.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.73
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 5
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "stockpile"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 95666.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.08
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 17
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "west extension"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 271451.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.07
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 17
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "west extension below 3700el"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 148187.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.11
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 17
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "west extension below 3570el"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 23967.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.09
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {}
+            ]
+          },
+          "date": "2009-8",
+          "zone": "e-zone"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 376554.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.06
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 17
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "main zone pillars"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 22750.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.87
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 17
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "central flats"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 45287.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.33
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 17
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "south flats"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 30390.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 1.17
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 17
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "pug"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/probable"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 6447.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.73
+          },
+          "cutoff_grade": {
+            "grade_value": 0.8
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Cantung Project in North America dated August 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/4DX4GJDW",
+              "authors": [
+                "J. Britt Reid",
+                "Robert D. Baldwin",
+                "Finley J. Bakker"
+              ],
+              "year": 2009,
+              "month": 8,
+              "description": "This report details the mining operations, mineral reserves, and economic assessments related to the Cantung Mine, specifically focusing on updates around primary tungsten concentrate production."
+            },
+            "page_info": [
+              {
+                "page": 17
+              }
+            ]
+          },
+          "date": "2009-8",
+          "zone": "stockpile"
+        }
+      ],
+      "deposit_type_candidate": [
+        {
+          "observed_name": "Open Pit",
+          "normalized_uri": "",
+          "source": "report",
+          "confidence": 0.5
+        },
+        {
+          "observed_name": "E Zone",
+          "normalized_uri": "",
+          "source": "report",
+          "confidence": 0.5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "MineralSite": [
+    {
+      "source_id": "https://w3id.org/usgs/z/4530692/W2N46PIS",
+      "record_id": 1,
+      "name": "NI 43-101 Technical Report for the Davis Township Project in North America dated April 2000",
+      "location_info": {
+        "location": "MULTIPOINT(-80.5 46.6667,-80.4167 46.6667)",
+        "crs": "EPSG:4326",
+        "country": "Canada",
+        "state_or_province": "Ontario"
+      },
+      "mineral_inventory": [
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q589",
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Davis Township Project in North America dated April 2000",
+              "doi": "https://w3id.org/usgs/z/4530692/W2N46PIS",
+              "authors": [
+                "J.M. Siriunas"
+              ],
+              "year": 2000,
+              "month": 4,
+              "description": "This report by Minera Capital Corporation details geological and exploration activities at Davis Township property, emphasizing low-grade copper and nickel mineralization with potential for platinum group metals and gold."
+            }
+          }
+        }
+      ],
+      "deposit_type_candidate": []
+    }
+  ]
+}

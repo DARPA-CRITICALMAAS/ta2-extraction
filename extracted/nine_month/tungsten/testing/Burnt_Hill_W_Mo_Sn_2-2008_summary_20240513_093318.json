@@ -1,0 +1,102 @@
+{
+  "MineralSite": [
+    {
+      "source_id": "https://w3id.org/usgs/z/4530692/33R38T8G",
+      "record_id": 1,
+      "name": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated February 2008",
+      "location_info": {
+        "location": "POINT(-66.805 46.570)",
+        "crs": "EPSG:4326",
+        "country": "Canada",
+        "state_or_province": "New Brunswick"
+      },
+      "mineral_inventory": [
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/inferred"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 2560000.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.147
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated February 2008",
+              "doi": "https://w3id.org/usgs/z/4530692/33R38T8G",
+              "authors": [
+                "James G. Burns",
+                "Neil Willoughby",
+                "Eugene J. Puritch",
+                "Wayne D. Ewert"
+              ],
+              "year": 2008,
+              "month": 2,
+              "description": "This technical report dated February 15, 2008, evaluates the mineral potential of the Burnt Hill tungsten-molybdenum property for Cadillac Ventures Inc. according to NI 43-101 standards."
+            },
+            "page_info": [
+              {}
+            ]
+          },
+          "date": "2008-2",
+          "zone": "burnt hill"
+        },
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "category": [
+            "https://minmod.isi.edu/resource/indicated"
+          ],
+          "ore": {
+            "ore_unit": "https://minmod.isi.edu/resource/Q200",
+            "ore_value": 1800000.0
+          },
+          "grade": {
+            "grade_unit": "https://minmod.isi.edu/resource/Q201",
+            "grade_value": 0.125
+          },
+          "cutoff_grade": {
+            "grade_value": 0.05
+          },
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated February 2008",
+              "doi": "https://w3id.org/usgs/z/4530692/33R38T8G",
+              "authors": [
+                "James G. Burns",
+                "Neil Willoughby",
+                "Eugene J. Puritch",
+                "Wayne D. Ewert"
+              ],
+              "year": 2008,
+              "month": 2,
+              "description": "This technical report dated February 15, 2008, evaluates the mineral potential of the Burnt Hill tungsten-molybdenum property for Cadillac Ventures Inc. according to NI 43-101 standards."
+            },
+            "page_info": [
+              {}
+            ]
+          },
+          "date": "2008-2",
+          "zone": "burnt hill"
+        }
+      ],
+      "deposit_type_candidate": [
+        {
+          "observed_name": "Quartz, Vein & Stockwork Deposits",
+          "normalized_uri": "",
+          "source": "report",
+          "confidence": 0.5
+        },
+        {
+          "observed_name": "Porphyry-type Deposits",
+          "normalized_uri": "",
+          "source": "report",
+          "confidence": 0.5
+        }
+      ]
+    }
+  ]
+}

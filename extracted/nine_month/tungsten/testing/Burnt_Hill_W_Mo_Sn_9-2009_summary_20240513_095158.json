@@ -1,0 +1,55 @@
+{
+  "MineralSite": [
+    {
+      "source_id": "https://w3id.org/usgs/z/4530692/H9RR2X54",
+      "record_id": 1,
+      "name": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated September 2009",
+      "location_info": {
+        "location": "POINT(-66.8 46.56666666666667)",
+        "crs": "EPSG:4326",
+        "country": "Canada",
+        "state_or_province": "New Brunswick"
+      },
+      "mineral_inventory": [
+        {
+          "commodity": "https://minmod.isi.edu/resource/Q615",
+          "reference": {
+            "document": {
+              "title": "NI 43-101 Technical Report for the Burnt Hill Project in North America dated September 2009",
+              "doi": "https://w3id.org/usgs/z/4530692/H9RR2X54",
+              "authors": [
+                "Eugene Puritch",
+                "Tracy Armstrong",
+                "Antoine Yassa",
+                "Kirstine Malloch"
+              ],
+              "year": 2009,
+              "month": 9,
+              "description": "This report provides a comprehensive resource estimate and technical analysis for the Burnt Hill mining property, adhering to NI 43-101 standards."
+            }
+          }
+        }
+      ],
+      "deposit_type_candidate": [
+        {
+          "observed_name": "granite-related quartz vein",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q427",
+          "source": "report",
+          "confidence": 0.3333333333333333
+        },
+        {
+          "observed_name": "stockwork",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q427",
+          "source": "report",
+          "confidence": 0.3333333333333333
+        },
+        {
+          "observed_name": "greisen polymetallic mineralization",
+          "normalized_uri": "https://minmod.isi.edu/resource/Q427",
+          "source": "report",
+          "confidence": 0.3333333333333333
+        }
+      ]
+    }
+  ]
+}
