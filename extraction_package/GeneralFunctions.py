@@ -61,13 +61,13 @@ def extract_json_strings(input_string, correct_format, remove_comments = False):
                 count -= 1
             if count == 0:
                 json_str = input_string[start:i+1]
-                # print(json_str)
+                print(json_str)
                 try:
                     return json.loads(json_str)
                 except json.JSONDecodeError as e:
                     # here is the error, lets fix this
-                    
-                    return assistant.fix_format(json_str)       
+                    logger.error(f"JSON error for checking the format: {e}")
+                    return assistant.fix_formats(json_str, correct_format)       
     else:
         return None
 
@@ -232,11 +232,17 @@ def check_instance(current_extraction, key, instance):
     return current_extraction
 
 def get_zotero(url):
+   
     zot = zotero.Zotero(LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY)
     file_list = url.split("/")
     file_key = file_list[-1]
-    file_item = zot.item(file_key)
-    title = file_item['data']['title']
+    try:
+        file_item = zot.item(file_key)
+        title = file_item['data']['title']
+    except Exception:
+        logger.error(f'Error connectiong to Zotero. Missing Title')
+        title = ""
+    
     print(f"Zoltero Information: file_key {file_key} Title: {title} \n")
     return title
 

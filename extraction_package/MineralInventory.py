@@ -15,10 +15,7 @@ logger = logging.getLogger("Inventory")
 url_str = "https://minmod.isi.edu/resource/"
 
 
-def create_mineral_inventory(thread_id, assistant_id, file_path, document_dict, url, commodity, sign, title):
-   
-    # thread_id, assistant_id = create_assistant(file_path, commodity, sign)
-    # thread_id, assistant_id = check_file(thread_id, assistant_id,file_path, commodity, sign)
+def create_mineral_inventory(thread_id, assistant_id, file_path, document_dict, commodity, sign):
     
     commodities, correct_units = create_minmod_dict()
     
@@ -120,7 +117,6 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, unit_dict, 
                     if found_value is not None:
                         current_inventory_format['cutoff_grade']['grade_unit'] = url_str + unit_dict[found_value]
                         
-                logger.debug(f"Error lets see current_inventory_format: {current_inventory_format} \n")
                 current_inventory_format['cutoff_grade'] = general.check_instance(current_extraction=current_inventory_format['cutoff_grade'], key = 'grade_unit', instance=str)
                      
             elif 'tonnage' in key.lower() and 'unit' not in key.lower():
@@ -211,30 +207,33 @@ def create_minmod_dict():
 
 def check_empty_headers_add_contained_metal(extraction):
     keys_to_check = ["ore", "grade", "cutoff_grade"]
-    logger.debug(extraction)
+    # logger.debug(f"Starting extraction for check empty & add {extraction}")
     
     for key in keys_to_check:
         if not extraction[key]:
             extraction.pop(key)
             logger.debug("Currently this value is empty")
     
-    if "ore" in extraction and "ore_value" in extraction["ore"]:
+    if extraction.get("ore", None).get("ore_value", None):
         ore_value = extraction["ore"]["ore_value"]
     else: ore_value = None
     
-    if "grade" in extraction and "grade_value" in extraction["ore"]:
+    if extraction.get("grade", None).get("grade_value", None):
         grade_value = extraction["grade"]["grade_value"]
     else: grade_value = None 
     
     if  ore_value and grade_value:
+        # logger.debug('We have ore_value and grade_value for contained_metal')
         try:
             extraction["contained_metal"] = round(ore_value*(grade_value/100), 4)
         except ValueError:
             logger.error(f"Get ValueError in check empty headers for ore_value: {ore_value} or grade_value {grade_value}")
             extraction.pop("contained_metal")
     else:
+        # logger.debug("Didn't get ore_value")
         extraction.pop("contained_metal")
-
+        
+    # logger.debug(f"Here is the extraction post contained metal: {extraction}")
     return extraction
 
 

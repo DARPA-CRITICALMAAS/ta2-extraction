@@ -13,10 +13,7 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl'
 logger = logging.getLogger("Deposit")
 
 def create_deposit_types(thread_id, assistant_id, commodity):
-  
-    # thread_id, assistant_id = assistant.create_assistant(file_path, commodity, sign)
-    # thread_id, assistant_id = assistant.check_file(thread_id, assistant_id, file_path, commodity, sign)
-    
+    logger.info(f"Getting started on deposit type")
 
     minmod_deposit_types = general.read_csv_to_dict("./codes/minmod_deposit_types.csv")
     deposit_id = {}
@@ -25,6 +22,7 @@ def create_deposit_types(thread_id, assistant_id, commodity):
         
     
     deposit_format = schemas.create_deposit_format()
+    
     
     ans = assistant.get_assistant_message(thread_id, assistant_id, 
     prompts.deposit_instructions.replace('__COMMODITY__', commodity).replace('__DEPOSIT_FORMAT__', deposit_format))

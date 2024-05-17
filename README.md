@@ -26,6 +26,8 @@ extraction_package/ \
 1. Add your openAI API key in the settings.py file under API_KEY variable
 2. In the terminal at the root directory: `python -m extraction_package.extraction_pipeline --pdf_p "/folder/path" --pdf_name  "filename.pdf" --primary_commodity "commodity" --element_sign "commodity_sign" --url "zoltero url" --output_path "/folder/path"`
 
+python -m extraction_package.ExtractionPipeline --pdf_p "/Users/adrisheu/git_folders/ta2-extraction/reports/tungsten/completed/" --pdf_name "Burnt Hill W Mo Sn 8-2013.pdf" --primary_commodity "tungsten" --element_sign "W" --url "https://w3id.org/usgs/z/4530692/FAKE" --output_path "./"
+
 
 
 ## How to run multiple files using the parallelization
