@@ -121,6 +121,9 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, u
     ## type dict if mineral inventory not made, list when it is has correct mineral inventory
     if isinstance(inner_list, dict):
         logger.debug("No commodity in mineral inventory \n")
+        
+        ## can do something here to check the multiple commodities. Even a for loop works for now. Need To update
+        ## by adding each value. Pass through after the first pass within the larger meta data.
         thread_id = assistant.create_new_thread(message_file_id=message_file_id, 
                         content=prompts.content.replace("__FOCUS__", "the mineral inventory"))
 
@@ -139,6 +142,8 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, u
         logger.debug("NO deposit Type so need to add")
         thread_id = assistant.create_new_thread(message_file_id=message_file_id, 
                         content=prompts.content.replace("__FOCUS__", "mineral deposit types"))
+        
+        ## Need to check if we need to add more versions of this.
         deposit_types_json = deposits.create_deposit_types(thread_id, assistant_id,  commodity.lower())
         logger.debug(f"Output deposit types: {deposit_types_json} \n")
         inner_data.append(deposit_types_json)

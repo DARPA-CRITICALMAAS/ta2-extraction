@@ -7,6 +7,7 @@ import extraction_package.GeneralFunctions as general
 import extraction_package.DepositTypes as deposits
 import extraction_package.SchemaFormats as schemas
 import extraction_package.Prompts as prompts
+from settings import VERSION_NUMBER, SYSTEM_SOURCE
 # Ignore the specific UserWarning from openpyxl
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')
 
@@ -62,7 +63,7 @@ def format_deposit_candidates(deposit_list):
         inner_dict = {}
         inner_dict["observed_name"] = dep
         inner_dict["normalized_uri"] = deposit_list['deposit_type'][dep]
-        inner_dict["source"] = "report" 
+        inner_dict["source"] =  SYSTEM_SOURCE + " "+ VERSION_NUMBER
         inner_dict["confidence"] = 1/len(deposit_list['deposit_type']) 
         deposit_type_candidate['deposit_type_candidate'].append(inner_dict)
         

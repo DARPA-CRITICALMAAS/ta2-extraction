@@ -2,11 +2,12 @@ import warnings
 import requests
 import copy
 import logging
-from settings import CATEGORY_VALUES
+from settings import CATEGORY_VALUES, SYSTEM_SOURCE, VERSION_NUMBER
 import extraction_package.Prompts as prompts
 import extraction_package.SchemaFormats as schemas
 import extraction_package.AssistantFunctions as assistant
 import extraction_package.GeneralFunctions as general
+
 
 # Ignore the specific UserWarning from openpyxl
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')
@@ -85,18 +86,17 @@ def generate_categories(thread_id, assistant_id, relevant_tables):
 
 def create_mineral_inventory_json(extraction_dict, inventory_format, unit_dict, file_path):
     output_str = {"mineral_inventory":[]}
-    ## add conversion to tonnes
     
     for inner_dict in extraction_dict['extractions']:
         current_inventory_format = copy.deepcopy(inventory_format)
     
         for key, value in inner_dict.items():
-            logger.info(f"Checking the current_inventory_format:{key}: {value} \n")
+            logger.info(f"Checking the current_inventory_format: {key}: {value} \n")
             
             if isinstance(value, int) or isinstance(value, float):
                 value = str(value)
             
-            elif 'category' in key:
+            if 'category' in key:
                 current_inventory_format = check_category(current_inventory_format, url_str, value)
             
             elif 'zone' in key:
@@ -107,28 +107,19 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, unit_dict, 
                 current_inventory_format['cutoff_grade'] = general.check_instance(current_extraction=current_inventory_format['cutoff_grade'], key = 'grade_value', instance=float)
                                        
             elif 'cut' in key.lower() and 'unit' in key.lower():
-                if value == '%':
-                    current_inventory_format['cutoff_grade']['grade_unit'] = url_str + unit_dict['percent']
-                
-                elif value:
-                    grade_unit_list = list(unit_dict.keys())
-                    found_value = general.find_best_match(value, grade_unit_list[5:])
-       
-                    if found_value is not None:
-                        current_inventory_format['cutoff_grade']['grade_unit'] = url_str + unit_dict[found_value]
-                        
-                current_inventory_format['cutoff_grade'] = general.check_instance(current_extraction=current_inventory_format['cutoff_grade'], key = 'grade_unit', instance=str)
-                     
+                current_inventory_format = check_cutoff_grade_unit(current_inventory_format, value, unit_dict)
+                # current_inventory_format['cutoff_grade'] = general.check_instance(current_extraction=current_inventory_format['cutoff_grade'], key = 'grade_unit', instance=str)
+               
+             
             elif 'tonnage' in key.lower() and 'unit' not in key.lower():
                 value = value.replace(",", "")
                 current_inventory_format['ore']['ore_value'] = value.lower()
                 current_inventory_format['ore'] = general.check_instance(current_extraction=current_inventory_format['ore'], key = 'ore_value', instance=float)
-                
+               
                
             elif 'tonnage' in key.lower() and 'unit' in key.lower():
-                current_inventory_format = check_tonnage(current_inventory_format, value, unit_dict)
-                current_inventory_format['ore'] = general.check_instance(current_extraction=current_inventory_format['ore'], key = 'ore_unit', instance=str)
-                
+                ## fix here to update to new form
+                current_inventory_format = check_tonnage_unit(current_inventory_format, value, unit_dict)
                 
             elif 'grade' in key.lower():
                 current_inventory_format['grade']['grade_unit'] = url_str + unit_dict['percent']
@@ -153,17 +144,41 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, unit_dict, 
         
     return output_str
 
+def check_cutoff_grade_unit(curr_json, value, unit_dict):
+    ## need to change the method of doing this as well for doing the unit to follow new schema
+    curr_json['cutoff_grade']['grade_unit'] = {}
+    curr_json['cutoff_grade']['grade_unit']['normalized_uri'] = ""
+    if value == '%':
+        curr_json['cutoff_grade']['grade_unit']['normalized_uri'] = url_str + unit_dict['percent']
+    
+    elif value:
+        grade_unit_list = list(unit_dict.keys())
+        found_value = general.find_best_match(value, grade_unit_list[5:])
 
-def check_tonnage(curr_json, value, unit_dict):
+        if found_value is not None:
+            # can check of the new new format
+            curr_json['cutoff_grade']['grade_unit']['normalized_uri'] = url_str + unit_dict[found_value]
+            
+    curr_json['cutoff_grade']['grade_unit']['extracted_value'] = value
+    curr_json['cutoff_grade']['grade_unit']['confidence'] = 1 
+    curr_json['cutoff_grade']['grade_unit']['source'] = SYSTEM_SOURCE + " " + VERSION_NUMBER         
+    return curr_json
+
+def check_tonnage_unit(curr_json, value, unit_dict):
     kt_values = ["k","kt", "000s tonnes", "thousand tonnes", "thousands", "000s" , "000 tonnes", "ktonnes"]
     grade_unit_list = list(unit_dict.keys())
+    curr_json['ore']['ore_unit'] = {}
+    curr_json['ore']['ore_unit']['normalized_uri'] = ""
+    
     
     if value.lower() in kt_values:
             if curr_json['ore']['ore_value']: 
                 try:
                     float_val = float(curr_json['ore']['ore_value']) * 1000
                     curr_json['ore']['ore_value'] =  float_val
-                    curr_json['ore']['ore_unit'] = url_str + unit_dict["tonnes"]
+                    curr_json['ore']['ore_unit']['normalized_uri'] = url_str + unit_dict["tonnes"]
+                    
+                    
                 except ValueError:
                     logger.error(f"Got Type Error for : {curr_json['ore']['ore_value']}")
                     
@@ -171,8 +186,13 @@ def check_tonnage(curr_json, value, unit_dict):
         found_value = general.find_best_match(value, grade_unit_list)
         if found_value is not None:
             logger.debug(f"Found match value for ore_unit {found_value}")
-            curr_json['ore']['ore_unit'] = url_str + unit_dict[found_value.lower()]
+            curr_json['ore']['ore_unit']['normalized_uri'] = url_str + unit_dict[found_value.lower()]
     
+    
+    curr_json['ore']['ore_unit']['extracted_value'] = value
+    curr_json['ore']['ore_unit']['confidence'] = 1 
+    curr_json['ore']['ore_unit']['source'] = SYSTEM_SOURCE + " " + VERSION_NUMBER  
+            
     return curr_json
 
 def check_category(current_json, url_str, value):

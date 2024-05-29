@@ -1,6 +1,7 @@
 import json
 import warnings
 import logging
+import re
 import extraction_package.Prompts as prompts
 import extraction_package.SchemaFormats as schemas
 import extraction_package.AssistantFunctions as assistant
@@ -95,13 +96,23 @@ def clean_mineral_site_json(json_str, title, url):
                     json_str[key][new_key] = "EPSG:4326"
                     
                 if new_key == 'location':
-                    if isinstance(new_value, str) and (new_value.strip() == "" or new_value.strip() == "POINT()"):
+                    if isinstance(new_value, str) and (new_value.strip() == "" or new_value.strip() == "POINT()") or not is_valid_point(new_value):
                         key_to_remove.append((key, new_key))  # Append a tuple (key, new_key) for inner keys
                         key_to_remove.append((key, 'crs'))
+                        
+                    
 
     json_str = remove_keys_MineralSite(json_check=json_str, keys_list = key_to_remove)
 
     return json_str
+
+def is_valid_point(s):
+    ## used to check if there is anything besides numbers between the ()
+    pattern = r"\w+\((-?\d+(\.\d+)?\s-?\d+(\.\d+)?)\)"
+    match = re.search(pattern, s)
+    
+    # Return True if a match is found, False otherwise
+    return match is not None
 
 def remove_keys_MineralSite(json_check, keys_list):
     ## Removing any keys we don't need
