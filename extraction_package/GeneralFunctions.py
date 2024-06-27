@@ -5,8 +5,9 @@ import csv
 import PyPDF2
 from pyzotero import zotero
 import os
+import requests
 from fuzzywuzzy import process
-from settings import LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY 
+from settings import LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY, SYSTEM_SOURCE, VERSION_NUMBER, CDR_BEARER 
 from extraction_package.Prompts import *
 import extraction_package.AssistantFunctions as assistant
 import logging
@@ -17,6 +18,33 @@ logger = logging.getLogger("GeneralFunctions")
 # Ignore the specific UserWarning from openpyxl
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')
 
+
+def download_document(doc_id):
+    url = f'https://api.cdr.land/v1/docs/document/{doc_id}'
+    headers = {
+        'accept': 'application/json',
+        'Authorization': CDR_BEARER
+    }
+
+    url_meta = f'https://api.cdr.land/v1/docs/document/meta/{doc_id}'
+
+    # Send the initial GET request
+    response = requests.get(url_meta, headers=headers)
+
+    if response.status_code == 200:
+        # Save the response content to a file
+        resp_json = json.loads(response.content)
+        title = resp_json['title']
+        response = requests.get(url, headers=headers)
+
+        if response.status_code == 200:    
+            with open(f'./{title}.pdf', 'wb') as file:
+                file.write(response.content)
+        print(f"Document downloaded and saved as '{title}.pdf'")
+    else:
+        print(f"Failed to download document. Status code: {response.status_code}")
+        print(f"Response content: {response.content}")
+
 def append_section_to_JSON(file_path, header_name, whole_section):
     logger.debug(f"Writing {header_name}")
     
@@ -24,10 +52,6 @@ def append_section_to_JSON(file_path, header_name, whole_section):
     logger.debug(f"Json Schema before write: {json_schema}")
     with open(file_path, "w") as json_file:
         json.dump(convert_int_or_float(json_schema), json_file, indent=2)
-    
-
-        
-    
 
     # Writing to a file using json.dump with custom serialization function
     
@@ -213,7 +237,10 @@ def check_instance(current_extraction, key, instance):
         elif isinstance(curr_value, instance):
             # if it is the correct instance type
             logger.debug(f"MATCH: curr_value {curr_value} instance {instance} \n")
-            output_value = current_extraction[key]
+            if instance == list and len(current_extraction[key]) == 0:
+                output_value = None
+            else:
+                output_value = current_extraction[key]
         else:
             try:
             # testing the current value as the instance
@@ -245,6 +272,19 @@ def get_zotero(url):
     
     print(f"Zoltero Information: file_key {file_key} Title: {title} \n")
     return title
+
+
+def add_extraction_dict(value, inner_json):
+    # logger.info(f"In the inner dict function: {inner_json}")
+    if not inner_json['normalized_uri']:
+        inner_json.pop('normalized_uri')
+        
+        
+    inner_json['extracted_value'] = value
+    inner_json['confidence'] = 1 
+    inner_json['source'] = SYSTEM_SOURCE + " " + VERSION_NUMBER  
+    
+    return inner_json
 
 
 def convert_int_or_float(obj):

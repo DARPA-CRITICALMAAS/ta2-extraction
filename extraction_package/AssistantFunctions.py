@@ -15,14 +15,15 @@ client = openai.OpenAI(api_key = API_KEY)
     
 logger = logging.getLogger("Assistant") 
 
-def create_assistant(file_path, commodity, sign):
+def create_assistant(file_path):
     assistant = client.beta.assistants.create(
         name="Get Extraction",
-        instructions= instructions.replace("__COMMODITY__", commodity).replace("__SIGN__", sign),
+        instructions= instructions,
         model=MODEL_TYPE,  ## try new model
         tools=[{"type": "file_search"}],
     )
 
+    logger.info(f"Created the assistant with Model: {MODEL_TYPE}")
     message_file = client.files.create(
     file=open(file_path, "rb"), purpose="assistants"
     )
@@ -68,12 +69,7 @@ def fix_formats(json_str, correct_format):
     ) 
     return json.loads(completion.choices[0].message.content) 
     
-def check_file(thread_id, assistant_id, message_file_id, file_path, commodity, sign):
-    file_instructions = """If the file was correctly uploaded and can be read return YES otherwise return NO. 
-                        Only return the Yes or No answer.
-                        """
-
-   
+def check_file(thread_id, assistant_id, message_file_id, file_path):
     ans = get_assistant_message(thread_id, assistant_id, file_instructions)
     
     logger.info(f"Response: {ans}")
@@ -84,9 +80,9 @@ def check_file(thread_id, assistant_id, message_file_id, file_path, commodity, s
         if response_code == 200:
             logger.debug(f"Deleted assistant {assistant_id}")
         
-        new_thread_id, new_assistant_id, new_message_file_id =  create_assistant(file_path, commodity, sign)
+        new_thread_id, new_assistant_id, new_message_file_id =  create_assistant(file_path)
         logger.debug("Created new_thread")
-        return check_file(new_thread_id, new_assistant_id, new_message_file_id, file_path, commodity, sign)
+        return check_file(new_thread_id, new_assistant_id, new_message_file_id, file_path)
     else:
         logger.debug("File was correctly uploaded \n")
         return thread_id, assistant_id, message_file_id

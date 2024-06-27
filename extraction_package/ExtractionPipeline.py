@@ -12,6 +12,7 @@ import extraction_package.Prompts as prompts
 import extraction_package.GeneralFunctions as general
 import extraction_package.DepositTypes as deposits
 import extraction_package.MineralInventory as inventory
+import shutil
 
 class FilesNotCompleted(Exception):
     pass
@@ -32,53 +33,54 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl'
 def document_parallel_extract(
     pdf_paths,
     file_names,
-    url_list,
-    primary_commodity,
-    element_sign,
+    commodity_list,
     output_path
     ):
 
     pdf_paths = [pdf_paths]*len(file_names)
-    primary_commodity = [primary_commodity]*len(file_names)
-    element_sign = [element_sign]*len(file_names)
     output_path = [output_path]*len(file_names)
     
     logger.debug(f"Running the parallelization method with {len(file_names)} files \n")
     assistant.delete_all_files()
     
     with concurrent.futures.ThreadPoolExecutor() as executor:
-        list(executor.map(run, pdf_paths, file_names, url_list, primary_commodity, element_sign, output_path))
+        list(executor.map(run, pdf_paths, file_names, commodity_list, output_path))
 
 
 
 ## new structure where we try the run again while we don't get errors
-def run(folder_path, file_name, url, commodity, sign, output_folder_path):
+def run(folder_path, file_name, commodity_list, output_folder_path):
     ## this is where we keep running if we get any errors
     
     t = time.time()
     
     file_path = folder_path + file_name
     
-    thread_id, assistant_id, message_file_id = assistant.create_assistant(file_path, commodity, sign)
-    thread_id, assistant_id, message_file_id = assistant.check_file(thread_id, assistant_id, message_file_id, file_path, commodity, sign)
+    thread_id, assistant_id, message_file_id = assistant.create_assistant(file_path)
+    thread_id, assistant_id, message_file_id = assistant.check_file(thread_id, assistant_id, message_file_id, file_path)
     try:
-        pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, url, commodity, sign, output_folder_path)
-        assistant.delete_assistant(assistant_id=assistant_id)
+        pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, commodity_list, output_folder_path)
+        assistant.delete_assistant(assistant_id=assistant_id) 
+        logger.info("Moved file to completed folder \n")
     except Exception as e:
-        logger.error(f"{file_name} : Pipeline Error: {e}")
+        logger.error(f"{file_name} : Pipeline Error: {e} \n")
         assistant.delete_assistant(assistant_id=assistant_id)
-        logger.error(f"Rerunning: {file_name}")
-        return run(folder_path, file_name, url, commodity, sign, output_folder_path)
+        logger.error(f"Rerunning: {file_name} \n")
+        
+        ## here need to move file to partial complete vs full complete
+        
+        # return run(folder_path, file_name, commodity, sign, output_folder_path)
     
     logger.info(f"Entire run takes: {time.time()-t}")
     
     
-def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, url, commodity, sign, output_folder_path ):
+def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, commodity_list, output_folder_path ):
     file_path = folder_path + file_name
     site_completed, inventory_completed, deposit_completed = False, False, False
-    title = general.get_zotero(url)
+    record_id, title = file_name.split('_', 1)
     
-    logger.info(f"Working on file: {file_name} title: {title} url: {url} commodity of interest is {commodity} \n")
+    
+    logger.info(f"Working on file: {file_name} title: {title} commodities to extract {commodity_list} \n")
     new_name = file_name[:-4].replace(" ", "_")
     
     current_datetime_str = datetime.now().strftime("%Y%m%d")
@@ -93,7 +95,7 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, u
    # do a check that its there
     if not inner_data:
         logger.debug("No Mineral_site or document_dict \n")
-        document_dict, mineral_site_json = site.create_document_reference(thread_id, assistant_id, url, title)
+        document_dict, mineral_site_json = site.create_document_reference(thread_id, assistant_id, record_id, title)
         logger.debug(f"Document dict Output: {document_dict} \n Mineral Site Output: {mineral_site_json} \n")
         
         inner_data.append(mineral_site_json)
@@ -122,12 +124,14 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, u
     if isinstance(inner_list, dict):
         logger.debug("No commodity in mineral inventory \n")
         
+        ## here loop through: ask again or just get the important table first then loop through?
+        
         ## can do something here to check the multiple commodities. Even a for loop works for now. Need To update
         ## by adding each value. Pass through after the first pass within the larger meta data.
         thread_id = assistant.create_new_thread(message_file_id=message_file_id, 
                         content=prompts.content.replace("__FOCUS__", "the mineral inventory"))
 
-        mineral_inventory_json = inventory.create_mineral_inventory(thread_id, assistant_id,file_path,document_dict, commodity.lower(), sign)
+        mineral_inventory_json = inventory.create_mineral_inventory(thread_id, assistant_id,file_path,document_dict, commodity_list)
         
         if inner_data[1].get("mineral_inventory", None):
             inner_data.pop(1)
@@ -144,7 +148,7 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, u
                         content=prompts.content.replace("__FOCUS__", "mineral deposit types"))
         
         ## Need to check if we need to add more versions of this.
-        deposit_types_json = deposits.create_deposit_types(thread_id, assistant_id,  commodity.lower())
+        deposit_types_json = deposits.create_deposit_types(thread_id, assistant_id)
         logger.debug(f"Output deposit types: {deposit_types_json} \n")
         inner_data.append(deposit_types_json)
         general.append_section_to_JSON(output_file_path, "Deposit types", inner_data)
@@ -155,6 +159,7 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, u
     
     if site_completed and inventory_completed and deposit_completed:
         logger.debug(f"ALL Sections data written to {output_file_path} \n")
+        shutil.move(output_file_path, f'{output_folder_path}completed/{new_name}_summary_{current_datetime_str}.json' )
     else: 
         raise FilesNotCompleted()
         

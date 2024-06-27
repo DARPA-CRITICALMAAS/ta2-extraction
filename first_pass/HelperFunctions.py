@@ -1,18 +1,51 @@
 import os
 import openai
 import csv
+import requests
+import json
+import logging
 from first_pass import prompts
-from extraction_package import AssistantFunctions, GeneralFunctions
-from settings import API_KEY, LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY 
+from extraction_package import AssistantFunctions
+from settings import API_KEY, CDR_BEARER, MODEL_TYPE 
+logger = logging.getLogger("Helper") 
 
 client = openai.OpenAI(api_key = API_KEY)
+
+def download_document(doc_id, download_dir):
+    url = f'https://api.cdr.land/v1/docs/document/{doc_id}'
+    headers = {
+        'accept': 'application/json',
+        'Authorization': CDR_BEARER
+    }
+
+    url_meta = f'https://api.cdr.land/v1/docs/document/meta/{doc_id}'
+
+    # Send the initial GET request
+    response = requests.get(url_meta, headers=headers)
+    if response.status_code == 200:
+        # Save the response content to a file
+        resp_json = json.loads(response.content)
+        title = resp_json['title']
+        response = requests.get(url, headers=headers)
+
+        if response.status_code == 200:    
+            with open(f'{download_dir}{doc_id}_{title}.pdf', 'wb') as file:
+                file.write(response.content)
+        logger.info(f"Document downloaded and saved as '{title}.pdf'")
+    else:
+        logger.info(f"Failed to download document. Status code: {response.status_code}")
+        logger.info(f"Response content: {response.content}")
+        
+def delete_document(file_name):
+    pass
+        
 
 def create_assistant_commodities(message_file_id):
     assistant = client.beta.assistants.create(
         name="Get Extraction",
         instructions= prompts.first_pass_instructions ,
         tools=[{"type": "file_search"}],
-        model="gpt-4-1106-preview",
+        model=MODEL_TYPE,
   
     )
     
@@ -26,7 +59,7 @@ def create_assistant_commodities(message_file_id):
         
     )
     
-    # print(f"Created an Assistant")
+    # logger.info(f"Created an Assistant")
     return thread.id, assistant.id
 
 
@@ -34,12 +67,12 @@ def check_file_commodities(thread_id, assistant_id, file_path):
    
     ans = AssistantFunctions.get_assistant_message(thread_id, assistant_id, prompts.file_instructions)
     
-    print(f"Response: {ans}")
+    logger.info(f"Response: {ans}")
     if ans.lower() == "no":
-        print("We need to reload file.")
+        logger.info("We need to reload file.")
         response_code = AssistantFunctions.delete_assistant(assistant_id)
         if response_code == 200:
-            print(f"Deleted assistant {assistant_id}")
+            logger.info(f"Deleted assistant {assistant_id}")
         message_file = client.files.create(
               file=open(f"{file_path}", "rb"),
               purpose='assistants'
@@ -47,18 +80,18 @@ def check_file_commodities(thread_id, assistant_id, file_path):
         new_thread_id, new_assistant_id =  create_assistant_commodities(message_file.id)
         return check_file_commodities(new_thread_id, new_assistant_id, file_path)
     else:
-        print("File was correctly uploaded \n")
+        logger.info("File was correctly uploaded \n")
         return thread_id, assistant_id
     
     
     
-def add_to_metadata(csv_output_path, file_name, commodities_dict):
+def add_to_metadata(csv_output_path, file_name, record_id, commodities_dict):
     
     if not os.path.exists(csv_output_path):
         # Create the CSV file with header row
         with open(csv_output_path, mode='w', newline='') as csvfile:
             writer = csv.writer(csvfile)
-            writer.writerow(['File Name', 'Identified Commodities'])
+            writer.writerow(['File Name', 'record_id', 'Identified Commodities'])
 
     with open(csv_output_path, mode='a', newline='') as csvfile:
         # Create a CSV writer object
@@ -69,5 +102,5 @@ def add_to_metadata(csv_output_path, file_name, commodities_dict):
         else:
             joined_commodities = ""
         
-        writer.writerow([file_name, joined_commodities])
-    print(f"Finished writing row for {file_name} \n")
+        writer.writerow([file_name, record_id, joined_commodities])
+    logger.info(f"Finished writing row for {file_name} \n")

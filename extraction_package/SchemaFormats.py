@@ -1,8 +1,8 @@
 
-def created_document_ref(title, url):
+def created_document_ref(title):
     return f"""{{
               "title": "{title}",
-              "doi" : "{url}"
+              "doi" : ""
               "authors": "[]",
               "year": "",
               "month": "",
@@ -12,11 +12,11 @@ def created_document_ref(title, url):
             }}"""
             
             
-def create_mineral_site(url, doc_name):
+def create_mineral_site(record_id, doc_name):
     return f"""
                 {{
-                    "source_id": "{url}",
-                    "record_id": "1",
+                    "source_id": "",
+                    "record_id": "{record_id}",
                     "name": "{doc_name}",
                     "location_info": {{
                         "location": "POINT()",
@@ -51,11 +51,13 @@ def create_mineral_extractions_format(commodity):
         "Table": "",
         "category": "",
         "zone": "",
+        "chemical compound": "",
         "{commodity} Cut-Off": "",
         "{commodity} Cut-Off Unit": "",
         "{commodity} Tonnage": "",
         "{commodity} Tonnage Unit": "",
-        "{commodity} Grade Percent": ""
+        "{commodity} Grade": "",
+        "{commodity} Grade Unit": ""
         }}
         ]
     }}
@@ -71,6 +73,7 @@ def create_inventory_format(commodities_dict, commodity, document_dict):
     format = {
     "commodity": "https://minmod.isi.edu/resource/" + commodities_dict[commodity],
     "category": "",
+    "material_form": "",
     "ore": {
         "ore_unit": "",
         "ore_value": ""
