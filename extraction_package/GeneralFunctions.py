@@ -20,13 +20,13 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl'
 
 
 def download_document(doc_id):
-    url = f'https://api.cdr.land/v1/docs/document/{doc_id}'
+    url = f'https://api.cdr.land/v1/docs/documents//v1/docs/document/{doc_id}'
     headers = {
         'accept': 'application/json',
         'Authorization': CDR_BEARER
     }
 
-    url_meta = f'https://api.cdr.land/v1/docs/document/meta/{doc_id}'
+    url_meta = f'https://api.cdr.land/v1/docs/documents//v1/docs/document/meta/{doc_id}'
 
     # Send the initial GET request
     response = requests.get(url_meta, headers=headers)
@@ -40,10 +40,10 @@ def download_document(doc_id):
         if response.status_code == 200:    
             with open(f'./{title}.pdf', 'wb') as file:
                 file.write(response.content)
-        print(f"Document downloaded and saved as '{title}.pdf'")
+        logger.info(f"Document downloaded and saved as '{title}.pdf'")
     else:
-        print(f"Failed to download document. Status code: {response.status_code}")
-        print(f"Response content: {response.content}")
+        logger.error(f"Failed to download document. Status code: {response.status_code}")
+        logger.error(f"Response content: {response.content}")
 
 def append_section_to_JSON(file_path, header_name, whole_section):
     logger.debug(f"Writing {header_name}")
@@ -62,7 +62,7 @@ def check_JSON_exists(file_name):
         # If the file doesn't exist, create an empty object
         with open(file_name, 'w') as json_file:
             json.dump(data, json_file)
-        print(f"Created {file_name}")
+        logger.info(f"Created {file_name}")
     else:
         # open what was already created
         with open(file_name, "r") as json_file:
@@ -85,7 +85,7 @@ def extract_json_strings(input_string, correct_format, remove_comments = False):
                 count -= 1
             if count == 0:
                 json_str = input_string[start:i+1]
-                print(json_str)
+                # logger.debug(json_str)
                 try:
                     return json.loads(json_str)
                 except json.JSONDecodeError as e:
@@ -124,7 +124,7 @@ def find_best_match(input_str, list_to_match, threshold=75):
 def find_correct_page(file_path, extractions):
     ## get a series of strings to look at to find these values in curr_json
     ## probably ask Goran how many strings should be looked at
-    print(f"This is the inner_dict: {extractions}, {type(extractions)}")
+    # logger.debug(f"This is the inner_dict: {extractions}, {type(extractions)}")
     page = []
     target_strings = []
     for key, value in extractions.items():
@@ -132,7 +132,7 @@ def find_correct_page(file_path, extractions):
             target_strings.append(value)
             
     
-    print(f"Target strings found: {target_strings}")
+    # logger.debug(f"Target strings found: {target_strings}")
     ## DO TWO METHODS: METHOD 1
     # checks based off first target for the second ones
     if len(target_strings) > 2:
@@ -144,8 +144,8 @@ def find_correct_page(file_path, extractions):
             if len(list(matching_pages.values())) > 0: 
                 page = find_common_numbers(matching_pages)
     
-        print(f"Matching pages: {matching_pages}")
-        print(f"Output pages: {page}")
+        # logger.debug(f"Matching pages: {matching_pages}")
+        # logger.debug(f"Output pages: {page}")
 
     if len(page) == 0:
         return page
@@ -205,12 +205,12 @@ def find_common_numbers(dictionary):
 
 
 def check_instance(current_extraction, key, instance):
-    print(f"Previous value: {current_extraction[key]}")
+    # logger.debug(f"Previous value: {current_extraction[key]}")
     output_value = None
     
     if key in current_extraction:
         curr_value = current_extraction[key]
-        print(f"Looking at key {key} : {curr_value}")
+        logger.debug(f"Looking at key {key} : {curr_value}")
         
         ## want to test the current value or if its 0
         if isinstance(curr_value, str) and len(curr_value) == 0:
@@ -270,7 +270,7 @@ def get_zotero(url):
         logger.error(f'Error connectiong to Zotero. Missing Title')
         title = ""
     
-    print(f"Zoltero Information: file_key {file_key} Title: {title} \n")
+    # print(f"Zoltero Information: file_key {file_key} Title: {title} \n")
     return title
 
 

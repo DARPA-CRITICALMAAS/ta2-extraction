@@ -27,7 +27,7 @@ def create_document_reference(thread_id, assistant_id, record_id, title):
     doc_name = document_dict.get('title', '')   
 
 
-    print(f" Here is the reference material for the document: \n {document_dict} \n")
+    logger.debug(f" Here is the reference material for the document: \n {document_dict} \n")
     
     site_format = schemas.create_mineral_site(record_id, doc_name=doc_name)
     
@@ -41,7 +41,7 @@ def create_document_reference(thread_id, assistant_id, record_id, title):
 
     mineral_site_json = clean_mineral_site_json(mineral_site_json, title, record_id)
 
-    print(f"Here is the Mineral Site Json: \n {mineral_site_json} \n")
+    logger.debug(f"Here is the Mineral Site Json: \n {mineral_site_json} \n")
     
     # assistant.delete_assistant(assistant_id)
         
@@ -86,7 +86,7 @@ def clean_mineral_site_json(json_str, title, record_id):
             json_str[key] = title
             
         if key == 'source_id':
-           json_str[key] = "https://api.cdr.land"
+           json_str[key] = "https://api.cdr.land/v1/docs/documents/"
                 
         if key == 'location_info' and isinstance(value, dict):
             for new_key, new_value in value.items():
@@ -107,7 +107,7 @@ def clean_mineral_site_json(json_str, title, record_id):
                        json_str = add_country_or_state("country.csv", json_str, key, new_key, new_value, None)
 
                 if new_key == 'state_or_province':
-                    logger.debug(f"Looking at state_province: {new_key}, {new_value}")
+                    # logger.debug(f"Looking at state_province: {new_key}, {new_value}")
                     if new_value == "": 
                         key_to_remove.append((key, new_key))
                     else:

@@ -71,7 +71,7 @@ def run(folder_path, file_name, commodity_list, output_folder_path):
         
         # return run(folder_path, file_name, commodity, sign, output_folder_path)
     
-    logger.info(f"Entire run takes: {time.time()-t}")
+    logger.info(f"Entire run takes: {time.time()-t} \n\n")
     
     
 def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, commodity_list, output_folder_path ):
@@ -180,22 +180,18 @@ if __name__ == "__main__":
     # Define named arguments
     parser.add_argument('--pdf_p', type=str, help='Path to the reports folder', required=True)
     parser.add_argument('--pdf_name', type=str, help='The name of the document', required=True)
-    parser.add_argument('--primary_commodity', type=str, help='Primary commodity we are interested in', required=True)
-    parser.add_argument('--element_sign', type=str, help='The element sign of the primery commodity', required=True)
-    parser.add_argument('--url', type=str, help='The Zotero URL required to fullfile the DOI portion', required=True)
+    parser.add_argument('--commodity_list', type=str, help='Primary commodity we are interested in', required=True)
     parser.add_argument('--output_path', type=str, help='Path where you want the output saved', required=True)
 
     # Parse the arguments
     args = parser.parse_args()
 
     # Access the arguments
-    pdf_p = args.pdf_p
-    pdf_name = args.pdf_name
-    primary_commodity = args.primary_commodity
-    element_sign = args.element_sign
-    zotero_url = args.url
+    folder_path = args.pdf_p
+    file_name = args.pdf_name.split(",")
+    commodity_list = args.primary_commodity
     output_folder_path = args.output_path
     
-    logger.info(f"Current Inputs: file_path: {pdf_p+pdf_name} zotero_url: {zotero_url} \n")
-    run(pdf_p, pdf_name, zotero_url, primary_commodity, element_sign, output_folder_path)
+    logger.info(f"Current Inputs: file_path: {file_name} \n")
+    run(folder_path, file_name, commodity_list, output_folder_path)
    

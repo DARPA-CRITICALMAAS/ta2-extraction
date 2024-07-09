@@ -33,9 +33,11 @@ def create_mineral_inventory(thread_id, assistant_id, file_path, document_dict, 
         commodities_in_report = generate_commodities(thread_id, assistant_id, commodities, relevant_tables)
     else: categories_in_report, commodities_in_report = [], []
         
-        
+    commodities_in_report = clean_commodities(commodities_in_report, commodities)
     logger.info(f" List of idenitified Categories in the report: {categories_in_report} \n")
     logger.info(f" List of idenitified Commodities in the report: {commodities_in_report} \n")
+    
+    
     mineral_inventory_json = {"mineral_inventory":[]}
     done_first = False
     
@@ -66,14 +68,27 @@ def create_mineral_inventory(thread_id, assistant_id, file_path, document_dict, 
                 done_first = True
             
 
-    if len(mineral_inventory_json["mineral_inventory"]) == 0:
-        mineral_inventory_json["mineral_inventory"].append({"commodity": "https://minmod.isi.edu/resource/" + commodities[commodity], "reference": {
-            "document": document_dict}})
+        if len(mineral_inventory_json["mineral_inventory"]) == 0:
+            inner_commodity = {}
+            inner_commodity['normalized_uri'] = URL_STR + commodities[commodity]
+            inner_commodity = general.add_extraction_dict(commodity, inner_commodity)
+            
+            mineral_inventory_json["mineral_inventory"].append({"commodity": inner_commodity, "reference": {
+                "document": document_dict}})
     
+        
     logger.debug(f"Here is the mineral inventory json: \n {mineral_inventory_json}")
     
     return mineral_inventory_json
 
+def clean_commodities(commodity_list, acceptable_commodities):
+    final_list = []
+    for comm in commodity_list:
+        if comm in acceptable_commodities:
+            final_list.append(comm)
+            
+    return final_list
+    
 
 def generate_categories(thread_id, assistant_id, relevant_tables):
     ans = assistant.get_assistant_message(thread_id, assistant_id, 
@@ -147,6 +162,7 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, unit_dict, 
                 current_inventory_format = check_tonnage_unit(current_inventory_format, value, unit_dict)
 
             elif 'grade' in key.lower() and 'unit' in key.lower():
+                logger.debug(f'grade unit value : {value}')
                 if value == "":
                     current_inventory_format['grade'].pop('grade_unit')
                 else:
@@ -162,7 +178,7 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, unit_dict, 
                         found_value = general.find_best_match(value, grade_unit_list) 
                         if found_value is not None:
                             current_inventory_format['grade']['grade_unit']['normalized_uri'] = URL_STR + unit_dict[found_value]           
-                        
+                    logger.debug(f"Before add extraction_dict {current_inventory_format['grade']}")
                     current_inventory_format['grade']['grade_unit'] = general.add_extraction_dict(value, current_inventory_format['grade']['grade_unit'])
                     
                 
@@ -338,7 +354,7 @@ def check_material_form(curr_json, URL_STR, value):
     
     curr_json['material_form'] = {"normalized_uri": ""}
     
-    print(f"Here is curr_json {curr_json}")
+    # print(f"Here is curr_json {curr_json}")
     material_form_picklist = general.read_csv_to_dict("./codes/material_form.csv")
     # print(f"material_form_picklist: {material_form_picklist}")
     
@@ -354,7 +370,7 @@ def check_material_form(curr_json, URL_STR, value):
         
     curr_json['material_form'] = general.add_extraction_dict(value, curr_json['material_form'])
     
-    print(f"Here is the curr_json in the file: {curr_json}")
+    # print(f"Here is the curr_json in the file: {curr_json}")
     
     return curr_json
     

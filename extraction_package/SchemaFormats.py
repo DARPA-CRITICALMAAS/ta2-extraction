@@ -1,3 +1,4 @@
+from settings import VERSION_NUMBER, SYSTEM_SOURCE
 
 def created_document_ref(title):
     return f"""{{
@@ -15,7 +16,7 @@ def created_document_ref(title):
 def create_mineral_site(record_id, doc_name):
     return f"""
                 {{
-                    "source_id": "",
+                    "source_id": "https://api.cdr.land/v1/docs/documents/",
                     "record_id": "{record_id}",
                     "name": "{doc_name}",
                     "location_info": {{
@@ -71,9 +72,12 @@ def create_inventory_format(commodities_dict, commodity, document_dict):
         doc_date = f"{doc_year}-{doc_month}"
 
     format = {
-    "commodity": "https://minmod.isi.edu/resource/" + commodities_dict[commodity],
+    "commodity": {"normalized_uri": "https://minmod.isi.edu/resource/" + commodities_dict[commodity],
+                  "observed_name": commodity,
+                  "confidence": 1,
+                  "source": SYSTEM_SOURCE + " " + VERSION_NUMBER},
     "category": "",
-    "material_form": "",
+    
     "ore": {
         "ore_unit": "",
         "ore_value": ""

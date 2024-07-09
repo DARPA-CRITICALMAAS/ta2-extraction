@@ -12,16 +12,17 @@ logger = logging.getLogger("Helper")
 client = openai.OpenAI(api_key = API_KEY)
 
 def download_document(doc_id, download_dir):
-    url = f'https://api.cdr.land/v1/docs/document/{doc_id}'
+    url = f'https://api.cdr.land/v1/docs/documents//v1/docs/document/{doc_id}'
     headers = {
         'accept': 'application/json',
         'Authorization': CDR_BEARER
     }
 
-    url_meta = f'https://api.cdr.land/v1/docs/document/meta/{doc_id}'
+    url_meta = f'https://api.cdr.land/v1/docs/documents//v1/docs/document/meta/{doc_id}'
 
     # Send the initial GET request
     response = requests.get(url_meta, headers=headers)
+    logger.info(f"Download doc status code: {response.status_code}")
     if response.status_code == 200:
         # Save the response content to a file
         resp_json = json.loads(response.content)

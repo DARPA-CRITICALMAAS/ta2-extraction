@@ -98,6 +98,7 @@ def delete_assistant(assistant_id):
     }
     assistant = True
 
+    count = 0
     # Make the DELETE request
     while assistant:
         try:
@@ -109,6 +110,10 @@ def delete_assistant(assistant_id):
             else:
                 logger.debug("Retrying to delete assistant...")
                 time.sleep(1)  # Wait for 1 second before retrying
+                count += 1
+                if count >= 3:
+                    # only tries to delete 3 times
+                    assistant = False
                 
         except Exception as e:
             logger.error("An error occurred:", e)
@@ -148,7 +153,7 @@ def get_created_assistant_run(thread_id, assistant_id, prompt):
         logger.error("Failure reason:", run.last_error.message)
         logger.error(f"Run: {run.id} Thread: {thread_id} \n FAILED RUN \n")
 
-    print()
+    
     return run  # Completed runs are returned directly
         
 def get_assistant_message(thread_id, assistant_id, prompt):
