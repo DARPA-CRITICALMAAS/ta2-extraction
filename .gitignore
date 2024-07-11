@@ -7,6 +7,8 @@
 node_modules/
 dist/
 
+#juptyr notebook checkpoints
+.ipynb_checkpoints
 # Compiled Java class files
 *.class
 
@@ -48,3 +50,13 @@ Thumbs.db
 *.mov
 *.wmv
 
+# Ignore Visual Studio Code settings directory
+.vscode/
+
+# Ignore specific files in .vscode directory
+.vscode/settings.json
+.vscode/*.code-workspace
+
+.ipynb_checkpoints
+
+extract_venv/

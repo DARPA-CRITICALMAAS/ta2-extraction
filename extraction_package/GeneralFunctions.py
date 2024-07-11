@@ -5,8 +5,9 @@ import csv
 import PyPDF2
 from pyzotero import zotero
 import os
+import requests
 from fuzzywuzzy import process
-from settings import LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY 
+from settings import LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY, SYSTEM_SOURCE, VERSION_NUMBER, CDR_BEARER 
 from extraction_package.Prompts import *
 import extraction_package.AssistantFunctions as assistant
 import logging
@@ -17,6 +18,33 @@ logger = logging.getLogger("GeneralFunctions")
 # Ignore the specific UserWarning from openpyxl
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')
 
+
+def download_document(doc_id):
+    url = f'https://api.cdr.land/v1/docs/documents//v1/docs/document/{doc_id}'
+    headers = {
+        'accept': 'application/json',
+        'Authorization': CDR_BEARER
+    }
+
+    url_meta = f'https://api.cdr.land/v1/docs/documents//v1/docs/document/meta/{doc_id}'
+
+    # Send the initial GET request
+    response = requests.get(url_meta, headers=headers)
+
+    if response.status_code == 200:
+        # Save the response content to a file
+        resp_json = json.loads(response.content)
+        title = resp_json['title']
+        response = requests.get(url, headers=headers)
+
+        if response.status_code == 200:    
+            with open(f'./{title}.pdf', 'wb') as file:
+                file.write(response.content)
+        logger.info(f"Document downloaded and saved as '{title}.pdf'")
+    else:
+        logger.error(f"Failed to download document. Status code: {response.status_code}")
+        logger.error(f"Response content: {response.content}")
+
 def append_section_to_JSON(file_path, header_name, whole_section):
     logger.debug(f"Writing {header_name}")
     
@@ -24,10 +52,6 @@ def append_section_to_JSON(file_path, header_name, whole_section):
     logger.debug(f"Json Schema before write: {json_schema}")
     with open(file_path, "w") as json_file:
         json.dump(convert_int_or_float(json_schema), json_file, indent=2)
-    
-
-        
-    
 
     # Writing to a file using json.dump with custom serialization function
     
@@ -38,7 +62,7 @@ def check_JSON_exists(file_name):
         # If the file doesn't exist, create an empty object
         with open(file_name, 'w') as json_file:
             json.dump(data, json_file)
-        print(f"Created {file_name}")
+        logger.info(f"Created {file_name}")
     else:
         # open what was already created
         with open(file_name, "r") as json_file:
@@ -61,13 +85,13 @@ def extract_json_strings(input_string, correct_format, remove_comments = False):
                 count -= 1
             if count == 0:
                 json_str = input_string[start:i+1]
-                # print(json_str)
+                # logger.debug(json_str)
                 try:
                     return json.loads(json_str)
                 except json.JSONDecodeError as e:
                     # here is the error, lets fix this
-                    
-                    return assistant.fix_format(json_str)       
+                    logger.error(f"JSON error for checking the format: {e}")
+                    return assistant.fix_formats(json_str, correct_format)       
     else:
         return None
 
@@ -100,7 +124,7 @@ def find_best_match(input_str, list_to_match, threshold=75):
 def find_correct_page(file_path, extractions):
     ## get a series of strings to look at to find these values in curr_json
     ## probably ask Goran how many strings should be looked at
-    print(f"This is the inner_dict: {extractions}, {type(extractions)}")
+    # logger.debug(f"This is the inner_dict: {extractions}, {type(extractions)}")
     page = []
     target_strings = []
     for key, value in extractions.items():
@@ -108,20 +132,23 @@ def find_correct_page(file_path, extractions):
             target_strings.append(value)
             
     
-    print(f"Target strings found: {target_strings}")
+    logger.debug(f"Target strings found: {target_strings}")
     ## DO TWO METHODS: METHOD 1
     # checks based off first target for the second ones
+    
     if len(target_strings) > 2:
+        logger.debug(f"Before search_text_in_pdf {file_path}")
         table_pages = search_text_in_pdf(file_path, target_strings[0])
         matching_pages = {}
-
+        logger.debug(f"Here are table_pages: {table_pages}")
         for string in target_strings[1:]:
             matching_pages[string] = string_in_page(file_path, string, table_pages)
             if len(list(matching_pages.values())) > 0: 
                 page = find_common_numbers(matching_pages)
     
-        print(f"Matching pages: {matching_pages}")
-        print(f"Output pages: {page}")
+        logger.debug(f"Matching pages: {matching_pages}")
+        logger.debug(f"Output pages: {page}")
+
 
     if len(page) == 0:
         return page
@@ -155,11 +182,19 @@ def search_text_in_pdf(pdf_path, target_string):
     page_numbers = []
 
     # Open the PDF file in binary mode
+    logger.debug("before opening path")
     with open(pdf_path, 'rb') as file:
         
+        logger.debug("opened path")
         # Create a PDF reader
-        pdf = PyPDF2.PdfReader(file)
+        try:
+            pdf = PyPDF2.PdfReader(file)
+        except PyPDF2.utils.PdfReadError as e:
+            logger.error(f"PyPDF2 read error: {e}")
+        except Exception as e:
+            logger.error(f"An unexpected error occurred: {e}")
         
+        # logger.debug("PYPDF2 ERROR")
         # Iterate over each page
         for page_num in range(len(pdf.pages)):
             page = pdf.pages[page_num]
@@ -168,7 +203,8 @@ def search_text_in_pdf(pdf_path, target_string):
             # Check if target string is in the page's text
             if target_string.lower() in text_new:
                 page_numbers.append(page_num)  
-                            
+    
+    logger.debug(f"returning page numbers: {page_numbers}")   
     return page_numbers
 
 def find_common_numbers(dictionary):
@@ -181,12 +217,12 @@ def find_common_numbers(dictionary):
 
 
 def check_instance(current_extraction, key, instance):
-    print(f"Previous value: {current_extraction[key]}")
+    # logger.debug(f"Previous value: {current_extraction[key]}")
     output_value = None
     
     if key in current_extraction:
         curr_value = current_extraction[key]
-        print(f"Looking at key {key} : {curr_value}")
+        logger.debug(f"Looking at key {key} : {curr_value}")
         
         ## want to test the current value or if its 0
         if isinstance(curr_value, str) and len(curr_value) == 0:
@@ -213,7 +249,10 @@ def check_instance(current_extraction, key, instance):
         elif isinstance(curr_value, instance):
             # if it is the correct instance type
             logger.debug(f"MATCH: curr_value {curr_value} instance {instance} \n")
-            output_value = current_extraction[key]
+            if instance == list and len(current_extraction[key]) == 0:
+                output_value = None
+            else:
+                output_value = current_extraction[key]
         else:
             try:
             # testing the current value as the instance
@@ -232,13 +271,32 @@ def check_instance(current_extraction, key, instance):
     return current_extraction
 
 def get_zotero(url):
+   
     zot = zotero.Zotero(LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY)
     file_list = url.split("/")
     file_key = file_list[-1]
-    file_item = zot.item(file_key)
-    title = file_item['data']['title']
-    print(f"Zoltero Information: file_key {file_key} Title: {title} \n")
+    try:
+        file_item = zot.item(file_key)
+        title = file_item['data']['title']
+    except Exception:
+        logger.error(f'Error connectiong to Zotero. Missing Title')
+        title = ""
+    
+    # print(f"Zoltero Information: file_key {file_key} Title: {title} \n")
     return title
+
+
+def add_extraction_dict(value, inner_json):
+    logger.debug(f"In the inner dict function: {inner_json}")
+    if not inner_json['normalized_uri']:
+        inner_json.pop('normalized_uri')
+        
+        
+    inner_json['extracted_value'] = value
+    inner_json['confidence'] = 1 
+    inner_json['source'] = SYSTEM_SOURCE + " " + VERSION_NUMBER  
+    logger.debug(f"after extraction_dict: {inner_json}")
+    return inner_json
 
 
 def convert_int_or_float(obj):

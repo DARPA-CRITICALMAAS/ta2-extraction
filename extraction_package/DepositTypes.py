@@ -7,16 +7,14 @@ import extraction_package.GeneralFunctions as general
 import extraction_package.DepositTypes as deposits
 import extraction_package.SchemaFormats as schemas
 import extraction_package.Prompts as prompts
+from settings import VERSION_NUMBER, SYSTEM_SOURCE
 # Ignore the specific UserWarning from openpyxl
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')
 
 logger = logging.getLogger("Deposit")
 
-def create_deposit_types(thread_id, assistant_id, commodity):
-  
-    # thread_id, assistant_id = assistant.create_assistant(file_path, commodity, sign)
-    # thread_id, assistant_id = assistant.check_file(thread_id, assistant_id, file_path, commodity, sign)
-    
+def create_deposit_types(thread_id, assistant_id):
+    logger.info(f"Getting started on deposit type")
 
     minmod_deposit_types = general.read_csv_to_dict("./codes/minmod_deposit_types.csv")
     deposit_id = {}
@@ -26,8 +24,9 @@ def create_deposit_types(thread_id, assistant_id, commodity):
     
     deposit_format = schemas.create_deposit_format()
     
+    
     ans = assistant.get_assistant_message(thread_id, assistant_id, 
-    prompts.deposit_instructions.replace('__COMMODITY__', commodity).replace('__DEPOSIT_FORMAT__', deposit_format))
+    prompts.deposit_instructions.replace('__DEPOSIT_FORMAT__', deposit_format))
     
     
     deposit_types_initial = general.extract_json_strings(ans, deposit_format)
@@ -37,7 +36,7 @@ def create_deposit_types(thread_id, assistant_id, commodity):
        
         deposit_format_correct = schemas.create_deposit_format_correct()
     
-        ans = assistant.get_assistant_message(thread_id, assistant_id, prompts.check_deposit_instructions.replace("__DEPOSIT_TYPE_LIST__", str(deposit_types_initial['deposit_type'])).replace("__DEPOSIT_ID__", str(deposit_id)).replace("__DEPOSIT_FORMAT_CORRECT__", deposit_format_correct).replace("__COMMODITY__", commodity)
+        ans = assistant.get_assistant_message(thread_id, assistant_id, prompts.check_deposit_instructions.replace("__DEPOSIT_TYPE_LIST__", str(deposit_types_initial['deposit_type'])).replace("__DEPOSIT_ID__", str(deposit_id)).replace("__DEPOSIT_FORMAT_CORRECT__", deposit_format_correct)
         )
         
         deposit_types_output = general.extract_json_strings(ans, deposit_format_correct)
@@ -63,9 +62,16 @@ def format_deposit_candidates(deposit_list):
     for dep in deposit_list['deposit_type']:
         inner_dict = {}
         inner_dict["observed_name"] = dep
-        inner_dict["normalized_uri"] = deposit_list['deposit_type'][dep]
-        inner_dict["source"] = "report" 
+        if dep in deposit_list['deposit_type']:
+            inner_dict["normalized_uri"] = deposit_list['deposit_type'][dep]
+        else:
+            inner_dict.pop("normalized_uri")
+            
+        inner_dict["source"] =  SYSTEM_SOURCE + " "+ VERSION_NUMBER
         inner_dict["confidence"] = 1/len(deposit_list['deposit_type']) 
         deposit_type_candidate['deposit_type_candidate'].append(inner_dict)
+    
+        if inner_dict['normalized_uri'] == "":
+            inner_dict.pop('normalized_uri')
         
     return deposit_type_candidate

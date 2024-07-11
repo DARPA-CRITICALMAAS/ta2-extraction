@@ -7,7 +7,7 @@ import requests
 from tenacity import retry, retry_if_result, stop_after_attempt, wait_fixed
 from requests.exceptions import ConnectionError
 import logging
-from settings import API_KEY 
+from settings import API_KEY,MODEL_TYPE 
 from extraction_package.Prompts import *
 # Ignore the specific UserWarning from openpyxl
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')
@@ -15,14 +15,15 @@ client = openai.OpenAI(api_key = API_KEY)
     
 logger = logging.getLogger("Assistant") 
 
-def create_assistant(file_path, commodity, sign):
+def create_assistant(file_path):
     assistant = client.beta.assistants.create(
         name="Get Extraction",
-        instructions= instructions.replace("__COMMODITY__", commodity).replace("__SIGN__", sign),
-        model="gpt-4-turbo",
+        instructions= instructions,
+        model=MODEL_TYPE,  ## try new model
         tools=[{"type": "file_search"}],
     )
 
+    logger.info(f"Created the assistant with Model: {MODEL_TYPE}")
     message_file = client.files.create(
     file=open(file_path, "rb"), purpose="assistants"
     )
@@ -38,12 +39,28 @@ def create_assistant(file_path, commodity, sign):
     }])
     
     logger.info(f"Created Assistant: {assistant.id}")
-    return thread.id, assistant.id
+    return thread.id, assistant.id, message_file.id
 
-def fix_formats(json_str):
+def create_new_thread(message_file_id, content):
+    
+    thread = client.beta.threads.create(
+    messages=[
+    {
+    "role": "user",
+    "content": content,
+    
+    "attachments": [
+        { "file_id": message_file_id, "tools": [{"type": "file_search"}] }
+    ],
+    }])
+    logger.debug(f"Creating new_thread {thread.id} with content : {content} \n")
+    return thread.id
+    
+
+def fix_formats(json_str, correct_format):
     logger.info("Need to reformat the JSON extraction \n")
     completion = client.chat.completions.create(
-    model="gpt-4-1106-preview",
+    model=MODEL_TYPE,
     messages=[
         {"role": "system", "content": "You are a json formatting expert"},
         {"role": "user", "content": JSON_format_fix.replace("__INCORRECT__", json_str).replace("__CORRECT_SCHEMA__", correct_format)}
@@ -52,12 +69,7 @@ def fix_formats(json_str):
     ) 
     return json.loads(completion.choices[0].message.content) 
     
-def check_file(thread_id, assistant_id, file_path, commodity, sign):
-    file_instructions = """If the file was correctly uploaded and can be read return YES otherwise return NO. 
-                        Only return the Yes or No answer.
-                        """
-
-   
+def check_file(thread_id, assistant_id, message_file_id, file_path):
     ans = get_assistant_message(thread_id, assistant_id, file_instructions)
     
     logger.info(f"Response: {ans}")
@@ -68,12 +80,12 @@ def check_file(thread_id, assistant_id, file_path, commodity, sign):
         if response_code == 200:
             logger.debug(f"Deleted assistant {assistant_id}")
         
-        new_thread_id, new_assistant_id =  create_assistant(file_path, commodity, sign)
+        new_thread_id, new_assistant_id, new_message_file_id =  create_assistant(file_path)
         logger.debug("Created new_thread")
-        return check_file(new_thread_id, new_assistant_id, file_path, commodity, sign)
+        return check_file(new_thread_id, new_assistant_id, new_message_file_id, file_path)
     else:
         logger.debug("File was correctly uploaded \n")
-        return thread_id, assistant_id
+        return thread_id, assistant_id, message_file_id
 
 def delete_assistant(assistant_id):
     url = f"https://api.openai.com/v1/assistants/{assistant_id}"
@@ -86,6 +98,7 @@ def delete_assistant(assistant_id):
     }
     assistant = True
 
+    count = 0
     # Make the DELETE request
     while assistant:
         try:
@@ -97,6 +110,10 @@ def delete_assistant(assistant_id):
             else:
                 logger.debug("Retrying to delete assistant...")
                 time.sleep(1)  # Wait for 1 second before retrying
+                count += 1
+                if count >= 3:
+                    # only tries to delete 3 times
+                    assistant = False
                 
         except Exception as e:
             logger.error("An error occurred:", e)
@@ -136,7 +153,7 @@ def get_created_assistant_run(thread_id, assistant_id, prompt):
         logger.error("Failure reason:", run.last_error.message)
         logger.error(f"Run: {run.id} Thread: {thread_id} \n FAILED RUN \n")
 
-    print()
+    
     return run  # Completed runs are returned directly
         
 def get_assistant_message(thread_id, assistant_id, prompt):
