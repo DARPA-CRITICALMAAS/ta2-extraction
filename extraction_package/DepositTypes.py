@@ -64,8 +64,14 @@ def format_deposit_candidates(deposit_list):
         inner_dict["observed_name"] = dep
         if dep in deposit_list['deposit_type']:
             inner_dict["normalized_uri"] = deposit_list['deposit_type'][dep]
+        else:
+            inner_dict.pop("normalized_uri")
+            
         inner_dict["source"] =  SYSTEM_SOURCE + " "+ VERSION_NUMBER
         inner_dict["confidence"] = 1/len(deposit_list['deposit_type']) 
         deposit_type_candidate['deposit_type_candidate'].append(inner_dict)
+    
+        if inner_dict['normalized_uri'] == "":
+            inner_dict.pop('normalized_uri')
         
     return deposit_type_candidate

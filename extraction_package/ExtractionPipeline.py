@@ -98,17 +98,17 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
         document_dict, mineral_site_json = site.create_document_reference(thread_id, assistant_id, record_id, title)
         logger.debug(f"Document dict Output: {document_dict} \n Mineral Site Output: {mineral_site_json} \n")
         
-        inner_data.append(mineral_site_json)
+        inner_data = [mineral_site_json]
         logger.debug(f"Inner_data after the mineral site json {inner_data} \n")
         general.append_section_to_JSON(output_file_path, "MineralSite", inner_data)
 
-        reference = {"mineral_inventory":{ "reference": {"document": document_dict}}}
-        inner_data.append(reference)
+
+        inner_data[0]['mineral_inventory'] = { "reference": {"document": document_dict}}
         general.append_section_to_JSON(output_file_path, "reference", inner_data)
         logger.debug(f"Outputed inner_data after adding reference & mineral inventory: {inner_data} \n")
         site_completed = True
     else:
-        inner_list = inner_data[1].get('mineral_inventory', None)
+        inner_list = inner_data[0].get('mineral_inventory', None)
         if isinstance(inner_list, list):
             # means that we have mineral inventory
             document_dict = inner_list[0].get('reference', None).get('document', None)
@@ -132,17 +132,18 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
                         content=prompts.content.replace("__FOCUS__", "the mineral inventory"))
 
         mineral_inventory_json = inventory.create_mineral_inventory(thread_id, assistant_id,file_path,document_dict, commodity_list)
+        # mineral_inventory_json = inventory.post_process(mineral_inventory_json)
+        logger.debug("Finished mineral inventory \n")
         
-        if inner_data[1].get("mineral_inventory", None):
-            inner_data.pop(1)
-            inner_data.append(mineral_inventory_json)
+        if inner_data[0].get("mineral_inventory", None):
+            inner_data[0]['mineral_inventory'] = mineral_inventory_json['mineral_inventory']
             general.append_section_to_JSON(output_file_path, "MineralInventory", inner_data)
             inventory_completed = True
             
     else: inventory_completed = True
         
     
-    if len(inner_data) < 3:
+    if "deposit_type_candidate" not in inner_data[0]:
         logger.debug("NO deposit Type so need to add")
         thread_id = assistant.create_new_thread(message_file_id=message_file_id, 
                         content=prompts.content.replace("__FOCUS__", "mineral deposit types"))
@@ -150,7 +151,7 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
         ## Need to check if we need to add more versions of this.
         deposit_types_json = deposits.create_deposit_types(thread_id, assistant_id)
         logger.debug(f"Output deposit types: {deposit_types_json} \n")
-        inner_data.append(deposit_types_json)
+        inner_data[0]['deposit_type_candidate'] = deposit_types_json['deposit_type_candidate']
         general.append_section_to_JSON(output_file_path, "Deposit types", inner_data)
         deposit_completed = True
         

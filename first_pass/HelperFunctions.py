@@ -4,41 +4,45 @@ import csv
 import requests
 import json
 import logging
+import logging.config
 from first_pass import prompts
 from extraction_package import AssistantFunctions
 from settings import API_KEY, CDR_BEARER, MODEL_TYPE 
+
+logging.config.fileConfig('config.ini')
 logger = logging.getLogger("Helper") 
 
 client = openai.OpenAI(api_key = API_KEY)
 
 def download_document(doc_id, download_dir):
-    url = f'https://api.cdr.land/v1/docs/documents//v1/docs/document/{doc_id}'
     headers = {
         'accept': 'application/json',
-        'Authorization': CDR_BEARER
+        'Authorization': 'Bearer '+ CDR_BEARER
     }
 
-    url_meta = f'https://api.cdr.land/v1/docs/documents//v1/docs/document/meta/{doc_id}'
+    url_pdf = f'https://api.cdr.land/v1/docs/document/{doc_id}'
+    url_meta = f'https://api.cdr.land/v1/docs/document/meta/{doc_id}'
+    logger.debug("in download document")
 
     # Send the initial GET request
     response = requests.get(url_meta, headers=headers)
-    logger.info(f"Download doc status code: {response.status_code}")
+    logger.info(f"Meta doc status code: {response.status_code}")
     if response.status_code == 200:
         # Save the response content to a file
         resp_json = json.loads(response.content)
         title = resp_json['title']
-        response = requests.get(url, headers=headers)
+        
+        response = requests.get(url_pdf, headers=headers)
 
         if response.status_code == 200:    
             with open(f'{download_dir}{doc_id}_{title}.pdf', 'wb') as file:
                 file.write(response.content)
-        logger.info(f"Document downloaded and saved as '{title}.pdf'")
+            logger.info(f"Document downloaded and saved as '{title}.pdf'")
+        else:
+            logger.info(f"Failed to download document. Status code: {response.status_code}")
     else:
-        logger.info(f"Failed to download document. Status code: {response.status_code}")
+        logger.info(f"Failed to get meta data. Status code: {response.status_code}")
         logger.info(f"Response content: {response.content}")
-        
-def delete_document(file_name):
-    pass
         
 
 def create_assistant_commodities(message_file_id):

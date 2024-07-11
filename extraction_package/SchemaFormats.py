@@ -1,6 +1,6 @@
 from settings import VERSION_NUMBER, SYSTEM_SOURCE
 
-def created_document_ref(title):
+def created_document_ref(title, record_id):
     return f"""{{
               "title": "{title}",
               "doi" : ""
@@ -9,14 +9,15 @@ def created_document_ref(title):
               "month": "",
               "volume": "",
               "issue": "",
-              "description": ""
+              "description": "",
+              "uri": "https://api.cdr.land/v1/docs/documents/{record_id}"
             }}"""
             
             
 def create_mineral_site(record_id, doc_name):
     return f"""
                 {{
-                    "source_id": "https://api.cdr.land/v1/docs/documents/",
+                    "source_id": "https://api.cdr.land/v1/docs/documents",
                     "record_id": "{record_id}",
                     "name": "{doc_name}",
                     "location_info": {{
@@ -77,7 +78,7 @@ def create_inventory_format(commodities_dict, commodity, document_dict):
                   "confidence": 1,
                   "source": SYSTEM_SOURCE + " " + VERSION_NUMBER},
     "category": "",
-    
+    "material_form":"",
     "ore": {
         "ore_unit": "",
         "ore_value": ""
@@ -93,11 +94,6 @@ def create_inventory_format(commodities_dict, commodity, document_dict):
     "contained_metal": "", 
     "reference": {
         "document": document_dict,
-        "page_info": [
-            {
-            "page": ""    
-            }
-        ]
     },
     "date": doc_date,
     "zone": "",

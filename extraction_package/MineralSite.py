@@ -18,7 +18,7 @@ def create_document_reference(thread_id, assistant_id, record_id, title):
 
     # thread_id, assistant_id = assistant.check_file(thread_id, assistant_id, file_path, commodity, sign)
 
-    document_ref = schemas.created_document_ref(title)
+    document_ref = schemas.created_document_ref(title, record_id=record_id)
     
     ans = assistant.get_assistant_message(thread_id, assistant_id, prompts.name_instructions.replace('__DOCUMENT_REF___', document_ref))
 
@@ -62,7 +62,13 @@ def clean_document_dict(document_dict_temp, title):
                 if value and len(value.strip()) > 0 and value.strip()[0] == "[":
                     document_dict_temp[key] = [str(item.strip()).replace('"', "") for item in value[1:-1].split(',')]
                 else:
-                    document_dict_temp[key] = [str(item.strip()) for item in value.split(',')]  
+                    document_dict_temp[key] = [str(item.strip()) for item in value.split(',')]
+            if len(document_dict_temp['authors']) == 0:
+               key_to_remove.append(key)
+                  
+            elif len(document_dict_temp['authors']) == 1:
+                if len(document_dict_temp['authors'][0]) == "":
+                    key_to_remove.append(key)
 
     for key in key_to_remove:
         del document_dict_temp[key]
@@ -86,12 +92,13 @@ def clean_mineral_site_json(json_str, title, record_id):
             json_str[key] = title
             
         if key == 'source_id':
-           json_str[key] = "https://api.cdr.land/v1/docs/documents/"
+           json_str[key] = "https://api.cdr.land/v1/docs/documents"
                 
-        if key == 'location_info' and isinstance(value, dict):
+        if key == 'location_info' and isinstance(value, dict):    
             for new_key, new_value in value.items():
                 if new_key == 'crs':
-                    json_str[key][new_key] = URL_STR + "Q701"
+                    json_str[key][new_key] = {"normalized_uri":URL_STR + "Q701"}
+                    json_str[key][new_key] = general.add_extraction_dict(new_value,json_str[key][new_key] )
                     
                 if new_key == 'location':
                     if isinstance(new_value, str) and (new_value.strip() == "" or new_value.strip() == "POINT()") or not is_valid_point(new_value):
@@ -99,7 +106,6 @@ def clean_mineral_site_json(json_str, title, record_id):
                         key_to_remove.append((key, 'crs'))
                         
                 if new_key == 'country':
-                    
                     if new_value == "": 
                         key_to_remove.append((key, new_key))
                     else:
@@ -167,4 +173,7 @@ def remove_keys_MineralSite(json_check, keys_list):
             if outer_key in json_check and inner_key in json_check[outer_key]:
                 del json_check[outer_key][inner_key]
     
+    if not json_check['location_info']:
+        json_check.pop('location_info')
+        
     return json_check

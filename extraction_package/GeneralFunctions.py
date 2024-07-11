@@ -132,20 +132,23 @@ def find_correct_page(file_path, extractions):
             target_strings.append(value)
             
     
-    # logger.debug(f"Target strings found: {target_strings}")
+    logger.debug(f"Target strings found: {target_strings}")
     ## DO TWO METHODS: METHOD 1
     # checks based off first target for the second ones
+    
     if len(target_strings) > 2:
+        logger.debug(f"Before search_text_in_pdf {file_path}")
         table_pages = search_text_in_pdf(file_path, target_strings[0])
         matching_pages = {}
-
+        logger.debug(f"Here are table_pages: {table_pages}")
         for string in target_strings[1:]:
             matching_pages[string] = string_in_page(file_path, string, table_pages)
             if len(list(matching_pages.values())) > 0: 
                 page = find_common_numbers(matching_pages)
     
-        # logger.debug(f"Matching pages: {matching_pages}")
-        # logger.debug(f"Output pages: {page}")
+        logger.debug(f"Matching pages: {matching_pages}")
+        logger.debug(f"Output pages: {page}")
+
 
     if len(page) == 0:
         return page
@@ -179,11 +182,19 @@ def search_text_in_pdf(pdf_path, target_string):
     page_numbers = []
 
     # Open the PDF file in binary mode
+    logger.debug("before opening path")
     with open(pdf_path, 'rb') as file:
         
+        logger.debug("opened path")
         # Create a PDF reader
-        pdf = PyPDF2.PdfReader(file)
+        try:
+            pdf = PyPDF2.PdfReader(file)
+        except PyPDF2.utils.PdfReadError as e:
+            logger.error(f"PyPDF2 read error: {e}")
+        except Exception as e:
+            logger.error(f"An unexpected error occurred: {e}")
         
+        # logger.debug("PYPDF2 ERROR")
         # Iterate over each page
         for page_num in range(len(pdf.pages)):
             page = pdf.pages[page_num]
@@ -192,7 +203,8 @@ def search_text_in_pdf(pdf_path, target_string):
             # Check if target string is in the page's text
             if target_string.lower() in text_new:
                 page_numbers.append(page_num)  
-                            
+    
+    logger.debug(f"returning page numbers: {page_numbers}")   
     return page_numbers
 
 def find_common_numbers(dictionary):
@@ -275,7 +287,7 @@ def get_zotero(url):
 
 
 def add_extraction_dict(value, inner_json):
-    # logger.info(f"In the inner dict function: {inner_json}")
+    logger.debug(f"In the inner dict function: {inner_json}")
     if not inner_json['normalized_uri']:
         inner_json.pop('normalized_uri')
         
@@ -283,7 +295,7 @@ def add_extraction_dict(value, inner_json):
     inner_json['extracted_value'] = value
     inner_json['confidence'] = 1 
     inner_json['source'] = SYSTEM_SOURCE + " " + VERSION_NUMBER  
-    
+    logger.debug(f"after extraction_dict: {inner_json}")
     return inner_json
 
 
