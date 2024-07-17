@@ -1,3 +1,10 @@
+"""
+Copyright © 2023-2024 InferLink Corporation. All Rights Reserved.
+
+Distribution authorized to U.S. Government only; Proprietary Information, September 22, 2023. Other requests for this document shall be referred to the DoD Controlling Office or the DoD SBIR/STTR Program Office.
+
+This Data developed under a SBIR/STTR Contract No 140D0423C0093 is subject to SBIR/STTR Data Rights which allow for protection under DFARS 252.227-7018 (see Section 11.6, Technical Data Rights). 
+"""
 import time
 import os
 import shutil
@@ -6,27 +13,8 @@ import sys
 from extraction_package import ExtractionPipeline
 
 
-def finish_files(commodity):
-    if commodity == "copper":
-        comm_list = ['copper', 'rhenium', 'molybedenum', 'tellurium', 'gold']
-        filename = 'phase_one_copper_top10percent'
-        folder_path = "./reports/copper/"
-    if commodity == "zinc":
-        comm_list = ['zinc', 'lead', 'gallium', 'germanium', 'indium', 'silver', 'lead']
-        filename = 'phase_one_mvt_zinc_top10percent'
-        folder_path = "./reports/mvt_zinc/"
-    
-    if commodity == "nickel":
-        comm_list = ['nickel', 'cobalt', 'copper', 'platinum', 'palladium', 'rhodium', 'ruthenium', 'iridium', 'osmium']
-        filename = 'phase_one_nickel_copper_PGE_top10percent'
-        folder_path = "./reports/nickel-copper-PGE/"
-    
-    if commodity == "lithium":
-        comm_list = ['lithium']
-        filename = 'phase_one_lithium_top10percent'
-        folder_path = "./reports/lithium/"  
+def finish_files(commodity, comm_list, filename, folder_path):
 
-    
     
     meta_data = pd.read_csv(f'./metadata/{filename}.csv').fillna('')
     meta_data.head()
@@ -74,25 +62,25 @@ def finish_files(commodity):
 
         if len(filenames) == 5: 
             print("Starting Extractions")
-            # t = time.time()
-            # ExtractionPipeline.document_parallel_extract(
-            #     folder_path,
-            #     filenames,
-            #     commodity_list,
-            #     output_path
-            #         )
+            t = time.time()
+            ExtractionPipeline.document_parallel_extract(
+                folder_path,
+                filenames,
+                commodity_list,
+                output_path
+                    )
             
-            # Single run
-            for i, filename in enumerate(filenames):
-                t = time.time()
-                ExtractionPipeline.run(folder_path, filename, commodity_list[i], output_path)
-                print(f'Run for file {filename}: {time.time()-t}')
+            # # Single run
+            # for i, filename in enumerate(filenames):
+            #     t = time.time()
+            #     ExtractionPipeline.run(folder_path, filename, commodity_list[i], output_path)
+            #     print(f'Run for file {filename}: {time.time()-t}')
             
             
             
             print("\n-------------------------------------------------------------------------\n")
             print(f'parallel: {time.time()-t}')
-            sys.exit()
+            # sys.exit()
             filenames, commodity_list = [], []
           
         
@@ -100,6 +88,13 @@ def finish_files(commodity):
     
     
 if __name__ == "__main__":
-    commodity = "lithium"
+    commodity = "earth_metals"
     print(f"Working on commodity: {commodity}")
-    finish_files(commodity=commodity)
+    
+    comm_list = ["yttrium", "scandium", "niobium", "lanthanum", "cerium", "praseodymium", 
+                "neodymium", "samarium", "europium", "gadolinium", "terbium", 
+                "dysprosium", "holmium", "erbium", "thulium", "ytterbium", "lutetium", "rare earth elements"]
+    
+    filename = f'phase_one_{commodity}_top10percent'
+    folder_path = f"./reports/{commodity}/"
+    finish_files(commodity=commodity, comm_list=comm_list, filename=filename, folder_path=folder_path)

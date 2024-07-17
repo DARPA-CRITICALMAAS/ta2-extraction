@@ -1,3 +1,10 @@
+"""
+Copyright © 2023-2024 InferLink Corporation. All Rights Reserved.
+
+Distribution authorized to U.S. Government only; Proprietary Information, September 22, 2023. Other requests for this document shall be referred to the DoD Controlling Office or the DoD SBIR/STTR Program Office.
+
+This Data developed under a SBIR/STTR Contract No 140D0423C0093 is subject to SBIR/STTR Data Rights which allow for protection under DFARS 252.227-7018 (see Section 11.6, Technical Data Rights). 
+"""
 import os
 import openai
 import csv
@@ -68,13 +75,13 @@ def create_assistant_commodities(message_file_id):
     return thread.id, assistant.id
 
 
-def check_file_commodities(thread_id, assistant_id, file_path):
+def check_file_commodities(thread_id, assistant_id, file_path, count):
    
     ans = AssistantFunctions.get_assistant_message(thread_id, assistant_id, prompts.file_instructions)
     
-    logger.info(f"Response: {ans}")
-    if ans.lower() == "no":
-        logger.info("We need to reload file.")
+    logger.info(f"Response: {ans} and count: {count}")
+    if ans.lower() == "no" and count < 5 :
+        logger.info("We need to reload file.\n")
         response_code = AssistantFunctions.delete_assistant(assistant_id)
         if response_code == 200:
             logger.info(f"Deleted assistant {assistant_id}")
@@ -83,11 +90,15 @@ def check_file_commodities(thread_id, assistant_id, file_path):
               purpose='assistants'
             )
         new_thread_id, new_assistant_id =  create_assistant_commodities(message_file.id)
-        return check_file_commodities(new_thread_id, new_assistant_id, file_path)
-    else:
+        return check_file_commodities(new_thread_id, new_assistant_id, file_path, count +1 )
+    elif ans.lower() == "yes":
         logger.info("File was correctly uploaded \n")
         return thread_id, assistant_id
+    elif count >= 5:
+        return None, None
     
+    else:
+        return None, None
     
     
 def add_to_metadata(csv_output_path, file_name, record_id, commodities_dict):
