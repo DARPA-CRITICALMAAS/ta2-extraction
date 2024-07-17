@@ -1,5 +1,7 @@
-from extraction_package.schema_formats import *
+from extraction_package.SchemaFormats import *
 
+content = """You are a geology expert and you are very good in understanding mining reports, which is attached.
+"""
 instructions = """You are a geology expert and you are very good in understanding mining reports. You will be given 
 a text from a mining report and a table name. You have to find out what are the different combinations of
 classification (which is either indicated, inferred, measure, proven, probable, or total ), cut-off (represented as a decimal), tonnage (in Tonnes) and 
@@ -14,6 +16,9 @@ Return the response as a JSON structure that follows this format __DOCUMENT_REF_
 Any unknown values should be returned as ""
 """
 
+file_instructions = """If the file was correctly uploaded and can be read return YES otherwise return NO. 
+                        Only return the Yes or No answer."""
+                        
 loc_instructions = f"""Find the geographic location of the mining 
 site in the document and put it in geographic coordinates using latitude and longitude that will then be converted to
 geometry point structure using WGS84 standard. If there are multiple points the format will look like: 
@@ -53,6 +58,11 @@ contains the list of categories found in the tables. The allotted categories are
 "probable", "proven", "proven+probable", "inferred+indicated", "inferred+measured", "measured+indicated"]. The output should be a
 JSON that follow this format : {{"categories": [value1, value2, ...]}} and each value should be all
 lower case.
+"""
+
+find_relevant_commodities = f""" From this list of tables: __RELEVANT__, return the JSON structure that
+contains the list of commodites found in the tables and come from our allotted list. The allotted commodities are __ALLOWED_LIST__. The output should be a
+JSON that follow this format : {{"commodities": [value1, value2, ...]}}.
 """
 
 find_category_rows = f""" From this list of tables: __RELEVANT__, create a python dictionary that
