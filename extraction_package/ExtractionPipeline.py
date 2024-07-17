@@ -13,6 +13,7 @@ import extraction_package.GeneralFunctions as general
 import extraction_package.DepositTypes as deposits
 import extraction_package.MineralInventory as inventory
 import shutil
+import re
 
 class FilesNotCompleted(Exception):
     pass
@@ -81,7 +82,8 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
     
     
     logger.info(f"Working on file: {file_name} title: {title} commodities to extract {commodity_list} \n")
-    new_name = file_name[:-4].replace(" ", "_")
+    new_name = re.sub(r'[()\[\]"\']', '', file_name)
+    new_name = new_name[:-4].replace(" ", "_")
     
     current_datetime_str = datetime.now().strftime("%Y%m%d")
     output_file_path = f'{output_folder_path}{new_name}_summary_{current_datetime_str}.json'
@@ -109,7 +111,7 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
         site_completed = True
     else:
         inner_list = inner_data[0].get('mineral_inventory', None)
-        if isinstance(inner_list, list):
+        if isinstance(inner_list, list) and len(inner_list) > 0:
             # means that we have mineral inventory
             document_dict = inner_list[0].get('reference', None).get('document', None)
         else:
@@ -132,8 +134,9 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
                         content=prompts.content.replace("__FOCUS__", "the mineral inventory"))
 
         mineral_inventory_json = inventory.create_mineral_inventory(thread_id, assistant_id,file_path,document_dict, commodity_list)
-        # mineral_inventory_json = inventory.post_process(mineral_inventory_json)
-        logger.debug("Finished mineral inventory \n")
+        mineral_inventory_json = inventory.post_process(mineral_inventory_json)
+        logger.debug(f"Finished mineral inventory after post processing: {mineral_inventory_json} \n")
+        
         
         if inner_data[0].get("mineral_inventory", None):
             inner_data[0]['mineral_inventory'] = mineral_inventory_json['mineral_inventory']
