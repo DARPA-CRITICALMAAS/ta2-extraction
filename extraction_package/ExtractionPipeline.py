@@ -89,7 +89,7 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
     
     
     logger.info(f"Working on file: {file_name} title: {title} commodities to extract {commodity_list} \n")
-    new_name = re.sub(r'[()\[\]"\']', '', file_name)
+    new_name = re.sub(r'[()\[\]"\',]', '', file_name)
     new_name = new_name[:-4].replace(" ", "_")
     
     current_datetime_str = datetime.now().strftime("%Y%m%d")
@@ -100,9 +100,10 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
     logger.debug(f"JSON form filepath: {data} \n\n")
     inner_data, inner_list = data.get("MineralSite"), {}
     logger.debug(f"Inner data from checking JSON: {inner_data} \n")
+    # logger.debug(f"Inner data from JSON: {inner_data[0]['mineral_inventory']} \n")
    
    # do a check that its there
-    if not inner_data:
+    if len(inner_data) == 0 or len(inner_data[0].get('mineral_inventory', [])) == 0:
         logger.debug("No Mineral_site or document_dict \n")
         document_dict, mineral_site_json = site.create_document_reference(thread_id, assistant_id, record_id, title)
         logger.debug(f"Document dict Output: {document_dict} \n Mineral Site Output: {mineral_site_json} \n")
@@ -118,6 +119,7 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
         site_completed = True
     else:
         inner_list = inner_data[0].get('mineral_inventory', None)
+        logger.debug(f"Got the inner list: {inner_list}")
         if isinstance(inner_list, list) and len(inner_list) > 0:
             # means that we have mineral inventory
             document_dict = inner_list[0].get('reference', None).get('document', None)
