@@ -34,7 +34,7 @@ def create_document_reference(thread_id, assistant_id, record_id, title):
     doc_name = document_dict.get('title', '')   
 
 
-    logger.debug(f" Here is the reference material for the document: \n {document_dict} \n")
+    logger.debug(f" Here is the reference material for the document after cleaning: \n {document_dict} \n")
     
     site_format = schemas.create_mineral_site(record_id, doc_name=doc_name)
     
@@ -45,7 +45,7 @@ def create_document_reference(thread_id, assistant_id, record_id, title):
     if mineral_site_json is None:
         mineral_site_json = json.loads(site_format)
         
-
+    logger.debug(f"Before cleaning mineral site: {mineral_site_json}")
     mineral_site_json = clean_mineral_site_json(mineral_site_json, title, record_id)
 
     logger.debug(f"Here is the Mineral Site Json: \n {mineral_site_json} \n")
@@ -88,7 +88,7 @@ def clean_mineral_site_json(json_str, title, record_id):
     key_to_remove = []
 
     for key, value in json_str.items():
-        # print(f"Here is the key {key}, value {value}")
+        print(f"Here is the key {key}, value {value}")
         if isinstance(value, str):
             if value.strip() == "" and key != "source_id" and key != "record_id":
                 key_to_remove.append((key, None))  # Append a tuple (key, None) for outer keys

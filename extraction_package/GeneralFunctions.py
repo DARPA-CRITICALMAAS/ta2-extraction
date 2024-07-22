@@ -14,7 +14,7 @@ from pyzotero import zotero
 import os
 import requests
 from fuzzywuzzy import process
-from settings import LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY, SYSTEM_SOURCE, VERSION_NUMBER, CDR_BEARER 
+from settings import LIBRARY_ID, LIBRARY_TYPE, SYSTEM_SOURCE, VERSION_NUMBER, CDR_BEARER 
 from extraction_package.ExtractPrompts import *
 import extraction_package.AssistantFunctions as assistant
 import logging

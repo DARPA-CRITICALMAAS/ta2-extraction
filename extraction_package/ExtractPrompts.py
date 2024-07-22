@@ -54,7 +54,7 @@ Return the list of tables as a JSON structure: {{"Tables": ["Table 1 Name","Tabl
 Only return the JSON structure. Note that these tables are typically found in the Mineral resource or Mineral
 reserve sections of the document. These tables should have column names that describe categories, tonnage, 
 cut off grade, or grades related to the commodity __COMMODITY__.
-If there are no tables just return None.
+If there are no tables just return an empty list.
 """
  
 find_relevant_categories = f""" From this list of tables: __RELEVANT__, return the JSON structure that

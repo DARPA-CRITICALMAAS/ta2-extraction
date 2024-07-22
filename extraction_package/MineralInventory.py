@@ -226,8 +226,8 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, unit_dict, 
 def check_cutoff_grade_unit(curr_json, value, unit_dict):
     ## need to change the method of doing this as well for doing the unit to follow new schema
     
-    if value == "":
-        logger.debug("No cutoff_grade")
+    if value.strip() == "":
+        # logger.debug("No cutoff_grade")
         curr_json['cutoff_grade'].pop('grade_unit')
         
     else:
