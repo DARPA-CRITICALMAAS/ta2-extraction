@@ -13,10 +13,10 @@ import sys
 from extraction_package import ExtractionPipeline
 
 
-def finish_files(commodity, comm_list, filename, folder_path):
+def finish_files(commodity, comm_list, meta_file, folder_path):
 
     
-    meta_data = pd.read_csv(f'./metadata/{filename}.csv').fillna('')
+    meta_data = pd.read_csv(meta_file).fillna('')
     meta_data.head()
 
     completed_path = f"./extracted/twelve_month/{commodity}/completed/"
@@ -57,7 +57,7 @@ def finish_files(commodity, comm_list, filename, folder_path):
         if not comm_found and os.path.exists(source_path):
             destination_path = f'{folder_path}not_found/{filename}'
             shutil.move(source_path, destination_path)
-            print(f"Did not find commodity in {filename} ")
+            print(f"Did not find commodity in {filename} \n")
 
 
         if len(filenames) == 5: 
@@ -93,8 +93,8 @@ if __name__ == "__main__":
     
     comm_list = ["yttrium", "scandium", "niobium", "lanthanum", "cerium", "praseodymium", 
                 "neodymium", "samarium", "europium", "gadolinium", "terbium", 
-                "dysprosium", "holmium", "erbium", "thulium", "ytterbium", "lutetium", "rare earth elements"]
+                "dysprosium", "holmium", "erbium", "thulium", "ytterbium", "lutetium"]
     
-    filename = f'phase_one_{commodity}_top10percent'
+    meta_file = f'./metadata/phase_one_{commodity}_top10percent.csv'
     folder_path = f"./reports/{commodity}/"
-    finish_files(commodity=commodity, comm_list=comm_list, filename=filename, folder_path=folder_path)
+    finish_files(commodity=commodity, comm_list=comm_list, meta_file=meta_file, folder_path=folder_path)
