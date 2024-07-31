@@ -46,17 +46,18 @@ You need to update under the main function update the following variables:
 1. Add your openAI API key in the settings.py file under API_KEY variable
 2. In the terminal at the root directory: `python -m extraction_package.extraction_pipeline --pdf_p "/folder/path" --pdf_name  "filename.pdf" --primary_commodity "commodity" --element_sign "commodity_sign" --url "zoltero url" --output_path "/folder/path"`
 
-python -m extraction_package.ExtractionPipeline --pdf_p "/Users/adrisheu/git_folders/ta2-extraction/reports/tungsten/completed/" --pdf_name "Burnt Hill W Mo Sn 8-2013.pdf" --primary_commodity "tungsten" --element_sign "W" --url "https://w3id.org/usgs/z/4530692/FAKE" --output_path "./"
 
 
 
 ## How to run multiple files using the parallelization
 1. Add your openAI API key in the settings.py file under API_KEY variable
 2. Navigate to the parallel_run_extract.py
-3. Update variables: the commodity you are working on, 
-an acceptable list of commodities that we want to have found from the intial pass that indicates we want to extract that file, the filename of the metadata gathered and stored in a metadata folder, folderpath to the where the pdfs are stored to that given commodity.
+3. Update variables: 
+    * commodity: the commodity you are working on 
+    * comm_list: an acceptable list of commodities that we want to have found from the intial pass that indicates we want to extract that file
+    * meta_file: the filename of the metadata gathered and stored in a metadata folder from running the first_pass
+    *folderpath: folderpath to the where the pdfs are stored to that given commodity.
  
-  
 
 
 ## Version Control
