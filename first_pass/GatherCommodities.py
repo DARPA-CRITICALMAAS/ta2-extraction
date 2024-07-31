@@ -1,3 +1,10 @@
+"""
+Copyright © 2023-2024 InferLink Corporation. All Rights Reserved.
+
+Distribution authorized to U.S. Government only; Proprietary Information, September 22, 2023. Other requests for this document shall be referred to the DoD Controlling Office or the DoD SBIR/STTR Program Office.
+
+This Data developed under a SBIR/STTR Contract No 140D0423C0093 is subject to SBIR/STTR Data Rights which allow for protection under DFARS 252.227-7018 (see Section 11.6, Technical Data Rights). 
+"""
 import os
 import openai
 import csv
@@ -51,22 +58,22 @@ def run(directory_path, csv_output_path):
 
             thread_id, assistant_id = HelperFunctions.create_assistant_commodities(file.id)
 
-            thread_id, assistant_id = HelperFunctions.check_file_commodities(thread_id, assistant_id, file_path)
+            thread_id, assistant_id = HelperFunctions.check_file_commodities(thread_id, assistant_id, file_path, 0)
         
-            
-            ans = AssistantFunctions.get_assistant_message(thread_id, assistant_id, prompts.get_commodities_prompt.replace("__COMMODITIES_LIST__", str(commodities_list)))
-            
-            correct_format = {'commodities': ['commodity1', 'commodity2']}
-            
-            commodities_json = GeneralFunctions.extract_json_strings(ans, str(correct_format), remove_comments = False)
-            
-            if commodities_json == None:
-                commodities_json = correct_format
+            if assistant_id is not None:
+                ans = AssistantFunctions.get_assistant_message(thread_id, assistant_id, prompts.get_commodities_prompt.replace("__COMMODITIES_LIST__", str(commodities_list)))
                 
-            logger.info(f"Here are the extracted commodities: {commodities_json} \n")
-            
-            AssistantFunctions.delete_assistant(assistant_id)
-            HelperFunctions.add_to_metadata(csv_output_path, file_title, record_id, commodities_json)
+                correct_format = {'commodities': ['commodity1', 'commodity2']}
+                
+                commodities_json = GeneralFunctions.extract_json_strings(ans, str(correct_format), remove_comments = False)
+                
+                if commodities_json == None:
+                    commodities_json = correct_format
+                    
+                logger.info(f"Here are the extracted commodities: {commodities_json} \n")
+                
+                AssistantFunctions.delete_assistant(assistant_id)
+                HelperFunctions.add_to_metadata(csv_output_path, file_title, record_id, commodities_json)
         else:
             logger.info("File was previously done \n")
         
@@ -76,7 +83,7 @@ def run(directory_path, csv_output_path):
         
 if __name__ == "__main__":
     t = time.time()
-    comm = "lithium"
+    comm = "earth_metals"
     download_dir = f"./reports/{comm}/"
     csv_output_path = f"./metadata/phase_one_{comm}_top10percent.csv"
     run(download_dir, csv_output_path)

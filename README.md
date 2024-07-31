@@ -3,7 +3,8 @@ This is part of the TA2 project for USGS. This is the package that works to extr
 
 ## Extraction Package Directory 
 Note all loggers should be name similar to the file.
-Launched May 15, 2024
+Launched July 31, 2024
+
 
 extraction_package/ \
 |    |---- \_\_init\_\_ \
@@ -11,9 +12,28 @@ extraction_package/ \
 |       |---- GeneralFunctions: all generalized functions that do not just relate to a single section \
 |       |---- MineralInventory: code to generate the Mineral Inventory \
 |       |---- MineralSite: Code to generate the Mineral Site and document reference information \
+|       |---- Assistant Functions: all code that relates to call the LLM that is used
 |       |---- DepositTypes : the code given to derive the deposit type candidates \
-|       |---- Prompts: all prompts used \
+|       |---- ExtractPrompts: all prompts used \
 |       |---- SchemaFormats: all the formats that match the schema derived by the larger TA2 team 
+
+The extraction package holds all the major code for running the parallelized extraction of the mineral inventory. This code can be handled by calling a driver function such as parallel_extract_run.py. The driver function requires: the commodity you are working on, 
+an acceptable list of commodities that we want to have found from the intial pass that indicates we want to extract that file, the filename of the metadata gathered and stored in a metadata folder, folderpath to the where the pdfs are stored to that given commodity.
+ 
+## first pass Directory
+The first pass directory stores all of the code that funs an initial first pass on a series of pdfs to gather the list of all commodities present in the file. This helps us determine whether or not we want to extract from that given file. It creates an output of a metadata file that gives a list of commodities within all files across a given commodity. 
+extraction_package/ \
+|    |---- \_\_init\_\_ \
+|    |---- GatherCommodities: the main driver that goes through each file and extracts the commodities
+|    |---- HelperFunctions: any generic prompts that were created just for this package
+|    |---- prompts : all prompts used for the package
+
+To run this directory you can call:  `python -m first_pass.GatherCommodities`
+
+You need to update under the main function update the following variables:
+* comm: the commodity of interest that you are looking at
+* download_dir: filepath to the pdf files where the commodity pdfs are stored
+* csv_output_path: the path where you want the metadata collected for that given commodity
 
 
 
@@ -32,15 +52,11 @@ python -m extraction_package.ExtractionPipeline --pdf_p "/Users/adrisheu/git_fol
 
 ## How to run multiple files using the parallelization
 1. Add your openAI API key in the settings.py file under API_KEY variable
-2. Navigate to the parallel_extraction.ipynb
-3. Update variables: 
-    - filenames: Names of the mining reports in your file path
-    - url_list: DOI gathered from Zoltero
-    - commodity: selected commodity of importance
-    - commodity_sign: elemental sign of the commodity 
-    - file_path: path to your Mining Reports that you want extracted
-    - output_path: what folder you want extracted files to be stored
-    Note: Many of these variables will not be needed in the future once we make a more autonomous package that integrates with the download of the reports
+2. Navigate to the parallel_run_extract.py
+3. Update variables: the commodity you are working on, 
+an acceptable list of commodities that we want to have found from the intial pass that indicates we want to extract that file, the filename of the metadata gathered and stored in a metadata folder, folderpath to the where the pdfs are stored to that given commodity.
+ 
+  
 
 
 ## Version Control

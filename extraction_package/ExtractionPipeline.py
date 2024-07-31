@@ -1,3 +1,10 @@
+"""
+Copyright © 2023-2024 InferLink Corporation. All Rights Reserved.
+
+Distribution authorized to U.S. Government only; Proprietary Information, September 22, 2023. Other requests for this document shall be referred to the DoD Controlling Office or the DoD SBIR/STTR Program Office.
+
+This Data developed under a SBIR/STTR Contract No 140D0423C0093 is subject to SBIR/STTR Data Rights which allow for protection under DFARS 252.227-7018 (see Section 11.6, Technical Data Rights). 
+"""
 import warnings
 import time
 import concurrent.futures
@@ -8,7 +15,7 @@ import logging.config
 from datetime import datetime
 import extraction_package.AssistantFunctions as assistant
 import extraction_package.MineralSite as site
-import extraction_package.Prompts as prompts
+import extraction_package.ExtractPrompts as prompts
 import extraction_package.GeneralFunctions as general
 import extraction_package.DepositTypes as deposits
 import extraction_package.MineralInventory as inventory
@@ -82,7 +89,7 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
     
     
     logger.info(f"Working on file: {file_name} title: {title} commodities to extract {commodity_list} \n")
-    new_name = re.sub(r'[()\[\]"\']', '', file_name)
+    new_name = re.sub(r'[()\[\]"\',]', '', file_name)
     new_name = new_name[:-4].replace(" ", "_")
     
     current_datetime_str = datetime.now().strftime("%Y%m%d")
@@ -93,9 +100,10 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
     logger.debug(f"JSON form filepath: {data} \n\n")
     inner_data, inner_list = data.get("MineralSite"), {}
     logger.debug(f"Inner data from checking JSON: {inner_data} \n")
+    # logger.debug(f"Inner data from JSON: {inner_data[0]['mineral_inventory']} \n")
    
    # do a check that its there
-    if not inner_data:
+    if len(inner_data) == 0 or len(inner_data[0].get('mineral_inventory', [])) == 0:
         logger.debug("No Mineral_site or document_dict \n")
         document_dict, mineral_site_json = site.create_document_reference(thread_id, assistant_id, record_id, title)
         logger.debug(f"Document dict Output: {document_dict} \n Mineral Site Output: {mineral_site_json} \n")
@@ -111,6 +119,7 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
         site_completed = True
     else:
         inner_list = inner_data[0].get('mineral_inventory', None)
+        logger.debug(f"Got the inner list: {inner_list}")
         if isinstance(inner_list, list) and len(inner_list) > 0:
             # means that we have mineral inventory
             document_dict = inner_list[0].get('reference', None).get('document', None)

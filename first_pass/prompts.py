@@ -1,3 +1,10 @@
+"""
+Copyright © 2023-2024 InferLink Corporation. All Rights Reserved.
+
+Distribution authorized to U.S. Government only; Proprietary Information, September 22, 2023. Other requests for this document shall be referred to the DoD Controlling Office or the DoD SBIR/STTR Program Office.
+
+This Data developed under a SBIR/STTR Contract No 140D0423C0093 is subject to SBIR/STTR Data Rights which allow for protection under DFARS 252.227-7018 (see Section 11.6, Technical Data Rights). 
+"""
 first_pass_instructions = """You are a geology expert and you are very good in understanding mining reports. 
 You will be given a text from a mining report and a table name. From this mining report, you will need to 
 extract all of the commodities that are mentioned and are relevant.
