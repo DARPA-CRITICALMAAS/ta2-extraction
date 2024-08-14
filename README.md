@@ -47,8 +47,6 @@ You need to update under the main function update the following variables:
 2. In the terminal at the root directory: `python -m extraction_package.extraction_pipeline --pdf_p "/folder/path" --pdf_name  "filename.pdf" --primary_commodity "commodity" --element_sign "commodity_sign" --url "zoltero url" --output_path "/folder/path"`
 
 
-
-
 ## How to run multiple files using the parallelization
 1. Add your openAI API key in the settings.py file under API_KEY variable
 2. Navigate to the parallel_run_extract.py
