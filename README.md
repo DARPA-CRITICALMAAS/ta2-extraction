@@ -54,8 +54,9 @@ You need to update under the main function update the following variables:
     * commodity: the commodity you are working on 
     * comm_list: an acceptable list of commodities that we want to have found from the intial pass that indicates we want to extract that file
     * meta_file: the filename of the metadata gathered and stored in a metadata folder from running the first_pass
-    *folderpath: folderpath to the where the pdfs are stored to that given commodity.
- 
+    * folderpath: folderpath to the where the pdfs are stored to that given commodity.
+    * output_path: output folder path where you want extractions to be temporarily stored before they are completed
+    * completed_path: output folder path where you want fully completed extractions (ie all three sections) stored in
 
 
 ## Version Control

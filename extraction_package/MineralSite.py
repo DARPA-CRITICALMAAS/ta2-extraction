@@ -168,7 +168,21 @@ def is_valid_point(s):
     match = re.search(pattern, s)
     
     # Return True if a match is found, False otherwise
-    return match is not None
+    number_bool = match is not None
+    matches = re.findall(r'[-\d.]+', s)
+
+    correct_val = False
+    if len(matches) == 2:
+        longitude = float(matches[0])
+        latitude = float(matches[1])
+
+        # Check the conditions
+        if -180 <= longitude <= 180 and -90 <= latitude <= 90:
+            correct_val = True
+    
+    return number_bool and correct_val
+    
+    
 
 def remove_keys_MineralSite(json_check, keys_list):
     ## Removing any keys we don't need

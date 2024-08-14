@@ -13,13 +13,11 @@ import sys
 from extraction_package import ExtractionPipeline
 
 
-def finish_files(commodity, comm_list, meta_file, folder_path):
-
-    
+def finish_files(commodity, comm_list, meta_file, folder_path, output_path, completed_path):
     meta_data = pd.read_csv(meta_file).fillna('')
     meta_data.head()
 
-    completed_path = f"./extracted/twelve_month/{commodity}/completed/"
+    
     all_files = os.listdir(completed_path)
 
     completed_records = []
@@ -31,7 +29,7 @@ def finish_files(commodity, comm_list, meta_file, folder_path):
 
     total = 0
     
-    output_path = f"./extracted/twelve_month/{commodity}/"
+    
     filenames = []
     commodity_list = []
     # need to add that it wasn't in the completed & then can run again
@@ -80,7 +78,7 @@ def finish_files(commodity, comm_list, meta_file, folder_path):
             
             print("\n-------------------------------------------------------------------------\n")
             print(f'parallel: {time.time()-t}')
-            # sys.exit()
+            
             filenames, commodity_list = [], []
           
         
@@ -97,4 +95,8 @@ if __name__ == "__main__":
     
     meta_file = f'./metadata/phase_one_{commodity}_top10percent.csv'
     folder_path = f"./reports/{commodity}/"
-    finish_files(commodity=commodity, comm_list=comm_list, meta_file=meta_file, folder_path=folder_path)
+    output_path = f"./extracted/look_at/"
+    completed_path = f"./extracted/look_at/"
+    
+    finish_files(commodity=commodity, comm_list=comm_list, meta_file=meta_file, 
+        folder_path=folder_path, output_path=output_path, completed_path=completed_path)
