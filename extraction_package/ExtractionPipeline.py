@@ -176,10 +176,6 @@ def pipeline(thread_id, assistant_id, message_file_id, folder_path, file_name, c
     else: 
         raise FilesNotCompleted()
         
-        
-
-    
-
 
 
 if __name__ == "__main__":
