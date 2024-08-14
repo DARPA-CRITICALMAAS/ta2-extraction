@@ -26,7 +26,7 @@ file_instructions = """If the file was correctly uploaded and can be read return
 loc_instructions = f"""Find the geographic location of the mining 
 site in the document and put it in geographic coordinates using latitude and longitude that will then be converted to
 geometry point structure using WGS84 standard. If there are multiple points the format will look like: 
-"MULTIPOINT(long1 lat1,long2 lat2, ..)". If there is no location information or if the correct conversions cannot be made replace the value as empty strings. 
+"MULTIPOINT(long1 lat1,long2 lat2, ..)". Latitude should be between (-90 and +90) and Longitude should be between (-180 and +180). If there is no location information or if the correct conversions cannot be made replace the value as empty strings. 
 Fill out the JSON structure Mineral Site based on the geographic information found.
 Here is an example format: Mineral Site: __SITE_FORMAT__.
 Return only the filled in MineralSite Json Structure with the given keys and found values. Do not 

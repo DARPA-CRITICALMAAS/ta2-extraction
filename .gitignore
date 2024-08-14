@@ -60,3 +60,5 @@ Thumbs.db
 .ipynb_checkpoints
 
 extract_venv/
+reports/
+extracted/
