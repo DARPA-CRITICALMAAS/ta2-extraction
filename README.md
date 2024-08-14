@@ -7,14 +7,22 @@ To exploit all the advantages of this package, you want to use it for the entire
 ### Steps
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys)
 1. Run the download_files.py to get all files connected to the commodity/deposit type pair: 
-    1a. update variables: deposits, document_dir
+
+    1a. update variables: deposits, document_dir 
+
     1b. run: `python -u download_files.py`
 2. Run the first pass package to gather a list of all commodities within a given file.
+
     2a. update variables: comm, download_dir, csv_output_path
+
     2b. run `python -um first_pass.GatherCommodities`
+
 3. Run the extraction package to get the extractions
+
     3a. uncomment the _run_with_metadata()_ and comment out _run_folder_path()_
+
     3b update variables: commodity, comm_list, meta_file, folderpath, output_path, completed_path
+    
     3c. run `python -u parallel_extract_run.py` 
 
 For further explaination or information of each of these steps refer to the sections below. 
