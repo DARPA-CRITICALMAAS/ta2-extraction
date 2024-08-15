@@ -17,6 +17,7 @@ To exploit all the advantages of this package, you want to use it for the entire
 3. Run the extraction package to get the extractions
     
     3a. run `python -u parallel_extract_run.py --comm_list "List of commodities that you identify as related to the deposit type" --metafile "Path to generated metadata file" --folder_path "Path to stored reports" --output_path "Path to temporary storage of incomplete extractions" --completed_path "Path to storage of completed extractions" --commodity_dict "Dictionary of the list of commodities for each file"`
+
     **Note** if there is no metadata file you can leave it as an empty string. If there is a metadata file then commodity dictionary can be left as an empty string. 
 
 For further explaination or information of each of these steps refer to the sections below. 
@@ -61,9 +62,9 @@ The extraction package holds all the major code for running the parallelized ext
 The first pass directory stores all of the code that creates an initial first pass on pdfs to generate a list of all commodities present in a given file. This helps us determine whether or not we want to extract from that given file. It creates an output of a metadata file that gives a list of commodities within all files across a given commodity. 
 extraction_package/ \
 |    |---- \_\_init\_\_ \
-|    |---- GatherCommodities: the main driver that goes through each file and extracts the commodities
-|    |---- HelperFunctions: any generic prompts that were created just for this package
-|    |---- prompts : all prompts used for the package
+|    |---- GatherCommodities: the main driver that goes through each file and extracts the commodities \
+|    |---- HelperFunctions: any generic prompts that were created just for this package \
+|    |---- prompts : all prompts used for the package \
 
 ### How to run
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys) 
@@ -83,7 +84,7 @@ The python file download_files.py works by using the SRI generated predictions o
 
 ## How to run the single package for extraction
 1. Add your openAI API key in the settings.py file under API_KEY variable
-2. In the terminal at the root directory: `python -m extraction_package.extraction_pipeline --pdf_p "/folder/path" --pdf_name  "filename.pdf" --commodity_list "List of commodities expected in the file" --output_path "/folder/path" `
+2. In the terminal at the root directory: `python -m extraction_package.extraction_pipeline --pdf_p "/folder/path" --pdf_name  "filename.pdf" --commodity_list "[List of commodities expected in the file]" --output_path "/folder/path" `
 
 ## Version Control
 ### current version 2.0
