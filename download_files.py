@@ -14,7 +14,7 @@ from first_pass import HelperFunctions as helper
 logging.config.fileConfig('config.ini')
 logger = logging.getLogger("Downloader") 
 
-def download_files(deposit_type, folder_name):
+def download_files(deposit_type, download_dir):
     df = pd.read_csv("./metadata/deposit_type_record_id.csv")
     df_deposit = df[df['deposit_type'] == deposit_type].reset_index()
     df_deposit_sorted = df_deposit.sort_values(by='confidence', ascending = False)
@@ -30,7 +30,7 @@ def download_files(deposit_type, folder_name):
         limit = m * 0.1
     logger.info(f"Limit: {limit}")
     
-    download_dir = f"/Users/adrisheu/git_folders/ta2-extraction/reports/{folder_name}/"
+    
     count = 1
     for index, row in df_deposit_sorted.iterrows():
         logger.info(f"On file number: {count} out of {limit}")
@@ -48,5 +48,6 @@ if __name__ == "__main__":
     folder_name = "earth_metals"
     deposits = ["Carbonatite REE", "Peralkaline igneous HFSE- REE"]
     logger.info("Starting Download")
+    download_dir = f"./reports/{folder_name}/"
     for dep_type in deposits:
-        download_files(dep_type, folder_name)
+        download_files(dep_type, download_dir)

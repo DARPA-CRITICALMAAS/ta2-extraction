@@ -13,7 +13,7 @@ import sys
 from extraction_package import ExtractionPipeline
 
 
-def finish_files(commodity, comm_list, meta_file, folder_path, output_path, completed_path):
+def run_from_metadata(comm_list, meta_file, folder_path, output_path, completed_path):
     meta_data = pd.read_csv(meta_file).fillna('')
     meta_data.head()
 
@@ -67,14 +67,7 @@ def finish_files(commodity, comm_list, meta_file, folder_path, output_path, comp
                 commodity_list,
                 output_path
                     )
-            
-            # # Single run
-            # for i, filename in enumerate(filenames):
-            #     t = time.time()
-            #     ExtractionPipeline.run(folder_path, filename, commodity_list[i], output_path)
-            #     print(f'Run for file {filename}: {time.time()-t}')
-            
-            
+
             
             print("\n-------------------------------------------------------------------------\n")
             print(f'parallel: {time.time()-t}')
@@ -83,7 +76,43 @@ def finish_files(commodity, comm_list, meta_file, folder_path, output_path, comp
           
         
     print(f"found this many files with identified {total}")    
+  
+  
+ 
     
+def run_folder_path(commodity_dictionary, folder_path, output_path, completed_path): 
+    completed_files = os.listdir(completed_path)
+    all_commodity_files = os.listdir(folder_path)
+
+    completed_records, commodity_list = [], []
+    for filename in completed_files:
+        record_id, _ = filename.split('_', 1)
+        completed_records.append(record_id)
+        
+    for filename in all_commodity_files:
+        record_id, _ = filename.split('_', 1)
+        if record_id in completed_records: 
+            pass
+        else:
+            filenames.append(filename)
+            commodity_list.append(commodity_dictionary[filename])
+
+
+        if len(filenames) == 5: 
+            print("Starting Extractions")
+            t = time.time()
+            ExtractionPipeline.document_parallel_extract(
+                folder_path,
+                filenames,
+                commodity_list,
+                output_path
+                    )
+            
+            print("\n-------------------------------------------------------------------------\n")
+            print(f'parallel: {time.time()-t}')
+            
+            filenames, commodity_list = [], []
+            
     
 if __name__ == "__main__":
     commodity = "earth_metals"
@@ -98,5 +127,9 @@ if __name__ == "__main__":
     output_path = f"./extracted/look_at/"
     completed_path = f"./extracted/look_at/"
     
-    finish_files(commodity=commodity, comm_list=comm_list, meta_file=meta_file, 
+    
+    run_from_metadata(comm_list=comm_list, meta_file=meta_file, 
         folder_path=folder_path, output_path=output_path, completed_path=completed_path)
+    
+    commodity_dictionary = {}
+    # run_folder_path(commodity_dictionary, folder_path, output_path, completed_path)

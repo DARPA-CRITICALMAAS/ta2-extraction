@@ -79,7 +79,6 @@ def run(directory_path, csv_output_path):
         
 ###########################       parallelization      ############################
 
-
         
 if __name__ == "__main__":
     t = time.time()
