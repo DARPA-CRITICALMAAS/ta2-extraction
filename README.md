@@ -8,22 +8,16 @@ To exploit all the advantages of this package, you want to use it for the entire
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys)
 1. Run the download_files.py to get all files connected to the commodity/deposit type pair: 
 
-    1a. update variables: deposits, document_dir 
+    1a. run: `python -u download_files.py --download_dir "path you want to download too" --deposits "[list of deposit types]"`
 
-    1b. run: `python -u download_files.py`
 2. Run the first pass package to gather a list of all commodities within a given file.
 
-    2a. update variables: comm, download_dir, csv_output_path
-
-    2b. run `python -um first_pass.GatherCommodities`
+    2a. run `python -um first_pass.GatherCommodities --download_dir "path to stored reports" --csv_output "Path to where you want to download reports"`
 
 3. Run the extraction package to get the extractions
-
-    3a. uncomment the _run_with_metadata()_ and comment out _run_folder_path()_
-
-    3b update variables: commodity, comm_list, meta_file, folderpath, output_path, completed_path
     
-    3c. run `python -u parallel_extract_run.py` 
+    3a. run `python -u parallel_extract_run.py --comm_list "List of commodities that you identify as related to the deposit type" --metafile "Path to generated metadata file" --folder_path "Path to stored reports" --output_path "Path to temporary storage of incomplete extractions" --completed_path "Path to storage of completed extractions" --commodity_dict "Dictionary of the list of commodities for each file"`
+    **Note** if there is no metadata file you can leave it as an empty string. If there is a metadata file then commodity dictionary can be left as an empty string. 
 
 For further explaination or information of each of these steps refer to the sections below. 
 
@@ -46,34 +40,22 @@ extraction_package/ \
 
 The extraction package holds all the major code for running the parallelized extraction of the mineral inventory. This code can be handled by calling a driver function such as parallel_extract_run.py. 
 
-### How to run with MetaData file
+### Description of Variables
+* **comm_list**: an acceptable list of commodities that we want to have found from the intial pass that indicates we want to extract that file
+* **meta_file**: the filename of the metadata gathered and stored in a metadata folder from running the first_pass
+* **folderpath**: folderpath to the where the pdfs are stored to that given commodity.
+* **output_path**: output folder path where you want extractions to be temporarily stored before they are completed
+* **completed_path**: output folder path where you want fully completed extractions (ie all three sections) stored in
+* **commodity_dictionary**: this should be a dictionary where the filename is a key and the value is a list of found commodities in the file. 
+
+### How to run
 **Note**: In order to correctly run this section you must have previously run the first pass to generate the metadata file that will be used for the extractions. Please refer to section first pass directory to generate that file.
 **Note**: the function expects that the files are downloaded with the file name as CDR_DOCUMENT_ID underscore then file title. For example: 02003096a4646d77019ce2e76ba93c8e2242a7a8ae7734176781080368f32772c9_NI 43-101 Technical Report for the Rovina Valley project in Romania dated March, 2022. If you want to download files following this format please refer to the download_files.py
 
-
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys)
-1. Update variables: 
-    * **commodity**: the commodity you are working on 
-    * **comm_list**: an acceptable list of commodities that we want to have found from the intial pass that indicates we want to extract that file
-    * **meta_file**: the filename of the metadata gathered and stored in a metadata folder from running the first_pass
-    * **folderpath**: folderpath to the where the pdfs are stored to that given commodity.
-    * **output_path**: output folder path where you want extractions to be temporarily stored before they are completed
-    * **completed_path**: output folder path where you want fully completed extractions (ie all three sections) stored in
-2. Make sure that function _run_folder_path()_ is commented out
-3. Run `python -u parallel_extract_run.py`
+1. run `python -u parallel_extract_run.py --comm_list "List of commodities that you identify as related to the deposit type" --metafile "Path to generated metadata file" --folder_path "Path to stored reports" --output_path "Path to temporary storage of incomplete extractions" --completed_path "Path to storage of completed extractions" --commodity_dict "Dictionary of the list of commodities for each file"`
 
-
-### How to run with just a directory of files
-**Note**: the function expects that the files are downloaded with the file name as CDR_DOCUMENT_ID underscore then file title. For example: 02003096a4646d77019ce2e76ba93c8e2242a7a8ae7734176781080368f32772c9_NI 43-101 Technical Report for the Rovina Valley project in Romania dated March, 2022. If you want to download files following this format please refer to the download_files.py
-
-
-0. Make sure all variables in the settings.py are correctly formatted (ie API keys)
-1. Update variables: 
-    * **commodity_dictionary**: this should be a dictionary where the filename is a key and the value is a list of found commodities in the file. 
-    * **output_path**: output folder path where you want extractions to be temporarily stored before they are completed
-    * **completed_path**: output folder path where you want fully completed extractions (ie all three sections) stored in
-2. Make sure that function _run_from_metadata()_ is commented out
-3. Run `python -u parallel_extract_run.py`
+**Note** if there is no metadata file you can leave it as an empty string. If there is a metadata file then commodity dictionary can be left as an empty string. 
  
 ## First pass Directory
 The first pass directory stores all of the code that creates an initial first pass on pdfs to generate a list of all commodities present in a given file. This helps us determine whether or not we want to extract from that given file. It creates an output of a metadata file that gives a list of commodities within all files across a given commodity. 
@@ -84,19 +66,15 @@ extraction_package/ \
 |    |---- prompts : all prompts used for the package
 
 ### How to run
-1. Update the following variables:
-* **comm**: the commodity of interest that you are looking at
-* **download_dir**: filepath to the pdf files where the commodity pdfs are stored
-* **csv_output_path**: the path where you want the metadata collected for that given commodity
-2. To run this directory you can call:  `python -m first_pass.GatherCommodities`
+0. Make sure all variables in the settings.py are correctly formatted (ie API keys) 
+1. To run this directory you can call:  `python -um first_pass.GatherCommodities --download_dir "path to stored reports" --csv_output "Path to where you want to download reports"`
 
 ## Download Files
-The python file download_files.py works by using the SRI generated predictions of deposit types, which is sotred in the metadata directory. This works by downloading a limited amount of files from a given commodity type by creating an API request to the CDR. 
-To run:
-1. update variables: 
-* **download_dir**: directory path of where you want to store the file
-* **deposits**: the deposity types, which should follow the names given in the codes/minmod_depsit_types.csv
-2. run `python -u download_files.py`
+The python file download_files.py works by using the SRI generated predictions of deposit types, which is sotred in the metadata directory. This works by downloading a limited amount of files from a given commodity type by creating an API request to the CDR.
+
+### How to run
+0. Make sure all variables in the settings.py are correctly formatted (ie API keys) 
+1. To run: `python -u download_files.py --download_dir "path you want to download too" --deposits "[list of deposit types]"`
 
 ## Installation (requires python >3.7 and pip)
 1. Create virtual environment (python, anaconda, etc.)

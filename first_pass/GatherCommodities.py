@@ -11,6 +11,8 @@ import csv
 import pandas as pd
 import logging
 import time
+import ast
+import argparse
 
 from first_pass import HelperFunctions, prompts 
 from extraction_package import AssistantFunctions, GeneralFunctions
@@ -82,8 +84,14 @@ def run(directory_path, csv_output_path):
         
 if __name__ == "__main__":
     t = time.time()
-    comm = "earth_metals"
-    download_dir = f"./reports/{comm}/"
-    csv_output_path = f"./metadata/phase_one_{comm}_top10percent.csv"
+    parser = argparse.ArgumentParser(description="Named arguments.")
+
+    # Define named arguments
+    parser.add_argument('--csv_output', type=str, help='full path to the generated metadata csv file', required=True)
+    parser.add_argument('--download_dir', type=str, help='Path to stored reports', required=True)
+    args = parser.parse_args()
+    
+    download_dir = args.download_dir
+    csv_output_path = args.csv_output
     run(download_dir, csv_output_path)
-    # print(f'Evaluation Took: {time.time()-t}')
+    print(f'Evaluation Took: {time.time()-t}')

@@ -9,6 +9,8 @@ import os
 import pandas as pd
 import logging
 import logging.config
+import argparse
+import ast
 from first_pass import HelperFunctions as helper
 
 logging.config.fileConfig('config.ini')
@@ -45,9 +47,17 @@ def download_files(deposit_type, download_dir):
         
         
 if __name__ == "__main__":
-    folder_name = "earth_metals"
-    deposits = ["Carbonatite REE", "Peralkaline igneous HFSE- REE"]
+    
+    parser = argparse.ArgumentParser(description="Named arguments.")
+
+    # Define named arguments
+    parser.add_argument('--deposits', type=str, help='list of deposit types you want to download', required=True)
+    parser.add_argument('--download_dir', type=str, help='Path to where you want to download reports', required=True)
+   
+    # Parse the arguments
+    args = parser.parse_args()
+    deposits = ast.literal_eval(args.deposits)
     logger.info("Starting Download")
-    download_dir = f"./reports/{folder_name}/"
+    download_dir = args.download_dir
     for dep_type in deposits:
         download_files(dep_type, download_dir)

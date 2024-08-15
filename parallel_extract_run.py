@@ -11,6 +11,8 @@ import shutil
 import pandas as pd
 import sys
 from extraction_package import ExtractionPipeline
+import argparse
+import ast
 
 
 def run_from_metadata(comm_list, meta_file, folder_path, output_path, completed_path):
@@ -114,22 +116,40 @@ def run_folder_path(commodity_dictionary, folder_path, output_path, completed_pa
             filenames, commodity_list = [], []
             
     
-if __name__ == "__main__":
-    commodity = "earth_metals"
-    print(f"Working on commodity: {commodity}")
-    
-    comm_list = ["yttrium", "scandium", "niobium", "lanthanum", "cerium", "praseodymium", 
-                "neodymium", "samarium", "europium", "gadolinium", "terbium", 
-                "dysprosium", "holmium", "erbium", "thulium", "ytterbium", "lutetium"]
-    
-    meta_file = f'./metadata/phase_one_{commodity}_top10percent.csv'
-    folder_path = f"./reports/{commodity}/"
-    output_path = f"./extracted/look_at/"
-    completed_path = f"./extracted/look_at/"
-    
-    
-    run_from_metadata(comm_list=comm_list, meta_file=meta_file, 
+def run(metadata):
+    if metadata:
+        run_from_metadata(comm_list=comm_list, meta_file=meta_file, 
         folder_path=folder_path, output_path=output_path, completed_path=completed_path)
     
-    commodity_dictionary = {}
-    # run_folder_path(commodity_dictionary, folder_path, output_path, completed_path)
+        
+    else:
+        run_folder_path(commodity_dictionary, folder_path, output_path, completed_path)
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Named arguments.")
+
+    # Define named arguments
+    parser.add_argument('--comm_list', type=str, help='List of commodities that you identify as related to the deposit type', required=True)
+    parser.add_argument('--metafile', type=str, help='Path to generated metadata file', required=True)
+    parser.add_argument('--folder_path', type=str, help='Path to stored reports', required=True)
+    parser.add_argument('--output_path', type=str, help='Path to temporary storage of incomplete extractions', required=True)
+    parser.add_argument('--completed_path', type=str, help='Path to storage of completed extractions', required=True)
+    parser.add_argument('--commodity_dict', type=str, help='Dictionary of the list of commodities for each file.', required=True)
+    
+    # Parse the arguments
+    args = parser.parse_args()
+    
+    comm_list = ast.literal_eval(args.comm_list)
+    meta_file = args.metafile
+    folder_path =  args.folder_path
+    output_path = args.output_path
+    completed_path = args.completed_path
+    commodity_dictionary = args.commodity_dict
+    
+    ismetadata = True if len(meta_file) > 0 else False
+  
+    
+    run(metadata=ismetadata,comm_list=comm_list, meta_file=meta_file, 
+        folder_path=folder_path, output_path=output_path, completed_path=completed_path)
+    
+    
