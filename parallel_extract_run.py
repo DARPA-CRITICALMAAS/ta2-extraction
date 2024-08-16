@@ -24,7 +24,8 @@ def run_from_metadata(comm_list, meta_file, folder_path, output_path, completed_
 
     completed_records = []
     for filename in all_files:
-        record_id, title = filename.split('_', 1)
+        print(filename)
+        record_id, _ = filename.split('_', 1)
         completed_records.append(record_id)
 
     print("Amount of files completed: ",len(completed_records))
@@ -116,7 +117,9 @@ def run_folder_path(commodity_dictionary, folder_path, output_path, completed_pa
             filenames, commodity_list = [], []
             
     
-def run(metadata):
+def run(metadata,comm_list, meta_file, 
+        folder_path, output_path, completed_path):
+    
     if metadata:
         run_from_metadata(comm_list=comm_list, meta_file=meta_file, 
         folder_path=folder_path, output_path=output_path, completed_path=completed_path)
