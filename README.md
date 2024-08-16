@@ -8,17 +8,19 @@ To exploit all the advantages of this package, you want to use it for the entire
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys)
 1. Run the download_files.py to get all files connected to the commodity/deposit type pair: 
 
-    1a. run: `python -u download_files.py --download_dir "path you want to download too" --deposits "[list of deposit types]"`
+    1a. run: `python -u download_files.py --download_dir 'path you want to download too' --deposits '[list of deposit types]'`
+    
+    **Note** A valid deposits list is ["mvt zinc-lead"].
 
 2. Run the first pass package to gather a list of all commodities within a given file.
 
-    2a. run `python -um first_pass.GatherCommodities --download_dir "path to stored reports" --csv_output "Path to where you want to download reports"`
+    2a. run `python -um first_pass.GatherCommodities --download_dir 'path to stored reports' --csv_output 'Full Path to where and what you want to name the csv metadata file'`
 
 3. Run the extraction package to get the extractions
     
-    3a. run `python -u parallel_extract_run.py --comm_list "List of commodities that you identify as related to the deposit type" --metafile "Path to generated metadata file" --folder_path "Path to stored reports" --output_path "Path to temporary storage of incomplete extractions" --completed_path "Path to storage of completed extractions" --commodity_dict "Dictionary of the list of commodities for each file"`
+    3a. run `python -u parallel_extract_run.py --comm_list '[List of commodities as strings that you identify as related to the deposit type]' --metafile 'Path to generated metadata file' --folder_path 'Path to stored reports' --output_path 'Path to temporary storage of incomplete extractions' --completed_path 'Path to storage of completed extractions' --commodity_dict 'Dictionary of the list of commodities for each file'`
 
-    **Note** if there is no metadata file you can leave it as an empty string. If there is a metadata file then commodity dictionary can be left as an empty string. 
+    **Note** if there is no metadata file you can leave it as an empty string. If there is a metadata file then commodity dictionary can be left as an empty string. Also a valid format for the comm_list is ["zinc", "lead"]. Also a valid format for the comm_list is ["zinc", "lead"]. For commodity_dict is {"filename": ["zinc"]}.
 
 For further explaination or information of each of these steps refer to the sections below. 
 
@@ -54,9 +56,9 @@ The extraction package holds all the major code for running the parallelized ext
 **Note**: the function expects that the files are downloaded with the file name as CDR_DOCUMENT_ID underscore then file title. For example: 02003096a4646d77019ce2e76ba93c8e2242a7a8ae7734176781080368f32772c9_NI 43-101 Technical Report for the Rovina Valley project in Romania dated March, 2022. If you want to download files following this format please refer to the download_files.py
 
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys)
-1. run `python -u parallel_extract_run.py --comm_list "List of commodities that you identify as related to the deposit type" --metafile "Path to generated metadata file" --folder_path "Path to stored reports" --output_path "Path to temporary storage of incomplete extractions" --completed_path "Path to storage of completed extractions" --commodity_dict "Dictionary of the list of commodities for each file"`
+1. run `python -u parallel_extract_run.py --comm_list '[List of commodities as strings that you identify as related to the deposit type]' --metafile 'Path to generated metadata file' --folder_path 'Path to stored reports' --output_path 'Path to temporary storage of incomplete extractions' --completed_path 'Path to storage of completed extractions' --commodity_dict 'Dictionary of the list of commodities for each file'`
 
-**Note** if there is no metadata file you can leave it as an empty string. If there is a metadata file then commodity dictionary can be left as an empty string. 
+**Note** if there is no metadata file you can leave it as an empty string. If there is a metadata file then commodity dictionary can be left as an empty string. Also a valid format for the comm_list is ["zinc", "lead"]. For commodity_dict is {"filename": ["zinc"]}.
  
 ## First pass Directory
 The first pass directory stores all of the code that creates an initial first pass on pdfs to generate a list of all commodities present in a given file. This helps us determine whether or not we want to extract from that given file. It creates an output of a metadata file that gives a list of commodities within all files across a given commodity. 
@@ -68,14 +70,16 @@ extraction_package/ \
 
 ### How to run
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys) 
-1. To run this directory you can call:  `python -um first_pass.GatherCommodities --download_dir "path to stored reports" --csv_output "Path to where you want to download reports"`
+1. To run this directory you can call:  `python -um first_pass.GatherCommodities --download_dir 'path to stored reports' --csv_output 'Path to where you want to download reports'`
 
 ## Download Files
 The python file download_files.py works by using the SRI generated predictions of deposit types, which is sotred in the metadata directory. This works by downloading a limited amount of files from a given commodity type by creating an API request to the CDR.
 
 ### How to run
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys) 
-1. To run: `python -u download_files.py --download_dir "path you want to download too" --deposits "[list of deposit types]"`
+1. To run: `python -u download_files.py --download_dir 'path you want to download too' --deposits '[list of deposit types]'`
+
+**Note** A valid deposits list is ["mvt zinc-lead"].
 
 ## Installation (requires python >3.7 and pip)
 1. Create virtual environment (python, anaconda, etc.)
@@ -84,7 +88,7 @@ The python file download_files.py works by using the SRI generated predictions o
 
 ## How to run the single package for extraction
 1. Add your openAI API key in the settings.py file under API_KEY variable
-2. In the terminal at the root directory: `python -m extraction_package.extraction_pipeline --pdf_p "/folder/path" --pdf_name  "filename.pdf" --commodity_list "[List of commodities expected in the file]" --output_path "/folder/path" `
+2. In the terminal at the root directory: `python -m extraction_package.extraction_pipeline --pdf_p '/folder/path' --pdf_name  'filename.pdf' --commodity_list '[List of commodities expected in the file]' --output_path '/folder/path' `
 
 ## Version Control
 ### current version 2.0
