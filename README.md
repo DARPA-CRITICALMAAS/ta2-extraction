@@ -8,17 +8,17 @@ To exploit all the advantages of this package, you want to use it for the entire
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys)
 1. Run the download_files.py to get all files connected to the commodity/deposit type pair: 
 
-    1a. run: `python -u download_files.py --download_dir 'path you want to download too' --deposits '[list of deposit types]'`
+    1a. run: `python -u download_files.py --download_dir 'path you want to download too' --deposits '[list of deposit types]' --report_limit 'Max amount of reports you want to download. If no limit leave empty' `
     
     **Note** A valid deposits list is ["mvt zinc-lead"].
 
 2. Run the first pass package to gather a list of all commodities within a given file.
 
-    2a. run `python -um first_pass.GatherCommodities --download_dir 'path to stored reports' --csv_output 'Full Path to where and what you want to name the csv metadata file'`
+    2a. run `python -um first_pass.GatherCommodities --download_dir 'path to stored reports' --csv_output 'Full Path to where and what you want to name the csv metadata file' `
 
 3. Run the extraction package to get the extractions
     
-    3a. run `python -u parallel_extract_run.py --comm_list '[List of commodities as strings that you identify as related to the deposit type]' --metafile 'Path to generated metadata file' --folder_path 'Path to stored reports' --output_path 'Path to temporary storage of incomplete extractions' --completed_path 'Path to storage of completed extractions' --commodity_dict 'Dictionary of the list of commodities for each file'`
+    3a. run `python -u parallel_extract_run.py --comm_list '[List of commodities as strings that you identify as related to the deposit type]' --metafile 'Path to generated metadata file' --folder_path 'Path to stored reports' --output_path 'Path to temporary storage of incomplete extractions' --completed_path 'Path to storage of completed extractions' --commodity_dict 'Dictionary of the list of commodities for each file' `
 
     **Note** if there is no metadata file you can leave it as an empty string. If there is a metadata file then commodity dictionary can be left as an empty string. Also a valid format for the comm_list is ["zinc", "lead"]. Also a valid format for the comm_list is ["zinc", "lead"]. For commodity_dict is {"filename": ["zinc"]}.
 
@@ -56,7 +56,7 @@ The extraction package holds all the major code for running the parallelized ext
 **Note**: the function expects that the files are downloaded with the file name as CDR_DOCUMENT_ID underscore then file title. For example: 02003096a4646d77019ce2e76ba93c8e2242a7a8ae7734176781080368f32772c9_NI 43-101 Technical Report for the Rovina Valley project in Romania dated March, 2022. If you want to download files following this format please refer to the download_files.py
 
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys)
-1. run `python -u parallel_extract_run.py --comm_list '[List of commodities as strings that you identify as related to the deposit type]' --metafile 'Path to generated metadata file' --folder_path 'Path to stored reports' --output_path 'Path to temporary storage of incomplete extractions' --completed_path 'Path to storage of completed extractions' --commodity_dict 'Dictionary of the list of commodities for each file'`
+1. run `python -u parallel_extract_run.py --comm_list '[List of commodities as strings that you identify as related to the deposit type]' --metafile 'Path to generated metadata file' --folder_path 'Path to stored reports' --output_path 'Path to temporary storage of incomplete extractions' --completed_path 'Path to storage of completed extractions' --commodity_dict 'Dictionary of the list of commodities for each file' `
 
 **Note** if there is no metadata file you can leave it as an empty string. If there is a metadata file then commodity dictionary can be left as an empty string. Also a valid format for the comm_list is ["zinc", "lead"]. For commodity_dict is {"filename": ["zinc"]}.
  
@@ -77,7 +77,7 @@ The python file download_files.py works by using the SRI generated predictions o
 
 ### How to run
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys) 
-1. To run: `python -u download_files.py --download_dir 'path you want to download too' --deposits '[list of deposit types]'`
+1. To run: `python -u download_files.py --download_dir 'path you want to download too' --deposits '[list of deposit types]' --report_limit 'Max amount of reports you want to download. If no limit leave empty' `
 
 **Note** A valid deposits list is ["mvt zinc-lead"].
 

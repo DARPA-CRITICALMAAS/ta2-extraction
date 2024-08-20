@@ -16,17 +16,19 @@ from first_pass import HelperFunctions as helper
 logging.config.fileConfig('config.ini')
 logger = logging.getLogger("Downloader") 
 
-def download_files(deposit_type, download_dir):
+def download_files(deposit_type, download_dir, report_limit):
     df = pd.read_csv("./metadata/deposit_type_record_id.csv")
     df_deposit = df[df['deposit_type'] == deposit_type].reset_index()
     df_deposit_sorted = df_deposit.sort_values(by='confidence', ascending = False)
     m,n = df_deposit_sorted.shape
     logger.info(f"{m*0.1} or m: {m}")
+    
+    report_limit = m if not report_limit else int(report_limit)
     limit = m * 0.1
 
-    if limit > 200:
-        limit = 200
-    elif m < 200:
+    if limit > report_limit:
+        limit = report_limit
+    elif m < report_limit:
         limit = m
     else:
         limit = m * 0.1
@@ -53,11 +55,13 @@ if __name__ == "__main__":
     # Define named arguments
     parser.add_argument('--deposits', type=str, help='list of deposit types you want to download', required=True)
     parser.add_argument('--download_dir', type=str, help='Path to where you want to download reports', required=True)
+    parser.add_argument('--report_limit', type=str, help='Max amount of reports you want to download. If no limit leave empty', required=True)
    
     # Parse the arguments
     args = parser.parse_args()
     deposits = ast.literal_eval(args.deposits)
+    report_lim = args.report_limit
     logger.info("Starting Download")
     download_dir = args.download_dir
     for dep_type in deposits:
-        download_files(dep_type, download_dir)
+        download_files(dep_type, download_dir, report_lim)

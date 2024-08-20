@@ -29,7 +29,7 @@ def download_document(doc_id, download_dir):
 
     url_pdf = f'https://api.cdr.land/v1/docs/document/{doc_id}'
     url_meta = f'https://api.cdr.land/v1/docs/document/meta/{doc_id}'
-    logger.debug("in download document")
+    # logger.debug(f"in download document CDR Bearer: {CDR_BEARER}")
 
     # Send the initial GET request
     response = requests.get(url_meta, headers=headers)
