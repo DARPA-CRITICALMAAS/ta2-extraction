@@ -48,6 +48,11 @@ def download_files(deposit_type, download_dir, report_limit):
         count += 1
         
         
+
+    
+    
+        
+        
 if __name__ == "__main__":
     
     parser = argparse.ArgumentParser(description="Named arguments.")
@@ -56,12 +61,19 @@ if __name__ == "__main__":
     parser.add_argument('--deposits', type=str, help='list of deposit types you want to download', required=True)
     parser.add_argument('--download_dir', type=str, help='Path to where you want to download reports', required=True)
     parser.add_argument('--report_limit', type=str, help='Max amount of reports you want to download. If no limit leave empty', required=True)
+    parser.add_argument('--doc_ids',type=str, help='Download exact doc_id', required=True)
+   
    
     # Parse the arguments
     args = parser.parse_args()
     deposits = ast.literal_eval(args.deposits)
+    doc_id_list = ast.literal_eval(args.doc_ids)
+    
     report_lim = args.report_limit
     logger.info("Starting Download")
     download_dir = args.download_dir
     for dep_type in deposits:
         download_files(dep_type, download_dir, report_lim)
+        
+    for doc_id in doc_id_list:
+        helper.download_document(doc_id, download_dir)
