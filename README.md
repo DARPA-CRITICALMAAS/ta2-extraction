@@ -8,9 +8,9 @@ To exploit all the advantages of this package, you want to use it for the entire
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys)
 1. Run the download_files.py to get all files connected to the commodity/deposit type pair: 
 
-    1a. run: `python -u download_files.py --download_dir 'path you want to download too' --deposits '[list of deposit types]' --report_limit 'Max amount of reports you want to download. If no limit leave empty' `
+    1a. run: `python -u download_files.py --download_dir 'path you want to download too' --deposits '[list of deposit types]' --report_limit 'Max amount of reports you want to download. If no limit leave empty' --doc_ids '[List of document ids that are in the CDR]'`
     
-    **Note** A valid deposits list is ["mvt zinc-lead"].
+    **Note** A valid deposits list is ["mvt zinc-lead"]. If you want to download via doc_ids please leave deposits as an empty list. If you want to download using deposits only without any specific doc_ids leave doc_ids as an empty list. 
 
 2. Run the first pass package to gather a list of all commodities within a given file.
 
@@ -77,9 +77,9 @@ The python file download_files.py works by using the SRI generated predictions o
 
 ### How to run
 0. Make sure all variables in the settings.py are correctly formatted (ie API keys) 
-1. To run: `python -u download_files.py --download_dir 'path you want to download too' --deposits '[list of deposit types]' --report_limit 'Max amount of reports you want to download. If no limit leave empty' `
+1. To run: `python -u download_files.py --download_dir 'path you want to download too' --deposits '[list of deposit types]' --report_limit 'Max amount of reports you want to download. If no limit leave empty' --doc_ids '[List of document ids that are in the CDR]' `
 
-**Note** A valid deposits list is ["mvt zinc-lead"].
+**Note** A valid deposits list is ["mvt zinc-lead"]. If you want to download via doc_ids leave deposits empty. If you want to download using deposits only without any specific doc_ids leave doc_ids as an empty list. 
 
 ## Installation (requires python >3.7 and pip)
 1. Create virtual environment (python, anaconda, etc.)
