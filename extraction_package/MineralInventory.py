@@ -391,8 +391,8 @@ def check_material_form(curr_json, URL_STR, value):
     
     options = {}
     for item in material_form_picklist:
-        options[item['name']] = item['commodity_id']
-        options[item['formula']] = item['commodity_id']
+        options[item['name']] = item['id']
+        options[item['formula']] = item['id']
         
     found_value = general.find_best_match(value, list(options.keys()))
     if found_value is not None:

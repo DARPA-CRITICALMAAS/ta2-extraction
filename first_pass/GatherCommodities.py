@@ -80,7 +80,13 @@ def run(directory_path, csv_output_path):
             logger.info("File was previously done \n")
         
 ###########################       parallelization      ############################
-
+def ensure_trailing_slash(path):
+    normalized_path = os.path.normpath(path)
+    
+    if os.path.isdir(normalized_path) and not normalized_path.endswith(os.sep):
+        normalized_path += os.sep
+    
+    return normalized_path
         
 if __name__ == "__main__":
     t = time.time()
@@ -91,7 +97,8 @@ if __name__ == "__main__":
     parser.add_argument('--download_dir', type=str, help='Path to stored reports', required=True)
     args = parser.parse_args()
     
-    download_dir = args.download_dir
+    download_dir = ensure_trailing_slash(args.download_dir)
     csv_output_path = args.csv_output
+    print(f"Going to create metadata file: {csv_output_path}")
     run(download_dir, csv_output_path)
     print(f'Evaluation Took: {time.time()-t}')

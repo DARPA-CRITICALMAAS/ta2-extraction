@@ -16,6 +16,14 @@ from first_pass import HelperFunctions as helper
 logging.config.fileConfig('config.ini')
 logger = logging.getLogger("Downloader") 
 
+def ensure_trailing_slash(path):
+    normalized_path = os.path.normpath(path)
+    
+    if os.path.isdir(normalized_path) and not normalized_path.endswith(os.sep):
+        normalized_path += os.sep
+    
+    return normalized_path
+
 def download_files(deposit_type, download_dir, report_limit):
     df = pd.read_csv("./metadata/deposit_type_record_id.csv")
     df_deposit = df[df['deposit_type'] == deposit_type].reset_index()
@@ -68,10 +76,10 @@ if __name__ == "__main__":
     args = parser.parse_args()
     deposits = ast.literal_eval(args.deposits)
     doc_id_list = ast.literal_eval(args.doc_ids)
-    
+    download_dir = ensure_trailing_slash(args.download_dir)
     report_lim = args.report_limit
     logger.info("Starting Download")
-    download_dir = args.download_dir
+    
     for dep_type in deposits:
         download_files(dep_type, download_dir, report_lim)
         

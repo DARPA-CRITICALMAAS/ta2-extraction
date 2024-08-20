@@ -55,8 +55,10 @@ def run_from_metadata(comm_list, meta_file, folder_path, output_path, completed_
                     filenames.append(filename)
                     commodity_list.append(identified)
                     
-        if not comm_found and os.path.exists(source_path):
-            destination_path = f'{folder_path}not_found/{filename}'
+        if not comm_found:
+            destination_dir = f'{folder_path}not_found'
+            os.makedirs(destination_dir, exist_ok=True)
+            destination_path = os.path.join(destination_dir, filename)
             shutil.move(source_path, destination_path)
             print(f"Did not find commodity in {filename} \n")
 
@@ -77,7 +79,13 @@ def run_from_metadata(comm_list, meta_file, folder_path, output_path, completed_
             
             filenames, commodity_list = [], []
           
-        
+    ## Do a final run if there are no files
+    ExtractionPipeline.document_parallel_extract(
+                folder_path,
+                filenames,
+                commodity_list,
+                output_path
+                    )
     print(f"found this many files with identified {total}")    
   
   
@@ -116,7 +124,22 @@ def run_folder_path(commodity_dictionary, folder_path, output_path, completed_pa
             
             filenames, commodity_list = [], []
             
+    ## Do a final run of any leftovers
+    ExtractionPipeline.document_parallel_extract(
+                folder_path,
+                filenames,
+                commodity_list,
+                output_path
+                    )
+            
+def ensure_trailing_slash(path):
+    normalized_path = os.path.normpath(path)
     
+    if os.path.isdir(normalized_path) and not normalized_path.endswith(os.sep):
+        normalized_path += os.sep
+    
+    return normalized_path
+  
 def run(metadata,comm_list, meta_file, 
         folder_path, output_path, completed_path):
     
@@ -144,13 +167,18 @@ if __name__ == "__main__":
     
     comm_list = ast.literal_eval(args.comm_list)
     meta_file = args.metafile
-    folder_path =  args.folder_path
-    output_path = args.output_path
-    completed_path = args.completed_path
+    
+    folder_path =  ensure_trailing_slash(args.folder_path)
+    output_path = ensure_trailing_slash(args.output_path)
+    completed_path = ensure_trailing_slash(args.completed_path)
     commodity_dictionary = args.commodity_dict
     
     ismetadata = True if len(meta_file) > 0 else False
-  
+    
+    if ismetadata and not os.path.isfile(meta_file):
+        print(f"Metafile data path is incorrect. {meta_file}")
+        sys.exit()
+    
     
     run(metadata=ismetadata,comm_list=comm_list, meta_file=meta_file, 
         folder_path=folder_path, output_path=output_path, completed_path=completed_path)
