@@ -277,20 +277,20 @@ def check_instance(current_extraction, key, instance):
     logger.debug(f"check_instance: Final cleaned instance {current_extraction} \n")
     return current_extraction
 
-def get_zotero(url):
+# def get_zotero(url):
    
-    zot = zotero.Zotero(LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY)
-    file_list = url.split("/")
-    file_key = file_list[-1]
-    try:
-        file_item = zot.item(file_key)
-        title = file_item['data']['title']
-    except Exception:
-        logger.error(f'Error connectiong to Zotero. Missing Title')
-        title = ""
+#     zot = zotero.Zotero(LIBRARY_ID, LIBRARY_TYPE, ZOLTERO_KEY)
+#     file_list = url.split("/")
+#     file_key = file_list[-1]
+#     try:
+#         file_item = zot.item(file_key)
+#         title = file_item['data']['title']
+#     except Exception:
+#         logger.error(f'Error connectiong to Zotero. Missing Title')
+#         title = ""
     
-    # print(f"Zoltero Information: file_key {file_key} Title: {title} \n")
-    return title
+#     # print(f"Zoltero Information: file_key {file_key} Title: {title} \n")
+#     return title
 
 
 def add_extraction_dict(value, inner_json):
@@ -299,7 +299,7 @@ def add_extraction_dict(value, inner_json):
         inner_json.pop('normalized_uri')
         
         
-    inner_json['extracted_value'] = value
+    inner_json['observed_name'] = value
     inner_json['confidence'] = 1 
     inner_json['source'] = SYSTEM_SOURCE + " " + VERSION_NUMBER  
     logger.debug(f"after extraction_dict: {inner_json}")
