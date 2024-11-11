@@ -1,0 +1,10 @@
+commodity_observed_name,category_observed_name,ore_unit_observed_name,ore_value,grade_unit_observed_name,grade_value,cutoff_grade_unit_observed_name,cutoff_grade_value,contained_metal,zone
+zinc,inferred,tonnes,142684688.0,percent,7.10,percent,4.0,
+lead,inferred,tonnes,142684688.0,percent,2.32,percent,4.0,
+silver,inferred,tonnes,142684688.0,grams per tonne,46,percent,4.0,
+zinc,indicated,tonnes,75165938.0,percent,7.38,percent,4.0,
+lead,indicated,tonnes,75165938.0,percent,2.38,percent,4.0,
+silver,indicated,tonnes,75165938.0,grams per tonne,62,percent,4.0,
+zinc,measured+indicated,tonnes,217850625.0,percent,7.20,percent,4.0,
+lead,measured+indicated,tonnes,217850625.0,percent,2.34,percent,4.0,
+silver,measured+indicated,tonnes,217850625.0,grams per tonne,51,percent,4.0,

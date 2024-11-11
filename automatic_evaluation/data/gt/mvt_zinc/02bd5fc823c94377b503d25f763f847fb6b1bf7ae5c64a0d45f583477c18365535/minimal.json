@@ -1,0 +1,1114 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Bongara Zinc Project",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Peru",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Amazonas",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 161000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 18.2
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 29302.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": "Mina Grand\u00e9 Sur"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 172000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 17.1
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 29412.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": "Mina Grand\u00e9 Centro"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 21.0
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 29400.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": "Mina Grand\u00e9 Nort\u00e9"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 339000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 19.3
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 65427.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": "Mina Chica"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 13.8
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 1380.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": "Bongarita"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 822000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 18.9
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 155358.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": "All Zones - TOTAL"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 436000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 17.4
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 75864.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": "Mina Grand\u00e9 Sur"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 201000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 16.0
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 32160.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": "Mina Grand\u00e9 Centro"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 450000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 16.5
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 74250.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": "Mina Grand\u00e9 Nort\u00e9"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 252000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 16.9
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 42588.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": "Mina Chica"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 700.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.7
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 88.9,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": "Bongarita"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1340000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 16.8
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 225120.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": "All Zones - TOTAL"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1110000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 15.9
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 5.0
+                },
+                "contained_metal": 176490.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1852000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 14.4
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 5.0
+                },
+                "contained_metal": 266688.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 822000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 18.9
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10.0
+                },
+                "contained_metal": 155358.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1339000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 16.8
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10.0
+                },
+                "contained_metal": 224952.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 549000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 22.0
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 15.0
+                },
+                "contained_metal": 120780.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 752000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 20.1
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 15.0
+                },
+                "contained_metal": 151152.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Albert W. Workman",
+                            " John Reddick"
+                        ],
+                        "year": 2019,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-3",
+                "zone": ""
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Albert W. Workman",
+                        " John Reddick"
+                    ],
+                    "year": 2019,
+                    "month": 3,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

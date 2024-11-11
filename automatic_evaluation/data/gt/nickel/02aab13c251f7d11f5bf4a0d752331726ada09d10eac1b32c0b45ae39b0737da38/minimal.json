@@ -1,0 +1,1152 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Hart Project",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Ontario",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 120000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.7
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 840.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "IF Zone"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.86
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 103.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "IF Zone"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 999000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.56
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 15584.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Massive Zone Lower"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 228000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.4
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 3192.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Massive Zone Lower"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 353000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.36
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 4800.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Massive Zone Upper"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 59000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.12
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 660.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Massive Zone Upper"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 60000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.63
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 378.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Disseminated Zone Lower"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 22000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.52
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 114.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Disseminated Zone Lower"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 14000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.5
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 70.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Disseminated Zone Upper"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 120000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.06
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 72.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "IF Zone"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.07
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 8.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "IF Zone"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 999000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.11
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 1098.9,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Massive Zone Lower"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 228000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.09
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 205.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Massive Zone Lower"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 353000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.09
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 317.7,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Massive Zone Upper"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 59000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.08
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 47.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Massive Zone Upper"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 60000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.04
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 24.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Disseminated Zone Lower"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 22000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.02
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 4.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Disseminated Zone Lower"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 14000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.03
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.46
+                },
+                "contained_metal": 4.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Glen Cole",
+                            " Andrew Mackenzie",
+                            " Philip Bridson",
+                            " Will Randall"
+                        ],
+                        "year": 2010,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-2",
+                "zone": "Disseminated Zone Upper"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Glen Cole",
+                        " Andrew Mackenzie",
+                        " Philip Bridson",
+                        " Will Randall"
+                    ],
+                    "year": 2010,
+                    "month": 2,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

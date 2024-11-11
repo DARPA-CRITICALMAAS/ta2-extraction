@@ -1,0 +1,288 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Montviel Core Zone REE Mineral Resource Estimate",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Quebec",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Yttrium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 183900000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.007
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.0
+                },
+                "contained_metal": 12873.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Guy Desharnais",
+                            " Claude Duplessis"
+                        ],
+                        "year": 2011,
+                        "month": 9,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2011-9",
+                "zone": "Montviel Core Zone"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Niobium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 183900000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.126
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.0
+                },
+                "contained_metal": 231714.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Guy Desharnais",
+                            " Claude Duplessis"
+                        ],
+                        "year": 2011,
+                        "month": 9,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2011-9",
+                "zone": "Montviel Core Zone"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Yttrium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 66700000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.008
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.0
+                },
+                "contained_metal": 5336.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Guy Desharnais",
+                            " Claude Duplessis"
+                        ],
+                        "year": 2011,
+                        "month": 9,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2011-9",
+                "zone": "Montviel Core Zone"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Niobium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 66700000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.14
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.0
+                },
+                "contained_metal": 93380.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Guy Desharnais",
+                            " Claude Duplessis"
+                        ],
+                        "year": 2011,
+                        "month": 9,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2011-9",
+                "zone": "Montviel Core Zone"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Guy Desharnais",
+                        " Claude Duplessis"
+                    ],
+                    "year": 2011,
+                    "month": 9,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

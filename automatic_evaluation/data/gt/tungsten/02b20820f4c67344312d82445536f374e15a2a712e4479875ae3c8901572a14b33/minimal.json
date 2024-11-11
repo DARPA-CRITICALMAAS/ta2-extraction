@@ -1,0 +1,1442 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Mount Pleasant Property",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "New Brunswick",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tin",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12400000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.38
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 47120.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12400000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.86
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 106640.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Indium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12400000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 63.5
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 7874000.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tin",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2800000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.3
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 8400.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2800000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.13
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 31640.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Indium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2800000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 69.8
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 1954400.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tin",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10882000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.43
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 46792.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Indium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10882000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 67.8
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 7377996.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10882000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.64
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 69644.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Arsenic",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10882000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.98
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 106643.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10882000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.09
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 9793.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Molybdenum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10882000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.06
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 6529.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10882000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.11
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 11970.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Bismuth",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10882000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.08
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 8705.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tin",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7603000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 16726.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Indium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7603000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 74.6
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 5671838.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Zinc",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7603000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.99
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 75269.7,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Arsenic",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7603000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.8
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 60824.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7603000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.08
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 6082.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Molybdenum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7603000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.05
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 3801.5,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7603000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.09
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 6842.7,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Bismuth",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7603000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.05
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 3801.5,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Steven McCutcheon",
+                            " John Reddick",
+                            " Tim McKeen",
+                            " Stephanie Scott",
+                            " Dorota El-Rassi",
+                            " Michael Kociumbas"
+                        ],
+                        "year": 2013,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-10",
+                "zone": ""
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Steven McCutcheon",
+                        " John Reddick",
+                        " Tim McKeen",
+                        " Stephanie Scott",
+                        " Dorota El-Rassi",
+                        " Michael Kociumbas"
+                    ],
+                    "year": 2013,
+                    "month": 10,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

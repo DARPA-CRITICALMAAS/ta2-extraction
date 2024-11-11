@@ -1,0 +1,521 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Whabouchi Property",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Quebec",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "lithium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 11294000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.58
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.4
+                },
+                "contained_metal": 178445.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Andre Laferriere",
+                            " Yves Dessureault",
+                            " Nicholas Skiadas",
+                            "Gary H.K. Pearse",
+                            " Ann Lamontagne",
+                            " Isabelle Larouche",
+                            " Alain Michaud",
+                            " Michel Bilodeau",
+                            " Celine Charbonneau"
+                        ],
+                        "year": 2013,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-2",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "lithium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 13785000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.5
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.4
+                },
+                "contained_metal": 206775.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Andre Laferriere",
+                            " Yves Dessureault",
+                            " Nicholas Skiadas",
+                            "Gary H.K. Pearse",
+                            " Ann Lamontagne",
+                            " Isabelle Larouche",
+                            " Alain Michaud",
+                            " Michel Bilodeau",
+                            " Celine Charbonneau"
+                        ],
+                        "year": 2013,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-2",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "lithium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 25079000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.54
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.4
+                },
+                "contained_metal": 386216.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Andre Laferriere",
+                            " Yves Dessureault",
+                            " Nicholas Skiadas",
+                            "Gary H.K. Pearse",
+                            " Ann Lamontagne",
+                            " Isabelle Larouche",
+                            " Alain Michaud",
+                            " Michel Bilodeau",
+                            " Celine Charbonneau"
+                        ],
+                        "year": 2013,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-2",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "lithium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4401000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.5
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.4
+                },
+                "contained_metal": 66015.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Andre Laferriere",
+                            " Yves Dessureault",
+                            " Nicholas Skiadas",
+                            "Gary H.K. Pearse",
+                            " Ann Lamontagne",
+                            " Isabelle Larouche",
+                            " Alain Michaud",
+                            " Michel Bilodeau",
+                            " Celine Charbonneau"
+                        ],
+                        "year": 2013,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-2",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "lithium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10197000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.53
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.4
+                },
+                "contained_metal": 156014.1,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Andre Laferriere",
+                            " Yves Dessureault",
+                            " Nicholas Skiadas",
+                            "Gary H.K. Pearse",
+                            " Ann Lamontagne",
+                            " Isabelle Larouche",
+                            " Alain Michaud",
+                            " Michel Bilodeau",
+                            " Celine Charbonneau"
+                        ],
+                        "year": 2013,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-2",
+                "zone": "In-Pit Estimated"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "lithium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 9442000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.455
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.4
+                },
+                "contained_metal": 137381.1,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Andre Laferriere",
+                            " Yves Dessureault",
+                            " Nicholas Skiadas",
+                            "Gary H.K. Pearse",
+                            " Ann Lamontagne",
+                            " Isabelle Larouche",
+                            " Alain Michaud",
+                            " Michel Bilodeau",
+                            " Celine Charbonneau"
+                        ],
+                        "year": 2013,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-2",
+                "zone": "In-Pit Estimated"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "lithium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 19639000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.49
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.4
+                },
+                "contained_metal": 292621.1,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Andre Laferriere",
+                            " Yves Dessureault",
+                            " Nicholas Skiadas",
+                            "Gary H.K. Pearse",
+                            " Ann Lamontagne",
+                            " Isabelle Larouche",
+                            " Alain Michaud",
+                            " Michel Bilodeau",
+                            " Celine Charbonneau"
+                        ],
+                        "year": 2013,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2013-2",
+                "zone": "In-Pit Estima"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Andre Laferriere",
+                        " Yves Dessureault",
+                        " Nicholas Skiadas",
+                        "Gary H.K. Pearse",
+                        " Ann Lamontagne",
+                        " Isabelle Larouche",
+                        " Alain Michaud",
+                        " Michel Bilodeau",
+                        " Celine Charbonneau"
+                    ],
+                    "year": 2013,
+                    "month": 2,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

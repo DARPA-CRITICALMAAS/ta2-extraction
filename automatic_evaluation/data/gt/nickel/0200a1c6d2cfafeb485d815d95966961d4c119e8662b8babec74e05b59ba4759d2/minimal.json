@@ -1,0 +1,1675 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Turnagain Nickel Project",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "British Columbia",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 37629000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.23
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 86546.7,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 37629000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.011
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 4139.19,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 390934000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 860054.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 390934000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.011
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 43002.74,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 428563000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 942838.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 428563000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.011
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 47141.93,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 742923000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 1634430.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 742923000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.011
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 81721.53,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 11295000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.21
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 23719.5,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "NORTHWEST Domain 1"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 11295000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.009
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 1016.55,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "NORTHWEST Domain 1"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 115290000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.21
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 242109.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "NORTHWEST Domain 1"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 115290000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.009
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 10376.1,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "NORTHWEST Domain 1"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 143283000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 315222.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "NORTHWEST Domain 1"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 143283000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.009
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 12895.47,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "NORTHWEST Domain 1"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 26335000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 63204.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "HORSETRAIL Domain 2+3"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 26335000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.011
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 2896.85,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "HORSETRAIL Domain 2+3"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 205131000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 492314.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "HORSETRAIL Domain 2+3"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 205131000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.011
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 22564.41,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "HORSETRAIL Domain 2+3"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 394394000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.23
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 907106.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "HORSETRAIL Domain 2+3"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 394394000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.011
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 43383.34,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "HORSETRAIL Domain 2+3"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 61305000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 122610.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "HATZL Domain 4+5"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 61305000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.013
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 7969.65,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "HATZL Domain 4+5"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 182743000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 365486.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "HATZL Domain 4+5"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 182743000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.012
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 21929.16,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "HATZL Domain 4+5"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 9207000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 20255.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "DUFFY Domain 6"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 9207000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.011
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 1012.77,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "DUFFY Domain 6"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Nickel",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 22503000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 54007.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "DUFFY Domain 6"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Cobalt",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnage",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 22503000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.011
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 2475.33,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Ronald G. Simpson"
+                        ],
+                        "year": 2007,
+                        "month": 3,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-3",
+                "zone": "DUFFY Domain 6"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Ronald G. Simpson"
+                    ],
+                    "year": 2007,
+                    "month": 3,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,33 @@
+commodity_observed_name,category_observed_name,ore_unit_observed_name,ore_value,grade_unit_observed_name,grade_value,cutoff_grade_unit_observed_name,cutoff_grade_value,contained_metal,zone
+Copper,Measured,tonnes,18953000.0,%,0.363,NSR \C$/t,12,,,
+Copper,Indicated,tonnes,20964000.0,%,0.348,NSR \C$/t,12,,,
+Copper,Measured+Indicated,tonnes,39917000.0,%,0.355,NSR \C$/t,12,,,
+Copper,Inferred,tonnes,4634000.0,%,0.308,NSR \C$/t,12,,,
+Gold,Measured,tonnes,18953000.0,g/t,0.098,NSR \C$/t,12,,,
+Gold,Indicated,tonnes,20964000.0,g/t,0.105,NSR \C$/t,12,,,
+Gold,Measured+Indicated,tonnes,39917000.0,g/t,0.102,NSR \C$/t,12,,,
+Gold,Inferred,tonnes,4634000.0,g/t,0.123,NSR \C$/t,12,,,
+Platinum,Measured,tonnes,18953000.0,g/t,0.273,NSR \C$/t,12,,,
+Platinum,Indicated,tonnes,20964000.0,g/t,0.295,NSR \C$/t,12,,,
+Platinum,Measured+Indicated,tonnes,39917000.0,g/t,0.285,NSR \C$/t,12,,,
+Platinum,Inferred,tonnes,4634000.0,g/t,0.329,NSR \C$/t,12,,,
+Palladium,Measured,tonnes,18953000.0,g/t,1.069,NSR \C$/t,12,,,
+Palladium,Indicated,tonnes,20964000.0,g/t,1.060,NSR \C$/t,12,,,
+Palladium,Measured+Indicated,tonnes,39917000.0,g/t,1.065,NSR \C$/t,12,,,
+Palladium,Inferred,tonnes,4634000.0,g/t,1.063,NSR \C$/t,12,,,
+Copper,,tonnes,49459000.0,%,0.33,,,,North
+Copper,,tonnes,3780000.0,%,0.32,,,,South
+Copper,,tonnes,4764000.0,%,0.16,,,,South West
+Copper,,tonnes,58003000.0,%,0.31,,,,Total
+Gold,,tonnes,49459000.0,g/t,0.09,,,,North
+Gold,,tonnes,3780000.0,g/t,0.07,,,,South
+Gold,,tonnes,4764000.0,g/t,0.10,,,,South West
+Gold,,tonnes,58003000.0,g/t,0.09,,,,Total
+Platinum,,tonnes,49459000.0,g/t,0.25,,,,North
+Platinum,,tonnes,3780000.0,g/t,0.18,,,,South
+Platinum,,tonnes,4764000.0,g/t,0.36,,,,South West
+Platinum,,tonnes,58003000.0,g/t,0.25,,,,Total
+Palladium,,tonnes,49459000.0,g/t,0.92,,,,North
+Palladium,,tonnes,3780000.0,g/t,0.66,,,,South
+Palladium,,tonnes,4764000.0,g/t,0.96,,,,South West
+Palladium,,tonnes,58003000.0,g/t,0.91,,,,Total

@@ -1,0 +1,8 @@
+commodity_observed_name,category_observed_name,ore_unit_observed_name,ore_value,grade_unit_observed_name,grade_value,cutoff_grade_unit_observed_name,cutoff_grade_value,contained_metal,zone
+lithium,measured,tonnes,11294000.0,percent,1.58,percent,0.4,,
+lithium,indicated,tonnes,13785000.0,percent,1.50,percent,0.4,,
+lithium,measured+indicated,tonnes,25079000.0,percent,1.54,percent,0.4,,
+lithium,inferred,tonnes,4401000.0,percent,1.50,percent,0.4,,
+lithium,measured,tonnes,10197000.0,percent,1.530,percent,0.4,,In-Pit Estimated
+lithium,indicated,tonnes,9442000.0,percent,1.455,percent,0.4,,In-Pit Estimated
+lithium,measured+indicated,tonnes,19639000.0,percent,1.49,percent,0.4,,In-Pit Estima

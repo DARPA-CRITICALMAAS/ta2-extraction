@@ -1,0 +1,283 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "NMC Moland Molybdenum Property",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "South Korea",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Molybdenum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1801569.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.35
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.05
+                },
+                "contained_metal": 6305.4915,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "R.S. Middleton"
+                        ],
+                        "year": 2009,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Molybdenum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1726299.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.37
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "contained_metal": 6387.3063,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "R.S. Middleton"
+                        ],
+                        "year": 2009,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Molybdenum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1579018.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.39
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.15
+                },
+                "contained_metal": 6158.1702,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "R.S. Middleton"
+                        ],
+                        "year": 2009,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-10",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Molybdenum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1387703.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.42
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "contained_metal": 5828.3526,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "R.S. Middleton"
+                        ],
+                        "year": 2009,
+                        "month": 10,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-10",
+                "zone": ""
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "R.S. Middleton"
+                    ],
+                    "year": 2009,
+                    "month": 10,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

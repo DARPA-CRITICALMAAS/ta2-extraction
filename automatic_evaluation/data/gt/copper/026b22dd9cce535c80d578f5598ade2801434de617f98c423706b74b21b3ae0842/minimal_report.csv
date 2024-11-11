@@ -1,0 +1,17 @@
+,Precision,Recall,TP count,FP count,GT count
+mining_site_name,1.0,1.0,1.0,0.0,1.0
+country_observed_name,1.0,1.0,1.0,0.0,1.0
+state_or_province_observed_name,0.0,0.0,0.0,0.0,1.0
+authors,1.0,0.5,1.0,0.0,2.0
+year,1.0,1.0,1.0,0.0,1.0
+month,1.0,1.0,1.0,0.0,1.0
+commodity_observed_name,0.47368421052631576,1.0,18.0,20.0,18.0
+category_observed_name,0.42105263157894735,0.8888888888888888,16.0,22.0,18.0
+ore_unit_observed_name,0.47368421052631576,1.0,18.0,20.0,18.0
+ore_value,0.42105263157894735,0.8888888888888888,16.0,22.0,18.0
+grade_unit_observed_name,0.47368421052631576,1.0,18.0,20.0,18.0
+grade_value,0.47368421052631576,1.0,18.0,20.0,18.0
+cutoff_grade_unit_observed_name,0.2631578947368421,0.5555555555555556,10.0,28.0,18.0
+cutoff_grade_value,0.2631578947368421,0.5555555555555556,10.0,28.0,18.0
+contained_metal,0.47368421052631576,1.0,18.0,20.0,18.0
+zone,0.0,0.0,0.0,38.0,18.0

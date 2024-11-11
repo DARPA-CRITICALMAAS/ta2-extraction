@@ -1,0 +1,1055 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Lithium Neveda Project",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "United States",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Neveda",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "lithium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "thousand tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 50753.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.312
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "contained_metal": 158.3494,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage I Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "potassium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "thousand tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 50753.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3.27
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "contained_metal": 1659.6231,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage I Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "sodium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "thousand tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 50753.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.13
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "contained_metal": 573.5089,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage I Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "lithium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "thousand tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 164046.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.285
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "contained_metal": 467.5311,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage I Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "potassium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "thousand tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 164046.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3.07
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "contained_metal": 5036.2122,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage I Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "sodium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "thousand tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 164046.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.04
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "contained_metal": 1706.0784,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage I Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "lithium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "thousand tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 124890.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.294
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "contained_metal": 367.1766,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage I Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "potassium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "thousand tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 124890.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3.04
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "contained_metal": 3796.656,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage I Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "sodium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "thousand tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 124890.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.1
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "contained_metal": 1373.79,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage I Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "lithium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 95000000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.27
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 256500.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage II Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "potassium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 95000000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3.66
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 3477000.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage II Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "sodium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 95000000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.55
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 1472500.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage II Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "fluorine",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 95000000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.57
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 541500.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage II Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "lithium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 47000000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.26
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 122200.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage II Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "potassium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 47000000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3.83
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 1800100.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage II Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "sodium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 47000000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.43
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 672100.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage II Lens"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "fluorine",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 47000000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.58
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 272600.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Timothy J. Carew",
+                            " Mario E. Rossi"
+                        ],
+                        "year": 2017,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2017-12",
+                "zone": "Stage II Lens"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Timothy J. Carew",
+                        " Mario E. Rossi"
+                    ],
+                    "year": 2017,
+                    "month": 12,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

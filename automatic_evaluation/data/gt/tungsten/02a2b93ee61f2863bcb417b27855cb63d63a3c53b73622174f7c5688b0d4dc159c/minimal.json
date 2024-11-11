@@ -1,0 +1,2139 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Panasqueira Mine",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Portugal",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Castelo Branco",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 51000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.18
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 91.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L0"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 706000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 1412.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L1"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 468000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 936.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L2"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 727000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.21
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 1526.7,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L3"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1951000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 3902.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Total"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1038000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.23
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 2387.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L0"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1314000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.21
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 2759.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L1"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2984000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 7161.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L2"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2396000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.25
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 5990.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L3"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 343000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 754.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L4"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 8076000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 19382.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Total"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1089000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 2395.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L0"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2020000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 4040.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L1"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3452000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 8284.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L2"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3123000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 7495.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L3"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 343000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 754.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "L4"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 10027000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.23
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 23062.1,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Total"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 180000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.13
+                },
+                "contained_metal": 396.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Panasqueira Deep"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2730000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.23
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.13
+                },
+                "contained_metal": 6279.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "North"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2250000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.13
+                },
+                "contained_metal": 4500.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "South"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 5160000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.13
+                },
+                "contained_metal": 11352.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Total"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "proven",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 25000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.19
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 47.5,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Level 0"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "proven",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 238000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 523.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Level 1"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "proven",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 216000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.21
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 453.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Level 2"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "proven",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 297000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 712.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Level 3"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "proven",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 775000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.22
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 1705.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Total"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "probable",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 26000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.17
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 44.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Level 0"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "probable",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 468000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.18
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 842.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Level 1"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "probable",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 251000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.19
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 476.9,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Level 2"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "probable",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 431000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.19
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 818.9,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Level 3"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "probable",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1176000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.19
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 2234.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Total"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "probable+proven",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 51000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.18
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 91.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Level 0"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "probable+proven",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 706000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 1412.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Level 1"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "probable+proven",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 468000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 936.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Level 2"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "probable+proven",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 727000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.21
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 1526.7,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Level 3"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "probable+proven",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1951000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.2
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "contained_metal": 3902.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Adam Wheeler"
+                        ],
+                        "year": 2016,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2016-12",
+                "zone": "Total"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Adam Wheeler"
+                    ],
+                    "year": 2016,
+                    "month": 12,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

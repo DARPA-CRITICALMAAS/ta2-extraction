@@ -1,0 +1,406 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Mactung Tungsten Deposit",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Yukon",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 30202000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.88
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.5
+                },
+                "contained_metal": 265777.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Peter A. Lacroix",
+                            " R. Barry Cook"
+                        ],
+                        "year": 2007,
+                        "month": 5,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-5",
+                "zone": "Yukon"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2826000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.88
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.5
+                },
+                "contained_metal": 24868.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Peter A. Lacroix",
+                            " R. Barry Cook"
+                        ],
+                        "year": 2007,
+                        "month": 5,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-5",
+                "zone": "NWT"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 33029000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.88
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.5
+                },
+                "contained_metal": 290655.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Peter A. Lacroix",
+                            " R. Barry Cook"
+                        ],
+                        "year": 2007,
+                        "month": 5,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-5",
+                "zone": "Total"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 9836000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.75
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.5
+                },
+                "contained_metal": 73770.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Peter A. Lacroix",
+                            " R. Barry Cook"
+                        ],
+                        "year": 2007,
+                        "month": 5,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-5",
+                "zone": "Yukon"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2020000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.91
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.5
+                },
+                "contained_metal": 18382.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Peter A. Lacroix",
+                            " R. Barry Cook"
+                        ],
+                        "year": 2007,
+                        "month": 5,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-5",
+                "zone": "NWT"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 11857000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.78
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.5
+                },
+                "contained_metal": 92484.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Peter A. Lacroix",
+                            " R. Barry Cook"
+                        ],
+                        "year": 2007,
+                        "month": 5,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2007-5",
+                "zone": "Total"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Peter A. Lacroix",
+                        " R. Barry Cook"
+                    ],
+                    "year": 2007,
+                    "month": 5,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

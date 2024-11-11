@@ -1,0 +1,878 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Jersey-Emerald Property",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "British Columbia",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 256000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.192
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.15
+                },
+                "contained_metal": 491.52,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "Emerald and East Emerald Zones"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 18000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.282
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "contained_metal": 50.76,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "Emerald and East Emerald Zones"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1220000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.274
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.15
+                },
+                "contained_metal": 3342.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "Emerald and East Emerald Zones"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 430000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.452
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "contained_metal": 1943.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "Emerald and East Emerald Zones"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 209000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.188
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.15
+                },
+                "contained_metal": 392.92,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "Emerald and East Emerald Zones"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.291
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "contained_metal": 34.92,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "Emerald and East Emerald Zones"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1110000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.285
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.15
+                },
+                "contained_metal": 3163.5,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "Emerald and East Emerald Zones"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 470000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.429
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "contained_metal": 2016.3,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "Emerald and East Emerald Zones"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 710000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.346
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.15
+                },
+                "contained_metal": 2456.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "Emerald Zone"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 420000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.455
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "contained_metal": 1911.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "Emerald Zone"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 256000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.192
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.15
+                },
+                "contained_metal": 491.52,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "East Emerald Zones"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 18000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.282
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "contained_metal": 50.76,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "East Emerald Zones"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 510000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.174
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.15
+                },
+                "contained_metal": 887.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "East Emerald Zones"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tungsten",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.33
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.24
+                },
+                "contained_metal": 39.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Gary Giroux",
+                            " Perry Grunenberg"
+                        ],
+                        "year": 2009,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-2",
+                "zone": "East Emera"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Gary Giroux",
+                        " Perry Grunenberg"
+                    ],
+                    "year": 2009,
+                    "month": 2,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

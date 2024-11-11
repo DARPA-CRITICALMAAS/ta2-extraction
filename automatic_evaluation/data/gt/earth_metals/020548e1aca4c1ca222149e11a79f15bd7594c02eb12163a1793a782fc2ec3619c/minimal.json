@@ -1,0 +1,773 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Crater Lake Project",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Quebec",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Scandium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7300000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 282.01
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 110.8
+                },
+                "contained_metal": 20586730.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Marina lund",
+                            " Paul Daigle",
+                            " Carl Pelletier"
+                        ],
+                        "year": 2021,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2021-11",
+                "zone": "Crater Lake Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Dysprosium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7300000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 65.72
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 110.8
+                },
+                "contained_metal": 4797560.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Marina lund",
+                            " Paul Daigle",
+                            " Carl Pelletier"
+                        ],
+                        "year": 2021,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2021-11",
+                "zone": "Crater Lake Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Lanthanum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7300000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 605.82
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 110.8
+                },
+                "contained_metal": 44224860.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Marina lund",
+                            " Paul Daigle",
+                            " Carl Pelletier"
+                        ],
+                        "year": 2021,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2021-11",
+                "zone": "Crater Lake Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Neodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7300000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 595.78
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 110.8
+                },
+                "contained_metal": 43491940.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Marina lund",
+                            " Paul Daigle",
+                            " Carl Pelletier"
+                        ],
+                        "year": 2021,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2021-11",
+                "zone": "Crater Lake Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Praseodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7300000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 160.41
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 110.8
+                },
+                "contained_metal": 11709930.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Marina lund",
+                            " Paul Daigle",
+                            " Carl Pelletier"
+                        ],
+                        "year": 2021,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2021-11",
+                "zone": "Crater Lake Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Terbium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 7300000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 11.65
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 110.8
+                },
+                "contained_metal": 850450.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Marina lund",
+                            " Paul Daigle",
+                            " Carl Pelletier"
+                        ],
+                        "year": 2021,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2021-11",
+                "zone": "Crater Lake Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Scandium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 13200000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 264.24
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 110.8
+                },
+                "contained_metal": 34879680.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Marina lund",
+                            " Paul Daigle",
+                            " Carl Pelletier"
+                        ],
+                        "year": 2021,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2021-11",
+                "zone": "Crater Lake Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Dysprosium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 13200000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 62.24
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 110.8
+                },
+                "contained_metal": 8215680.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Marina lund",
+                            " Paul Daigle",
+                            " Carl Pelletier"
+                        ],
+                        "year": 2021,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2021-11",
+                "zone": "Crater Lake Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Lanthanum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 13200000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 568.63
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 110.8
+                },
+                "contained_metal": 75059160.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Marina lund",
+                            " Paul Daigle",
+                            " Carl Pelletier"
+                        ],
+                        "year": 2021,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2021-11",
+                "zone": "Crater Lake Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Neodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 13200000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 573.04
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 110.8
+                },
+                "contained_metal": 75641280.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Marina lund",
+                            " Paul Daigle",
+                            " Carl Pelletier"
+                        ],
+                        "year": 2021,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2021-11",
+                "zone": "Crater Lake Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Praseodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 13200000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 154.02
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 110.8
+                },
+                "contained_metal": 20330640.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Marina lund",
+                            " Paul Daigle",
+                            " Carl Pelletier"
+                        ],
+                        "year": 2021,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2021-11",
+                "zone": "Crater Lake Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Terbium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 13200000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 11.13
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 110.8
+                },
+                "contained_metal": 1469160.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Marina lund",
+                            " Paul Daigle",
+                            " Carl Pelletier"
+                        ],
+                        "year": 2021,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2021-11",
+                "zone": "Crater Lake Project"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Marina lund",
+                        " Paul Daigle",
+                        " Carl Pelletier"
+                    ],
+                    "year": 2021,
+                    "month": 11,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

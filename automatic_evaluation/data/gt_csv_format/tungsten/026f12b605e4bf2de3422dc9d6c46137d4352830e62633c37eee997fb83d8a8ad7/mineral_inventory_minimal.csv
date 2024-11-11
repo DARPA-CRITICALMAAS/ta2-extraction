@@ -1,0 +1,19 @@
+commodity_observed_name,category_observed_name,ore_unit_observed_name,ore_value,grade_unit_observed_name,grade_value,cutoff_grade_unit_observed_name,cutoff_grade_value,contained_metal,zone
+Tungsten,indicated,tonnes,245000.0,percent,0.530,percent,0.10,Open Pit
+Molybdenum,indicated,tonnes,245000.0,percent,0.012,percent,0.10,Open Pit
+Tin,indicated,tonnes,245000.0,percent,0.012,percent,0.10,Open Pit
+Tungsten,indicated,tonnes,216000.0,percent,0.440,percent,0.25,Underground
+Molybdenum,indicated,tonnes,216000.0,percent,0.011,percent,0.25,Underground
+Tin,indicated,tonnes,216000.0,percent,0.007,percent,0.25,Underground
+Tungsten,indicated,tonnes,461000.0,percent,0.489,,Total
+Molybdenum,indicated,tonnes,461000.0,percent,0.012,,Total
+Tin,indicated,tonnes,461000.0,percent,0.010,,Total
+Tungsten,inferred,tonnes,38000.0,percent,0.413,percent,0.10,Open Pit
+Molybdenum,inferred,tonnes,38000.0,percent,0.008,percent,0.10,Open Pit
+Tin,inferred,tonnes,38000.0,percent,0.008,percent,0.10,Open Pit
+Tungsten,inferred,tonnes,552000.0,percent,0.543,percent,0.25,Underground
+Molybdenum,inferred,tonnes,552000.0,percent,0.009,percent,0.25,Underground
+Tin,inferred,tonnes,552000.0,percent,0.013,percent,0.25,Underground
+Tungsten,inferred,tonnes,590000.0,percent,0.535,,Total
+Molybdenum,inferred,tonnes,590000.0,percent,0.009,,Total
+Tin,inferred,tonnes,590000.0,percent,0.013,,Total

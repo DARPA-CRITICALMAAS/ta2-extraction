@@ -1,0 +1,182 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "James Bay Niobium Project",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Ontario",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Niobium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "Mt",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 29.7
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.53
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.3
+                },
+                "contained_metal": 0.1574,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Louis-Pierre Gignac",
+                            " Carl Michaud",
+                            " Paul Murphy",
+                            " Antoine Champagne",
+                            " Pierre Pelletier",
+                            " Dorota El Rassi"
+                        ],
+                        "year": 2020,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2020-11",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Niobium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "Mt",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 33.8
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.52
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.3
+                },
+                "contained_metal": 0.1758,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Louis-Pierre Gignac",
+                            " Carl Michaud",
+                            " Paul Murphy",
+                            " Antoine Champagne",
+                            " Pierre Pelletier",
+                            " Dorota El Rassi"
+                        ],
+                        "year": 2020,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2020-11",
+                "zone": ""
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Louis-Pierre Gignac",
+                        " Carl Michaud",
+                        " Paul Murphy",
+                        " Antoine Champagne",
+                        " Pierre Pelletier",
+                        " Dorota El Rassi"
+                    ],
+                    "year": 2020,
+                    "month": 11,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

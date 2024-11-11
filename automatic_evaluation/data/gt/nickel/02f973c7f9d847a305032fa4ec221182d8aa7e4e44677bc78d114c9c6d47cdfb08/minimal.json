@@ -1,0 +1,2072 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Marathon PGM-CU Property",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Ontario",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 18953000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.363
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 68799.39,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 20964000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.348
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 72954.72,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Measured+Indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 39917000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.355
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 141705.35,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4634000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.308
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 14272.72,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 18953000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.098
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 18573.94,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 20964000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.105
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 22012.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Measured+Indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 39917000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.102
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 40715.34,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4634000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.123
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 5699.82,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Platinum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 18953000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.273
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 51741.69,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Platinum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 20964000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.295
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 61843.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Platinum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Measured+Indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 39917000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.285
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 113763.45,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Platinum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4634000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.329
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 15245.86,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Palladium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 18953000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.069
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 202607.57,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Palladium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 20964000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.06
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 222218.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Palladium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Measured+Indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 39917000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.065
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 425116.05,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Palladium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "Inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4634000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1.063
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "NSR \\C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.0
+                },
+                "contained_metal": 49259.42,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 49459000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.33
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 163214.7,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "North"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3780000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.32
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 12096.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "South"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4764000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.16
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 7622.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "South West"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 58003000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "%",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.31
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 179809.3,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "Total"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 49459000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.09
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 44513.1,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "North"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3780000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.07
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 2646.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "South"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4764000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 4764.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "South West"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 58003000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.09
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 52202.7,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "Total"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Platinum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 49459000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.25
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 123647.5,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "North"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Platinum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3780000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.18
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 6804.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "South"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Platinum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4764000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.36
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 17150.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "South West"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Platinum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 58003000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.25
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 145007.5,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "Total"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Palladium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 49459000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.92
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 455022.8,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "North"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Palladium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3780000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.66
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 24948.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "South"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Palladium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4764000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.96
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 45734.4,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "South West"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Palladium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 58003000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "g/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.91
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 527827.3,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tim Mann",
+                            " Eugene Puritch",
+                            " David Orava",
+                            "Al Hayden",
+                            " Tracy Armstrong",
+                            " Wayne Ewert"
+                        ],
+                        "year": 2006,
+                        "month": 6,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2006-6",
+                "zone": "Total"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Tim Mann",
+                        " Eugene Puritch",
+                        " David Orava",
+                        "Al Hayden",
+                        " Tracy Armstrong",
+                        " Wayne Ewert"
+                    ],
+                    "year": 2006,
+                    "month": 6,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

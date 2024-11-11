@@ -1,0 +1,560 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Crevier Niobium Project",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Quebec",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Niobium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "metric tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 30940000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.168
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "All (3)",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 51979.2,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Celine Charbonneau",
+                            " Claude Duplessis",
+                            " Daniel M. Gagnon",
+                            " Ewald Pengel",
+                            " Gared J. Daniel",
+                            " Sylvain Boucher"
+                        ],
+                        "year": 2011,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2011-12",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tantalum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "metric tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 30940000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 183.0
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "All (3)",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 56620200.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Celine Charbonneau",
+                            " Claude Duplessis",
+                            " Daniel M. Gagnon",
+                            " Ewald Pengel",
+                            " Gared J. Daniel",
+                            " Sylvain Boucher"
+                        ],
+                        "year": 2011,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2011-12",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Niobium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "metric tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 28850000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.122
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "All (3)",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 35197.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Celine Charbonneau",
+                            " Claude Duplessis",
+                            " Daniel M. Gagnon",
+                            " Ewald Pengel",
+                            " Gared J. Daniel",
+                            " Sylvain Boucher"
+                        ],
+                        "year": 2011,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2011-12",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tantalum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "metric tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 28850000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 166.0
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "All (3)",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 47891000.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Celine Charbonneau",
+                            " Claude Duplessis",
+                            " Daniel M. Gagnon",
+                            " Ewald Pengel",
+                            " Gared J. Daniel",
+                            " Sylvain Boucher"
+                        ],
+                        "year": 2011,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2011-12",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Niobium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "metric tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 25750000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.186
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "All (3)",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 47895.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Celine Charbonneau",
+                            " Claude Duplessis",
+                            " Daniel M. Gagnon",
+                            " Ewald Pengel",
+                            " Gared J. Daniel",
+                            " Sylvain Boucher"
+                        ],
+                        "year": 2011,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2011-12",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tantalum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "metric tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 25750000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 199.0
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "All (3)",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 51242500.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Celine Charbonneau",
+                            " Claude Duplessis",
+                            " Daniel M. Gagnon",
+                            " Ewald Pengel",
+                            " Gared J. Daniel",
+                            " Sylvain Boucher"
+                        ],
+                        "year": 2011,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2011-12",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Niobium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "metric tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 16880000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.162
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "All (3)",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 27345.6,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Celine Charbonneau",
+                            " Claude Duplessis",
+                            " Daniel M. Gagnon",
+                            " Ewald Pengel",
+                            " Gared J. Daniel",
+                            " Sylvain Boucher"
+                        ],
+                        "year": 2011,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2011-12",
+                "zone": ""
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Tantalum",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "metric tons",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 16880000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 204.0
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "All (3)",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 34435200.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Celine Charbonneau",
+                            " Claude Duplessis",
+                            " Daniel M. Gagnon",
+                            " Ewald Pengel",
+                            " Gared J. Daniel",
+                            " Sylvain Boucher"
+                        ],
+                        "year": 2011,
+                        "month": 12,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2011-12",
+                "zone": ""
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Celine Charbonneau",
+                        " Claude Duplessis",
+                        " Daniel M. Gagnon",
+                        " Ewald Pengel",
+                        " Gared J. Daniel",
+                        " Sylvain Boucher"
+                    ],
+                    "year": 2011,
+                    "month": 12,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]
