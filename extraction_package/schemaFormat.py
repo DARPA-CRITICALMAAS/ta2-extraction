@@ -7,34 +7,34 @@ This Data developed under a SBIR/STTR Contract No 140D0423C0093 is subject to SB
 """
 from settings import VERSION_NUMBER, SYSTEM_SOURCE
 
-def created_document_ref(title, record_id):
-    return f"""{{
-              "title": "{title}",
-              "doi" : ""
-              "authors": "[]",
-              "year": "",
-              "month": "",
-              "volume": "",
-              "issue": "",
-              "description": "",
-              "uri": "https://api.cdr.land/v1/docs/documents/{record_id}"
-            }}"""
+
+def created_document_ref(record_id, title):
+    return {
+        "title": title,
+        "doi": "",
+        "authors": [],
+        "year": "",
+        "month": "",
+        "volume": "",
+        "issue": "",
+        "description": "",
+        "uri": f"https://api.cdr.land/v1/docs/documents/{record_id}"
+    }
             
             
-def create_mineral_site(record_id, doc_name):
-    return f"""
-                {{
-                    "source_id": "https://api.cdr.land/v1/docs/documents",
-                    "record_id": "{record_id}",
-                    "name": "{doc_name}",
-                    "location_info": {{
-                        "location": "POINT()",
-                        "crs": "",
-                        "country": "",
-                        "state_or_province": ""
-                    }}
-                }}
-        """
+def create_mineral_site(record_id):
+    return {
+        "source_id": "mining-report::https://api.cdr.land/v1/docs/documents",
+        "record_id": f"{record_id}",
+        "name": "",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": "",
+            "state_or_province": ""
+        }
+    }
+
         
 def create_deposit_format():
     return """
@@ -53,24 +53,6 @@ def create_deposit_format_correct():
         }
         """
         
-def create_mineral_extractions_format(commodity):
-    return f"""
-        {{ "extractions":[
-        {{
-        "Table": "",
-        "category": "",
-        "zone": "",
-        "chemical compound": "",
-        "{commodity} Cut-Off": "",
-        "{commodity} Cut-Off Unit": "",
-        "{commodity} Tonnage": "",
-        "{commodity} Tonnage Unit": "",
-        "{commodity} Grade": "",
-        "{commodity} Grade Unit": ""
-        }}
-        ]
-    }}
-"""
 
 def create_inventory_format(commodities_dict, commodity, document_dict):
     doc_month = document_dict.get('month', '')
@@ -78,9 +60,13 @@ def create_inventory_format(commodities_dict, commodity, document_dict):
     doc_date = ''
     if doc_month and doc_year:
         doc_date = f"{doc_year}-{doc_month}"
-
+    if commodity in commodities_dict:
+        norm_uri =  "https://minmod.isi.edu/resource/" + commodities_dict[commodity]
+    else:
+        norm_uri = ""
+        
     format = {
-    "commodity": {"normalized_uri": "https://minmod.isi.edu/resource/" + commodities_dict[commodity],
+    "commodity": {"normalized_uri": norm_uri,
                   "observed_name": commodity,
                   "confidence": 1,
                   "source": SYSTEM_SOURCE + " " + VERSION_NUMBER},
@@ -88,7 +74,7 @@ def create_inventory_format(commodities_dict, commodity, document_dict):
     "material_form":"",
     "ore": {
         "ore_unit": "",
-        "ore_value": ""
+        "value": ""
     },
     "grade": {
         "grade_unit": "",
