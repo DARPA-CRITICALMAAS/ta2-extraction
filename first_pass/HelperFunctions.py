@@ -13,7 +13,7 @@ import json
 import logging
 import logging.config
 from first_pass import prompts
-from extraction_package import AssistantFunctions
+from old_extraction_package_v2 import AssistantFunctions
 from settings import API_KEY, CDR_BEARER, MODEL_TYPE 
 
 logging.config.fileConfig('config.ini')

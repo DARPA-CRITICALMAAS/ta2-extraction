@@ -10,7 +10,7 @@ import os
 import shutil
 import pandas as pd
 import sys
-from extraction_package import ExtractionPipeline
+from old_extraction_package_v2 import ExtractionPipeline
 import argparse
 import ast
 
@@ -51,11 +51,13 @@ def run_from_metadata(comm_list, meta_file, folder_path, output_path, completed_
                 
                 if row['record_id'] in completed_records: 
                     pass
+                elif not os.path.exists(source_path):
+                    pass
                 else:
                     filenames.append(filename)
                     commodity_list.append(identified)
                     
-        if not comm_found:
+        if not comm_found and os.path.exists(source_path):
             destination_dir = f'{folder_path}not_found'
             os.makedirs(destination_dir, exist_ok=True)
             destination_path = os.path.join(destination_dir, filename)
@@ -103,6 +105,8 @@ def run_folder_path(commodity_dictionary, folder_path, output_path, completed_pa
     for filename in all_commodity_files:
         record_id, _ = filename.split('_', 1)
         if record_id in completed_records: 
+            pass
+        elif not os.path.exists(folder_path+filename):
             pass
         else:
             filenames.append(filename)
