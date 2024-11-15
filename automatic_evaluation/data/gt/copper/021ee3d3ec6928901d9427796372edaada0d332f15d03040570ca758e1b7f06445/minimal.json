@@ -1,0 +1,406 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Red Chris Property",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "British Columba",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "proven",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 93475785.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.423
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 395402.5706,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Greg Gillstrom",
+                            " Steve Robertson"
+                        ],
+                        "year": 2010,
+                        "month": 5,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-5",
+                "zone": "Mine Feasibility Study"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "proven",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 93475785.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.327
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 305665.817,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Greg Gillstrom",
+                            " Steve Robertson"
+                        ],
+                        "year": 2010,
+                        "month": 5,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-5",
+                "zone": "Mine Feasibility Study"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "probable",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 182524215.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.3
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 547572.645,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Greg Gillstrom",
+                            " Steve Robertson"
+                        ],
+                        "year": 2010,
+                        "month": 5,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-5",
+                "zone": "Mine Feasibility Study"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "probable",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 182524215.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.226
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 412504.7259,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Greg Gillstrom",
+                            " Steve Robertson"
+                        ],
+                        "year": 2010,
+                        "month": 5,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-5",
+                "zone": "Mine Feasibility Study"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "proven+probable",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 276000000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.349
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 963240.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Greg Gillstrom",
+                            " Steve Robertson"
+                        ],
+                        "year": 2010,
+                        "month": 5,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-5",
+                "zone": "Mine Feasibility Study"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "proven+probable",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 276000000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.266
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 734160.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Greg Gillstrom",
+                            " Steve Robertson"
+                        ],
+                        "year": 2010,
+                        "month": 5,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2010-5",
+                "zone": "Mine Feasibility"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Greg Gillstrom",
+                        " Steve Robertson"
+                    ],
+                    "year": 2010,
+                    "month": 5,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,1114 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Rovina Valley Project",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Romania",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.6
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.4
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 0.0504,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Rovina"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 12.6
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.33
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 0.0416,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Rovina"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 65.3
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.36
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 0.2351,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Rovina"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 65.3
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.28
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 0.1828,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Rovina"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 77.9
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.37
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 0.2882,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Rovina"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 77.9
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.25
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 0.1948,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Rovina"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 35.1
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.33
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 0.1158,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Rovina"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 35.1
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.25
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.0
+                },
+                "contained_metal": 0.0878,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Rovina"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 9.4
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.76
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.45
+                },
+                "contained_metal": 0.0714,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Colnic"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 9.4
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.12
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.45
+                },
+                "contained_metal": 0.0113,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Colnic"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 105.8
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.57
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.45
+                },
+                "contained_metal": 0.6031,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Colnic"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 105.8
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.11
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.45
+                },
+                "contained_metal": 0.1164,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Colnic"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 115.2
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.58
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.45
+                },
+                "contained_metal": 0.6682,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Colnic"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "measured+indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 115.2
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.11
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.45
+                },
+                "contained_metal": 0.1267,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Colnic"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 41.2
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.44
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.45
+                },
+                "contained_metal": 0.1813,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Colnic"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 41.2
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.1
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.45
+                },
+                "contained_metal": 0.0412,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Colnic"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "gold",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 101.3
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.9
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.45
+                },
+                "contained_metal": 0.9117,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Ciresata"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "copper",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "million tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 101.3
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "percent",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.17
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "grams per tonne",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 0.45
+                },
+                "contained_metal": 0.1722,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Joseph Rosaire",
+                            " Pierre Desautels"
+                        ],
+                        "year": 2009,
+                        "month": 1,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-1",
+                "zone": "Ciresata"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Joseph Rosaire",
+                        " Pierre Desautels"
+                    ],
+                    "year": 2009,
+                    "month": 1,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

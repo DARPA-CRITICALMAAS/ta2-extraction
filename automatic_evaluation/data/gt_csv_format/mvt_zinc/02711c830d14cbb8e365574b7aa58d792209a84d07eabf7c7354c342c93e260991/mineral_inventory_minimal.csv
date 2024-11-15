@@ -1,0 +1,19 @@
+commodity_observed_name,category_observed_name,ore_unit_observed_name,ore_value,grade_unit_observed_name,grade_value,cutoff_grade_unit_observed_name,cutoff_grade_value,contained_metal,zone
+Zinc,measured,tonnes,1880000.0,percent,3.8,Surface
+Lead,measured,tonnes,1880000.0,percent,1.6,Surface
+Zinc,indicated,tonnes,2250000.0,percent,3.2,Surface
+Lead,indicated,tonnes,2250000.0,percent,1.4,Surface
+Zinc,indicated,tonnes,1110000.0,percent,6.6,Underground
+Lead,indicated,tonnes,1110000.0,percent,3.7,Underground
+Zinc,total measured+indicated,tonnes,5240000.0,percent,4.1,Surface and Underground
+Lead,total measured+indicated,tonnes,5240000.0,percent,2.0,Surface and Underground
+Zinc,inferred,tonnes,1800000.0,percent,3.1,Surface and Underground
+Lead,inferred,tonnes,1800000.0,percent,1.1,Surface and Underground
+Zinc,proven,tonnes,1750000.0,percent,3.2,Surface
+Lead,proven,tonnes,1750000.0,percent,1.3,Surface
+Zinc,probable,tonnes,1690000.0,percent,2.5,Surface
+Lead,probable,tonnes,1690000.0,percent,1.0,Surface
+Zinc,probable,tonnes,1150000.0,percent,5.7,Underground
+Lead,probable,tonnes,1150000.0,percent,3.2,Underground
+Zinc,proven+probable,tonnes,4590000.0,percent,3.6,Surface+Underground
+Lead,proven+probable,tonnes,4590000.0,percent,1.7,Surface+Underground

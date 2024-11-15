@@ -1,0 +1,747 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Deep Fox Project",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Newfoundland",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Praseodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2329000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 403
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140
+                },
+                "contained_metal": 9385870.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Katharine M. Masun"
+                        ],
+                        "year": 2019,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-11",
+                "zone": "Deep Fox Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Neodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2329000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1486
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140
+                },
+                "contained_metal": 34608940.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Katharine M. Masun"
+                        ],
+                        "year": 2019,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-11",
+                "zone": "Deep Fox Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Dysprosium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2329000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 206
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140
+                },
+                "contained_metal": 4797740.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Katharine M. Masun"
+                        ],
+                        "year": 2019,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-11",
+                "zone": "Deep Fox Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Praseodymium Oxide",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2329000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 487
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140
+                },
+                "contained_metal": 11342230.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Katharine M. Masun"
+                        ],
+                        "year": 2019,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-11",
+                "zone": "Deep Fox Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Neodymium Oxide",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2329000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1739
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140
+                },
+                "contained_metal": 40501310.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Katharine M. Masun"
+                        ],
+                        "year": 2019,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-11",
+                "zone": "Deep Fox Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Dysprosium Oxide",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 2329000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 237
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140
+                },
+                "contained_metal": 5519730.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Katharine M. Masun"
+                        ],
+                        "year": 2019,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-11",
+                "zone": "Deep Fox Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Praseodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3902000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 357
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140
+                },
+                "contained_metal": 13930140.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Katharine M. Masun"
+                        ],
+                        "year": 2019,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-11",
+                "zone": "Deep Fox Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Neodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3902000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1323
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140
+                },
+                "contained_metal": 51623460.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Katharine M. Masun"
+                        ],
+                        "year": 2019,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-11",
+                "zone": "Deep Fox Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Dysprosium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3902000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 181
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140
+                },
+                "contained_metal": 7062620.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Katharine M. Masun"
+                        ],
+                        "year": 2019,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-11",
+                "zone": "Deep Fox Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Praseodymium Oxide",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3902000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 432
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140
+                },
+                "contained_metal": 16856640.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Katharine M. Masun"
+                        ],
+                        "year": 2019,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-11",
+                "zone": "Deep Fox Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Neodymium Oxide",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3902000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1548
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140
+                },
+                "contained_metal": 60402960.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Katharine M. Masun"
+                        ],
+                        "year": 2019,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-11",
+                "zone": "Deep Fox Project"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Dysprosium Oxide",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 3902000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 208
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 140
+                },
+                "contained_metal": 8116160.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Katharine M. Masun"
+                        ],
+                        "year": 2019,
+                        "month": 11,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2019-11",
+                "zone": "Deep Fox Project"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Katharine M. Masun"
+                    ],
+                    "year": 2019,
+                    "month": 11,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

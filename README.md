@@ -91,7 +91,14 @@ The python file download_files.py works by using the SRI generated predictions o
 2. In the terminal at the root directory: `python -m extraction_package.extraction_pipeline --pdf_p '/folder/path' --pdf_name  'filename.pdf' --commodity_list '[List of commodities expected in the file]' --output_path '/folder/path' `
 
 ## Version Control
-### current version 2.0
+### Current Version 3.0
+Major Changes
+- Removal of assistants to use a more generic model for longevity
+- change approach of how to get page number
+- utilization of structured outputs and openAI improvements for models 4o
+- Working on adding a filtered extraction 
+
+### Previous Version 2.0: extraction_package
 Major Changes
 - LARGE overhaul to make code more scalable, readable, & all MPG's standards
 - add logging, more try catch
@@ -118,7 +125,7 @@ reference : https://platform.openai.com/docs/assistants/tools/file-search
     - this was done for copper & nickel & zinc
 
 
-### OLD Extraction Package Directory 
+### OLD Extraction Package Directory v1
 extraction_package/ \
 |    |---- \_\_init\_\_ \
 | |---- extraction_pipeline : the main driver of the code \

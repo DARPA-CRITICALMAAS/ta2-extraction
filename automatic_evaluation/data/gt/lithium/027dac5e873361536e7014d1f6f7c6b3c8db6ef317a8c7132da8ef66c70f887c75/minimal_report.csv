@@ -1,0 +1,16 @@
+,Precision,Recall,TP count,FP count,GT count
+country_observed_name,0.0,0.0,0.0,1.0,1.0
+state_or_province_observed_name,0.0,0.0,0.0,2.0,1.0
+authors,0.0,0.0,0.0,1.0,1.0
+year,1.0,1.0,1.0,0.0,1.0
+month,0.0,0.0,0.0,1.0,1.0
+commodity_observed_name,0.0,0.0,0.0,3.0,1.0
+category_observed_name,0.0,0.0,0.0,3.0,1.0
+ore_unit_observed_name,0.0,0.0,0.0,3.0,1.0
+ore_value,0.0,0.0,0.0,3.0,1.0
+grade_unit_observed_name,0.0,0.0,0.0,3.0,1.0
+grade_value,0.0,0.0,0.0,3.0,1.0
+cutoff_grade_unit_observed_name,0.3333333333333333,1.0,1.0,2.0,1.0
+cutoff_grade_value,0.3333333333333333,1.0,1.0,2.0,1.0
+contained_metal,0.0,0.0,0.0,3.0,1.0
+zone,0.3333333333333333,1.0,1.0,2.0,1.0

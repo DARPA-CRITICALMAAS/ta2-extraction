@@ -1,0 +1,68 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Malviken Tungsten Skarn Project",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Norway",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Nordland",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Peter Skaarup",
+                            " Kare M. Lande"
+                        ],
+                        "year": 2001,
+                        "month": 2,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2001-2"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Peter Skaarup",
+                        " Kare M. Lande"
+                    ],
+                    "year": 2001,
+                    "month": 2,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

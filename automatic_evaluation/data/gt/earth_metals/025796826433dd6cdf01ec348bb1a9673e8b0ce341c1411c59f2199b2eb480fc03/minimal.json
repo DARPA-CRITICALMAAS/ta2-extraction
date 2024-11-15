@@ -1,0 +1,1543 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Deep Fox and Foxtrot Project",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Newfoundland",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Praseodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 8483000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 381
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 32320230.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Open Pit"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Neodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 8483000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1422
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 120628260.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Open Pit"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Dysprosium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 8483000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 187
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 15863210.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Open Pit"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Terbium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 8483000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 32
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 2714560.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Open Pit"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Praseodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1441000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 329
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 4740890.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Open Pit"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Neodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1441000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1231
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 17738710.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Open Pit"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Dysprosium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1441000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 179
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 2579390.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Open Pit"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Terbium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1441000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 30
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 432300.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Open Pit"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Praseodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 6611000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 368
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 24328480.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Underground"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Neodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 6611000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1376
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 90967360.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Underground"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Dysprosium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 6611000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 182
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 12032020.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Underground"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Terbium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 6611000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 31
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 2049410.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Underground"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Praseodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4862000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 380
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 18475600.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Underground"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Neodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4862000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1427
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 69380740.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Underground"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Dysprosium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4862000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 191
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 9286420.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Underground"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Terbium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 4862000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 33
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 1604460.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Underground"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Praseodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 15094000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 375
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 56602500.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Totals"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Neodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 15094000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1402
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 211617880.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Totals"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Dysprosium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 15094000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 185
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 27923900.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Totals"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Terbium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "indicated",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 15094000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 32
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 4830080.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Totals"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Praseodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 6303000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 369
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 23258070.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Totals"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Neodymium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 6303000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 1382
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 87107460.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Totals"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Dysprosium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 6303000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 188
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 11849640.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Totals"
+            },
+            {
+                "commodity": {
+                    "normalized_uri": "",
+                    "observed_name": "Terbium",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                },
+                "category": [
+                    {
+                        "normalized_uri": "",
+                        "observed_name": "inferred",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    }
+                ],
+                "ore": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "tonnes",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 6303000.0
+                },
+                "grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "ppm",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 32
+                },
+                "cutoff_grade": {
+                    "unit": {
+                        "normalized_uri": "",
+                        "observed_name": "C$/t",
+                        "confidence": 1,
+                        "source": "Inferlink Extraction v3"
+                    },
+                    "value": 260
+                },
+                "contained_metal": 2016960.0,
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Tudorel Ciuculescu",
+                            " Katharine M. Masun",
+                            " Ian Weir",
+                            " Luis Vasquez",
+                            " John R. Goode"
+                        ],
+                        "year": 2022,
+                        "month": 7,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2022-7",
+                "zone": "Totals"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Tudorel Ciuculescu",
+                        " Katharine M. Masun",
+                        " Ian Weir",
+                        " Luis Vasquez",
+                        " John R. Goode"
+                    ],
+                    "year": 2022,
+                    "month": 7,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

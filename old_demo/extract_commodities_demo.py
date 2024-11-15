@@ -276,7 +276,7 @@ def run():
                 
                 tonnage = str(inner_sec[3]).replace(',', '') 
                 ore_dict['ore_unit'] = 'tonnes'
-                ore_dict['ore_value'] = extract.extract_floats(tonnage)[0] 
+                ore_dict['value'] = extract.extract_floats(tonnage)[0] 
                 
                 contained_metal = float(tonnage) * float(grade)/100
 

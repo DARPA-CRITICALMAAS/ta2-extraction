@@ -1,0 +1,25 @@
+commodity_observed_name,category_observed_name,ore_unit_observed_name,ore_value,grade_unit_observed_name,grade_value,cutoff_grade_unit_observed_name,cutoff_grade_value,contained_metal,zone
+Zinc,indicated,tonnes,7366.0,percent,4.04,Sulphides
+Lead,indicated,tonnes,7366.0,percent,3.26,Sulphides
+Silver,indicated,tonnes,7366.0,grams per tonne,14.98,Sulphides
+Zinc,inferred,tonnes,68688.0,percent,3.15,Sulphides
+Lead,inferred,tonnes,68688.0,percent,2.53,Sulphides
+Silver,inferred,tonnes,68688.0,grams per tonne,12.23,Sulphides
+Zinc,inferred,tonnes,36291.0,percent,2.79,Sulphides
+Lead,inferred,tonnes,36291.0,percent,2.03,Sulphides
+Silver,inferred,tonnes,36291.0,grams per tonne,10.47,Sulphides
+Zinc,measured+indicated,tonnes,76054.0,percent,3.23,Sulphides
+Lead,measured+indicated,tonnes,76054.0,percent,2.60,Sulphides
+Silver,measured+indicated,tonnes,76054.0,grams per tonne,12.50,Sulphides
+Zinc,measured,tonnes,571482.0,percent,8.79,Oxides
+Lead,measured,tonnes,571482.0,percent,2.52,Oxides
+Silver,measured,tonnes,571482.0,grams per tonne,14.01,Oxides
+Zinc,indicated,tonnes,1320154.0,percent,6.69,Oxides
+Lead,indicated,tonnes,1320154.0,percent,2.36,Oxides
+Silver,indicated,tonnes,1320154.0,grams per tonne,14.35,Oxides
+Zinc,measured+indicated,tonnes,1891636.0,percent,7.32,Oxides
+Lead,measured+indicated,tonnes,1891636.0,percent,2.41,Oxides
+Silver,measured+indicated,tonnes,1891636.0,grams per tonne,14.25,Oxides
+Zinc,inferred,tonnes,169705.0,percent,4.42,Oxides
+Lead,inferred,tonnes,169705.0,percent,1.96,Oxides
+Silver,inferred,tonnes,169705.0,grams per tonne,12.53,Oxides

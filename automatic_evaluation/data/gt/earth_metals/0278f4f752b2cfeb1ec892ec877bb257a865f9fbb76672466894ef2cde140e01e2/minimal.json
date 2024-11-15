@@ -1,0 +1,66 @@
+[
+    {
+        "source_id": "",
+        "record_id": "",
+        "name": "Carbo Property",
+        "location_info": {
+            "location": "",
+            "crs": "",
+            "country": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "Canada",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ],
+            "state_or_province": [
+                {
+                    "normalized_uri": "",
+                    "observed_name": "British Columbia",
+                    "confidence": 1,
+                    "source": "Inferlink Extraction v3"
+                }
+            ]
+        },
+        "mineral_inventory": [
+            {
+                "reference": {
+                    "document": {
+                        "title": "",
+                        "authors": [
+                            "Michael Guo"
+                        ],
+                        "year": 2009,
+                        "month": 4,
+                        "description": "",
+                        "uri": ""
+                    }
+                },
+                "date": "2009-4"
+            }
+        ],
+        "deposit_type_candidate": [
+            {
+                "observed_name": "",
+                "normalized_uri": "",
+                "source": "Inferlink Extraction v3",
+                "confidence": 1.0
+            }
+        ],
+        "reference": [
+            {
+                "document": {
+                    "title": "",
+                    "authors": [
+                        "Michael Guo"
+                    ],
+                    "year": 2009,
+                    "month": 4,
+                    "description": "",
+                    "uri": ""
+                }
+            }
+        ]
+    }
+]

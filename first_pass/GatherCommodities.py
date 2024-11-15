@@ -15,7 +15,7 @@ import ast
 import argparse
 
 from first_pass import HelperFunctions, prompts 
-from extraction_package import AssistantFunctions, GeneralFunctions
+from old_extraction_package_v2 import AssistantFunctions, GeneralFunctions
 from settings import API_KEY
 
 
