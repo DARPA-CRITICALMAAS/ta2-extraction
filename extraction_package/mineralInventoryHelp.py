@@ -318,23 +318,48 @@ def check_material_form(curr_json, URL_STR, value):
     
     return curr_json
     
-def post_process(curr_json): 
-    
+def post_process(curr_json):
     inner_list = curr_json['mineral_inventory']
     
     for inner_dict in inner_list:
+        # Check if 'material_form' is an empty string and remove it
+        if inner_dict.get('material_form') == "":
+            inner_dict.pop('material_form', None)
+        
+        # Process each key in the inner dictionary
         for key in inner_dict:
-            if key in ['ore','grade', 'cutoff_grade']:
-                # logger.debug(f"Looking at key {key}")
+            # Process 'ore', 'grade', and 'cutoff_grade'
+            if key in ['ore', 'grade', 'cutoff_grade']:
                 new_dict = {}
                 for inner_key in inner_dict[key]:
                     new_dict['unit'] = {}
                     new_dict['value'] = {}
+                    
+                    # Extract 'unit' and 'value' if they exist in the inner key
                     if 'unit' in inner_key:
                         new_dict['unit'] = inner_dict[key][inner_key]
                     if 'value' in inner_key:
                         new_dict['value'] = inner_dict[key][inner_key]
 
+               
+               
+                if not new_dict['unit']:
+                    new_dict.pop('unit')
+                if not new_dict['value']:
+                    new_dict.pop('value')
+             
                 inner_dict[key] = new_dict
-    
+
+           
+            for nested_key, nested_value in inner_dict.items():
+                if isinstance(nested_value, dict): 
+                    for sub_key in nested_value:
+                        if sub_key == 'observed_name':
+                            nested_value[sub_key] = str(nested_value[sub_key])
+                            if nested_value[sub_key] == "":
+                                nested_value.pop(sub_key)
+                        if sub_key == 'normalized_uri':
+                            nested_value[sub_key] = str(nested_value[sub_key])
+                            
+
     return curr_json
