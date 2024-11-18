@@ -40,17 +40,20 @@ def download_document(doc_id, download_dir):
         title = resp_json['title']
         
         response = requests.get(url_pdf, headers=headers)
-
+        
         if response.status_code == 200:    
             with open(f'{download_dir}{doc_id}_{title}.pdf', 'wb') as file:
                 file.write(response.content)
             logger.info(f"Document downloaded and saved as '{title}.pdf'")
+            return f"{doc_id}_{title}.pdf"
         else:
             logger.info(f"Failed to download document. Status code: {response.status_code}")
+            return None
     else:
         logger.info(f"Failed to get meta data. Status code: {response.status_code}")
         logger.info(f"Response content: {response.content}")
-        
+        return None
+    
 
 def create_assistant_commodities(message_file_id):
     assistant = client.beta.assistants.create(
