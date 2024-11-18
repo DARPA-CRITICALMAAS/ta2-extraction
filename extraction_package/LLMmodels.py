@@ -34,12 +34,12 @@ def create_enum_from_csv(csv_file: str, enum_name: str, key1: str, key2: str) ->
     return Enum(enum_name, {value.upper().replace(' ', '_'): value for value in values})
 
 UnitEnum = create_enum_from_csv('/home/ubuntu/ta2_extraction/codes/minmod_units.csv', 'UnitEnum', 'unit name', 'unit aliases' )
-CompoundEnum = create_enum_from_csv('./codes/material_form.csv', 'CompoundEnum', 'name', 'formula' )
-CommoditiesEnum =create_enum_from_csv('./codes/minmod_commodities.csv', 'CommoditiesEnum', 'CommodityinMRDS', '')
-CountryEnum = create_enum_from_csv('./codes/country.csv', 'CountryEnum','name', 'iso3')
-StateProvinceEnum = create_enum_from_csv('./codes/state_or_province.csv', 'StateProvinceEnum', 'name', '')
-CRSEnum = create_enum_from_csv('./codes/epsg.csv', 'CRSEnum', 'name', '')
-DepositEnum = create_enum_from_csv('./codes/minmod_deposit_types.csv', 'DepositEnum', 'Deposit type', '')
+CompoundEnum = create_enum_from_csv('/home/ubuntu/ta2_extraction//material_form.csv', 'CompoundEnum', 'name', 'formula' )
+CommoditiesEnum =create_enum_from_csv('/home/ubuntu/ta2_extraction//minmod_commodities.csv', 'CommoditiesEnum', 'CommodityinMRDS', '')
+CountryEnum = create_enum_from_csv('/home/ubuntu/ta2_extraction//country.csv', 'CountryEnum','name', 'iso3')
+StateProvinceEnum = create_enum_from_csv('/home/ubuntu/ta2_extraction//state_or_province.csv', 'StateProvinceEnum', 'name', '')
+CRSEnum = create_enum_from_csv('/home/ubuntu/ta2_extraction//epsg.csv', 'CRSEnum', 'name', '')
+DepositEnum = create_enum_from_csv('/home/ubuntu/ta2_extraction//minmod_deposit_types.csv', 'DepositEnum', 'Deposit type', '')
 
 
 
