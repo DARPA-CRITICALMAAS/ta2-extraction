@@ -13,7 +13,7 @@ import csv
 import PyPDF2
 from fuzzywuzzy import process
 from settings import SYSTEM_SOURCE, VERSION_NUMBER 
-from old_extraction_package_v2.ExtractPrompts import *
+from extraction_package.extractionPrompts import *
 import logging
 from collections import Counter
 

@@ -4,7 +4,7 @@ import extraction_package.extractionPrompts as prompts
 import extraction_package.LLMmodels as model
 import extraction_package.LLMFunctions as llmFunc
 import extraction_package.genericFunctions as generic
-import extraction_package.schemaFormats as schema
+import extraction_package.schemaFormat as schema
 import re
 import pandas as pd
 from settings import MINI_MODEL, STRUCTURE_MODEL, URL_STR, VERSION_NUMBER, SYSTEM_SOURCE

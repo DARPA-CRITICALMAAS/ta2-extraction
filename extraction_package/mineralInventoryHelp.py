@@ -11,7 +11,7 @@ import copy
 import logging
 from settings import CATEGORY_VALUES, SYSTEM_SOURCE, VERSION_NUMBER, URL_STR, STRUCTURE_MODEL, MINI_MODEL
 
-import extraction_package.schemaFormats as schemas
+import extraction_package.schemaFormat as schemas
 import extraction_package.genericFunctions as generic
 import extraction_package.LLMFunctions as llm
 import extraction_package.extractionPrompts as prompts
