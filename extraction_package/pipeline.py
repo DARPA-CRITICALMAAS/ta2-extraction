@@ -46,7 +46,7 @@ class FilesNotCompleted(Exception):
     pass
 
 ## ADD LOGGING
-logging.config.fileConfig(fname='config.ini', disable_existing_loggers=True)
+logging.config.fileConfig(fname='/home/ubuntu/ta2_extraction/config.ini', disable_existing_loggers=True)
 
 # Get the logger specified in the file
 logger = logging.getLogger("Pipeline")
@@ -82,7 +82,8 @@ def run(folder_path, file_name, output_folder_path):
     t = time.time()
 
     try:
-        pipeline(folder_path, file_name, output_folder_path)
+        output = pipeline(folder_path, file_name, output_folder_path)
+        return output
     except Exception as e:
         logger.error(f"{file_name} : Pipeline Error: {e} \n")
         logger.error(f"Rerunning: {file_name} \n")
@@ -115,7 +116,7 @@ def pipeline(folder_path, file_name, output_folder_path):
     
     full_json = [mineral_site_json]
     logger.debug(f"full_json after the mineral site json {full_json} \n")
-    generic.append_section_to_JSON(output_file_path, "MineralSite", full_json)
+    # generic.append_section_to_JSON(output_file_path, "MineralSite", full_json)
 
     ## initiating the extraction
     full_json[0]['mineral_inventory'] = [{ "reference": {"document": document_dict}}]
@@ -123,7 +124,7 @@ def pipeline(folder_path, file_name, output_folder_path):
     full_json[0]['modified_at'] = datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
     full_json[0]['created_by'] = "https://minmod.isi.edu/users/inferlink"
     full_json[0]['reference'] = [{"document":document_dict}]
-    generic.append_section_to_JSON(output_file_path, "reference", full_json)
+    # generic.append_section_to_JSON(output_file_path, "reference", full_json)
     logger.debug(f"Outputed full_json after adding reference & mineral inventory: {full_json} \n")
        
     logger.debug(f"Here is the doc_dict: {document_dict} \n ")
@@ -137,7 +138,7 @@ def pipeline(folder_path, file_name, output_folder_path):
     
     
     
-    generic.append_section_to_JSON(output_file_path, "MineralInventory", full_json)
+    # generic.append_section_to_JSON(output_file_path, "MineralInventory", full_json)
     
     
     deposit_types_json = deposit.create_deposit_types(file_path, deposit_pages)
@@ -151,9 +152,9 @@ def pipeline(folder_path, file_name, output_folder_path):
     
 
 
-    logger.debug(f"ALL Sections data written to {output_file_path} \n")
-    # shutil.move(output_file_path, f'{output_folder_path}completed/{new_name}_summary_{current_datetime_str}.json' )
-  
+    # logger.debug(f"ALL Sections data written to {output_file_path} \n")
+    # # shutil.move(output_file_path, f'{output_folder_path}completed/{new_name}_summary_{current_datetime_str}.json' )
+    return full_json
         
 
 

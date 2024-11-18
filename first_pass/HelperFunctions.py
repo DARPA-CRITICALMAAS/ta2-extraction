@@ -16,7 +16,7 @@ from first_pass import prompts
 from old_extraction_package_v2 import AssistantFunctions
 from settings import API_KEY, CDR_BEARER, MODEL_TYPE 
 
-logging.config.fileConfig('config.ini')
+logging.config.fileConfig('/home/ubuntu/ta2_extraction/config.ini')
 logger = logging.getLogger("Helper") 
 
 client = openai.OpenAI(api_key = API_KEY)

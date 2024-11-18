@@ -10,7 +10,7 @@ import pandas as pd
 from settings import MINI_MODEL, STRUCTURE_MODEL, URL_STR, VERSION_NUMBER, SYSTEM_SOURCE
 
 ## ADD LOGGING
-logging.config.fileConfig(fname='config.ini', disable_existing_loggers=True)
+logging.config.fileConfig(fname='/home/ubuntu/ta2_extraction/config.ini', disable_existing_loggers=True)
 
 # Get the logger specified in the file
 logger = logging.getLogger("Site")
