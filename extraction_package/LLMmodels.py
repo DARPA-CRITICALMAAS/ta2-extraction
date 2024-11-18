@@ -33,13 +33,13 @@ def create_enum_from_csv(csv_file: str, enum_name: str, key1: str, key2: str) ->
         values = df[key1].tolist()
     return Enum(enum_name, {value.upper().replace(' ', '_'): value for value in values})
 
-UnitEnum = create_enum_from_csv('/home/ubuntu/ta2_extraction/codes/minmod_units.csv', 'UnitEnum', 'unit name', 'unit aliases' )
-CompoundEnum = create_enum_from_csv('/home/ubuntu/ta2_extraction/codes/material_form.csv', 'CompoundEnum', 'name', 'formula' )
-CommoditiesEnum =create_enum_from_csv('/home/ubuntu/ta2_extraction/codes/minmod_commodities.csv', 'CommoditiesEnum', 'CommodityinMRDS', '')
-CountryEnum = create_enum_from_csv('/home/ubuntu/ta2_extraction/codes/country.csv', 'CountryEnum','name', 'iso3')
-StateProvinceEnum = create_enum_from_csv('/home/ubuntu/ta2_extraction/codes/state_or_province.csv', 'StateProvinceEnum', 'name', '')
-CRSEnum = create_enum_from_csv('/home/ubuntu/ta2_extraction/codes/epsg.csv', 'CRSEnum', 'name', '')
-DepositEnum = create_enum_from_csv('/home/ubuntu/ta2_extraction/codes/minmod_deposit_types.csv', 'DepositEnum', 'Deposit type', '')
+UnitEnum = create_enum_from_csv('/home/ubuntu/ta2_extractio/home/ubuntu/ta2_extraction/codes/minmod_units.csv', 'UnitEnum', 'unit name', 'unit aliases' )
+CompoundEnum = create_enum_from_csv('/home/ubuntu/ta2_extractio/home/ubuntu/ta2_extraction/codes/material_form.csv', 'CompoundEnum', 'name', 'formula' )
+CommoditiesEnum =create_enum_from_csv('/home/ubuntu/ta2_extractio/home/ubuntu/ta2_extraction/codes/minmod_commodities.csv', 'CommoditiesEnum', 'CommodityinMRDS', '')
+CountryEnum = create_enum_from_csv('/home/ubuntu/ta2_extractio/home/ubuntu/ta2_extraction/codes/country.csv', 'CountryEnum','name', 'iso3')
+StateProvinceEnum = create_enum_from_csv('/home/ubuntu/ta2_extractio/home/ubuntu/ta2_extraction/codes/state_or_province.csv', 'StateProvinceEnum', 'name', '')
+CRSEnum = create_enum_from_csv('/home/ubuntu/ta2_extractio/home/ubuntu/ta2_extraction/codes/epsg.csv', 'CRSEnum', 'name', '')
+DepositEnum = create_enum_from_csv('/home/ubuntu/ta2_extractio/home/ubuntu/ta2_extraction/codes/minmod_deposit_types.csv', 'DepositEnum', 'Deposit type', '')
 
 
 

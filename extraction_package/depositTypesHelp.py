@@ -21,7 +21,7 @@ logger = logging.getLogger("Deposit")
 def create_deposit_types(filepath, deposit_pages):
     logger.info(f"Getting started on deposit type")
     deposit_window = generic.generate_sliding_windows(deposit_pages)
-    minmod_deposit_types = generic.read_csv_to_dict("./codes/minmod_deposit_types.csv")
+    minmod_deposit_types = generic.read_csv_to_dict("/home/ubuntu/ta2_extraction/codes/minmod_deposit_types.csv")
     deposit_id = {}
     for key in minmod_deposit_types:
         deposit_id[key['Deposit type']] = key['Minmod ID']
