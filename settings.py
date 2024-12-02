@@ -20,5 +20,7 @@ CATEGORY_VALUES = ["inferred", "indicated","measured", "probable",
                 "proven", "proven+probable", "inferred+indicated", "inferred+measured",
                 "measured+indicated"]
 URL_STR = "https://minmod.isi.edu/resource/"
-VERSION_NUMBER = "v2"
+VERSION_NUMBER = "v3"
 SYSTEM_SOURCE = "Inferlink Extraction"
+STRUCTURE_MODEL = "gpt-4o-2024-08-06"
+MINI_MODEL = "gpt-4o-mini"
