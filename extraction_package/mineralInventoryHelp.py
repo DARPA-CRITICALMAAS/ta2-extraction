@@ -11,7 +11,7 @@ import copy
 import logging
 from settings import CATEGORY_VALUES, SYSTEM_SOURCE, VERSION_NUMBER, URL_STR, STRUCTURE_MODEL, MINI_MODEL
 
-import extraction_package.schemaFormats as schemas
+import extraction_package.schemaFormat as schemas
 import extraction_package.genericFunctions as generic
 import extraction_package.LLMFunctions as llm
 import extraction_package.extractionPrompts as prompts
@@ -141,7 +141,8 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, unit_dict, 
                 current_inventory_format['grade']['grade_unit'] = generic.add_extraction_dict(value, current_inventory_format['grade']['grade_unit'])
                 
         elif 'grade' in key.lower() and 'unit' not in key.lower():
-            current_inventory_format['grade']['grade_value'] = value.lower()
+            
+            current_inventory_format['grade']['grade_value'] = validate_grade_value(value, unit=current_inventory_format['grade']['grade_unit'])
             current_inventory_format['grade'] = generic.check_instance(current_extraction=current_inventory_format['grade'], key = 'grade_value', instance=float)
             
         elif 'table' in key.lower():
@@ -158,7 +159,19 @@ def create_mineral_inventory_json(extraction_dict, inventory_format, unit_dict, 
     return current_inventory_format
 
 
+def validate_grade_value(value, unit=None):
+    try:
+        # Convert to float
+        numeric_value = float(value)
+        
+        if (0 <= numeric_value <= 1) or (numeric_value.is_integer() and numeric_value < 100):
+            if unit and unit.lower() == "percentage" and numeric_value > 1:
+                return "" 
+            return value.lower()
+    except ValueError:
+        pass
 
+    return "" 
 
 def check_cutoff_grade_unit(curr_json, value, unit_dict):
     ## need to change the method of doing this as well for doing the unit to follow new schema
@@ -246,7 +259,7 @@ def create_minmod_dict():
     minmod_commodities = generic.read_csv_to_dict("./codes/minmod_commodities.csv")
     commodities = {}
     for key in minmod_commodities:
-        commodities[key['CommodityinGeoKb']] = key['minmod_id']
+        commodities[key['CommodityinGeoKb'].lower()] = key['minmod_id']
         
     minmod_units = generic.read_csv_to_dict("./codes/minmod_units.csv")
     correct_units = {}
