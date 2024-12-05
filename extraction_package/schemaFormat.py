@@ -6,7 +6,7 @@ Distribution authorized to U.S. Government only; Proprietary Information, Septem
 This Data developed under a SBIR/STTR Contract No 140D0423C0093 is subject to SBIR/STTR Data Rights which allow for protection under DFARS 252.227-7018 (see Section 11.6, Technical Data Rights). 
 """
 from settings import VERSION_NUMBER, SYSTEM_SOURCE
-
+from extraction_package import genericFunctions as generic
 
 def created_document_ref(record_id, title):
     return {
@@ -60,16 +60,21 @@ def create_inventory_format(commodities_dict, commodity, document_dict):
     doc_date = ''
     if doc_month and doc_year:
         doc_date = f"{doc_year}-{doc_month}"
-    if commodity in commodities_dict:
-        norm_uri =  "https://minmod.isi.edu/resource/" + commodities_dict[commodity]
-    else:
-        norm_uri = ""
-        
-    format = {
-    "commodity": {"normalized_uri": norm_uri,
+    
+    commodity_dict = {
                   "observed_name": commodity,
                   "confidence": 1,
-                  "source": SYSTEM_SOURCE + " " + VERSION_NUMBER},
+                  "source": SYSTEM_SOURCE + " " + VERSION_NUMBER}
+    
+    found_value = generic.find_best_match(commodity, commodities_dict.keys()) 
+    # print(f"Found commodity: {found_value}")
+    if found_value in commodities_dict:
+        # print(f"found value in dict: {commodities_dict[found_value]}")
+        norm_uri =  "https://minmod.isi.edu/resource/" + commodities_dict[found_value]
+        commodity_dict["normalized_uri"] = norm_uri
+        
+    format = {
+    "commodity": commodity_dict,
     "category": "",
     "material_form":"",
     "ore": {

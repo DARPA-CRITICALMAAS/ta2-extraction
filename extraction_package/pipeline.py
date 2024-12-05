@@ -96,8 +96,7 @@ def pipeline(folder_path, file_name, output_folder_path):
     
     
     logger.info(f"Working on file: {title} \n")
-    new_name = re.sub(r'[()\[\]"\',]', '', file_name)
-    new_name = new_name[:-4].replace(" ", "_")
+    new_name = record_id
     
     current_datetime_str = datetime.now().strftime("%Y%m%d")
     output_file_path = f'{output_folder_path}{new_name}_summary_{current_datetime_str}.json'
