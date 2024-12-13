@@ -6,7 +6,7 @@ This code is a part of the TA2 project for USGS. This is the package that works 
 To exploit all the advantages of this package, you want to use it for the entire process of downloading the files to extracting all the commodities within them. This walkthrough starts from a specific commodity/deposit type pair. 
 
 ### How to run Docker Image
-1. Clone the Repository: `git clone https:// `
+1. Clone the Repository: `git clone git@github.com:DARPA-CRITICALMAAS/ta2-extraction.git `
 2. Build the Docker Image: `docker build -t -my-extraction-app .`
 3. Running the Docker Container: 
 ```docker run \
