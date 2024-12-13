@@ -97,8 +97,7 @@ def pipeline(folder_path, file_name, output_folder_path):
     logger.info(f"Working on file: {title} \n")
     new_name = record_id
     
-    current_datetime_str = datetime.now().strftime("%Y%m%d")
-    output_file_path = f'{output_folder_path}{new_name}_summary_{current_datetime_str}.json'
+    output_file_path = f'{output_folder_path}{new_name}.json'
     
     ## Get the JSON 
     table_pages, deposit_pages, TOC_pages = LLMfunc.get_pages_with_tables(file_path)
@@ -114,6 +113,7 @@ def pipeline(folder_path, file_name, output_folder_path):
     
     full_json = [mineral_site_json]
     logger.debug(f"full_json after the mineral site json {full_json} \n")
+    logger.debug(f"Here is the output_file_path: {output_file_path}")
     generic.append_section_to_JSON(output_file_path, "MineralSite", full_json)
 
     ## initiating the extraction
@@ -165,7 +165,6 @@ if __name__ == "__main__":
     # Define named arguments
     parser.add_argument('--pdf_p', type=str, help='Path to the reports folder', required=True)
     parser.add_argument('--pdf_name', type=str, help='The name of the document', required=True)
-    parser.add_argument('--commodity_list', type=str, help='Primary commodity we are interested in', required=True)
     parser.add_argument('--output_path', type=str, help='Path where you want the output saved', required=True)
 
     # Parse the arguments
@@ -173,10 +172,9 @@ if __name__ == "__main__":
 
     # Access the arguments
     folder_path = args.pdf_p
-    file_name = args.pdf_name.split(",")
-    commodity_list = args.primary_commodity
+    file_name = args.pdf_name
     output_folder_path = args.output_path
     
     logger.info(f"Current Inputs: file_path: {file_name} \n")
-    run(folder_path, file_name, commodity_list, output_folder_path)
+    run(folder_path, file_name, output_folder_path)
    
