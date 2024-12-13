@@ -26,7 +26,7 @@ warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl'
 
 
 def append_section_to_JSON(file_path, header_name, whole_section):
-    # logger.debug(f"Writing {header_name}")
+    logger.debug(f"Writing {header_name}")
     
     json_schema = whole_section
     # logger.debug(f"Json Schema before write: {json_schema}")
