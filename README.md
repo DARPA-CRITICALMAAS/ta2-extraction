@@ -9,7 +9,8 @@ To exploit all the advantages of this package, you want to use it for the entire
 1. Clone the Repository: `git clone git@github.com:DARPA-CRITICALMAAS/ta2-extraction.git `
 2. Build the Docker Image: `docker build -t -my-extraction-app .`
 3. Running the Docker Container: 
-```docker run \
+``` 
+    docker run \
     -v /path/to/stored/reports/ta2-extraction/reports:/app/reports \
     -v /path/to/stored/reports/ta2-extraction/output:/app/output \
     my-extraction-app \
