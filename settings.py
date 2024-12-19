@@ -10,9 +10,12 @@ Settings File to place API_key or any other variables that will change between u
 easier across all files as well. 
     
 """
+from dotenv import load_dotenv
+import os
+load_dotenv()
 
-API_KEY = ""
-CDR_BEARER = ""
+API_KEY = os.getenv("API_KEY")
+CDR_BEARER = os.getenv("CDR_BEARER")
 MODEL_TYPE = "gpt-4o"
 LIBRARY_ID = "4530692"
 LIBRARY_TYPE = "group"

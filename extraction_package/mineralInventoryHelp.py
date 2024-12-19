@@ -339,6 +339,9 @@ def post_process(curr_json):
         if inner_dict.get('material_form') == "":
             inner_dict.pop('material_form', None)
         
+        if 'zone' in inner_dict and not isinstance(inner_dict['zone'], str):
+            inner_dict['zone'] = str(inner_dict['zone'])
+        
         # Process each key in the inner dictionary
         for key in inner_dict:
             # Process 'ore', 'grade', and 'cutoff_grade'
