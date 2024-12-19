@@ -52,6 +52,8 @@ def format_deposit_candidates(deposit_list, minmod_deposits):
    
         inner_dict["source"] =  SYSTEM_SOURCE + " "+ VERSION_NUMBER
         inner_dict["confidence"] = 1/len(deposit_list['deposits']) 
+        if inner_dict['confidence'] == 1:
+            inner_dict['confidence'] = 0.99
         deposit_type_candidate['deposit_type_candidate'].append(inner_dict)
     
         

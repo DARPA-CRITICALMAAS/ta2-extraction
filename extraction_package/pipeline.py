@@ -120,7 +120,7 @@ def pipeline(folder_path, file_name, output_folder_path):
     full_json[0]['mineral_inventory'] = []
     full_json[0]['deposit_type_candidate'] = []
     full_json[0]['modified_at'] = datetime.now(timezone.utc).isoformat().replace('+00:00', 'Z')
-    full_json[0]['created_by'] = "https://minmod.isi.edu/users/inferlink"
+    full_json[0]['created_by'] = "https://minmod.isi.edu/users/s/inferlinks"
     full_json[0]['reference'] = [{"document":document_dict}]
     generic.append_section_to_JSON(output_file_path, "reference", full_json)
     logger.debug(f"Outputed full_json after adding reference & mineral inventory: {full_json} \n")
