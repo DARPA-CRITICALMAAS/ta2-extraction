@@ -59,7 +59,8 @@ Thumbs.db
 
 .ipynb_checkpoints
 
-extract_venv/
+cmaas_venv/
 reports/
 extracted/
 created_pdf/
+.env

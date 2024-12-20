@@ -18,27 +18,16 @@ def extract_commodity(text):
         return []
     return re.findall(r'Commodity:([^;]+)', text)
 
-def collect_list_keys(desired_commodity, df, data, download_dir): 
-    cdr_ids = []
 
-    for _, row in df.iterrows():
-        if isinstance(row['Manual Tags'], str):
-            commodities = extract_commodity(row['Manual Tags'])
-            if desired_commodity in commodities:
-                zotero_key = row['Key']
-                if zotero_key in data:
-                    helper.download_document(data[zotero_key]['id'], download_dir)
-       
-    
-def save_unfinished_files(download_dir):
+def save_unfinished_files(folder_path):
+    ## Get the list where name has NI_43 in them
+    ## save that to then rerun
     directory_path = "/Users/adrisheu/git_folders/ta2-minmod-data/data/mineral-sites/inferlink/mining-report/"
-
-
-    save_file = []
+    save_file, zotero_files, completed_files = [], [], []
     # Iterate through all files in the directory
     for filename in os.listdir(directory_path):
         file_path = os.path.join(directory_path, filename)
-    
+        
         # Check if the file is a JSON file
         if filename.endswith(".json"):
             try:
@@ -47,16 +36,45 @@ def save_unfinished_files(download_dir):
                     data = json.load(json_file)
                     print(f"Successfully loaded JSON from {filename}")
 
+
+
                     if "NI 43-101" in data[0]['name']:
                         if filename[0] == "0":
-                            helper.download_document(filename[:-5], download_dir)
-                            print("Downloading files files")
+                            save_file.append(filename.split(".")[0])
+                            # print("saved_file\n")
+                        else:
+                            zotero_id = data[0]['record_id']
+                            zotero_files.append(zotero_id)
+                            # print(f"Here is zotero ID: {zotero_id} \n\n")
                     else:
-                        print("Did not need to update file \n\n")
+                        # print("Completed \n\n")
+                        completed_files.append(filename)
+    
             except json.JSONDecodeError as e:
                 print(f"Error decoding JSON in {filename}: {e}")
             except Exception as e:
                 print(f"Error processing {filename}: {e}")
+                
+    ## next step          
+    with open('./metadata/zotero_cdr_id.pickle', 'rb') as file:
+        data = pickle.load(file)
+        
+    
+    for zotero_id in zotero_files:
+        zotero_id = zotero_id.split("/")[1]
+        # print(zotero_id)
+        if zotero_id in data: 
+            cdr_id = data[zotero_id]['id']
+            save_file.append(cdr_id)
+    
+    for file in save_file:
+        if file in completed_files:
+            pass
+        else:
+            helper.download_document(file, folder_path)
+            
+    
+
      
       
 
@@ -68,8 +86,8 @@ if __name__ == '__main__':
         
     folder_path = "./reports/unfinished/"
     
-    desired_commodity = "graphite"
-    # collect_list_keys(desired_commodity, zotero_df, cdr_data, folder_path)
+    # desired_commodity = "graphite"
+    
     # save_unfinished_files(folder_path)
     # print("finished downloading files\n")
     
