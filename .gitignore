@@ -65,3 +65,4 @@ extracted/
 created_pdf/
 automatic_evaluation/data/
 .env
+*.log
