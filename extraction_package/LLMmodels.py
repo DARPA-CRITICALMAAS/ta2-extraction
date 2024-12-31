@@ -10,7 +10,7 @@ import time
 from pydantic import BaseModel, Field
 import openai
 from typing import List, Optional
-from settings import API_KEY
+from settings import API_KEY, WORKING_DIR
 import warnings
 import requests
 import json
@@ -33,13 +33,13 @@ def create_enum_from_csv(csv_file: str, enum_name: str, key1: str, key2: str) ->
         values = df[key1].tolist()
     return Enum(enum_name, {value.upper().replace(' ', '_'): value for value in values})
 
-UnitEnum = create_enum_from_csv('./codes/minmod_units.csv', 'UnitEnum', 'unit name', 'unit aliases' )
-CompoundEnum = create_enum_from_csv('./codes/material_form.csv', 'CompoundEnum', 'name', 'formula' )
-CommoditiesEnum =create_enum_from_csv('./codes/minmod_commodities.csv', 'CommoditiesEnum', 'CommodityinMRDS', '')
-CountryEnum = create_enum_from_csv('./codes/country.csv', 'CountryEnum','name', 'iso3')
-StateProvinceEnum = create_enum_from_csv('./codes/state_or_province.csv', 'StateProvinceEnum', 'name', '')
-CRSEnum = create_enum_from_csv('./codes/epsg.csv', 'CRSEnum', 'name', '')
-DepositEnum = create_enum_from_csv('./codes/minmod_deposit_types.csv', 'DepositEnum', 'Deposit type', '')
+UnitEnum = create_enum_from_csv(f'{WORKING_DIR}/codes/minmod_units.csv', 'UnitEnum', 'unit name', 'unit aliases' )
+CompoundEnum = create_enum_from_csv(f'{WORKING_DIR}/codes/material_form.csv', 'CompoundEnum', 'name', 'formula' )
+CommoditiesEnum =create_enum_from_csv(f'{WORKING_DIR}/codes/minmod_commodities.csv', 'CommoditiesEnum', 'CommodityinMRDS', '')
+CountryEnum = create_enum_from_csv(f'{WORKING_DIR}/codes/country.csv', 'CountryEnum','name', 'iso3')
+StateProvinceEnum = create_enum_from_csv(f'{WORKING_DIR}/codes/state_or_province.csv', 'StateProvinceEnum', 'name', '')
+CRSEnum = create_enum_from_csv(f'{WORKING_DIR}/codes/epsg.csv', 'CRSEnum', 'name', '')
+DepositEnum = create_enum_from_csv(f'{WORKING_DIR}/codes/minmod_deposit_types.csv', 'DepositEnum', 'Deposit type', '')
 
 
 

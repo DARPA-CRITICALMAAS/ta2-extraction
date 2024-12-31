@@ -8,8 +8,9 @@ This code is a part of the TA2 project for USGS. This is the package that works 
 ## How to run Docker Image
 1. Clone the Repository: `git clone git@github.com:DARPA-CRITICALMAAS/ta2-extraction.git `
 2. Create a .env file with : API_KEY & CDR_BEARER so that the application works. The API_KEY should be an OpenAI API key and the CDR Bearer is a connection to the polymer.
-3. Build the Docker Image: `docker build -t -my-extraction-app .`
-4. Running the Docker Container: 
+3. Fill out any necessary variables in the settings.py
+4. Build the Docker Image: `docker build -t -my-extraction-app .`
+5. Running the Docker Container: 
 ``` 
     docker run \
     -v /path/to/stored/reports/ta2-extraction/reports:/app/reports \
@@ -43,7 +44,7 @@ extraction_package/ \
 
 
 ### Description of Variables
-* **file_name**: the filename of the pdf that you want to extract from
+* **file_name**: the filename of the pdf that you want to extract from. Expectation is that the file_name has the record_id in part of the name. 
 * **folderpath**: folderpath to the where the report pdf is stored 
 * **output_path**: output folder path where you want the mineral inventory extraction json to be outputted to.
 
@@ -55,16 +56,13 @@ extraction_package/ \
 3. Run Pipeline for one File which must already be downloaded locally. At the top of the ta2-extraction directory Run
  `python -m extraction_package.pipeline --pdf_p "/path/to/reports/" --pdf_name "FileName.pdf" --output_path "/path/to/stored/output/"`
 
-
-## Download Files
-The python file download_files.py works by using the SRI generated predictions of deposit types, which is sotred in the metadata directory. This works by downloading a limited amount of files from a given commodity type by creating an API request to the CDR.
-
-
-
-
-
-
-
+## CDR Polymer process
+1. Log in to the CDR: https://auth.polymer.rocks/
+2. Upload a document by hitting the CDR dropdown in top right corner 
+3. Insert document name and information.
+4. Hit upload
+5. Once upload completes, go to the file
+6. Hit the process button to initate the extraction of the document
 
 
 ## Version Control
@@ -74,6 +72,7 @@ Major Changes
 - change approach of how to get page number
 - utilization of structured outputs and openAI improvements for models 4o
 - Working on adding a filtered extraction 
+- updates to the schema
 
 ### Previous Version 2.0: extraction_package
 Major Changes

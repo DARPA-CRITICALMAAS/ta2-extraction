@@ -16,6 +16,7 @@ load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
 CDR_BEARER = os.getenv("CDR_BEARER")
+WORKING_DIR = os.getcwd()
 MODEL_TYPE = "gpt-4o"
 LIBRARY_ID = "4530692"
 LIBRARY_TYPE = "group"
