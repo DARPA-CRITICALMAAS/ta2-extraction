@@ -16,7 +16,7 @@ from settings import SYSTEM_SOURCE, VERSION_NUMBER, CDR_BEARER
 from old_extraction_package_v2.ExtractPrompts import *
 import logging
 from collections import Counter
-
+import requests
 
 # Get logger
 logger = logging.getLogger("GeneralFunctions")
