@@ -86,8 +86,8 @@ def ensure_directories_exist(folder_path):
 
 if __name__ == '__main__':
    
-    desired_commodity = "barite"
-    desired_sign = "barite"
+    desired_commodity = "Nickel"
+    desired_sign = "Ni"
     
     with open('./metadata/zotero_cdr_id.pickle', 'rb') as file:
         cdr_data = pickle.load(file)
@@ -114,8 +114,7 @@ if __name__ == '__main__':
         
 
     
-    
-    
+
     pdf_files = [f for f in os.listdir(folder_path) if f.endswith(".pdf")]
 
     completed_files = []
