@@ -12,18 +12,47 @@ import re
 import csv
 import PyPDF2
 from fuzzywuzzy import process
-from settings import SYSTEM_SOURCE, VERSION_NUMBER 
+from settings import SYSTEM_SOURCE, VERSION_NUMBER, CDR_BEARER 
 from old_extraction_package_v2.ExtractPrompts import *
 import logging
 from collections import Counter
-
+import requests
 
 # Get logger
 logger = logging.getLogger("GeneralFunctions")
 
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')
 
+def download_document(doc_id, download_dir):
+    headers = {
+        'accept': 'application/json',
+        'Authorization': 'Bearer '+ CDR_BEARER
+    }
 
+    url_pdf = f'https://api.cdr.land/v1/docs/document/{doc_id}'
+    url_meta = f'https://api.cdr.land/v1/docs/document/meta/{doc_id}'
+    # logger.debug(f"in download document CDR Bearer: {CDR_BEARER}")
+
+    # Send the initial GET request
+    response = requests.get(url_meta, headers=headers)
+    logger.info(f"Meta doc status code: {response.status_code}")
+    if response.status_code == 200:
+        # Save the response content to a file
+        resp_json = json.loads(response.content)
+        title = resp_json['title']
+        
+        response = requests.get(url_pdf, headers=headers)
+
+        if response.status_code == 200:    
+            with open(f'{download_dir}{doc_id}_{title}.pdf', 'wb') as file:
+                file.write(response.content)
+            logger.info(f"Document downloaded and saved as '{title}.pdf'")
+        else:
+            logger.info(f"Failed to download document. Status code: {response.status_code}")
+    else:
+        logger.info(f"Failed to get meta data. Status code: {response.status_code}")
+        logger.info(f"Response content: {response.content}")
+      
 
 def append_section_to_JSON(file_path, header_name, whole_section):
     logger.debug(f"Writing {header_name}")

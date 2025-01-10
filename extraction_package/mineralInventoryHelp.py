@@ -9,7 +9,7 @@ import warnings
 import requests
 import copy
 import logging
-from settings import CATEGORY_VALUES, SYSTEM_SOURCE, VERSION_NUMBER, URL_STR, STRUCTURE_MODEL, MINI_MODEL
+from settings import CATEGORY_VALUES,  URL_STR, STRUCTURE_MODEL, WORKING_DIR
 
 import extraction_package.schemaFormat as schemas
 import extraction_package.genericFunctions as generic
@@ -256,12 +256,12 @@ def check_category(current_json, URL_STR, value):
 
 
 def create_minmod_dict():
-    minmod_commodities = generic.read_csv_to_dict("./codes/minmod_commodities.csv")
+    minmod_commodities = generic.read_csv_to_dict(f"{WORKING_DIR}/codes/minmod_commodities.csv")
     commodities = {}
     for key in minmod_commodities:
         commodities[key['CommodityinGeoKb'].lower()] = key['minmod_id']
         
-    minmod_units = generic.read_csv_to_dict("./codes/minmod_units.csv")
+    minmod_units = generic.read_csv_to_dict(f"{WORKING_DIR}/codes/minmod_units.csv")
     correct_units = {}
     for key in minmod_units:
         correct_units[key['unit name']] = key['minmod_id']
@@ -313,7 +313,7 @@ def check_material_form(curr_json, URL_STR, value):
     curr_json['material_form'] = {"normalized_uri": ""}
     
     # logger.debug(f"Here is curr_json {curr_json}")
-    material_form_picklist = generic.read_csv_to_dict("./codes/material_form.csv")
+    material_form_picklist = generic.read_csv_to_dict(f"{WORKING_DIR}/codes/material_form.csv")
     
     options = {}
     for item in material_form_picklist:

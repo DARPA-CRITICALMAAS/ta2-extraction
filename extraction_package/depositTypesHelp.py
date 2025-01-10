@@ -12,7 +12,8 @@ import extraction_package.LLMFunctions as llm
 import extraction_package.LLMmodels as model
 import extraction_package.extractionPrompts as prompt
 
-from settings import VERSION_NUMBER, SYSTEM_SOURCE, MINI_MODEL, STRUCTURE_MODEL, URL_STR
+
+from settings import VERSION_NUMBER, SYSTEM_SOURCE, MINI_MODEL, STRUCTURE_MODEL, URL_STR, WORKING_DIR
 # Ignore the specific UserWarning from openpyxl
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')
 
@@ -21,7 +22,7 @@ logger = logging.getLogger("Deposit")
 def create_deposit_types(filepath, deposit_pages):
     logger.info(f"Getting started on deposit type")
     deposit_window = generic.generate_sliding_windows(deposit_pages)
-    minmod_deposit_types = generic.read_csv_to_dict("./codes/minmod_deposit_types.csv")
+    minmod_deposit_types = generic.read_csv_to_dict(WORKING_DIR + "/codes/minmod_deposit_types.csv")
     deposit_id = {}
     for key in minmod_deposit_types:
         deposit_id[key['Deposit type']] = key['Minmod ID']

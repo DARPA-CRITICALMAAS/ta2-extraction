@@ -1,14 +1,16 @@
 # README for Extraction Package
 This code is a part of the TA2 project for USGS. This is the package that works to extract information from Mining Reports to gather deposit types, mineral inventory, mining report reference, and mining site information to create a larger Database. The most up to date package is stored in ./extraction_package. 
 
+## Installation (requires python >3.12 and pip)
+1. Create virtual environment (python, anaconda, etc.)
+2. In the project root: `pip install -r requirements.txt`
 
-## Recommendation for Running this package
-To exploit all the advantages of this package, you want to use it for the entire process of downloading the files to extracting all the commodities within them. This walkthrough starts from a specific commodity/deposit type pair. 
-
-### How to run Docker Image
+## How to run Docker Image
 1. Clone the Repository: `git clone git@github.com:DARPA-CRITICALMAAS/ta2-extraction.git `
-2. Build the Docker Image: `docker build -t -my-extraction-app .`
-3. Running the Docker Container: 
+2. Create a .env file with : API_KEY & CDR_BEARER so that the application works. The API_KEY should be an OpenAI API key and the CDR Bearer is a connection to the polymer.
+3. Fill out any necessary variables in the settings.py
+4. Build the Docker Image: `docker build -t -my-extraction-app .`
+5. Running the Docker Container: 
 ``` 
     docker run \
     -v /path/to/stored/reports/ta2-extraction/reports:/app/reports \
@@ -23,13 +25,13 @@ To exploit all the advantages of this package, you want to use it for the entire
 **Note**: Make sure the the directories are for saving the output and finding the reports are correctly named. This will only run one file at a time. --pdf_p: the pathway to where reports are stored. --pdf_name: is the name of the file that you want to extract from. --output_path: folder directory where you want to store the output.
 
 ## Extraction Package Directory 
-Note all loggers should be name similar to the file.
-Launched Aug 14, 2024
+Note all loggers should be name similar to the file. Note that the documents you want to process should also already be downloaded locally. 
 
+Updated Jan 2025.
 
 extraction_package/ \
 |    |---- \_\_init\_\_ \
-|    |---- ExtractionPipeline : the main driver of the code \
+|    |---- pipeline.py : the main driver of the code \
 |       |---- genericFunctions: all generalized functions that do not just relate to a single section \
 |       |---- mineralInventoryHelp: code to generate the Mineral Inventory \
 |       |---- documentRefHelp: Code to generate the Mineral Site and document reference information \
@@ -39,50 +41,29 @@ extraction_package/ \
 |       |---- extractionPrompts: all prompts used \
 |       |---- schemaFormats: all the formats that match the schema derived by the larger TA2 team 
 
-The extraction package holds all the major code for running the parallelized extraction of the mineral inventory. This code can be handled by calling a driver function such as runPipeline.py.
+
 
 ### Description of Variables
-* **file_name**: the filename of the pdf that you want to extract from
-* **folderpath**: folderpath to the where the pdfs are stored to that given commodity.
-* **output_path**: output folder path where you want fully completed extractions (ie all three sections) stored in
+* **file_name**: the filename of the pdf that you want to extract from. Expectation is that the file_name has the record_id in part of the name. 
+* **folderpath**: folderpath to the where the report pdf is stored 
+* **output_path**: output folder path where you want the mineral inventory extraction json to be outputted to.
 
 
 ### How to run One File
-0. Make sure all variables in the settings.py are correctly formatted (ie API keys)
+0. Make sure all variables in the .env are correctly formatted (ie API key and CDR Bearer)
 1. Create virtual environment
 2. Install required dependencies: `pip install -r requirements.txt`
-3. Run Pipeline for one File which must already be downloaded locally: `python -m extraction_package.pipeline --pdf_p "/path/to/reports/" --pdf_name "FileName.pdf" --output_path "/path/to/stored/output/"`
+3. Run Pipeline for one File which must already be downloaded locally. At the top of the ta2-extraction directory Run
+ `python -m extraction_package.pipeline --pdf_p "/path/to/reports/" --pdf_name "FileName.pdf" --output_path "/path/to/stored/output/"`
 
+## CDR Polymer process
+1. Log in to the CDR: https://auth.polymer.rocks/
+2. Upload a document by hitting the CDR dropdown in top right corner 
+3. Insert document name and information.
+4. Hit upload
+5. Once upload completes, go to the file
+6. Hit the process button to initate the extraction of the document
 
-## Download Files
-The python file download_files.py works by using the SRI generated predictions of deposit types, which is sotred in the metadata directory. This works by downloading a limited amount of files from a given commodity type by creating an API request to the CDR.
-
-### How to run
-0. Make sure all variables in the settings.py are correctly formatted (ie API keys) 
-1. To run: `python -u download_files.py --download_dir 'path you want to download too' --deposits '[list of deposit types]' --report_limit 'Max amount of reports you want to download. If no limit leave empty' --doc_ids '[List of document ids that are in the CDR]' `
-
-**Note** A valid deposits list is ["mvt zinc-lead"]. If you want to download via doc_ids leave deposits empty. If you want to download using deposits only without any specific doc_ids leave doc_ids as an empty list. 
-
-## First pass Directory : Might not be needed Anymore
-The first pass directory stores all of the code that creates an initial first pass on pdfs to generate a list of all commodities present in a given file. This helps us determine whether or not we want to extract from that given file. It creates an output of a metadata file that gives a list of commodities within all files across a given commodity. 
-extraction_package/ \
-|    |---- \_\_init\_\_ \
-|    |---- GatherCommodities: the main driver that goes through each file and extracts the commodities \
-|    |---- HelperFunctions: any generic prompts that were created just for this package \
-|    |---- prompts : all prompts used for the package \
-
-### How to run
-0. Make sure all variables in the settings.py are correctly formatted (ie API keys) 
-1. To run this directory you can call:  `python -um first_pass.GatherCommodities --download_dir 'path to stored reports' --csv_output 'Path to where you want to download reports'`
-
-## Installation (requires python >3.7 and pip)
-1. Create virtual environment (python, anaconda, etc.)
-2. In the project root: `pip install -r requirements.txt`
-
-
-## How to run the single package for extraction
-1. Add your openAI API key in the settings.py file under API_KEY variable
-2. In the terminal at the root directory: `python -m extraction_package.extraction_pipeline --pdf_p '/folder/path' --pdf_name  'filename.pdf' --output_path '/folder/path' `
 
 ## Version Control
 ### Current Version 3.0
@@ -91,6 +72,7 @@ Major Changes
 - change approach of how to get page number
 - utilization of structured outputs and openAI improvements for models 4o
 - Working on adding a filtered extraction 
+- updates to the schema
 
 ### Previous Version 2.0: extraction_package
 Major Changes

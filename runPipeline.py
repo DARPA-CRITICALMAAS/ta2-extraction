@@ -4,7 +4,7 @@ import shutil
 import pandas as pd
 import sys
 from extraction_package import pipeline as extract
-from first_pass import HelperFunctions as helper
+from extraction_package import genericFunctions as general
 import json
 import argparse
 import ast
@@ -71,28 +71,50 @@ def save_unfinished_files(folder_path):
         if file in completed_files:
             pass
         else:
-            helper.download_document(file, folder_path)
+            general.download_document(file, folder_path)
             
+def ensure_directories_exist(folder_path):
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
+        print(f"Created folder: {folder_path}")
+    else:
+        print(f"Folder already exists: {folder_path}")
     
 
      
       
 
 if __name__ == '__main__':
+   
+    desired_commodity = "Nickel"
+    desired_sign = "Ni"
+    
     with open('./metadata/zotero_cdr_id.pickle', 'rb') as file:
         cdr_data = pickle.load(file)
         
     zotero_df = pd.read_csv('./metadata/Zotero_files.csv')
+    
+    folder_path = f"./reports/{desired_commodity}/"
+    output_folder_path = f"./extracted/jan_2025/{desired_commodity}/"
+    ensure_directories_exist(folder_path)
+    ensure_directories_exist(output_folder_path)
+    
+
+    with open('./metadata/zotero_cdr_id.pickle', 'rb') as file:
+        data = pickle.load(file)
+
+    for idx, row in zotero_df.iterrows():
+        manual_tags = row['Manual Tags']
+        if isinstance(manual_tags, str):
+            commodities = re.findall(r"Commodity:([^;]+)", manual_tags)
+            if desired_sign in commodities:
+                if row['Key'] in data:
+                    record_id = data[row['Key']]['id']
+                    general.download_document(record_id, folder_path)
         
-    folder_path = "./reports/unfinished/"
+
     
-    # desired_commodity = "graphite"
-    
-    # save_unfinished_files(folder_path)
-    # print("finished downloading files\n")
-    
-    output_folder_path = "./extracted/updated_files/"
-    
+
     pdf_files = [f for f in os.listdir(folder_path) if f.endswith(".pdf")]
 
     completed_files = []

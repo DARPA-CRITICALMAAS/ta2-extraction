@@ -7,7 +7,7 @@ import extraction_package.genericFunctions as generic
 import extraction_package.schemaFormat as schema
 import re
 import pandas as pd
-from settings import MINI_MODEL, STRUCTURE_MODEL, URL_STR, VERSION_NUMBER, SYSTEM_SOURCE
+from settings import MINI_MODEL, STRUCTURE_MODEL, URL_STR, VERSION_NUMBER, SYSTEM_SOURCE, WORKING_DIR
 
 ## ADD LOGGING
 logging.config.fileConfig(fname='config.ini', disable_existing_loggers=True)
@@ -84,7 +84,7 @@ def normalize_mineral_site(dictionary):
     for key, new_value in dictionary["location_info"].items():
         logger.debug(f"Normalizing the key: {key}: {new_value}")
         if key == 'crs':
-            minmod_epsg = generic.read_csv_to_dict(f"./codes/epsg.csv")
+            minmod_epsg = generic.read_csv_to_dict(f"{WORKING_DIR}/codes/epsg.csv")
             epsg_dict = {item['name']: item['minmod_id'] for item in minmod_epsg}
             logger.debug(f'epsg: {epsg_dict}')
             normalized_value = generic.find_best_match(new_value, list(epsg_dict.keys()), threshold=75)
@@ -131,7 +131,7 @@ def normalize_mineral_site(dictionary):
 
 
 def add_country_or_state(code_name, new_key, new_value, country_list):
-    minmod_code = generic.read_csv_to_dict(f"./codes/{code_name}")
+    minmod_code = generic.read_csv_to_dict(f"{WORKING_DIR}/codes/{code_name}")
     
     df = pd.DataFrame(minmod_code)
     df.columns = df.columns.str.strip().str.replace('\ufeff', '')
