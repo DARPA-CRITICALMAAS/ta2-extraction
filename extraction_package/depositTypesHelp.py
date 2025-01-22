@@ -51,7 +51,8 @@ def format_deposit_candidates(deposit_list, minmod_deposits):
             inner_dict["normalized_uri"] = URL_STR + minmod_deposits[normalized_value]
    
         inner_dict["source"] =  SYSTEM_SOURCE + " "+ VERSION_NUMBER
-        inner_dict["confidence"] = 1/len(deposit_list['deposits']) 
+        confidence_value = 1 / len(deposit_list['deposits'])
+        inner_dict["confidence"] = confidence_value if confidence_value != 1 else 0.99
         deposit_type_candidate['deposit_type_candidate'].append(inner_dict)
     
         
