@@ -22,7 +22,7 @@ import logging
 # Define a generic type for Enum
 T = TypeVar('T', bound=Enum)
 client = openai.OpenAI(api_key = API_KEY)
-logger = logging.getLogger("LLMFunction")
+logger = logging.getLogger(__name__)
 
 def get_gpt_response(prompt, model_type, schema_format):
     # logger.debug(f'Here is the prompt: {prompt} \n\n')

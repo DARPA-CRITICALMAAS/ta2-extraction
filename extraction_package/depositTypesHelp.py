@@ -17,7 +17,7 @@ from settings import VERSION_NUMBER, SYSTEM_SOURCE, MINI_MODEL, STRUCTURE_MODEL,
 # Ignore the specific UserWarning from openpyxl
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')
 
-logger = logging.getLogger("Deposit")
+logger = logging.getLogger(__name__)
 
 def create_deposit_types(filepath, deposit_pages):
     logger.info(f"Getting started on deposit type")

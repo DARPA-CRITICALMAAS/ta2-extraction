@@ -19,7 +19,7 @@ from collections import Counter
 import requests
 
 # Get logger
-logger = logging.getLogger("GeneralFunctions")
+logger = logging.getLogger(__name__)
 
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')
 

@@ -22,7 +22,7 @@ import extraction_package.LLMmodels as model
 # Ignore the specific UserWarning from openpyxl
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')
 
-logger = logging.getLogger("Inventory")
+logger = logging.getLogger(__name__)
 
 
 

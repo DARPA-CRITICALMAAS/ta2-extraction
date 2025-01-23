@@ -45,11 +45,10 @@ import statistics
 class FilesNotCompleted(Exception):
     pass
 
-## ADD LOGGING
-logging.config.fileConfig(fname='config.ini', disable_existing_loggers=True)
+
 
 # Get the logger specified in the file
-logger = logging.getLogger("Pipeline")
+logger = logging.getLogger(__name__)
 
 # Ignore the specific UserWarning from openpyxl
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')

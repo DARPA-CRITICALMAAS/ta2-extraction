@@ -9,11 +9,10 @@ import re
 import pandas as pd
 from settings import MINI_MODEL, STRUCTURE_MODEL, URL_STR, VERSION_NUMBER, SYSTEM_SOURCE, WORKING_DIR
 
-## ADD LOGGING
-logging.config.fileConfig(fname='config.ini', disable_existing_loggers=True)
+
 
 # Get the logger specified in the file
-logger = logging.getLogger("Site")
+logger = logging.getLogger(__name__)
 
 # Ignore the specific UserWarning from openpyxl
 warnings.filterwarnings(action='ignore', category=UserWarning, module='openpyxl')

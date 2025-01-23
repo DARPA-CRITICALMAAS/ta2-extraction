@@ -16,7 +16,8 @@ load_dotenv()
 
 API_KEY = os.getenv("API_KEY")
 CDR_BEARER = os.getenv("CDR_BEARER")
-WORKING_DIR = os.getcwd()
+WORKING_DIR = os.path.expanduser("~/ta2-extraction")
+# print(API_KEY, WORKING_DIR, CDR_BEARER)
 MODEL_TYPE = "gpt-4o"
 LIBRARY_ID = "4530692"
 LIBRARY_TYPE = "group"

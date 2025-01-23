@@ -14,7 +14,7 @@ import ast
 from first_pass import HelperFunctions as helper
 
 logging.config.fileConfig('config.ini')
-logger = logging.getLogger("Downloader") 
+logger = logging.getLogger(__name__) 
 
 def ensure_trailing_slash(path):
     normalized_path = os.path.normpath(path)
