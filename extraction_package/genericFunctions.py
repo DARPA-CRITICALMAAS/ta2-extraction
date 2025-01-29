@@ -47,7 +47,7 @@ def download_document(doc_id, download_dir):
             with open(f'{download_dir}{doc_id}_{title}.pdf', 'wb') as file:
                 file.write(response.content)
             logger.info(f"Document downloaded and saved as '{title}.pdf'")
-            return title
+            return f"{doc_id}_{title}.pdf"
         else:
             logger.info(f"Failed to download document. Status code: {response.status_code}")
             return None
