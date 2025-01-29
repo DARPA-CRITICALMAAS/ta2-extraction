@@ -81,10 +81,12 @@ def run(folder_path, file_name, output_folder_path):
     t = time.time()
 
     try:
-        pipeline(folder_path, file_name, output_folder_path)
+        output = pipeline(folder_path, file_name, output_folder_path)
+        return output
     except Exception as e:
         logger.error(f"{file_name} : Pipeline Error: {e} \n")
         logger.error(f"Rerunning: {file_name} \n")
+        return None
     logger.info(f"Entire run takes: {time.time()-t} \n\n")
     
     
@@ -151,7 +153,7 @@ def pipeline(folder_path, file_name, output_folder_path):
 
     logger.debug(f"ALL Sections data written to {output_file_path} \n")
     # shutil.move(output_file_path, f'{output_folder_path}completed/{new_name}_summary_{current_datetime_str}.json' )
-  
+    return full_json
         
 
 

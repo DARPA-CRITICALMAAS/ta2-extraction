@@ -24,7 +24,7 @@ def created_document_ref(record_id, title):
             
 def create_mineral_site(record_id):
     return {
-        "source_id": "mining-report::https://api.cdr.land/v1/docs/documents",
+        "source_id": "https://api.cdr.land/v1/docs/documents",
         "record_id": f"{record_id}",
         "name": "",
         "location_info": {
