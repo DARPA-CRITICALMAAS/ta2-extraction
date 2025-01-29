@@ -47,11 +47,14 @@ def download_document(doc_id, download_dir):
             with open(f'{download_dir}{doc_id}_{title}.pdf', 'wb') as file:
                 file.write(response.content)
             logger.info(f"Document downloaded and saved as '{title}.pdf'")
+            return title
         else:
             logger.info(f"Failed to download document. Status code: {response.status_code}")
+            return None
     else:
         logger.info(f"Failed to get meta data. Status code: {response.status_code}")
         logger.info(f"Response content: {response.content}")
+        return None
       
 
 def append_section_to_JSON(file_path, header_name, whole_section):
